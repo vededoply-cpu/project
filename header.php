@@ -78,7 +78,7 @@ if (!isset($meta_desc)) $meta_desc = 'Mirai Packaging LLP is Bangalore\'s premie
 <nav class="mobile-drawer" id="mobileDrawer">
   <div class="drawer-header">
     <div class="nav-logo">
-      <img src="images/logo.png" alt="Mirai Packaging LLP" style="height:44px;"/>
+      <img src="images/logo.png" alt="Mirai Packaging LLP" style="height:50px;"/>
       <div class="nav-logo-text">
         <span class="brand-name" style="font-size:1.3rem;">MIRAI</span>
         <span class="brand-tag">PACKAGING LLP</span>

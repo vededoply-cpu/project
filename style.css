@@ -469,22 +469,22 @@
    text-decoration: none;
  }
 
- .nav-logo-img {
-   height: 52px;
-   width: auto;
-   object-fit: contain;
-   background-color: transparent !important;
- }
+  .nav-logo-img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    background-color: transparent !important;
+  }
 
- .nav-logo-text {
-   display: flex;
-   flex-direction: column;
- }
+  .nav-logo-text {
+    display: flex;
+    flex-direction: column;
+  }
 
- .brand-name {
-   font-family: var(--font-heading);
-   font-weight: 900;
-   font-size: 1.45rem;
+  .brand-name {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 1.65rem;
    color: var(--text-primary);
    line-height: 1;
    letter-spacing: 0.02em;
@@ -1566,11 +1566,11 @@
    gap: 12px;
  }
 
- .footer-logo-img {
-   height: 48px;
-   width: auto;
-   background-color: transparent !important;
- }
+  .footer-logo-img {
+    height: 55px;
+    width: auto;
+    background-color: transparent !important;
+  }
 
  .footer-brand p {
    font-size: 0.88rem;
@@ -1895,11 +1895,11 @@
   }
 
   .nav-logo-img {
-    height: 40px;
+    height: 46px;
   }
 
   .brand-name {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
   }
 
   .brand-tag {
@@ -2097,11 +2097,11 @@
 
 @media (max-width: 380px) {
   .nav-logo-img {
-    height: 34px;
+    height: 39px;
   }
 
   .brand-name {
-    font-size: 1rem;
+    font-size: 1.15rem;
   }
 
   .hero-title {
