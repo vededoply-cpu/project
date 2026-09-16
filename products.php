@@ -23,7 +23,7 @@ include 'header.php';
 </section>
 
 <!-- PRODUCT FILTER BUTTONS -->
-<div style="background:var(--bg-neutral); padding:12px 0; border-bottom:1px solid var(--border-subtle); position:sticky; top:66px; z-index:90;">
+<div style="background:var(--bg-neutral); padding:12px 0; border-bottom:1px solid var(--border-subtle); position:sticky; top:66px; z-index:90; max-width:100vw; overflow-x:hidden;">
   <div class="container">
     <div class="product-filter-bar">
       <button class="btn btn-sm product-filter-btn active" data-filter="all" style="background:var(--blue-brand);color:var(--white);">All Products (12)</button>
