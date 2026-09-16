@@ -29,37 +29,46 @@ include 'header.php';
       <div>
         <span class="sub-title">ISO 9001:2015 Certified Manufacturing Enterprise</span>
         <h2 style="font-family:var(--font-heading); font-weight:800; font-size:2rem; color:var(--text-primary); margin-bottom:18px;">
-          End-to-End Industrial Packaging &amp; Material Handling Solutions
+          End-to-End Industrial Packaging &amp; Material Handling Partner
         </h2>
-        <p style="font-size:0.98rem; color:var(--text-secondary); line-height:1.75; margin-bottom:16px;">
-          <strong>Mirai Packaging LLP</strong> is an ISO 9001:2015 certified, Bangalore-based manufacturing and wholesale enterprise specializing in end-to-end industrial packaging and material handling solutions. The company eliminates multi-vendor procurement bottlenecks by delivering custom-engineered protective packaging, storage systems, and transit security on a single platform.
+        <p style="font-size:0.98rem; color:var(--text-secondary); line-height:1.75; margin-bottom:14px;">
+          <strong>Mirai Packaging LLP</strong> is Bangalore’s premier ISO 9001:2015 certified manufacturing and wholesale enterprise, delivering end-to-end industrial packaging, material handling, and warehouse infrastructure solutions for modern supply chains.
+        </p>
+        <p style="font-size:0.98rem; color:var(--text-secondary); line-height:1.75; margin-bottom:18px;">
+          As an integrated conversion and supply chain partner, we solve complex multi-vendor procurement bottlenecks for corporate enterprises across India. By bringing custom heavy-duty corrugation, plastic material handling containers, high-shear adhesive tapes, and warehouse racking under a single manufacturing umbrella, we streamline your operational workflow and ensure zero factory floor stoppages.
         </p>
 
-        <h3 style="font-family:var(--font-heading); font-weight:700; font-size:1.2rem; color:var(--text-primary); margin:24px 0 14px 0;">
+        <h3 style="font-family:var(--font-heading); font-weight:700; font-size:1.25rem; color:var(--text-primary); margin:24px 0 14px 0;">
           Key Enterprise Advantages
         </h3>
 
-        <div style="display:flex; flex-direction:column; gap:12px; margin-bottom:24px;">
-          <div style="background:#f8fafc; padding:14px 18px; border-radius:var(--radius-xs); border:1px solid #e2e8f0; border-left:4px solid var(--blue-brand);">
-            <strong style="color:var(--text-primary); font-size:0.95rem;">Vendor Consolidation:</strong>
-            <span style="color:var(--text-secondary); font-size:0.9rem; display:block; margin-top:2px;">Consolidates corrugated, plastic, tape, and storage procurement into a single reliable vendor relationship.</span>
+        <div style="display:flex; flex-direction:column; gap:14px; margin-bottom:24px;">
+          <div style="background:#f8fafc; padding:16px 20px; border-radius:var(--radius-xs); border:1px solid #e2e8f0; border-left:4px solid var(--blue-brand);">
+            <strong style="color:var(--text-primary); font-size:0.98rem;">Single-Source Vendor Consolidation</strong>
+            <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.6; margin-top:4px;">
+              Consolidates your complete packaging lifecycle—including corrugated cartons, poly mailers, BOPP tapes, pallets, plastic crates, and storage racking—into one dependable vendor relationship, eliminating administrative overhead and multi-vendor delays.
+            </p>
           </div>
 
-          <div style="background:#f8fafc; padding:14px 18px; border-radius:var(--radius-xs); border:1px solid #e2e8f0; border-left:4px solid var(--orange-brand);">
-            <strong style="color:var(--text-primary); font-size:0.95rem;">Certified Quality Standards:</strong>
-            <span style="color:var(--text-secondary); font-size:0.9rem; display:block; margin-top:2px;">ISO 9001:2015 certified quality management ensuring consistent load tolerances and structural integrity.</span>
+          <div style="background:#f8fafc; padding:16px 20px; border-radius:var(--radius-xs); border:1px solid #e2e8f0; border-left:4px solid var(--orange-brand);">
+            <strong style="color:var(--text-primary); font-size:0.98rem;">Certified Quality &amp; Load Integrity Standards</strong>
+            <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.6; margin-top:4px;">
+              Backed by ISO 9001:2015 certified quality management and in-house digital laboratory testing (Mullen bursting strength, ECT, and BCT compression), guaranteeing consistent load-bearing capacities and structural durability.
+            </p>
           </div>
 
-          <div style="background:#f8fafc; padding:14px 18px; border-radius:var(--radius-xs); border:1px solid #e2e8f0; border-left:4px solid var(--blue-brand);">
-            <strong style="color:var(--text-primary); font-size:0.95rem;">Custom Manufacturing:</strong>
-            <span style="color:var(--text-secondary); font-size:0.9rem; display:block; margin-top:2px;">Tailored structural specifications, dimensions, and material grades designed for enterprise supply chain requirements.</span>
+          <div style="background:#f8fafc; padding:16px 20px; border-radius:var(--radius-xs); border:1px solid #e2e8f0; border-left:4px solid var(--blue-brand);">
+            <strong style="color:var(--text-primary); font-size:0.98rem;">Custom Architectural &amp; Spec Manufacturing</strong>
+            <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.6; margin-top:4px;">
+              Tailored structural CAD engineering, custom dimensioning, paper GSM combinations, and specialized material formulations engineered to meet your exact supply chain payload requirements.
+            </p>
           </div>
         </div>
       </div>
 
       <div>
         <div style="border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--border-subtle); box-shadow:var(--shadow-md); margin-bottom:20px;">
-          <img src="images/about_factory.jpg" alt="Mirai Packaging Bengaluru Facility" style="width:100%; height:380px; object-fit:cover;"/>
+          <img src="images/about_factory.jpg" alt="Mirai Packaging Bengaluru Manufacturing Facility" style="width:100%; height:440px; object-fit:cover;"/>
         </div>
       </div>
     </div>
@@ -70,47 +79,47 @@ include 'header.php';
 <section class="section-pad bg-neutral">
   <div class="container">
     <div class="section-header text-center">
-      <span class="sub-title">Integrated Solutions</span>
+      <span class="sub-title">Integrated Supply Chain Solutions</span>
       <h2 class="section-title">Core Product <span>Portfolio</span></h2>
       <p class="section-desc">
-        Comprehensive industrial packaging, storage infrastructure, and transit security manufactured to enterprise specifications.
+        Comprehensive industrial protective packaging, material handling containers, and warehouse storage systems.
       </p>
     </div>
 
     <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:24px;">
       <div style="background:var(--white); padding:28px; border-radius:var(--radius-sm); border:1px solid var(--border-subtle); box-shadow:var(--shadow-xs);">
-        <h3 style="font-family:var(--font-heading); font-weight:800; font-size:1.2rem; color:var(--blue-brand); margin-bottom:8px;">
+        <h3 style="font-family:var(--font-heading); font-weight:800; font-size:1.25rem; color:var(--blue-brand); margin-bottom:10px;">
           📦 Corrugated &amp; Paper Packaging
         </h3>
-        <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.65;">
-          Custom-designed 2-ply to 9-ply corrugated cartons and tamper-proof courier mailers built for heavy-duty shipping and logistics.
+        <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.7;">
+          Custom-engineered 2-ply single face rolls to 9-ply AAA heavy-duty corrugated cartons, RSC shippers, and tamper-evident poly courier mailers. Built with high-burst kraft paper liners for superior vertical stacking strength, moisture resistance, and multi-tier warehouse palletizing.
         </p>
       </div>
 
       <div style="background:var(--white); padding:28px; border-radius:var(--radius-sm); border:1px solid var(--border-subtle); box-shadow:var(--shadow-xs);">
-        <h3 style="font-family:var(--font-heading); font-weight:800; font-size:1.2rem; color:var(--orange-brand); margin-bottom:8px;">
+        <h3 style="font-family:var(--font-heading); font-weight:800; font-size:1.25rem; color:var(--orange-brand); margin-bottom:10px;">
           🎗️ Tapes &amp; Transit Security
         </h3>
-        <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.65;">
-          High-shear BOPP sealing tapes and high-security transit seals ensuring cargo integrity during transport.
+        <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.7;">
+          High-shear acrylic and hot-melt BOPP adhesive tapes available in clear, tan brown, and custom logo printed rolls, paired with ISO 17712 certified laser-numbered pull-tight PP security seals and bolt locks for tamper-evident transit protection.
         </p>
       </div>
 
       <div style="background:var(--white); padding:28px; border-radius:var(--radius-sm); border:1px solid var(--border-subtle); box-shadow:var(--shadow-xs);">
-        <h3 style="font-family:var(--font-heading); font-weight:800; font-size:1.2rem; color:var(--blue-brand); margin-bottom:8px;">
+        <h3 style="font-family:var(--font-heading); font-weight:800; font-size:1.25rem; color:var(--blue-brand); margin-bottom:10px;">
           🪵 Pallets &amp; Storage Systems
         </h3>
-        <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.65;">
-          Heavy-duty wooden pallets, industrial plastic pallets, and heavy-duty warehouse racking systems.
+        <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.7;">
+          ISPM-15 heat-treated export wooden pallets, heavy-duty stackable HDPE plastic pallets, and cold-rolled high-tensile steel heavy-duty pallet racking systems engineered for maximum vertical volumetric utilization and safe material handling.
         </p>
       </div>
 
       <div style="background:var(--white); padding:28px; border-radius:var(--radius-sm); border:1px solid var(--border-subtle); box-shadow:var(--shadow-xs);">
-        <h3 style="font-family:var(--font-heading); font-weight:800; font-size:1.2rem; color:var(--orange-brand); margin-bottom:8px;">
+        <h3 style="font-family:var(--font-heading); font-weight:800; font-size:1.25rem; color:var(--orange-brand); margin-bottom:10px;">
           📥 Custom Containers &amp; Crates
         </h3>
-        <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.65;">
-          Tailor-made Polypropylene (PP) boxes and customized plastic crates engineered for durable material handling.
+        <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.7;">
+          Tailor-made Polypropylene (PP) hollow corrugated flute boxes, conductive ESD totes, and industrial stackable HDPE plastic crates custom-designed for closed-loop internal plant movement, automotive components, and returnable logistics.
         </p>
       </div>
     </div>
