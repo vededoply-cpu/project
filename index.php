@@ -62,7 +62,7 @@ include 'header.php';
           </div>
           <div>
             <div class="hero-stat-num">
-              <span data-target="25" data-suffix="+">25+</span>
+              <span data-target="42" data-suffix="+">42+</span>
             </div>
             <div class="hero-stat-lbl">Enterprise Clients</div>
           </div>
@@ -181,7 +181,7 @@ include 'header.php';
 <section class="ticker-section">
   <div class="container">
     <div class="ticker-header">
-      <span>TRUSTED BY 25+ INDUSTRY LEADERS ACROSS INDIA</span>
+      <span>TRUSTED BY 42+ INDUSTRY LEADERS ACROSS INDIA</span>
     </div>
     
     <div class="ticker-track">

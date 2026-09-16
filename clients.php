@@ -154,7 +154,7 @@ include 'header.php';
     <!-- CTA CALLOUT -->
     <div style="background:linear-gradient(135deg, #071e3d 0%, #0c2b53 100%); border-radius:var(--radius-lg); padding:40px; color:var(--white); text-align:center;">
       <h3 style="font-family:var(--font-heading); font-weight:800; font-size:1.8rem; margin-bottom:12px;">
-        Join Over 25+ Industry Leaders Partnering With Mirai Packaging
+        Join Over 42+ Industry Leaders Partnering With Mirai Packaging
       </h3>
       <p style="font-size:1rem; color:#cbd5e1; max-width:640px; margin:0 auto 24px auto; line-height:1.6;">
         Contact our enterprise sales department for custom contract pricing, SLA-backed dispatch schedules, and dedicated account management.
