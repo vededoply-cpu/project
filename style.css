@@ -83,6 +83,8 @@
    scroll-behavior: smooth;
    font-size: 16px;
    -webkit-text-size-adjust: 100%;
+   overflow-x: hidden;
+   max-width: 100%;
  }
 
  body {
@@ -92,6 +94,10 @@
    line-height: 1.65;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
+   overflow-x: hidden !important;
+   max-width: 100% !important;
+   position: relative;
+   touch-action: manipulation;
  }
 
  a {
@@ -1860,6 +1866,18 @@
 }
 
 @media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+    width: 100% !important;
+  }
+
+  .container {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    max-width: 100% !important;
+  }
+
   .nav-menu,
   .nav-actions .btn {
     display: none;
@@ -2117,6 +2135,46 @@
   gap: 10px;
   flex-wrap: wrap;
   margin-bottom: 36px;
+}
+
+@media (max-width: 768px) {
+  .filter-tabs {
+    justify-content: flex-start;
+    overflow-x: auto !important;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+    max-width: 100%;
+    scrollbar-width: none;
+  }
+  .filter-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .filter-tab-btn {
+    flex-shrink: 0 !important;
+  }
+}
+
+.product-filter-bar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  overflow-x: auto !important;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  padding: 4px 0;
+  max-width: 100%;
+  scrollbar-width: none;
+}
+
+.product-filter-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.product-filter-btn {
+  flex-shrink: 0 !important;
+  white-space: nowrap !important;
 }
 
 .filter-tab-btn {
