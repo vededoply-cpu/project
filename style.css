@@ -473,6 +473,7 @@
    height: 52px;
    width: auto;
    object-fit: contain;
+   background-color: transparent !important;
  }
 
  .nav-logo-text {
@@ -1568,6 +1569,7 @@
  .footer-logo-img {
    height: 48px;
    width: auto;
+   background-color: transparent !important;
  }
 
  .footer-brand p {
