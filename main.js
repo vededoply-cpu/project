@@ -5,6 +5,11 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
+  // Helper selector function
+  const id = function (elementId) {
+    return document.getElementById(elementId);
+  };
+
   // ── NAVBAR SCROLL EFFECT ──
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', function () {
