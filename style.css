@@ -1759,7 +1759,7 @@
   display: grid;
   grid-template-columns: 1fr 1.25fr;
   gap: 36px;
-  align-items: start;
+  align-items: stretch;
   background: var(--white);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
@@ -1783,7 +1783,9 @@
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  justify-content: space-between;
+  gap: 14px;
+  height: 100%;
 }
 
 .product-gallery-box:hover {
@@ -1794,7 +1796,8 @@
 .product-main-view {
   position: relative;
   width: 100%;
-  height: 290px;
+  flex: 1;
+  min-height: 350px;
   border-radius: var(--radius-sm);
   overflow: hidden;
   background: #ffffff;
