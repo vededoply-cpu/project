@@ -556,3 +556,27 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 });
+
+/* Global Product Gallery Thumbnail Switcher */
+function switchGalleryImg(thumbEl, targetMainId) {
+  const mainImg = document.getElementById(targetMainId);
+  if (!mainImg) return;
+  const newSrc = thumbEl.querySelector('img').src;
+  const newAlt = thumbEl.querySelector('img').alt;
+
+  // Smooth fade transition
+  mainImg.style.opacity = '0.3';
+  setTimeout(() => {
+    mainImg.src = newSrc;
+    if (newAlt) mainImg.alt = newAlt;
+    mainImg.style.opacity = '1';
+  }, 120);
+
+  // Update active state indicator
+  const parentRow = thumbEl.parentElement;
+  if (parentRow) {
+    const siblings = parentRow.querySelectorAll('.thumb-item');
+    siblings.forEach(s => s.classList.remove('active'));
+    thumbEl.classList.add('active');
+  }
+}

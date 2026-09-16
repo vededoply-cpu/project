@@ -134,13 +134,24 @@
     <!-- 1. CORRUGATED BOXES -->
     <div class="product-filter-card" data-category="boxes" id="corrugated" style="margin-bottom:60px;">
       <div class="product-detail-card">
-        <div>
-          <div style="border-radius:var(--radius-sm); overflow:hidden; margin-bottom:16px; border:1px solid var(--border-subtle);">
-            <img src="images/corrugated_lineup.jpg" alt="Corrugated Box Sizes Lineup" style="width:100%; height:290px; object-fit:contain; background:#ffffff;"/>
+        <div class="product-gallery-box">
+          <div class="product-main-view">
+            <img src="images/corrugated_lineup.jpg" alt="Corrugated Box Sizes Lineup" class="main-gallery-img" id="mainGalleryImg1"/>
+            <span class="gallery-zoom-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+              HD Preview
+            </span>
           </div>
-          <div class="grid-2col-thumbs">
-            <img src="images/corrugated_box.jpg" alt="Open Corrugated RSC Carton" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:contain; background:#ffffff; border:1px solid var(--border-subtle);"/>
-            <img src="images/modern_machinery.jpg" alt="Corrugator Machine Line" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:contain; background:#ffffff; border:1px solid var(--border-subtle);"/>
+          <div class="product-thumbs-row">
+            <div class="thumb-item active" onclick="switchGalleryImg(this, 'mainGalleryImg1')">
+              <img src="images/corrugated_lineup.jpg" alt="Lineup View"/>
+            </div>
+            <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg1')">
+              <img src="images/corrugated_box.jpg" alt="Open RSC Box"/>
+            </div>
+            <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg1')">
+              <img src="images/modern_machinery.jpg" alt="Factory Machine"/>
+            </div>
           </div>
         </div>
 
@@ -490,12 +501,21 @@
     <!-- 6. HEAVY DUTY STORAGE RACKS & WAREHOUSE RACKING -->
     <div class="product-filter-card" data-category="racks" id="racks" style="margin-bottom:60px;">
       <div class="product-detail-card">
-        <div>
-          <div style="border-radius:var(--radius-sm); overflow:hidden; margin-bottom:16px; border:1px solid var(--border-subtle);">
-            <img src="images/heavy_duty_rack.jpg" alt="Heavy Duty Industrial Pallet Rack" style="width:100%; height:290px; object-fit:contain; background:#ffffff;"/>
+        <div class="product-gallery-box">
+          <div class="product-main-view">
+            <img src="images/heavy_duty_rack.jpg" alt="Heavy Duty Industrial Pallet Rack" class="main-gallery-img" id="mainGalleryImgRacks"/>
+            <span class="gallery-zoom-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+              HD Preview
+            </span>
           </div>
-          <div style="border-radius:var(--radius-xs); overflow:hidden; border:1px solid var(--border-subtle);">
-            <img src="images/heavy_duty_rack_row.jpg" alt="Warehouse Selective Pallet Racking System" style="height:120px; width:100%; object-fit:contain; background:#ffffff;"/>
+          <div class="product-thumbs-row">
+            <div class="thumb-item active" onclick="switchGalleryImg(this, 'mainGalleryImgRacks')">
+              <img src="images/heavy_duty_rack.jpg" alt="Rack Unit View"/>
+            </div>
+            <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImgRacks')">
+              <img src="images/heavy_duty_rack_row.jpg" alt="Warehouse Aisle View"/>
+            </div>
           </div>
         </div>
 
