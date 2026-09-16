@@ -490,4 +490,61 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+  // ── DYNAMIC IMAGE LIGHTBOX MODAL (FULLSCREEN ZOOM ON CLICK) ──
+  let lightboxModal = document.getElementById('imageLightboxModal');
+  if (!lightboxModal) {
+    lightboxModal = document.createElement('div');
+    lightboxModal.id = 'imageLightboxModal';
+    lightboxModal.className = 'lightbox-modal';
+    lightboxModal.innerHTML = `
+      <div class="lightbox-overlay" id="lightboxOverlay"></div>
+      <div class="lightbox-content">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+        <img src="" alt="" id="lightboxImg" class="lightbox-img"/>
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+      </div>
+    `;
+    document.body.appendChild(lightboxModal);
+  }
+
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxCaption = document.getElementById('lightboxCaption');
+  const lightboxClose = document.getElementById('lightboxClose');
+  const lightboxOverlay = document.getElementById('lightboxOverlay');
+
+  function openLightbox(src, altText) {
+    if (!lightboxModal || !lightboxImg) return;
+    lightboxImg.src = src;
+    lightboxImg.alt = altText || 'Product Image';
+    if (lightboxCaption) lightboxCaption.textContent = altText || '';
+    lightboxModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    if (!lightboxModal) return;
+    lightboxModal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  lightboxClose?.addEventListener('click', closeLightbox);
+  lightboxOverlay?.addEventListener('click', closeLightbox);
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && lightboxModal?.classList.contains('active')) {
+      closeLightbox();
+    }
+  });
+
+  // Attach click listener to all product photos, sliders, and gallery thumbs
+  document.addEventListener('click', function (e) {
+    const target = e.target;
+    if (target && target.tagName === 'IMG') {
+      const isZoomable = target.closest('.product-thumb, .product-card, .auto-slide, .hero-slide, .infra-thumb, .product-detail-card, .product-filter-card, .grid-2col-thumbs');
+      if (isZoomable || target.classList.contains('zoomable-img')) {
+        openLightbox(target.src, target.alt || target.title);
+      }
+    }
+  });
+
 });
