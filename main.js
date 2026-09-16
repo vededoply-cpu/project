@@ -516,6 +516,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!lightboxModal || !lightboxImg) return;
     lightboxImg.src = src;
     lightboxImg.alt = altText || 'Product Image';
+    lightboxImg.classList.remove('zoomed');
     if (lightboxCaption) lightboxCaption.textContent = altText || '';
     lightboxModal.classList.add('active');
     document.body.style.overflow = 'hidden';
@@ -523,9 +524,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function closeLightbox() {
     if (!lightboxModal) return;
+    if (lightboxImg) lightboxImg.classList.remove('zoomed');
     lightboxModal.classList.remove('active');
     document.body.style.overflow = '';
   }
+
+  // Click / Tap image inside Lightbox to toggle 2.2x zoom
+  lightboxImg?.addEventListener('click', function (e) {
+    e.stopPropagation();
+    lightboxImg.classList.toggle('zoomed');
+  });
 
   lightboxClose?.addEventListener('click', closeLightbox);
   lightboxOverlay?.addEventListener('click', closeLightbox);
