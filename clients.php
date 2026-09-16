@@ -1,0 +1,171 @@
+<?php
+$page = 'clients';
+$page_title = 'Enterprise Clients & Case Studies | Mirai Packaging LLP';
+$meta_desc = 'From high-growth direct-to-consumer e-commerce leaders to Tier-1 automotive conglomerates, see how Mirai Packaging LLP powers mission-critical supply chain operations.';
+include 'header.php';
+?>
+
+<!-- PAGE HERO -->
+<section style="background:linear-gradient(135deg, #071e3d 0%, #0c2b53 100%); color:var(--white); padding:60px 0 70px 0;">
+  <div class="container">
+    <div style="font-size:0.85rem; color:#94a3b8; margin-bottom:12px; display:flex; gap:8px; align-items:center;">
+      <a href="index.php" style="color:#94a3b8;">Home</a>
+      <span>/</span>
+      <span style="color:#38bdf8; font-weight:600;">Enterprise Clients</span>
+    </div>
+    <h1 style="font-family:var(--font-heading); font-weight:900; font-size:clamp(2.2rem, 4vw, 3.4rem); line-height:1.15; margin-bottom:16px;">
+      Trusted by India's Foremost<br/>
+      <span style="color:#38bdf8;">Enterprise Brands</span>
+    </h1>
+    <p style="font-size:1.1rem; color:#cbd5e1; max-width:680px; line-height:1.7;">
+      From high-growth direct-to-consumer e-commerce leaders to Tier-1 automotive conglomerates, see how Mirai Packaging LLP powers mission-critical supply chain operations.
+    </p>
+  </div>
+</section>
+
+<!-- CLIENT PORTFOLIO GRID -->
+<section class="section-pad">
+  <div class="container">
+    
+    <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:30px; margin-bottom:60px;">
+      
+      <!-- BigBasket -->
+      <div style="background:var(--white); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--shadow-sm); display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:18px;">
+            <div>
+              <span style="font-family:var(--font-heading); font-weight:900; font-size:1.6rem; color:var(--text-dark); display:block;">BigBasket</span>
+              <span style="font-size:0.8rem; color:var(--blue-primary); font-weight:700; text-transform:uppercase; letter-spacing:0.5px;">E-Commerce &amp; Quick Grocery</span>
+            </div>
+            <span style="background:var(--blue-subtle); color:var(--blue-primary); font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:12px;">Active Client</span>
+          </div>
+          <p style="font-size:0.92rem; color:var(--text-body); line-height:1.6; margin-bottom:20px;">
+            Supply of heavy-duty 5-ply partition corrugated cartons, stackable returnable plastic crates, and moisture-barrier stretch film rolls across Bengaluru fulfillment hubs.
+          </p>
+        </div>
+        <div style="border-top:1px solid var(--border-light); padding-top:16px; font-size:0.82rem; color:var(--text-muted); display:flex; gap:16px;">
+          <span>5-Ply Cartons</span>
+          <span>Daily Dispatch</span>
+        </div>
+      </div>
+
+      <!-- Zomato Hyperpure -->
+      <div style="background:var(--white); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--shadow-sm); display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:18px;">
+            <div>
+              <span style="font-family:var(--font-heading); font-weight:900; font-size:1.6rem; color:var(--text-dark); display:block;">Hyperpure (Zomato)</span>
+              <span style="font-size:0.8rem; color:var(--orange); font-weight:700; text-transform:uppercase; letter-spacing:0.5px;">Food &amp; HoReCa Supply</span>
+            </div>
+            <span style="background:var(--orange-subtle); color:var(--orange); font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:12px;">Active Client</span>
+          </div>
+          <p style="font-size:0.92rem; color:var(--text-body); line-height:1.6; margin-bottom:20px;">
+            Food-grade kraft shopping bags, heavy double-wall master cartons, and high-shear clear BOPP sealing tapes for restaurant kitchen supply logistics.
+          </p>
+        </div>
+        <div style="border-top:1px solid var(--border-light); padding-top:16px; font-size:0.82rem; color:var(--text-muted); display:flex; gap:16px;">
+          <span>Kraft Bags</span>
+          <span>BOPP Tapes</span>
+        </div>
+      </div>
+
+      <!-- JioMart -->
+      <div style="background:var(--white); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--shadow-sm); display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:18px;">
+            <div>
+              <span style="font-family:var(--font-heading); font-weight:900; font-size:1.6rem; color:var(--text-dark); display:block;">JioMart</span>
+              <span style="font-size:0.8rem; color:var(--blue-primary); font-weight:700; text-transform:uppercase; letter-spacing:0.5px;">Pan-India Retail Fleet</span>
+            </div>
+            <span style="background:var(--blue-subtle); color:var(--blue-primary); font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:12px;">Active Client</span>
+          </div>
+          <p style="font-size:0.92rem; color:var(--text-body); line-height:1.6; margin-bottom:20px;">
+            Custom printed tamper-evident poly courier mailer bags with POD document jackets and serial laser numbered security transit seals.
+          </p>
+        </div>
+        <div style="border-top:1px solid var(--border-light); padding-top:16px; font-size:0.82rem; color:var(--text-muted); display:flex; gap:16px;">
+          <span>Courier Flyers</span>
+          <span>Security Seals</span>
+        </div>
+      </div>
+
+      <!-- Delhivery -->
+      <div style="background:var(--white); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--shadow-sm); display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:18px;">
+            <div>
+              <span style="font-family:var(--font-heading); font-weight:900; font-size:1.6rem; color:var(--text-dark); display:block;">Delhivery</span>
+              <span style="font-size:0.8rem; color:var(--orange); font-weight:700; text-transform:uppercase; letter-spacing:0.5px;">Express Express Logistics</span>
+            </div>
+            <span style="background:var(--orange-subtle); color:var(--orange); font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:12px;">Active Client</span>
+          </div>
+          <p style="font-size:0.92rem; color:var(--text-body); line-height:1.6; margin-bottom:20px;">
+            High-tensile cast LLDPE machine stretch wrap film rolls (23 Microns) and heavy-duty 7-ply export shipper boxes for hub sorting lines.
+          </p>
+        </div>
+        <div style="border-top:1px solid var(--border-light); padding-top:16px; font-size:0.82rem; color:var(--text-muted); display:flex; gap:16px;">
+          <span>Stretch Wrap</span>
+          <span>7-Ply Cartons</span>
+        </div>
+      </div>
+
+      <!-- Amazon Seller Network -->
+      <div style="background:var(--white); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--shadow-sm); display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:18px;">
+            <div>
+              <span style="font-family:var(--font-heading); font-weight:900; font-size:1.6rem; color:var(--text-dark); display:block;">Amazon Sellers</span>
+              <span style="font-size:0.8rem; color:var(--blue-primary); font-weight:700; text-transform:uppercase; letter-spacing:0.5px;">FBA Fulfillment Network</span>
+            </div>
+            <span style="background:var(--blue-subtle); color:var(--blue-primary); font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:12px;">Active Client</span>
+          </div>
+          <p style="font-size:0.92rem; color:var(--text-body); line-height:1.6; margin-bottom:20px;">
+            Standardized FBA master cartons, self-locking die-cut mailer boxes, bubble cushioning rolls, and barcode label compatible BOPP packaging tapes.
+          </p>
+        </div>
+        <div style="border-top:1px solid var(--border-light); padding-top:16px; font-size:0.82rem; color:var(--text-muted); display:flex; gap:16px;">
+          <span>FBA Boxes</span>
+          <span>Bubble Wrap</span>
+        </div>
+      </div>
+
+      <!-- Master Chow -->
+      <div style="background:var(--white); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--shadow-sm); display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:18px;">
+            <div>
+              <span style="font-family:var(--font-heading); font-weight:900; font-size:1.6rem; color:var(--text-dark); display:block;">Master Chow</span>
+              <span style="font-size:0.8rem; color:var(--orange); font-weight:700; text-transform:uppercase; letter-spacing:0.5px;">D2C Gourmet Food</span>
+            </div>
+            <span style="background:var(--orange-subtle); color:var(--orange); font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:12px;">Active Client</span>
+          </div>
+          <p style="font-size:0.92rem; color:var(--text-body); line-height:1.6; margin-bottom:20px;">
+            Custom multi-color flexo-printed die-cut partitions and leak-proof outer transit boxes designed for fragile glass sauce bottles.
+          </p>
+        </div>
+        <div style="border-top:1px solid var(--border-light); padding-top:16px; font-size:0.82rem; color:var(--text-muted); display:flex; gap:16px;">
+          <span>Custom Print</span>
+          <span>Glass Safety</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA CALLOUT -->
+    <div style="background:linear-gradient(135deg, #071e3d 0%, #0c2b53 100%); border-radius:var(--radius-lg); padding:40px; color:var(--white); text-align:center;">
+      <h3 style="font-family:var(--font-heading); font-weight:800; font-size:1.8rem; margin-bottom:12px;">
+        Join Over 25+ Industry Leaders Partnering With Mirai Packaging
+      </h3>
+      <p style="font-size:1rem; color:#cbd5e1; max-width:640px; margin:0 auto 24px auto; line-height:1.6;">
+        Contact our enterprise sales department for custom contract pricing, SLA-backed dispatch schedules, and dedicated account management.
+      </p>
+      <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+        <a href="contact.php" class="btn btn-orange btn-lg">Request Enterprise Quote</a>
+        <a href="tel:+919044129477" class="btn btn-outline-white btn-lg">Call Enterprise Desk: +91-9044129477</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<?php include 'footer.php'; ?>
