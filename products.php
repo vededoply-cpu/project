@@ -633,7 +633,7 @@ include 'header.php';
           <span class="sub-title">Facility Infrastructure</span>
           <h2 style="font-family:var(--font-heading); font-weight:800; font-size:1.75rem; color:var(--text-primary); margin-bottom:10px;">Industrial Epoxy Flooring &amp; Safety Line Marking</h2>
           <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.65; margin-bottom:18px;">
-            Seamless, high-impact self-leveling resinous epoxy floor coating systems for industrial plants, warehouses, and clean rooms. Features anti-dusting, chemical resistance, and high-visibility safety walkway line markings.
+            Designed to seamlessly complement your heavy-duty Storage Racks and stackable Plastic Crates, our industrial epoxy flooring and 5S safety line marking solutions create a clean, safe, and organized warehouse environment. Built to withstand high-impact forklift movement, oil spills, and chemical exposure.
           </p>
 
           <div class="specs-table-wrap">
