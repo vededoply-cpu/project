@@ -376,8 +376,9 @@
   .navbar {
     position: sticky;
     top: 0;
-    background: red;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: linear-gradient(135deg, #ff5252 0%, #ef4444 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.2);
     z-index: 100;
     transition: box-shadow var(--transition-fast);
   }
@@ -388,11 +389,11 @@
 
   .navbar .brand-tag {
     color: #ffffff;
-    opacity: 0.9;
+    opacity: 0.95;
   }
 
   .navbar .brand-motto {
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255, 255, 255, 0.9);
   }
 
   .navbar .nav-link {
@@ -406,38 +407,38 @@
 
   .navbar .nav-link:hover {
     color: #ffffff;
-    background-color: #990000;
-    transform: translateY(-4px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.22);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
 
   .navbar .nav-link.active {
     color: #ffffff;
-    background-color: #990000;
+    background-color: rgba(255, 255, 255, 0.28);
     font-weight: 700;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   }
 
   .navbar .nav-link.active:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
-    background-color: #800000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.35);
   }
 
   .navbar .btn-orange {
     background-color: #ffffff;
-    color: #cc0000;
+    color: #ef4444;
     border-color: #ffffff;
     font-weight: 700;
     transition: transform 0.25s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.25s cubic-bezier(0.165, 0.84, 0.44, 1), background-color 0.25s ease, color 0.25s ease;
   }
 
   .navbar .btn-orange:hover {
-    background-color: #f8fafc;
-    color: #990000;
-    border-color: #f8fafc;
-    transform: translateY(-4px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+    background-color: #fff5f5;
+    color: #dc2626;
+    border-color: #fff5f5;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   }
 
   .navbar .hamburger {
