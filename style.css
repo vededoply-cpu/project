@@ -1797,12 +1797,14 @@
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 12px;
-  padding: 14px;
+  padding: 16px;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  justify-content: space-between;
+  gap: 14px;
+  height: 100%;
 }
 
 .product-gallery-box:hover {
@@ -1813,7 +1815,8 @@
 .product-main-view {
   position: relative;
   width: 100%;
-  height: 260px;
+  height: 280px;
+  min-height: 260px;
   border-radius: 8px;
   overflow: hidden;
   background: #ffffff;
@@ -1821,6 +1824,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid #edf2f7;
+  flex-shrink: 0;
 }
 
 .product-gallery-grid {

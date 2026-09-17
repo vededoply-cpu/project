@@ -803,8 +803,8 @@ include 'header.php';
     <div class="product-filter-card" data-category="pallets" id="plastic-crates" style="margin-bottom:60px;">
       <div class="product-detail-card" style="display:flex; flex-direction:column; gap:24px;">
         <div style="display:grid; grid-template-columns:1fr 1.25fr; gap:32px; align-items:start;">
-          <div class="product-gallery-box">
-            <div class="product-main-view" style="height:260px;">
+          <div class="product-gallery-box" style="height:100%;">
+            <div class="product-main-view" style="height:280px;">
               <img src="images/product_photo_4.jpg" alt="Plastic Storage Crate with Lid" class="main-gallery-img" id="mainGalleryImg_plastic-crates" onerror="handleImgError(this)" />
               <span class="gallery-zoom-badge">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
@@ -820,6 +820,32 @@ include 'header.php';
               </div>
               <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_plastic-crates')">
                 <img src="images/product_photo_4.jpg" alt="Heavy-Duty Locking Crate" onerror="handleImgError(this)" />
+              </div>
+            </div>
+
+            <!-- APPLICATION & STACKING SHOWCASE HIGHLIGHT GRID -->
+            <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:12px; margin-top:8px;">
+              <div style="font-size:0.78rem; font-weight:800; color:var(--text-secondary); text-transform:uppercase; letter-spacing:0.06em; margin-bottom:8px; display:flex; align-items:center; gap:6px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;color:var(--orange-brand);"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                Industrial Application Highlights
+              </div>
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
+                <div style="position:relative; border-radius:6px; overflow:hidden; border:1px solid #cbd5e1; height:85px; cursor:pointer;" onclick="switchGalleryImg(this.querySelector('img'), 'mainGalleryImg_plastic-crates')">
+                  <img src="images/plastic_crate.jpg" alt="HDPE Stack Load" style="width:100%; height:100%; object-fit:cover;" />
+                  <span style="position:absolute; bottom:0; left:0; right:0; background:rgba(7,30,61,0.85); color:#ffffff; font-size:0.68rem; font-weight:700; padding:2px 4px; text-align:center;">HDPE Stack Load</span>
+                </div>
+                <div style="position:relative; border-radius:6px; overflow:hidden; border:1px solid #cbd5e1; height:85px; cursor:pointer;" onclick="switchGalleryImg(this.querySelector('img'), 'mainGalleryImg_plastic-crates')">
+                  <img src="images/plastic_pallets.jpg" alt="ISO Pallet Fit" style="width:100%; height:100%; object-fit:cover;" />
+                  <span style="position:absolute; bottom:0; left:0; right:0; background:rgba(7,30,61,0.85); color:#ffffff; font-size:0.68rem; font-weight:700; padding:2px 4px; text-align:center;">ISO Pallet Fit</span>
+                </div>
+                <div style="position:relative; border-radius:6px; overflow:hidden; border:1px solid #cbd5e1; height:85px; cursor:pointer;" onclick="switchGalleryImg(this.querySelector('img'), 'mainGalleryImg_plastic-crates')">
+                  <img src="images/heavy_duty_rack.jpg" alt="Rack Storage" style="width:100%; height:100%; object-fit:cover;" />
+                  <span style="position:absolute; bottom:0; left:0; right:0; background:rgba(7,30,61,0.85); color:#ffffff; font-size:0.68rem; font-weight:700; padding:2px 4px; text-align:center;">Rack Storage</span>
+                </div>
+                <div style="position:relative; border-radius:6px; overflow:hidden; border:1px solid #cbd5e1; height:85px; cursor:pointer;" onclick="switchGalleryImg(this.querySelector('img'), 'mainGalleryImg_plastic-crates')">
+                  <img src="images/pallet_truck_warehouse.jpg" alt="Material Handling" style="width:100%; height:100%; object-fit:cover;" />
+                  <span style="position:absolute; bottom:0; left:0; right:0; background:rgba(7,30,61,0.85); color:#ffffff; font-size:0.68rem; font-weight:700; padding:2px 4px; text-align:center;">Material Handling</span>
+                </div>
               </div>
             </div>
           </div>
