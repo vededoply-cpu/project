@@ -48,7 +48,7 @@ include 'header.php';
       <div class="product-detail-card">
         <div class="product-gallery-box">
           <div class="product-main-view">
-            <img src="images/corrugated_lineup.jpg" alt="Corrugated Box Sizes Lineup" class="main-gallery-img" id="mainGalleryImg1_php"/>
+            <img src="images/ai_corrugated_boxes.jpg" alt="Corrugated Box Sizes Lineup" class="main-gallery-img" id="mainGalleryImg1_php"/>
             <span class="gallery-zoom-badge">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
               HD Preview
@@ -56,7 +56,7 @@ include 'header.php';
           </div>
           <div class="product-thumbs-row">
             <div class="thumb-item active" onclick="switchGalleryImg(this, 'mainGalleryImg1_php')">
-              <img src="images/corrugated_lineup.jpg" alt="Lineup View"/>
+              <img src="images/ai_corrugated_boxes.jpg" alt="Lineup View"/>
             </div>
             <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg1_php')">
               <img src="images/corrugated_box.jpg" alt="Open RSC Box"/>
@@ -131,7 +131,7 @@ include 'header.php';
       <div class="product-detail-card">
         <div>
           <div style="border-radius:var(--radius-sm); overflow:hidden; margin-bottom:16px; border:1px solid var(--border-subtle);">
-            <img src="images/courier_bag.jpg" alt="Tamper Proof Poly Courier Bags" style="width:100%; height:290px; object-fit:contain; background:#ffffff;"/>
+            <img src="images/ai_courier_mailers.jpg" alt="Tamper Proof Poly Courier Bags" style="width:100%; height:290px; object-fit:contain; background:#ffffff;"/>
           </div>
           <div style="border-radius:var(--radius-xs); overflow:hidden; border:1px solid var(--border-subtle);">
             <img src="images/hero_composite.jpg" alt="Packaging Bags and Flyers" style="height:120px; width:100%; object-fit:contain; background:#ffffff;"/>
@@ -289,7 +289,7 @@ include 'header.php';
       <div class="product-detail-card">
         <div>
           <div style="border-radius:var(--radius-sm); overflow:hidden; margin-bottom:16px; border:1px solid var(--border-subtle);">
-            <img src="images/kraft_paper_bags.jpg" alt="Eco Friendly Kraft Paper Bags and Honeycomb Paper" style="width:100%; height:290px; object-fit:contain; background:#ffffff;"/>
+            <img src="images/ai_kraft_mailers.jpg" alt="Eco Friendly Kraft Paper Bags and Honeycomb Paper" style="width:100%; height:290px; object-fit:contain; background:#ffffff;"/>
           </div>
           <div style="border-radius:var(--radius-xs); overflow:hidden; border:1px solid var(--border-subtle);">
             <img src="images/bubble_wrap.jpg" alt="Air Bubble Protective Wrap Roll" style="height:120px; width:100%; object-fit:contain; background:#ffffff;"/>
