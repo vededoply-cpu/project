@@ -1,7 +1,32 @@
-// ============================================================
-// MIRAI PACKAGING LLP — CORE JAVASCRIPT 2.0
-// Smooth Animations, Packaging Calculator & Interactions
-// ============================================================
+// Global Image Fallback & Gallery Switcher Handlers
+window.handleImgError = function (img) {
+  if (!img) return;
+  img.onerror = null; // Prevent infinite loop if fallback fails
+  img.src = 'images/hero_composite.jpg';
+  img.classList.add('img-fallback-loaded');
+};
+
+window.switchGalleryImg = function (thumbEl, targetImgId) {
+  if (!thumbEl || !targetImgId) return;
+  const targetImg = document.getElementById(targetImgId);
+  const newSrc = thumbEl.getAttribute('data-fullsrc') || (thumbEl.querySelector('img') ? thumbEl.querySelector('img').src : null);
+  if (targetImg && newSrc) {
+    targetImg.style.opacity = '0.4';
+    setTimeout(function () {
+      targetImg.src = newSrc;
+      targetImg.style.opacity = '1';
+    }, 120);
+
+    // Active state toggling
+    const parentContainer = thumbEl.closest('.product-thumbs-row') || thumbEl.parentElement;
+    if (parentContainer) {
+      parentContainer.querySelectorAll('.thumb-item').forEach(function (el) {
+        el.classList.remove('active');
+      });
+      thumbEl.classList.add('active');
+    }
+  }
+};
 
 document.addEventListener('DOMContentLoaded', function () {
 

@@ -48,7 +48,7 @@ include 'header.php';
       <div class="product-detail-card">
         <div class="product-gallery-box">
           <div class="product-main-view">
-            <img src="images/ai_corrugated_boxes.jpg" alt="Corrugated Box Sizes Lineup" class="main-gallery-img" id="mainGalleryImg1_php"/>
+            <img src="images/ai_corrugated_boxes.jpg" alt="Corrugated Box Sizes Lineup" class="main-gallery-img" id="mainGalleryImg1_php" onerror="handleImgError(this)" />
             <span class="gallery-zoom-badge">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
               HD Preview
@@ -56,13 +56,13 @@ include 'header.php';
           </div>
           <div class="product-thumbs-row">
             <div class="thumb-item active" onclick="switchGalleryImg(this, 'mainGalleryImg1_php')">
-              <img src="images/ai_corrugated_boxes.jpg" alt="Lineup View"/>
+              <img src="images/ai_corrugated_boxes.jpg" alt="Lineup View" onerror="handleImgError(this)" />
             </div>
             <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg1_php')">
-              <img src="images/corrugated_box.jpg" alt="Open RSC Box"/>
+              <img src="images/corrugated_box.jpg" alt="Open RSC Box" onerror="handleImgError(this)" />
             </div>
             <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg1_php')">
-              <img src="images/modern_machinery.jpg" alt="Factory Machine"/>
+              <img src="images/modern_machinery.jpg" alt="Factory Machine" onerror="handleImgError(this)" />
             </div>
           </div>
         </div>
@@ -131,10 +131,10 @@ include 'header.php';
       <div class="product-detail-card">
         <div>
           <div style="border-radius:var(--radius-sm); overflow:hidden; margin-bottom:16px; border:1px solid var(--border-subtle);">
-            <img src="images/ai_courier_mailers.jpg" alt="Tamper Proof Poly Courier Bags" style="width:100%; height:290px; object-fit:contain; background:#ffffff;"/>
+            <img src="images/ai_courier_mailers.jpg" alt="Tamper Proof Poly Courier Bags" style="width:100%; height:260px; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
           </div>
           <div style="border-radius:var(--radius-xs); overflow:hidden; border:1px solid var(--border-subtle);">
-            <img src="images/hero_composite.jpg" alt="Packaging Bags and Flyers" style="height:120px; width:100%; object-fit:contain; background:#ffffff;"/>
+            <img src="images/hero_composite.jpg" alt="Packaging Bags and Flyers" style="height:120px; width:100%; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
           </div>
         </div>
 
@@ -202,7 +202,7 @@ include 'header.php';
       <div class="product-detail-card">
         <div>
           <div style="border-radius:var(--radius-sm); overflow:hidden; border:1px solid var(--border-subtle);">
-            <img src="images/tape_rolls.jpg" alt="Industrial BOPP Adhesive Tapes" style="width:100%; height:290px; object-fit:contain; background:#ffffff;"/>
+            <img src="images/tape_rolls.jpg" alt="Industrial BOPP Adhesive Tapes" style="width:100%; height:260px; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
           </div>
         </div>
 
@@ -289,10 +289,10 @@ include 'header.php';
       <div class="product-detail-card">
         <div>
           <div style="border-radius:var(--radius-sm); overflow:hidden; margin-bottom:16px; border:1px solid var(--border-subtle);">
-            <img src="images/ai_kraft_mailers.jpg" alt="Eco Friendly Kraft Paper Bags and Honeycomb Paper" style="width:100%; height:290px; object-fit:contain; background:#ffffff;"/>
+            <img src="images/ai_kraft_mailers.jpg" alt="Eco Friendly Kraft Paper Bags and Honeycomb Paper" style="width:100%; height:260px; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
           </div>
           <div style="border-radius:var(--radius-xs); overflow:hidden; border:1px solid var(--border-subtle);">
-            <img src="images/bubble_wrap.jpg" alt="Air Bubble Protective Wrap Roll" style="height:120px; width:100%; object-fit:contain; background:#ffffff;"/>
+            <img src="images/bubble_wrap.jpg" alt="Air Bubble Protective Wrap Roll" style="height:120px; width:100%; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
           </div>
         </div>
 
@@ -347,10 +347,10 @@ include 'header.php';
       <div class="product-detail-card">
         <div>
           <div style="border-radius:var(--radius-sm); overflow:hidden; margin-bottom:16px; border:1px solid var(--border-subtle);">
-            <img src="images/stretch_film.jpg" alt="Industrial Stretch Wrap Rolls" style="width:100%; height:290px; object-fit:contain; background:#ffffff;"/>
+            <img src="images/stretch_film.jpg" alt="Industrial Stretch Wrap Rolls" style="width:100%; height:260px; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
           </div>
           <div style="border-radius:var(--radius-xs); overflow:hidden; border:1px solid var(--border-subtle);">
-            <img src="images/security_seal.jpg" alt="Tamper Evident Security Seals" style="height:120px; width:100%; object-fit:contain; background:#ffffff;"/>
+            <img src="images/security_seal.jpg" alt="Tamper Evident Security Seals" style="height:120px; width:100%; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
           </div>
         </div>
 
@@ -410,7 +410,7 @@ include 'header.php';
       <div class="product-detail-card">
         <div class="product-gallery-box">
           <div class="product-main-view">
-            <img src="images/heavy_duty_rack.jpg" alt="Heavy Duty Industrial Pallet Rack" class="main-gallery-img" id="mainGalleryImgRacks_php"/>
+            <img src="images/heavy_duty_rack.jpg" alt="Heavy Duty Industrial Pallet Rack" class="main-gallery-img" id="mainGalleryImgRacks_php" onerror="handleImgError(this)" />
             <span class="gallery-zoom-badge">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
               HD Preview
@@ -418,10 +418,10 @@ include 'header.php';
           </div>
           <div class="product-thumbs-row">
             <div class="thumb-item active" onclick="switchGalleryImg(this, 'mainGalleryImgRacks_php')">
-              <img src="images/heavy_duty_rack.jpg" alt="Rack Unit View"/>
+              <img src="images/heavy_duty_rack.jpg" alt="Rack Unit View" onerror="handleImgError(this)" />
             </div>
             <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImgRacks_php')">
-              <img src="images/heavy_duty_rack_row.jpg" alt="Warehouse Aisle View"/>
+              <img src="images/heavy_duty_rack_row.jpg" alt="Warehouse Aisle View" onerror="handleImgError(this)" />
             </div>
           </div>
         </div>
@@ -477,11 +477,11 @@ include 'header.php';
       <div class="product-detail-card">
         <div>
           <div style="border-radius:var(--radius-sm); overflow:hidden; margin-bottom:16px; border:1px solid var(--border-subtle); background:#ffffff;">
-            <img src="images/wooden_pallets.jpg" alt="ISPM-15 Heat Treated Wooden Pallet" style="width:100%; height:290px; object-fit:contain; background:#ffffff;" class="zoomable-img"/>
+            <img src="images/wooden_pallets.jpg" alt="ISPM-15 Heat Treated Wooden Pallet" style="width:100%; height:260px; object-fit:cover; background:#ffffff;" class="zoomable-img" onerror="handleImgError(this)" />
           </div>
           <div class="grid-2col-thumbs">
-            <img src="images/about_factory.jpg" alt="Wooden Pallet Kiln Drying Facility" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:cover; background:#ffffff; border:1px solid var(--border-subtle);" class="zoomable-img"/>
-            <img src="images/modern_machinery.jpg" alt="Automated Pallet Nailing Line" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:cover; background:#ffffff; border:1px solid var(--border-subtle);" class="zoomable-img"/>
+            <img src="images/about_factory.jpg" alt="Wooden Pallet Kiln Drying Facility" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:cover; background:#ffffff; border:1px solid var(--border-subtle);" class="zoomable-img" onerror="handleImgError(this)" />
+            <img src="images/modern_machinery.jpg" alt="Automated Pallet Nailing Line" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:cover; background:#ffffff; border:1px solid var(--border-subtle);" class="zoomable-img" onerror="handleImgError(this)" />
           </div>
         </div>
 
@@ -549,15 +549,15 @@ include 'header.php';
       <div class="product-detail-card">
         <div>
           <div style="border-radius:var(--radius-sm); overflow:hidden; margin-bottom:16px; border:1px solid var(--border-subtle);">
-            <img src="images/plastic_pallets.jpg" alt="Heavy Duty Plastic Pallets Stack" style="width:100%; height:290px; object-fit:contain; background:#ffffff;"/>
+            <img src="images/plastic_pallets.jpg" alt="Heavy Duty Plastic Pallets Stack" style="width:100%; height:260px; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
           </div>
           <div class="grid-2col-thumbs">
-            <img src="images/wooden_pallets.jpg" alt="ISPM-15 Heat Treated Wooden Pallet" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:contain; background:#ffffff; border:1px solid var(--border-subtle);"/>
-            <img src="images/plastic_crate.jpg" alt="Plastic Storage Crate with Lid" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:contain; background:#ffffff; border:1px solid var(--border-subtle);"/>
+            <img src="images/wooden_pallets.jpg" alt="ISPM-15 Heat Treated Wooden Pallet" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:cover; background:#ffffff; border:1px solid var(--border-subtle);" onerror="handleImgError(this)" />
+            <img src="images/plastic_crate.jpg" alt="Plastic Storage Crate with Lid" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:cover; background:#ffffff; border:1px solid var(--border-subtle);" onerror="handleImgError(this)" />
           </div>
           <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px;">
-            <img src="images/pp_box.jpg" alt="PP Flute Corrugated Reusable Boxes" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:contain; background:#ffffff; border:1px solid var(--border-subtle);"/>
-            <img src="images/pallet_truck.jpg" alt="Hydraulic Pallet Jack Truck" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:contain; background:#ffffff; border:1px solid var(--border-subtle);"/>
+            <img src="images/pp_box.jpg" alt="PP Flute Corrugated Reusable Boxes" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:cover; background:#ffffff; border:1px solid var(--border-subtle);" onerror="handleImgError(this)" />
+            <img src="images/pallet_truck.jpg" alt="Hydraulic Pallet Jack Truck" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:cover; background:#ffffff; border:1px solid var(--border-subtle);" onerror="handleImgError(this)" />
           </div>
         </div>
 
@@ -643,11 +643,11 @@ include 'header.php';
       <div class="product-detail-card">
         <div>
           <div style="border-radius:var(--radius-sm); overflow:hidden; margin-bottom:16px; border:1px solid var(--border-subtle);">
-            <img src="images/product_photo_4.jpg" alt="Plastic Storage Crate with Lid" style="width:100%; height:290px; object-fit:contain; background:#ffffff;"/>
+            <img src="images/product_photo_4.jpg" alt="Plastic Storage Crate with Lid" style="width:100%; height:260px; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
           </div>
           <div class="grid-2col-thumbs">
-            <img src="images/plastic_crate.jpg" alt="HDPE Stackable Plastic Storage Crate with Lid" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:contain; background:#ffffff; border:1px solid var(--border-subtle);"/>
-            <img src="images/plastic_pallets.jpg" alt="Industrial HDPE Plastic Pallets" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:contain; background:#ffffff; border:1px solid var(--border-subtle);"/>
+            <img src="images/plastic_crate.jpg" alt="HDPE Stackable Plastic Storage Crate with Lid" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:cover; background:#ffffff; border:1px solid var(--border-subtle);" onerror="handleImgError(this)" />
+            <img src="images/plastic_pallets.jpg" alt="Industrial HDPE Plastic Pallets" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:cover; background:#ffffff; border:1px solid var(--border-subtle);" onerror="handleImgError(this)" />
           </div>
         </div>
 
@@ -733,11 +733,11 @@ include 'header.php';
       <div class="product-detail-card">
         <div>
           <div style="border-radius:var(--radius-sm); overflow:hidden; margin-bottom:16px; border:1px solid var(--border-subtle);">
-            <img src="images/product_photo_5.jpg" alt="Polypropylene PP Flute Corrugated Box" style="width:100%; height:290px; object-fit:contain; background:#ffffff;"/>
+            <img src="images/product_photo_5.jpg" alt="Polypropylene PP Flute Corrugated Box" style="width:100%; height:260px; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
           </div>
           <div class="grid-2col-thumbs">
-            <img src="images/pp_box.jpg" alt="PP Flute Reusable Totes" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:contain; background:#ffffff; border:1px solid var(--border-subtle);"/>
-            <img src="images/corrugated_box.jpg" alt="Heavy Duty Corrugated Box" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:contain; background:#ffffff; border:1px solid var(--border-subtle);"/>
+            <img src="images/pp_box.jpg" alt="PP Flute Reusable Totes" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:cover; background:#ffffff; border:1px solid var(--border-subtle);" onerror="handleImgError(this)" />
+            <img src="images/corrugated_box.jpg" alt="Heavy Duty Corrugated Box" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:cover; background:#ffffff; border:1px solid var(--border-subtle);" onerror="handleImgError(this)" />
           </div>
         </div>
 
@@ -823,7 +823,7 @@ include 'header.php';
       <div class="product-detail-card">
         <div class="product-gallery-box">
           <div class="product-main-view">
-            <img src="images/epoxy_flooring_warehouse.jpg" alt="Industrial Epoxy Flooring &amp; 5S Line Marking Solutions" class="main-gallery-img" id="mainGalleryImgEpoxy_php"/>
+            <img src="images/epoxy_flooring_warehouse.jpg" alt="Industrial Epoxy Flooring &amp; 5S Line Marking Solutions" class="main-gallery-img" id="mainGalleryImgEpoxy_php" onerror="handleImgError(this)" />
             <span class="gallery-zoom-badge">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
               HD Preview
@@ -831,16 +831,16 @@ include 'header.php';
           </div>
           <div class="product-thumbs-row">
             <div class="thumb-item active" onclick="switchGalleryImg(this, 'mainGalleryImgEpoxy_php')">
-              <img src="images/epoxy_flooring.jpg" alt="Infographic Banner"/>
+              <img src="images/epoxy_flooring.jpg" alt="Infographic Banner" onerror="handleImgError(this)" />
             </div>
             <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImgEpoxy_php')">
-              <img src="images/epoxy_flooring_warehouse.jpg" alt="Seamless Floor"/>
+              <img src="images/epoxy_flooring_warehouse.jpg" alt="Seamless Floor" onerror="handleImgError(this)" />
             </div>
             <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImgEpoxy_php')">
-              <img src="images/heavy_duty_rack_row.jpg" alt="Racks &amp; Flooring"/>
+              <img src="images/heavy_duty_rack_row.jpg" alt="Racks &amp; Flooring" onerror="handleImgError(this)" />
             </div>
             <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImgEpoxy_php')">
-              <img src="images/about_factory.jpg" alt="Plant Floor"/>
+              <img src="images/about_factory.jpg" alt="Plant Floor" onerror="handleImgError(this)" />
             </div>
           </div>
         </div>
@@ -896,19 +896,19 @@ include 'header.php';
             <!-- Visual Project Showcase Gallery Grid (4 Images) -->
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:14px; margin-bottom:18px;">
               <div style="border-radius:var(--radius-xs); overflow:hidden; border:1px solid var(--border-subtle); position:relative; background:#ffffff;">
-                <img src="images/office_fitout.jpg" alt="Commercial Office Interior Design &amp; Workstations" style="width:100%; height:150px; object-fit:cover; display:block;" />
+                <img src="images/office_fitout.jpg" alt="Commercial Office Interior Design &amp; Workstations" style="width:100%; height:150px; object-fit:cover; display:block;"  onerror="handleImgError(this)" />
                 <div style="position:absolute; bottom:0; left:0; right:0; background:rgba(15,23,42,0.85); color:#fff; font-size:0.72rem; font-weight:700; padding:4px 8px; text-transform:uppercase;">Office Interior Fitouts</div>
               </div>
               <div style="border-radius:var(--radius-xs); overflow:hidden; border:1px solid var(--border-subtle); position:relative; background:#ffffff;">
-                <img src="images/office_glass_partition.jpg" alt="Glass &amp; Aluminum Office Dividers" style="width:100%; height:150px; object-fit:cover; display:block;" />
+                <img src="images/office_glass_partition.jpg" alt="Glass &amp; Aluminum Office Dividers" style="width:100%; height:150px; object-fit:cover; display:block;"  onerror="handleImgError(this)" />
                 <div style="position:absolute; bottom:0; left:0; right:0; background:rgba(15,23,42,0.85); color:#fff; font-size:0.72rem; font-weight:700; padding:4px 8px; text-transform:uppercase;">Glass Partitions</div>
               </div>
               <div style="border-radius:var(--radius-xs); overflow:hidden; border:1px solid var(--border-subtle); position:relative; background:#ffffff;">
-                <img src="images/office_executive_cabin.jpg" alt="Executive Cabins &amp; Commercial Flooring" style="width:100%; height:150px; object-fit:cover; display:block;" />
+                <img src="images/office_executive_cabin.jpg" alt="Executive Cabins &amp; Commercial Flooring" style="width:100%; height:150px; object-fit:cover; display:block;"  onerror="handleImgError(this)" />
                 <div style="position:absolute; bottom:0; left:0; right:0; background:rgba(15,23,42,0.85); color:#fff; font-size:0.72rem; font-weight:700; padding:4px 8px; text-transform:uppercase;">Executive Cabins</div>
               </div>
               <div style="border-radius:var(--radius-xs); overflow:hidden; border:1px solid var(--border-subtle); position:relative; background:#ffffff;">
-                <img src="images/industrial_warehouse_infra.jpg" alt="Warehouse Racks &amp; Factory Epoxy Flooring" style="width:100%; height:150px; object-fit:cover; display:block;" />
+                <img src="images/industrial_warehouse_infra.jpg" alt="Warehouse Racks &amp; Factory Epoxy Flooring" style="width:100%; height:150px; object-fit:cover; display:block;"  onerror="handleImgError(this)" />
                 <div style="position:absolute; bottom:0; left:0; right:0; background:rgba(15,23,42,0.85); color:#fff; font-size:0.72rem; font-weight:700; padding:4px 8px; text-transform:uppercase;">Warehouse Racking &amp; Infra</div>
               </div>
             </div>
@@ -951,7 +951,7 @@ include 'header.php';
       <div class="product-detail-card">
         <div>
           <div style="border-radius:var(--radius-sm); overflow:hidden; margin-bottom:16px; border:1px solid var(--border-subtle);">
-            <img src="images/bubble_wrap.jpg" alt="Air Bubble Wrap Packaging Rolls" style="width:100%; height:290px; object-fit:contain; background:#ffffff;"/>
+            <img src="images/bubble_wrap.jpg" alt="Air Bubble Wrap Packaging Rolls" style="width:100%; height:260px; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
           </div>
         </div>
 
@@ -1014,7 +1014,7 @@ include 'header.php';
       <div class="product-detail-card">
         <div>
           <div style="border-radius:var(--radius-sm); overflow:hidden; margin-bottom:16px; border:1px solid var(--border-subtle);">
-            <img src="images/hero_composite.jpg" alt="PP Strapping Rolls and PET Green Straps" style="width:100%; height:290px; object-fit:contain; background:#ffffff;"/>
+            <img src="images/hero_composite.jpg" alt="PP Strapping Rolls and PET Green Straps" style="width:100%; height:260px; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
           </div>
         </div>
 
@@ -1072,7 +1072,7 @@ include 'header.php';
       <div class="product-detail-card">
         <div>
           <div style="border-radius:var(--radius-sm); overflow:hidden; margin-bottom:16px; border:1px solid var(--border-subtle);">
-            <img src="images/pallet_truck.jpg" alt="Industrial Hydraulic Hand Pallet Truck" style="width:100%; height:290px; object-fit:contain; background:#ffffff;"/>
+            <img src="images/pallet_truck.jpg" alt="Industrial Hydraulic Hand Pallet Truck" style="width:100%; height:260px; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
           </div>
         </div>
 
