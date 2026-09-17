@@ -3240,11 +3240,34 @@ img, video, iframe, canvas, table {
     overflow: hidden !important;
   }
 
+  .product-detail-card div[style*="display:grid"],
+  .product-detail-card div[style*="display: grid"],
+  .product-card-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    width: 100% !important;
+  }
+
   .product-detail-card > * {
     min-width: 0 !important;
     max-width: 100% !important;
     width: 100% !important;
     box-sizing: border-box !important;
+  }
+
+  .product-main-view {
+    height: 220px !important;
+  }
+
+  .product-thumbs-row {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 8px !important;
+    width: 100% !important;
+  }
+
+  .thumb-item {
+    height: 65px !important;
   }
 
   .product-detail-card h2 {
