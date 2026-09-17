@@ -165,42 +165,88 @@
       </p>
     </div>
 
-    <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:24px;">
-      <div style="background:var(--white); padding:28px; border-radius:var(--radius-sm); border:1px solid var(--border-subtle); box-shadow:var(--shadow-xs);">
-        <h3 style="font-family:var(--font-heading); font-weight:800; font-size:1.2rem; color:var(--blue-brand); margin-bottom:8px;">
-          📦 Corrugated &amp; Paper Packaging
-        </h3>
-        <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.65;">
-          Custom-designed 2-ply to 9-ply corrugated cartons and tamper-proof courier mailers built for heavy-duty shipping and logistics.
-        </p>
+    <div class="products-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:24px;">
+      
+      <!-- 1. Corrugated & Paper Packaging -->
+      <div class="product-card" style="background:var(--white); border-radius:var(--radius-md); border:1px solid var(--border-subtle); overflow:hidden; box-shadow:var(--shadow-xs); transition:transform 0.3s ease, box-shadow 0.3s ease; display:flex; flex-direction:column;">
+        <div style="position:relative; height:190px; overflow:hidden; background:#f8fafc;">
+          <img src="images/corrugated_lineup.jpg" alt="Corrugated &amp; Paper Packaging" style="width:100%; height:100%; object-fit:cover; transition:transform 0.4s ease;" onerror="handleImgError(this)" />
+          <span style="position:absolute; top:12px; left:12px; background:rgba(9,25,44,0.85); color:#ffffff; font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:12px; backdrop-filter:blur(4px);">2 to 9 Ply Cartons</span>
+        </div>
+        <div style="padding:22px; display:flex; flex-direction:column; flex-grow:1;">
+          <h3 style="font-family:var(--font-heading); font-weight:800; font-size:1.25rem; color:var(--text-primary); margin-bottom:10px;">
+            Corrugated &amp; Paper Packaging
+          </h3>
+          <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.6; margin-bottom:18px; flex-grow:1;">
+            Custom-designed 2-ply to 9-ply corrugated cartons, die-cut self-locking mailers, and tamper-proof courier flyers built for heavy-duty shipping and logistics.
+          </p>
+          <a href="products.html#corrugated" class="product-cta-link" style="font-weight:700; color:var(--blue-brand); text-decoration:none; font-size:0.88rem; display:inline-flex; align-items:center; gap:6px;">
+            Explore Corrugated Range
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:16px;height:16px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
       </div>
 
-      <div style="background:var(--white); padding:28px; border-radius:var(--radius-sm); border:1px solid var(--border-subtle); box-shadow:var(--shadow-xs);">
-        <h3 style="font-family:var(--font-heading); font-weight:800; font-size:1.2rem; color:var(--orange-brand); margin-bottom:8px;">
-          🎗️ Tapes &amp; Transit Security
-        </h3>
-        <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.65;">
-          High-shear BOPP sealing tapes and high-security transit seals ensuring cargo integrity during transport.
-        </p>
+      <!-- 2. Tapes & Transit Security -->
+      <div class="product-card" style="background:var(--white); border-radius:var(--radius-md); border:1px solid var(--border-subtle); overflow:hidden; box-shadow:var(--shadow-xs); transition:transform 0.3s ease, box-shadow 0.3s ease; display:flex; flex-direction:column;">
+        <div style="position:relative; height:190px; overflow:hidden; background:#f8fafc;">
+          <img src="images/tape_rolls.jpg" alt="Tapes &amp; Transit Security" style="width:100%; height:100%; object-fit:cover; transition:transform 0.4s ease;" onerror="handleImgError(this)" />
+          <span style="position:absolute; top:12px; left:12px; background:rgba(9,25,44,0.85); color:#ffffff; font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:12px; backdrop-filter:blur(4px);">High Tack &amp; Security</span>
+        </div>
+        <div style="padding:22px; display:flex; flex-direction:column; flex-grow:1;">
+          <h3 style="font-family:var(--font-heading); font-weight:800; font-size:1.25rem; color:var(--text-primary); margin-bottom:10px;">
+            Tapes &amp; Transit Security
+          </h3>
+          <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.6; margin-bottom:18px; flex-grow:1;">
+            High-shear acrylic and hot-melt BOPP sealing tapes in clear, brown, and custom logo prints paired with sequential laser-numbered security seals ensuring cargo integrity.
+          </p>
+          <a href="products.html#tapes" class="product-cta-link" style="font-weight:700; color:var(--orange-brand); text-decoration:none; font-size:0.88rem; display:inline-flex; align-items:center; gap:6px;">
+            Explore Tapes &amp; Seals
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:16px;height:16px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
       </div>
 
-      <div style="background:var(--white); padding:28px; border-radius:var(--radius-sm); border:1px solid var(--border-subtle); box-shadow:var(--shadow-xs);">
-        <h3 style="font-family:var(--font-heading); font-weight:800; font-size:1.2rem; color:var(--blue-brand); margin-bottom:8px;">
-          🪵 Pallets &amp; Storage Systems
-        </h3>
-        <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.65;">
-          Heavy-duty wooden pallets, industrial plastic pallets, and heavy-duty warehouse racking systems.
-        </p>
+      <!-- 3. Pallets & Storage Systems -->
+      <div class="product-card" style="background:var(--white); border-radius:var(--radius-md); border:1px solid var(--border-subtle); overflow:hidden; box-shadow:var(--shadow-xs); transition:transform 0.3s ease, box-shadow 0.3s ease; display:flex; flex-direction:column;">
+        <div style="position:relative; height:190px; overflow:hidden; background:#f8fafc;">
+          <img src="images/wooden_pallets.jpg" alt="Pallets &amp; Storage Systems" style="width:100%; height:100%; object-fit:cover; transition:transform 0.4s ease;" onerror="handleImgError(this)" />
+          <span style="position:absolute; top:12px; left:12px; background:rgba(9,25,44,0.85); color:#ffffff; font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:12px; backdrop-filter:blur(4px);">Export Pallets &amp; Racks</span>
+        </div>
+        <div style="padding:22px; display:flex; flex-direction:column; flex-grow:1;">
+          <h3 style="font-family:var(--font-heading); font-weight:800; font-size:1.25rem; color:var(--text-primary); margin-bottom:10px;">
+            Pallets &amp; Storage Systems
+          </h3>
+          <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.6; margin-bottom:18px; flex-grow:1;">
+            ISPM-15 heat-treated wooden pallets, industrial HDPE plastic pallets, and heavy-duty warehouse pallet racking systems for optimized industrial storage.
+          </p>
+          <a href="products.html#pallets" class="product-cta-link" style="font-weight:700; color:var(--blue-brand); text-decoration:none; font-size:0.88rem; display:inline-flex; align-items:center; gap:6px;">
+            Explore Pallets &amp; Storage
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:16px;height:16px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
       </div>
 
-      <div style="background:var(--white); padding:28px; border-radius:var(--radius-sm); border:1px solid var(--border-subtle); box-shadow:var(--shadow-xs);">
-        <h3 style="font-family:var(--font-heading); font-weight:800; font-size:1.2rem; color:var(--orange-brand); margin-bottom:8px;">
-          📥 Custom Containers &amp; Crates
-        </h3>
-        <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.65;">
-          Tailor-made Polypropylene (PP) boxes and customized plastic crates engineered for durable material handling.
-        </p>
+      <!-- 4. Custom Containers & Crates -->
+      <div class="product-card" style="background:var(--white); border-radius:var(--radius-md); border:1px solid var(--border-subtle); overflow:hidden; box-shadow:var(--shadow-xs); transition:transform 0.3s ease, box-shadow 0.3s ease; display:flex; flex-direction:column;">
+        <div style="position:relative; height:190px; overflow:hidden; background:#f8fafc;">
+          <img src="images/product_photo_4.jpg" alt="Custom Containers &amp; Crates" style="width:100%; height:100%; object-fit:cover; transition:transform 0.4s ease;" onerror="handleImgError(this)" />
+          <span style="position:absolute; top:12px; left:12px; background:rgba(9,25,44,0.85); color:#ffffff; font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:12px; backdrop-filter:blur(4px);">PP Flute &amp; HDPE Crates</span>
+        </div>
+        <div style="padding:22px; display:flex; flex-direction:column; flex-grow:1;">
+          <h3 style="font-family:var(--font-heading); font-weight:800; font-size:1.25rem; color:var(--text-primary); margin-bottom:10px;">
+            Custom Containers &amp; Crates
+          </h3>
+          <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.6; margin-bottom:18px; flex-grow:1;">
+            Tailor-made Polypropylene (PP) flute corrugated boxes and stackable heavy-duty plastic crates engineered for durable material handling and logistics.
+          </p>
+          <a href="products.html#crates" class="product-cta-link" style="font-weight:700; color:var(--orange-brand); text-decoration:none; font-size:0.88rem; display:inline-flex; align-items:center; gap:6px;">
+            Explore Crates &amp; Containers
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:16px;height:16px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
