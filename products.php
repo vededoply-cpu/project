@@ -840,10 +840,10 @@ include 'header.php';
     </div>
 
     <!-- 8. INDUSTRIAL EPOXY FLOORING -->
-    <div class="product-filter-card" data-category="flooring" id="flooring" style="margin-bottom:30px;">
+    <div class="product-filter-card" data-category="flooring" id="flooring" style="margin-bottom:40px;">
       <div class="product-detail-card">
         <div class="product-gallery-box">
-          <div class="product-main-view">
+          <div class="product-main-view" style="height:320px;">
             <img src="images/epoxy_flooring_warehouse.jpg" alt="Industrial Epoxy Flooring &amp; 5S Line Marking Solutions" class="main-gallery-img" id="mainGalleryImgEpoxy_php" onerror="handleImgError(this)" />
             <span class="gallery-zoom-badge">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
@@ -851,29 +851,9 @@ include 'header.php';
             </span>
           </div>
 
-          <!-- Feature Image Grid arranged to fill column space cleanly -->
-          <div class="product-gallery-grid">
-            <div class="product-gallery-grid-item" onclick="switchGalleryImg(this, 'mainGalleryImgEpoxy_php')">
-              <img src="images/epoxy_flooring.jpg" alt="Resinous Epoxy Coating" onerror="handleImgError(this)" />
-              <div class="product-gallery-grid-label">Resinous Epoxy Coating</div>
-            </div>
-            <div class="product-gallery-grid-item" onclick="switchGalleryImg(this, 'mainGalleryImgEpoxy_php')">
-              <img src="images/epoxy_flooring_warehouse.jpg" alt="5S Line Marking" onerror="handleImgError(this)" />
-              <div class="product-gallery-grid-label">5S Safety Line Marking</div>
-            </div>
-            <div class="product-gallery-grid-item" onclick="switchGalleryImg(this, 'mainGalleryImgEpoxy_php')">
-              <img src="images/heavy_duty_rack_row.jpg" alt="Plant Floor Infrastructure" onerror="handleImgError(this)" />
-              <div class="product-gallery-grid-label">Plant Floor Infra</div>
-            </div>
-            <div class="product-gallery-grid-item" onclick="switchGalleryImg(this, 'mainGalleryImgEpoxy_php')">
-              <img src="images/about_factory.jpg" alt="ESD Cleanroom Flooring" onerror="handleImgError(this)" />
-              <div class="product-gallery-grid-label">ESD Cleanroom Flooring</div>
-            </div>
-          </div>
-
           <div class="product-thumbs-row">
             <div class="thumb-item active" onclick="switchGalleryImg(this, 'mainGalleryImgEpoxy_php')">
-              <img src="images/epoxy_flooring.jpg" alt="Infographic Banner" onerror="handleImgError(this)" />
+              <img src="images/epoxy_flooring.jpg" alt="Resinous Epoxy Coating" onerror="handleImgError(this)" />
             </div>
             <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImgEpoxy_php')">
               <img src="images/epoxy_flooring_warehouse.jpg" alt="Seamless Floor" onerror="handleImgError(this)" />
@@ -928,62 +908,80 @@ include 'header.php';
             </table>
           </div>
 
-          <!-- TURNKEY INDUSTRIAL PROJECTS & COMMERCIAL OFFICE WORKS BREAKDOWN -->
-          <div style="background:var(--bg-subtle, #f8fafc); border:1px solid var(--border-subtle, #e2e8f0); border-radius:var(--radius-sm); padding:20px; margin:20px 0;">
-            <h4 style="font-family:var(--font-heading); font-weight:700; font-size:1.1rem; color:var(--text-primary); margin-bottom:14px; display:flex; align-items:center; gap:8px;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px;height:20px;color:var(--orange-brand);"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0h9m-9 0V9a2 2 0 012-2h2a2 2 0 012 2v12m-6 0h6"/></svg>
-              Turnkey Industrial Projects &amp; Commercial Office Works
-            </h4>
-
-            <!-- Visual Project Showcase Gallery Grid (4 Images) -->
-            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:14px; margin-bottom:18px;">
-              <div style="border-radius:var(--radius-xs); overflow:hidden; border:1px solid var(--border-subtle); position:relative; background:#ffffff;">
-                <img src="images/office_fitout.jpg" alt="Commercial Office Interior Design &amp; Workstations" style="width:100%; height:150px; object-fit:cover; display:block;"  onerror="handleImgError(this)" />
-                <div style="position:absolute; bottom:0; left:0; right:0; background:rgba(15,23,42,0.85); color:#fff; font-size:0.72rem; font-weight:700; padding:4px 8px; text-transform:uppercase;">Office Interior Fitouts</div>
-              </div>
-              <div style="border-radius:var(--radius-xs); overflow:hidden; border:1px solid var(--border-subtle); position:relative; background:#ffffff;">
-                <img src="images/office_glass_partition.jpg" alt="Glass &amp; Aluminum Office Dividers" style="width:100%; height:150px; object-fit:cover; display:block;"  onerror="handleImgError(this)" />
-                <div style="position:absolute; bottom:0; left:0; right:0; background:rgba(15,23,42,0.85); color:#fff; font-size:0.72rem; font-weight:700; padding:4px 8px; text-transform:uppercase;">Glass Partitions</div>
-              </div>
-              <div style="border-radius:var(--radius-xs); overflow:hidden; border:1px solid var(--border-subtle); position:relative; background:#ffffff;">
-                <img src="images/office_executive_cabin.jpg" alt="Executive Cabins &amp; Commercial Flooring" style="width:100%; height:150px; object-fit:cover; display:block;"  onerror="handleImgError(this)" />
-                <div style="position:absolute; bottom:0; left:0; right:0; background:rgba(15,23,42,0.85); color:#fff; font-size:0.72rem; font-weight:700; padding:4px 8px; text-transform:uppercase;">Executive Cabins</div>
-              </div>
-              <div style="border-radius:var(--radius-xs); overflow:hidden; border:1px solid var(--border-subtle); position:relative; background:#ffffff;">
-                <img src="images/industrial_warehouse_infra.jpg" alt="Warehouse Racks &amp; Factory Epoxy Flooring" style="width:100%; height:150px; object-fit:cover; display:block;"  onerror="handleImgError(this)" />
-                <div style="position:absolute; bottom:0; left:0; right:0; background:rgba(15,23,42,0.85); color:#fff; font-size:0.72rem; font-weight:700; padding:4px 8px; text-transform:uppercase;">Warehouse Racking &amp; Infra</div>
-              </div>
-            </div>
-
-            <div style="font-size:0.88rem; color:var(--text-secondary); line-height:1.6; display:grid; grid-template-columns:1fr 1fr; gap:14px;">
-              <div>
-                <strong style="color:var(--text-primary);">Turnkey Commercial Office Works &amp; Fitouts:</strong>
-                <ul style="margin:4px 0 0 16px; padding:0; list-style-type:disc;">
-                  <li><strong>Office Interior Design &amp; Execution:</strong> Executive cabins, workstation layouts, false ceiling, and acoustic wall panels.</li>
-                  <li><strong>Commercial Floorings:</strong> High-gloss resinous epoxy, ESD conductive flooring for IT server rooms &amp; anti-slip polyurethane coatings.</li>
-                  <li><strong>Glass &amp; Aluminum Partitions:</strong> Modular office dividers, frosted glass conference rooms, and soundproof partitions.</li>
-                </ul>
-              </div>
-              <div>
-                <strong style="color:var(--text-primary);">Industrial Plant &amp; Warehouse Infrastructure:</strong>
-                <ul style="margin:4px 0 0 16px; padding:0; list-style-type:disc;">
-                  <li><strong>Heavy Storage Racking:</strong> Multi-tier pallet racking, mezzanine floor steel structures, and heavy cantilever racks.</li>
-                  <li><strong>Factory Floor Epoxy:</strong> Heavy-duty self-leveling resinous floor hardeners for forklift traffic &amp; anti-dusting.</li>
-                  <li><strong>EHS 5S Line Marking:</strong> High-contrast polyurethane safety lanes, pedestrian walkways, and hazard zonation.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+          <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-top:16px;">
             <a href="contact.php?prod=flooring" class="btn btn-orange">
-              Request Turnkey &amp; Site Survey Quote
+              Request Epoxy Flooring Quote
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-            <a href="https://wa.me/919044129477?text=Hi,%20I%20want%20to%20discuss%20an%20industrial%20epoxy%20or%20turnkey%20office%20project." target="_blank" rel="noopener" class="btn btn-outline">
-              WhatsApp Turnkey Consultation
+            <a href="https://wa.me/919044129477?text=Hi,%20I%20need%20pricing%20for%20industrial%20epoxy%20flooring." target="_blank" rel="noopener" class="btn btn-outline">
+              WhatsApp Technical Spec Sheet
             </a>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. TURNKEY INDUSTRIAL PROJECTS & COMMERCIAL OFFICE WORKS (STANDALONE FULL WIDTH SHOWCASE) -->
+    <div class="product-filter-card" data-category="turnkey" id="turnkey" style="margin-bottom:60px;">
+      <div style="background:var(--white); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:32px; box-shadow:var(--shadow-xs);">
+        <div style="margin-bottom:20px;">
+          <span class="sub-title">Infrastructure &amp; Fitout Execution</span>
+          <h2 style="font-family:var(--font-heading); font-weight:800; font-size:1.75rem; color:var(--text-primary); margin-bottom:8px; display:flex; align-items:center; gap:10px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:24px;height:24px;color:var(--orange-brand);"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0h9m-9 0V9a2 2 0 012-2h2a2 2 0 012 2v12m-6 0h6"/></svg>
+            Turnkey Industrial Projects &amp; Commercial Office Works
+          </h2>
+          <p style="font-size:0.95rem; color:var(--text-secondary); line-height:1.6;">
+            End-to-end site execution from heavy industrial plant flooring &amp; racking setup to high-end corporate office interior fitouts across Bengaluru.
+          </p>
+        </div>
+
+        <!-- Visual Project Showcase Gallery Grid (4 High-Res Images) -->
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:16px; margin-bottom:24px;">
+          <div style="border-radius:var(--radius-sm); overflow:hidden; border:1px solid var(--border-subtle); position:relative; background:#ffffff; height:170px;">
+            <img src="images/office_fitout.jpg" alt="Commercial Office Interior Design &amp; Workstations" style="width:100%; height:100%; object-fit:cover; display:block;" onerror="handleImgError(this)" />
+            <div style="position:absolute; bottom:0; left:0; right:0; background:rgba(15,23,42,0.88); color:#fff; font-size:0.75rem; font-weight:700; padding:6px 10px; text-transform:uppercase;">Office Interior Fitouts</div>
+          </div>
+          <div style="border-radius:var(--radius-sm); overflow:hidden; border:1px solid var(--border-subtle); position:relative; background:#ffffff; height:170px;">
+            <img src="images/office_glass_partition.jpg" alt="Glass &amp; Aluminum Office Dividers" style="width:100%; height:100%; object-fit:cover; display:block;" onerror="handleImgError(this)" />
+            <div style="position:absolute; bottom:0; left:0; right:0; background:rgba(15,23,42,0.88); color:#fff; font-size:0.75rem; font-weight:700; padding:6px 10px; text-transform:uppercase;">Glass Partitions</div>
+          </div>
+          <div style="border-radius:var(--radius-sm); overflow:hidden; border:1px solid var(--border-subtle); position:relative; background:#ffffff; height:170px;">
+            <img src="images/office_executive_cabin.jpg" alt="Executive Cabins &amp; Commercial Flooring" style="width:100%; height:100%; object-fit:cover; display:block;" onerror="handleImgError(this)" />
+            <div style="position:absolute; bottom:0; left:0; right:0; background:rgba(15,23,42,0.88); color:#fff; font-size:0.75rem; font-weight:700; padding:6px 10px; text-transform:uppercase;">Executive Cabins</div>
+          </div>
+          <div style="border-radius:var(--radius-sm); overflow:hidden; border:1px solid var(--border-subtle); position:relative; background:#ffffff; height:170px;">
+            <img src="images/industrial_warehouse_infra.jpg" alt="Warehouse Racks &amp; Factory Epoxy Flooring" style="width:100%; height:100%; object-fit:cover; display:block;" onerror="handleImgError(this)" />
+            <div style="position:absolute; bottom:0; left:0; right:0; background:rgba(15,23,42,0.88); color:#fff; font-size:0.75rem; font-weight:700; padding:6px 10px; text-transform:uppercase;">Warehouse Racking &amp; Infra</div>
+          </div>
+        </div>
+
+        <div style="font-size:0.92rem; color:var(--text-secondary); line-height:1.65; display:grid; grid-template-columns:1fr 1fr; gap:20px; background:var(--bg-subtle, #f8fafc); border:1px solid var(--border-subtle); padding:20px; border-radius:var(--radius-sm); margin-bottom:24px;">
+          <div>
+            <strong style="color:var(--text-primary); font-size:1rem;">Turnkey Commercial Office Works &amp; Fitouts:</strong>
+            <ul style="margin:8px 0 0 18px; padding:0; list-style-type:disc;">
+              <li><strong>Office Interior Design &amp; Execution:</strong> Executive cabins, workstation layouts, false ceiling, and acoustic wall panels.</li>
+              <li><strong>Commercial Floorings:</strong> High-gloss resinous epoxy, ESD conductive flooring for IT server rooms &amp; anti-slip polyurethane coatings.</li>
+              <li><strong>Glass &amp; Aluminum Partitions:</strong> Modular office dividers, frosted glass conference rooms, and soundproof partitions.</li>
+            </ul>
+          </div>
+          <div>
+            <strong style="color:var(--text-primary); font-size:1rem;">Industrial Plant &amp; Warehouse Infrastructure:</strong>
+            <ul style="margin:8px 0 0 18px; padding:0; list-style-type:disc;">
+              <li><strong>Heavy Storage Racking:</strong> Multi-tier pallet racking, mezzanine floor steel structures, and heavy cantilever racks.</li>
+              <li><strong>Factory Floor Epoxy:</strong> Heavy-duty self-leveling resinous floor hardeners for forklift traffic &amp; anti-dusting.</li>
+              <li><strong>EHS 5S Line Marking:</strong> High-contrast polyurethane safety lanes, pedestrian walkways, and hazard zonation.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+          <a href="contact.php?prod=turnkey" class="btn btn-orange">
+            Request Turnkey &amp; Site Survey Quote
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://wa.me/919044129477?text=Hi,%20I%20want%20to%20discuss%20an%20industrial%20epoxy%20or%20turnkey%20office%20project." target="_blank" rel="noopener" class="btn btn-outline">
+            WhatsApp Turnkey Consultation
+          </a>
         </div>
       </div>
     </div>
