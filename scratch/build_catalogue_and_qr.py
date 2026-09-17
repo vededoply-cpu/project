@@ -4,7 +4,7 @@ from PIL import Image
 from reportlab.lib.pagesizes import letter
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, Image as RLImage, PageBreak, HRFlowable
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, Image as RLImage, PageBreak
 from reportlab.pdfgen import canvas
 
 # Base directory
@@ -72,19 +72,12 @@ class NumberedCanvas(canvas.Canvas):
         if self._pageNumber > 1:
             self.setFont("Helvetica-Bold", 8)
             self.setFillColor(colors.HexColor("#071e3d"))
-            self.drawString(36, 762, "MIRAI PACKAGING LLP  |  MASTER PRODUCT & SPECIFICATIONS CATALOGUE")
+            self.drawString(36, 762, "MIRAI PACKAGING LLP  |  MASTER PRODUCT CATALOGUE")
             self.setFont("Helvetica", 8)
             self.setFillColor(colors.HexColor("#64748b"))
             self.drawRightString(576, 762, "ISO 9001:2015 CERTIFIED")
-            self.setStrokeColor(colors.HexColor("#cbd5e1"))
-            self.setLineWidth(0.5)
-            self.line(36, 754, 576, 754)
 
         # Running footer on all pages
-        self.setStrokeColor(colors.HexColor("#cbd5e1"))
-        self.setLineWidth(0.5)
-        self.line(36, 42, 576, 42)
-        
         self.setFont("Helvetica", 8)
         self.setFillColor(colors.HexColor("#64748b"))
         self.drawString(36, 28, "sales@miraiflexipack.in  |  +91-9044129477  |  GSTIN: 29AAUFM9272M1Z2")
@@ -127,7 +120,7 @@ subtitle_style = ParagraphStyle(
     fontSize=12,
     leading=16,
     textColor=orange_brand,
-    spaceAfter=12
+    spaceAfter=14
 )
 
 h1_style = ParagraphStyle(
@@ -194,6 +187,16 @@ table_cell_bold = ParagraphStyle(
     textColor=navy_dark
 )
 
+# Standard Minimal Table Style (No Harsh Internal Grid Lines)
+clean_table_style = [
+    ('BACKGROUND', (0,0), (-1,0), navy_dark),
+    ('ROWBACKGROUNDS', (0,1), (-1,-1), [colors.white, light_bg]),
+    ('BOX', (0,0), (-1,-1), 0.5, colors.HexColor("#e2e8f0")),
+    ('LINEBELOW', (0,0), (-1,0), 1.5, navy_dark),
+    ('PADDING', (0,0), (-1,-1), 5),
+    ('VALIGN', (0,0), (-1,-1), 'MIDDLE'),
+]
+
 story = []
 
 # ==================== PAGE 1: COVER PAGE WITH HERO INFRASTRUCTURE IMAGE ====================
@@ -207,7 +210,6 @@ if os.path.exists(logo_path):
 story.append(Spacer(1, 10))
 story.append(Paragraph("MIRAI PACKAGING LLP", title_style))
 story.append(Paragraph("MASTER INDUSTRIAL PACKAGING & PLANT SPECIFICATIONS CATALOGUE", subtitle_style))
-story.append(HRFlowable(width="100%", thickness=2.5, color=orange_brand, spaceBefore=2, spaceAfter=12))
 
 # Cover Grid: Text Description on Left + Factory/Infra Image on Right
 intro_p = Paragraph(
@@ -232,7 +234,7 @@ cover_grid.setStyle(TableStyle([
 ]))
 story.append(cover_grid)
 
-story.append(Spacer(1, 12))
+story.append(Spacer(1, 14))
 
 # Corporate Metadata Table
 meta_data = [
@@ -245,14 +247,14 @@ meta_data = [
 ]
 t_meta = Table(meta_data, colWidths=[140, 400])
 t_meta.setStyle(TableStyle([
-    ('BACKGROUND', (0,0), (-1,-1), light_bg),
-    ('GRID', (0,0), (-1,-1), 0.5, colors.HexColor("#e2e8f0")),
+    ('ROWBACKGROUNDS', (0,0), (-1,-1), [colors.white, light_bg]),
+    ('BOX', (0,0), (-1,-1), 0.5, colors.HexColor("#e2e8f0")),
     ('PADDING', (0,0), (-1,-1), 5),
     ('VALIGN', (0,0), (-1,-1), 'MIDDLE'),
 ]))
 story.append(t_meta)
 
-story.append(Spacer(1, 12))
+story.append(Spacer(1, 14))
 story.append(Paragraph("Enterprise Clients & Packaging Deployment Matrix", h2_style))
 
 # Featured Enterprise Clients Table
@@ -268,13 +270,7 @@ client_data = [
     [Paragraph("Blackberrys Menswear", table_cell_bold), Paragraph("Men's Apparel", table_cell_style), Paragraph("Self-Locking E-Com Mailers + Wardrobe Master Cartons", table_cell_style)]
 ]
 t_client = Table(client_data, colWidths=[120, 130, 290])
-t_client.setStyle(TableStyle([
-    ('BACKGROUND', (0,0), (-1,0), navy_dark),
-    ('GRID', (0,0), (-1,-1), 0.5, colors.HexColor("#cbd5e1")),
-    ('ROWBACKGROUNDS', (0,1), (-1,-1), [colors.white, light_bg]),
-    ('PADDING', (0,0), (-1,-1), 4.5),
-    ('VALIGN', (0,0), (-1,-1), 'MIDDLE'),
-]))
+t_client.setStyle(TableStyle(clean_table_style))
 story.append(t_client)
 
 story.append(PageBreak())
@@ -305,14 +301,9 @@ box_specs = [
     [Paragraph("Box Styles", table_cell_bold), Paragraph("RSC, Full Overlap (FOL), Self-Locking Die-Cut, Telescopic", table_cell_style)]
 ]
 t_box = Table(box_specs, colWidths=[110, 210])
-t_box.setStyle(TableStyle([
-    ('BACKGROUND', (0,0), (-1,0), navy_dark),
-    ('GRID', (0,0), (-1,-1), 0.5, colors.HexColor("#cbd5e1")),
-    ('ROWBACKGROUNDS', (0,1), (-1,-1), [colors.white, light_bg]),
-    ('PADDING', (0,0), (-1,-1), 4),
-]))
+t_box.setStyle(TableStyle(clean_table_style))
 
-sec1_left = [box_desc, Spacer(1, 4), t_box]
+sec1_left = [box_desc, Spacer(1, 6), t_box]
 sec1_grid = Table([[sec1_left, box_img_cell]], colWidths=[330, 210])
 sec1_grid.setStyle(TableStyle([
     ('VALIGN', (0,0), (-1,-1), 'TOP'),
@@ -320,8 +311,7 @@ sec1_grid.setStyle(TableStyle([
 ]))
 story.append(sec1_grid)
 
-story.append(Spacer(1, 14))
-story.append(HRFlowable(width="100%", thickness=0.5, color=colors.HexColor("#e2e8f0"), spaceBefore=0, spaceAfter=10))
+story.append(Spacer(1, 18))
 
 story.append(Paragraph("2. Tamper-Evident Co-Ex Courier Bags & Poly Mailers", h1_style))
 
@@ -347,14 +337,9 @@ bag_specs = [
     [Paragraph("Available Sizes", table_cell_bold), Paragraph("6x8\", 8x10\", 10x12\", 12x14\", 14x18\", 18x22\", Custom Sizes", table_cell_style)]
 ]
 t_bag = Table(bag_specs, colWidths=[110, 210])
-t_bag.setStyle(TableStyle([
-    ('BACKGROUND', (0,0), (-1,0), navy_dark),
-    ('GRID', (0,0), (-1,-1), 0.5, colors.HexColor("#cbd5e1")),
-    ('ROWBACKGROUNDS', (0,1), (-1,-1), [colors.white, light_bg]),
-    ('PADDING', (0,0), (-1,-1), 4),
-]))
+t_bag.setStyle(TableStyle(clean_table_style))
 
-sec2_left = [bag_desc, Spacer(1, 4), t_bag]
+sec2_left = [bag_desc, Spacer(1, 6), t_bag]
 sec2_grid = Table([[sec2_left, bag_img_cell]], colWidths=[330, 210])
 sec2_grid.setStyle(TableStyle([
     ('VALIGN', (0,0), (-1,-1), 'TOP'),
@@ -389,14 +374,9 @@ tape_specs = [
     [Paragraph("Branding", table_cell_bold), Paragraph("Up to 3-Color High-Resolution Rotogravure Logo & Caution Print", table_cell_style)]
 ]
 t_tape = Table(tape_specs, colWidths=[110, 210])
-t_tape.setStyle(TableStyle([
-    ('BACKGROUND', (0,0), (-1,0), navy_dark),
-    ('GRID', (0,0), (-1,-1), 0.5, colors.HexColor("#cbd5e1")),
-    ('ROWBACKGROUNDS', (0,1), (-1,-1), [colors.white, light_bg]),
-    ('PADDING', (0,0), (-1,-1), 4),
-]))
+t_tape.setStyle(TableStyle(clean_table_style))
 
-sec3_left = [tape_desc, Spacer(1, 4), t_tape]
+sec3_left = [tape_desc, Spacer(1, 6), t_tape]
 sec3_grid = Table([[sec3_left, tape_img_cell]], colWidths=[330, 210])
 sec3_grid.setStyle(TableStyle([
     ('VALIGN', (0,0), (-1,-1), 'TOP'),
@@ -404,8 +384,7 @@ sec3_grid.setStyle(TableStyle([
 ]))
 story.append(sec3_grid)
 
-story.append(Spacer(1, 14))
-story.append(HRFlowable(width="100%", thickness=0.5, color=colors.HexColor("#e2e8f0"), spaceBefore=0, spaceAfter=10))
+story.append(Spacer(1, 18))
 
 story.append(Paragraph("4. Air Bubble Rolls & Eco Honeycomb Packaging Paper", h1_style))
 
@@ -431,14 +410,9 @@ cushion_specs = [
     [Paragraph("Stretch Film", table_cell_bold), Paragraph("23 Micron Hand & Machine Pallet Wrap (300% Stretchability)", table_cell_style)]
 ]
 t_cushion = Table(cushion_specs, colWidths=[110, 210])
-t_cushion.setStyle(TableStyle([
-    ('BACKGROUND', (0,0), (-1,0), navy_dark),
-    ('GRID', (0,0), (-1,-1), 0.5, colors.HexColor("#cbd5e1")),
-    ('ROWBACKGROUNDS', (0,1), (-1,-1), [colors.white, light_bg]),
-    ('PADDING', (0,0), (-1,-1), 4),
-]))
+t_cushion.setStyle(TableStyle(clean_table_style))
 
-sec4_left = [cushion_desc, Spacer(1, 4), t_cushion]
+sec4_left = [cushion_desc, Spacer(1, 6), t_cushion]
 sec4_grid = Table([[sec4_left, cushion_img_cell]], colWidths=[330, 210])
 sec4_grid.setStyle(TableStyle([
     ('VALIGN', (0,0), (-1,-1), 'TOP'),
@@ -472,14 +446,9 @@ crate_specs = [
     [Paragraph("PP Flute Totes", table_cell_bold), Paragraph("2.0mm to 10.0mm Conductive ESD Polypropylene Sheets (50+ Trips)", table_cell_style)]
 ]
 t_crate = Table(crate_specs, colWidths=[110, 210])
-t_crate.setStyle(TableStyle([
-    ('BACKGROUND', (0,0), (-1,0), navy_dark),
-    ('GRID', (0,0), (-1,-1), 0.5, colors.HexColor("#cbd5e1")),
-    ('ROWBACKGROUNDS', (0,1), (-1,-1), [colors.white, light_bg]),
-    ('PADDING', (0,0), (-1,-1), 4),
-]))
+t_crate.setStyle(TableStyle(clean_table_style))
 
-sec5_left = [crate_desc, Spacer(1, 4), t_crate]
+sec5_left = [crate_desc, Spacer(1, 6), t_crate]
 sec5_grid = Table([[sec5_left, crate_img_cell]], colWidths=[330, 210])
 sec5_grid.setStyle(TableStyle([
     ('VALIGN', (0,0), (-1,-1), 'TOP'),
@@ -487,8 +456,7 @@ sec5_grid.setStyle(TableStyle([
 ]))
 story.append(sec5_grid)
 
-story.append(Spacer(1, 14))
-story.append(HRFlowable(width="100%", thickness=0.5, color=colors.HexColor("#e2e8f0"), spaceBefore=0, spaceAfter=10))
+story.append(Spacer(1, 18))
 
 story.append(Paragraph("6. Industrial Epoxy Resin Flooring & ESD Coatings", h1_style))
 
@@ -513,14 +481,9 @@ floor_specs = [
     [Paragraph("Turnkey Office Fitout", table_cell_bold), Paragraph("Glass Partitions, Executive Cabins, Acoustic Ceiling & Racks", table_cell_style)]
 ]
 t_floor = Table(floor_specs, colWidths=[110, 210])
-t_floor.setStyle(TableStyle([
-    ('BACKGROUND', (0,0), (-1,0), navy_dark),
-    ('GRID', (0,0), (-1,-1), 0.5, colors.HexColor("#cbd5e1")),
-    ('ROWBACKGROUNDS', (0,1), (-1,-1), [colors.white, light_bg]),
-    ('PADDING', (0,0), (-1,-1), 4),
-]))
+t_floor.setStyle(TableStyle(clean_table_style))
 
-sec6_left = [floor_desc, Spacer(1, 4), t_floor]
+sec6_left = [floor_desc, Spacer(1, 6), t_floor]
 sec6_grid = Table([[sec6_left, floor_img_cell]], colWidths=[330, 210])
 sec6_grid.setStyle(TableStyle([
     ('VALIGN', (0,0), (-1,-1), 'TOP'),
@@ -554,14 +517,9 @@ order_info = [
     [Paragraph("Logistics Network", table_cell_bold), Paragraph("Dedicated fleet serving Bengaluru, Chennai, Hyderabad, Hosur, Pune & NCR", table_cell_style)]
 ]
 t_order = Table(order_info, colWidths=[110, 210])
-t_order.setStyle(TableStyle([
-    ('BACKGROUND', (0,0), (-1,0), navy_dark),
-    ('GRID', (0,0), (-1,-1), 0.5, colors.HexColor("#cbd5e1")),
-    ('ROWBACKGROUNDS', (0,1), (-1,-1), [colors.white, light_bg]),
-    ('PADDING', (0,0), (-1,-1), 4),
-]))
+t_order.setStyle(TableStyle(clean_table_style))
 
-sec7_left = [qc_desc, Spacer(1, 4), t_order]
+sec7_left = [qc_desc, Spacer(1, 6), t_order]
 sec7_grid = Table([[sec7_left, qc_img_cell]], colWidths=[330, 210])
 sec7_grid.setStyle(TableStyle([
     ('VALIGN', (0,0), (-1,-1), 'TOP'),
@@ -569,7 +527,7 @@ sec7_grid.setStyle(TableStyle([
 ]))
 story.append(sec7_grid)
 
-story.append(Spacer(1, 14))
+story.append(Spacer(1, 16))
 
 # QR Code Banner Block
 if os.path.exists(qr_path):
@@ -585,13 +543,13 @@ if os.path.exists(qr_path):
     t_qr = Table(qr_cell, colWidths=[130, 410])
     t_qr.setStyle(TableStyle([
         ('BACKGROUND', (0,0), (-1,-1), light_bg),
-        ('GRID', (0,0), (-1,-1), 1, colors.HexColor("#cbd5e1")),
+        ('BOX', (0,0), (-1,-1), 0.5, colors.HexColor("#cbd5e1")),
         ('PADDING', (0,0), (-1,-1), 10),
         ('VALIGN', (0,0), (-1,-1), 'MIDDLE'),
     ]))
     story.append(t_qr)
 
-story.append(Spacer(1, 14))
+story.append(Spacer(1, 16))
 
 # Final Contact Box
 story.append(Paragraph("FOR IMMEDIATE BULK QUOTATIONS & PLANT SURVEYS", h2_style))
@@ -603,11 +561,11 @@ contact_box = [
 t_contact = Table(contact_box, colWidths=[540])
 t_contact.setStyle(TableStyle([
     ('BACKGROUND', (0,0), (-1,-1), colors.HexColor("#fff4ee")),
-    ('BOX', (0,0), (-1,-1), 1.5, orange_brand),
+    ('BOX', (0,0), (-1,-1), 1, orange_brand),
     ('PADDING', (0,0), (-1,-1), 10),
 ]))
 story.append(t_contact)
 
 # Build PDF
 doc.build(story, canvasmaker=NumberedCanvas)
-print(f"Masterpiece PDF Catalogue with real product images & figure captions generated successfully at: {pdf_path}")
+print(f"Masterpiece PDF Catalogue regenerated cleanly without harsh table grid lines: {pdf_path}")
