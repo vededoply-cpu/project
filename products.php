@@ -45,8 +45,10 @@ include 'header.php';
     
     <!-- 1. CORRUGATED BOXES -->
     <div class="product-filter-card" data-category="boxes" id="corrugated" style="margin-bottom:60px;">
-      <div class="product-detail-card">
-        <div class="product-gallery-box">
+      <div class="product-detail-card" style="display:flex; flex-direction:column; gap:24px;">
+  <!-- BALANCED 2-COLUMN HEADER (NO BLANK SPACE) -->
+  <div style="display:grid; grid-template-columns:1fr 1.25fr; gap:32px; align-items:start;">
+    <div class="product-gallery-box">
           <div class="product-main-view">
             <img src="images/ai_corrugated_boxes.jpg" alt="Corrugated Box Sizes Lineup" class="main-gallery-img" id="mainGalleryImg1_php" onerror="handleImgError(this)" />
             <span class="gallery-zoom-badge">
@@ -66,15 +68,25 @@ include 'header.php';
             </div>
           </div>
         </div>
-
-        <div>
-          <span class="sub-title">Shipping &amp; Storage</span>
+    <div>
+      <span class="sub-title">Shipping &amp; Storage</span>
           <h2 style="font-family:var(--font-heading); font-weight:800; font-size:1.75rem; color:var(--text-primary); margin-bottom:10px;">Corrugated Shipping &amp; Die-Cut Boxes</h2>
           <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.65; margin-bottom:18px;">
             Manufactured from high-grade virgin kraft liners and high-burst test fluted corrugated boards. Designed for maximum vertical stacking strength, high humidity resistance, and heavy export transit payloads.
           </p>
-
-          <div class="specs-table-wrap">
+      <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+            <a href="contact.php?prod=corrugated" class="btn btn-orange">
+              Request Box Quote
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://wa.me/919044129477?text=Hi,%20I%20need%20a%20quotation%20for%20corrugated%20boxes." target="_blank" rel="noopener" class="btn btn-outline">
+              WhatsApp Technical Spec Sheet
+            </a>
+          </div>
+    </div>
+  </div>
+  <!-- FULL-WIDTH SPECS & BREAKDOWN -->
+  <div class="specs-table-wrap">
             <table class="specs-table">
               <thead>
                 <tr>
@@ -113,39 +125,57 @@ include 'header.php';
             </table>
           </div>
 
-          <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
-            <a href="contact.php?prod=corrugated" class="btn btn-orange">
-              Request Box Quote
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="https://wa.me/919044129477?text=Hi,%20I%20need%20a%20quotation%20for%20corrugated%20boxes." target="_blank" rel="noopener" class="btn btn-outline">
-              WhatsApp Technical Spec Sheet
-            </a>
-          </div>
+          
         </div>
       </div>
-    </div>
-
-    <!-- 2. COURIER & POLY BAGS -->
+</div>
+<!-- 2. COURIER & POLY BAGS -->
     <div class="product-filter-card" data-category="courier" id="courier" style="margin-bottom:60px;">
-      <div class="product-detail-card">
-        <div>
-          <div style="border-radius:var(--radius-sm); overflow:hidden; margin-bottom:16px; border:1px solid var(--border-subtle);">
-            <img src="images/ai_courier_mailers.jpg" alt="Tamper Proof Poly Courier Bags" style="width:100%; height:260px; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
+      <div class="product-detail-card" style="display:flex; flex-direction:column; gap:24px;">
+  <!-- BALANCED 2-COLUMN HEADER (NO BLANK SPACE) -->
+  <div style="display:grid; grid-template-columns:1fr 1.25fr; gap:32px; align-items:start;">
+    <div class="product-gallery-box">
+            <div class="product-main-view" style="height:260px;">
+              <img src="images/ai_courier_mailers.jpg" alt="Poly Courier Mailers" class="main-gallery-img" id="mainGalleryImg_courier" onerror="handleImgError(this)" />
+              <span class="gallery-zoom-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                HD Preview
+              </span>
+            </div>
+            <div class="product-thumbs-row">
+              <div class="thumb-item active" onclick="switchGalleryImg(this, 'mainGalleryImg_courier')">
+                <img src="images/ai_courier_mailers.jpg" alt="Poly Courier Mailers" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_courier')">
+                <img src="images/courier_bag_mailers.jpg" alt="Tamper-Proof Flyers" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_courier')">
+                <img src="images/courier_bag.jpg" alt="POD Airway Jacket Bags" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_courier')">
+                <img src="images/security_seal.jpg" alt="Hot-Melt Adhesive Seal" onerror="handleImgError(this)" />
+              </div>
+            </div>
           </div>
-          <div style="border-radius:var(--radius-xs); overflow:hidden; border:1px solid var(--border-subtle);">
-            <img src="images/hero_composite.jpg" alt="Packaging Bags and Flyers" style="height:120px; width:100%; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
-          </div>
-        </div>
-
-        <div>
-          <span class="sub-title">E-Commerce Dispatch</span>
+    <div>
+      <span class="sub-title">E-Commerce Dispatch</span>
           <h2 style="font-family:var(--font-heading); font-weight:800; font-size:1.75rem; color:var(--text-primary); margin-bottom:10px;">Tamper-Evident Courier Flyer Bags</h2>
           <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.65; margin-bottom:18px;">
             Co-extruded multilayer LDPE bags engineered for e-commerce, banking, and courier logistics. Features an aggressive permanent hot-melt adhesive strip that destroys the lip upon any unauthorized opening attempt.
           </p>
-
-          <div class="specs-table-wrap">
+      <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+            <a href="contact.php?prod=courier" class="btn btn-orange">
+              Request Courier Bag Quote
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://wa.me/919044129477?text=Hi,%20I%20need%20pricing%20for%20courier%20flyer%20bags." target="_blank" rel="noopener" class="btn btn-outline">
+              WhatsApp Technical Spec Sheet
+            </a>
+          </div>
+    </div>
+  </div>
+  <!-- FULL-WIDTH SPECS & BREAKDOWN -->
+  <div class="specs-table-wrap">
             <table class="specs-table">
               <thead>
                 <tr>
@@ -184,36 +214,49 @@ include 'header.php';
             </table>
           </div>
 
-          <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
-            <a href="contact.php?prod=courier" class="btn btn-orange">
-              Request Courier Bag Quote
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="https://wa.me/919044129477?text=Hi,%20I%20need%20pricing%20for%20courier%20flyer%20bags." target="_blank" rel="noopener" class="btn btn-outline">
-              WhatsApp Technical Spec Sheet
-            </a>
-          </div>
+          
         </div>
       </div>
-    </div>
-
-    <!-- 3. PACKAGING TAPES -->
+</div>
+<!-- 3. PACKAGING TAPES -->
     <div class="product-filter-card" data-category="tapes" id="tapes" style="margin-bottom:60px;">
-      <div class="product-detail-card">
-        <div>
-          <div style="border-radius:var(--radius-sm); overflow:hidden; border:1px solid var(--border-subtle);">
-            <img src="images/tape_rolls.jpg" alt="Industrial BOPP Adhesive Tapes" style="width:100%; height:260px; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
+      <div class="product-detail-card" style="display:flex; flex-direction:column; gap:24px;">
+  <!-- BALANCED 2-COLUMN HEADER (NO BLANK SPACE) -->
+  <div style="display:grid; grid-template-columns:1fr 1.25fr; gap:32px; align-items:start;">
+    <div class="product-gallery-box">
+            <div class="product-main-view" style="height:260px;">
+              <img src="images/tape_rolls.jpg" alt="BOPP Packaging Tapes" class="main-gallery-img" id="mainGalleryImg_tapes" onerror="handleImgError(this)" />
+              <span class="gallery-zoom-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                HD Preview
+              </span>
+            </div>
+            <div class="product-thumbs-row">
+              <div class="thumb-item active" onclick="switchGalleryImg(this, 'mainGalleryImg_tapes')">
+                <img src="images/tape_rolls.jpg" alt="BOPP Packaging Tapes" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_tapes')">
+                <img src="images/bopp_tape_rolls.jpg" alt="Transparent & Brown Rolls" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_tapes')">
+                <img src="images/bopp_tape_factory.jpg" alt="PSA Coating & Slitting" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_tapes')">
+                <img src="images/hero_composite.jpg" alt="Custom Printed Tapes" onerror="handleImgError(this)" />
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div>
-          <span class="sub-title">Carton Sealing</span>
+    <div>
+      <span class="sub-title">Carton Sealing</span>
           <h2 style="font-family:var(--font-heading); font-weight:800; font-size:1.75rem; color:var(--text-primary); margin-bottom:10px;">BOPP Packaging &amp; Custom Printed Tapes</h2>
           <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.65; margin-bottom:18px;">
             Biaxially Oriented Polypropylene (BOPP) film coated with emulsion acrylic or hot-melt adhesive. Delivers instant shear grab and high tensile holding strength on virgin and recycled kraft cartons.
           </p>
-
-          <div class="specs-table-wrap">
+      
+    </div>
+  </div>
+  <!-- FULL-WIDTH SPECS & BREAKDOWN -->
+  <div class="specs-table-wrap">
             <table class="specs-table">
               <thead>
                 <tr>
@@ -250,9 +293,8 @@ include 'header.php';
                 </tr>
               </tbody>
             </table>
-          </div>
-
-          <!-- BOPP TAPE MANUFACTURING PROCESS BREAKDOWN -->
+</div>
+<!-- BOPP TAPE MANUFACTURING PROCESS BREAKDOWN -->
           <div style="background:var(--bg-subtle, #f8fafc); border:1px solid var(--border-subtle, #e2e8f0); border-radius:var(--radius-sm); padding:18px; margin:20px 0;">
             <h4 style="font-family:var(--font-heading); font-weight:700; font-size:1.05rem; color:var(--text-primary); margin-bottom:10px; display:flex; align-items:center; gap:8px;">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;color:var(--blue-brand);"><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/><circle cx="12" cy="12" r="3"/></svg>
@@ -344,24 +386,48 @@ include 'header.php';
 
     <!-- 5. STRETCH FILM & SECURITY SEALS -->
     <div class="product-filter-card" data-category="stretch" id="stretch" style="margin-bottom:60px;">
-      <div class="product-detail-card">
-        <div>
-          <div style="border-radius:var(--radius-sm); overflow:hidden; margin-bottom:16px; border:1px solid var(--border-subtle);">
-            <img src="images/stretch_film.jpg" alt="Industrial Stretch Wrap Rolls" style="width:100%; height:260px; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
+      <div class="product-detail-card" style="display:flex; flex-direction:column; gap:24px;">
+  <!-- BALANCED 2-COLUMN HEADER (NO BLANK SPACE) -->
+  <div style="display:grid; grid-template-columns:1fr 1.25fr; gap:32px; align-items:start;">
+    <div class="product-gallery-box">
+            <div class="product-main-view" style="height:260px;">
+              <img src="images/stretch_film.jpg" alt="LLDPE Pallet Stretch Film" class="main-gallery-img" id="mainGalleryImg_stretch" onerror="handleImgError(this)" />
+              <span class="gallery-zoom-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                HD Preview
+              </span>
+            </div>
+            <div class="product-thumbs-row">
+              <div class="thumb-item active" onclick="switchGalleryImg(this, 'mainGalleryImg_stretch')">
+                <img src="images/stretch_film.jpg" alt="LLDPE Pallet Stretch Film" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_stretch')">
+                <img src="images/stretch_film_pallet.jpg" alt="Machine & Hand Wrap" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_stretch')">
+                <img src="images/security_seal.jpg" alt="Pallet Security Binding" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_stretch')">
+                <img src="images/tape_rolls.jpg" alt="Bundling Accessories" onerror="handleImgError(this)" />
+              </div>
+            </div>
           </div>
-          <div style="border-radius:var(--radius-xs); overflow:hidden; border:1px solid var(--border-subtle);">
-            <img src="images/security_seal.jpg" alt="Tamper Evident Security Seals" style="height:120px; width:100%; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
-          </div>
-        </div>
-
-        <div>
-          <span class="sub-title">Unitization &amp; Vault Security</span>
+    <div>
+      <span class="sub-title">Unitization &amp; Vault Security</span>
           <h2 style="font-family:var(--font-heading); font-weight:800; font-size:1.75rem; color:var(--text-primary); margin-bottom:10px;">Industrial Stretch Film &amp; Security Seals</h2>
           <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.65; margin-bottom:18px;">
             High-tensile cast LLDPE stretch film for automated pallet wrappers, paired with sequential laser-numbered security seals, padlocks, and gold loan tamper envelopes.
           </p>
-
-          <div class="specs-table-wrap">
+      <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+            <a href="contact.php?prod=stretch" class="btn btn-orange">
+              Request Stretch &amp; Seals Quote
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+    </div>
+  </div>
+  <!-- FULL-WIDTH SPECS & BREAKDOWN -->
+  <div class="specs-table-wrap">
             <table class="specs-table">
               <thead>
                 <tr>
@@ -395,20 +461,16 @@ include 'header.php';
             </table>
           </div>
 
-          <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
-            <a href="contact.php?prod=stretch" class="btn btn-orange">
-              Request Stretch &amp; Seals Quote
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </div>
+          
         </div>
       </div>
-    </div>
-
-    <!-- 6. HEAVY DUTY STORAGE RACKS & WAREHOUSE RACKING -->
+</div>
+<!-- 6. HEAVY DUTY STORAGE RACKS & WAREHOUSE RACKING -->
     <div class="product-filter-card" data-category="racks" id="racks" style="margin-bottom:60px;">
-      <div class="product-detail-card">
-        <div class="product-gallery-box">
+      <div class="product-detail-card" style="display:flex; flex-direction:column; gap:24px;">
+  <!-- BALANCED 2-COLUMN HEADER (NO BLANK SPACE) -->
+  <div style="display:grid; grid-template-columns:1fr 1.25fr; gap:32px; align-items:start;">
+    <div class="product-gallery-box">
           <div class="product-main-view">
             <img src="images/heavy_duty_rack.jpg" alt="Heavy Duty Industrial Pallet Rack" class="main-gallery-img" id="mainGalleryImgRacks_php" onerror="handleImgError(this)" />
             <span class="gallery-zoom-badge">
@@ -425,15 +487,22 @@ include 'header.php';
             </div>
           </div>
         </div>
-
-        <div>
-          <span class="sub-title">Warehouse Infrastructure</span>
+    <div>
+      <span class="sub-title">Warehouse Infrastructure</span>
           <h2 style="font-family:var(--font-heading); font-weight:800; font-size:1.75rem; color:var(--text-primary); margin-bottom:10px;">Heavy Duty Storage Racks &amp; Pallet Racking Systems</h2>
           <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.65; margin-bottom:18px;">
             High-grade cold-rolled structural steel heavy-duty racking systems engineered for distribution centers, manufacturing warehouses, and cold storage logistics.
           </p>
-
-          <div class="specs-table-wrap">
+      <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+            <a href="contact.php?prod=racks" class="btn btn-orange">
+              Request Racking Quotation
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+    </div>
+  </div>
+  <!-- FULL-WIDTH SPECS & BREAKDOWN -->
+  <div class="specs-table-wrap">
             <table class="specs-table">
               <thead>
                 <tr>
@@ -462,37 +531,57 @@ include 'header.php';
             </table>
           </div>
 
-          <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
-            <a href="contact.php?prod=racks" class="btn btn-orange">
-              Request Racking Quotation
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </div>
+          
         </div>
       </div>
-    </div>
-
-    <!-- 7A. ISPM-15 CERTIFIED WOODEN PALLETS -->
+</div>
+<!-- 7A. ISPM-15 CERTIFIED WOODEN PALLETS -->
     <div class="product-filter-card" data-category="pallets" id="wooden-pallets" style="margin-bottom:60px;">
-      <div class="product-detail-card">
-        <div>
-          <div style="border-radius:var(--radius-sm); overflow:hidden; margin-bottom:16px; border:1px solid var(--border-subtle); background:#ffffff;">
-            <img src="images/wooden_pallets.jpg" alt="ISPM-15 Heat Treated Wooden Pallet" style="width:100%; height:260px; object-fit:cover; background:#ffffff;" class="zoomable-img" onerror="handleImgError(this)" />
+      <div class="product-detail-card" style="display:flex; flex-direction:column; gap:24px;">
+  <!-- BALANCED 2-COLUMN HEADER (NO BLANK SPACE) -->
+  <div style="display:grid; grid-template-columns:1fr 1.25fr; gap:32px; align-items:start;">
+    <div class="product-gallery-box">
+            <div class="product-main-view" style="height:260px;">
+              <img src="images/plastic_pallets.jpg" alt="HDPE Plastic Pallets" class="main-gallery-img" id="mainGalleryImg_wooden-pallets" onerror="handleImgError(this)" />
+              <span class="gallery-zoom-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                HD Preview
+              </span>
+            </div>
+            <div class="product-thumbs-row">
+              <div class="thumb-item active" onclick="switchGalleryImg(this, 'mainGalleryImg_wooden-pallets')">
+                <img src="images/plastic_pallets.jpg" alt="HDPE Plastic Pallets" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_wooden-pallets')">
+                <img src="images/plastic_crate.jpg" alt="Stackable Industrial Crates" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_wooden-pallets')">
+                <img src="images/product_photo_4.jpg" alt="Rackable Heavy Pallets" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_wooden-pallets')">
+                <img src="images/product_photo_7.jpg" alt="Hygiene Cleanroom Skids" onerror="handleImgError(this)" />
+              </div>
+            </div>
           </div>
-          <div class="grid-2col-thumbs">
-            <img src="images/about_factory.jpg" alt="Wooden Pallet Kiln Drying Facility" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:cover; background:#ffffff; border:1px solid var(--border-subtle);" class="zoomable-img" onerror="handleImgError(this)" />
-            <img src="images/modern_machinery.jpg" alt="Automated Pallet Nailing Line" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:cover; background:#ffffff; border:1px solid var(--border-subtle);" class="zoomable-img" onerror="handleImgError(this)" />
-          </div>
-        </div>
-
-        <div>
-          <span class="sub-title">Export &amp; Heavy Warehouse Logistics</span>
+    <div>
+      <span class="sub-title">Export &amp; Heavy Warehouse Logistics</span>
           <h2 style="font-family:var(--font-heading); font-weight:800; font-size:1.75rem; color:var(--text-primary); margin-bottom:10px;">ISPM-15 Certified Wooden Pallets (2-Way &amp; 4-Way Entry)</h2>
           <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.65; margin-bottom:18px;">
             Manufactured from high-grade seasoned Pinewood, Rubberwood, and Jungle Hardwood. Kiln-dried and heat treated to ISPM-15 international phytosanitary standards for global export shipping and heavy industrial storage.
           </p>
-
-          <div class="specs-table-wrap">
+      <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+            <a href="contact.php?prod=wooden-pallets" class="btn btn-orange">
+              Request Wooden Pallets Quote
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://wa.me/919044129477?text=Hi,%20I%20need%20a%20quotation%20for%20ISPM-15%20Wooden%20Pallets." target="_blank" rel="noopener" class="btn btn-outline">
+              WhatsApp Spec Sheet
+            </a>
+          </div>
+    </div>
+  </div>
+  <!-- FULL-WIDTH SPECS & BREAKDOWN -->
+  <div class="specs-table-wrap">
             <table class="specs-table">
               <thead>
                 <tr>
@@ -531,44 +620,49 @@ include 'header.php';
             </table>
           </div>
 
-          <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
-            <a href="contact.php?prod=wooden-pallets" class="btn btn-orange">
-              Request Wooden Pallets Quote
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="https://wa.me/919044129477?text=Hi,%20I%20need%20a%20quotation%20for%20ISPM-15%20Wooden%20Pallets." target="_blank" rel="noopener" class="btn btn-outline">
-              WhatsApp Spec Sheet
-            </a>
-          </div>
+          
         </div>
       </div>
-    </div>
-
-    <!-- 7B. INDUSTRIAL PLASTIC PALLETS, CRATES & PP BOXES -->
+</div>
+<!-- 7B. INDUSTRIAL PLASTIC PALLETS, CRATES & PP BOXES -->
     <div class="product-filter-card" data-category="pallets" id="pallets" style="margin-bottom:60px;">
-      <div class="product-detail-card">
-        <div>
-          <div style="border-radius:var(--radius-sm); overflow:hidden; margin-bottom:16px; border:1px solid var(--border-subtle);">
-            <img src="images/plastic_pallets.jpg" alt="Heavy Duty Plastic Pallets Stack" style="width:100%; height:260px; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
+      <div class="product-detail-card" style="display:flex; flex-direction:column; gap:24px;">
+  <!-- BALANCED 2-COLUMN HEADER (NO BLANK SPACE) -->
+  <div style="display:grid; grid-template-columns:1fr 1.25fr; gap:32px; align-items:start;">
+    <div class="product-gallery-box">
+            <div class="product-main-view" style="height:260px;">
+              <img src="images/plastic_pallets.jpg" alt="HDPE Plastic Pallets" class="main-gallery-img" id="mainGalleryImg_pallets" onerror="handleImgError(this)" />
+              <span class="gallery-zoom-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                HD Preview
+              </span>
+            </div>
+            <div class="product-thumbs-row">
+              <div class="thumb-item active" onclick="switchGalleryImg(this, 'mainGalleryImg_pallets')">
+                <img src="images/plastic_pallets.jpg" alt="HDPE Plastic Pallets" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_pallets')">
+                <img src="images/plastic_crate.jpg" alt="Stackable Industrial Crates" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_pallets')">
+                <img src="images/product_photo_4.jpg" alt="Rackable Heavy Pallets" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_pallets')">
+                <img src="images/product_photo_7.jpg" alt="Hygiene Cleanroom Skids" onerror="handleImgError(this)" />
+              </div>
+            </div>
           </div>
-          <div class="grid-2col-thumbs">
-            <img src="images/wooden_pallets.jpg" alt="ISPM-15 Heat Treated Wooden Pallet" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:cover; background:#ffffff; border:1px solid var(--border-subtle);" onerror="handleImgError(this)" />
-            <img src="images/plastic_crate.jpg" alt="Plastic Storage Crate with Lid" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:cover; background:#ffffff; border:1px solid var(--border-subtle);" onerror="handleImgError(this)" />
-          </div>
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px;">
-            <img src="images/pp_box.jpg" alt="PP Flute Corrugated Reusable Boxes" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:cover; background:#ffffff; border:1px solid var(--border-subtle);" onerror="handleImgError(this)" />
-            <img src="images/pallet_truck.jpg" alt="Hydraulic Pallet Jack Truck" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:cover; background:#ffffff; border:1px solid var(--border-subtle);" onerror="handleImgError(this)" />
-          </div>
-        </div>
-
-        <div>
-          <span class="sub-title">Material Handling &amp; Returnable Packaging</span>
+    <div>
+      <span class="sub-title">Material Handling &amp; Returnable Packaging</span>
           <h2 style="font-family:var(--font-heading); font-weight:800; font-size:1.75rem; color:var(--text-primary); margin-bottom:10px;">Wooden &amp; Plastic Pallets, Industrial Crates &amp; PP Boxes</h2>
           <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.65; margin-bottom:18px;">
             Comprehensive range of ISPM-15 certified wooden pallets, heavy-duty HDPE plastic pallets, stackable plastic storage crates, and water-proof Polypropylene (PP) flute corrugated boxes for automotive and retail logistics.
           </p>
-
-          <div class="specs-table-wrap">
+      
+    </div>
+  </div>
+  <!-- FULL-WIDTH SPECS & BREAKDOWN -->
+  <div class="specs-table-wrap">
             <table class="specs-table">
               <thead>
                 <tr>
@@ -600,9 +694,8 @@ include 'header.php';
                 </tr>
               </tbody>
             </table>
-          </div>
-
-          <!-- WOODEN PALLETS & PP BOX MANUFACTURING DEEP DIVE -->
+</div>
+<!-- WOODEN PALLETS & PP BOX MANUFACTURING DEEP DIVE -->
           <div style="background:var(--bg-subtle, #f8fafc); border:1px solid var(--border-subtle, #e2e8f0); border-radius:var(--radius-sm); padding:18px; margin:20px 0;">
             <h4 style="font-family:var(--font-heading); font-weight:700; font-size:1.05rem; color:var(--text-primary); margin-bottom:10px; display:flex; align-items:center; gap:8px;">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;color:var(--orange);"><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/><circle cx="12" cy="12" r="3"/></svg>
@@ -841,8 +934,10 @@ include 'header.php';
 
     <!-- 8. INDUSTRIAL EPOXY FLOORING -->
     <div class="product-filter-card" data-category="flooring" id="flooring" style="margin-bottom:40px;">
-      <div class="product-detail-card">
-        <div class="product-gallery-box">
+      <div class="product-detail-card" style="display:flex; flex-direction:column; gap:24px;">
+  <!-- BALANCED 2-COLUMN HEADER (NO BLANK SPACE) -->
+  <div style="display:grid; grid-template-columns:1fr 1.25fr; gap:32px; align-items:start;">
+    <div class="product-gallery-box">
           <div class="product-main-view" style="height:320px;">
             <img src="images/epoxy_flooring_warehouse.jpg" alt="Industrial Epoxy Flooring &amp; 5S Line Marking Solutions" class="main-gallery-img" id="mainGalleryImgEpoxy_php" onerror="handleImgError(this)" />
             <span class="gallery-zoom-badge">
@@ -866,15 +961,25 @@ include 'header.php';
             </div>
           </div>
         </div>
-
-        <div>
-          <span class="sub-title">Facility Infrastructure</span>
+    <div>
+      <span class="sub-title">Facility Infrastructure</span>
           <h2 style="font-family:var(--font-heading); font-weight:800; font-size:1.75rem; color:var(--text-primary); margin-bottom:10px;">Industrial Epoxy Flooring &amp; Safety Line Marking</h2>
           <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.65; margin-bottom:18px;">
             Designed to seamlessly complement your heavy-duty Storage Racks and stackable Plastic Crates, our industrial epoxy flooring and 5S safety line marking solutions create a clean, safe, and organized warehouse environment. Built to withstand high-impact forklift movement, oil spills, and chemical exposure.
           </p>
-
-          <div class="specs-table-wrap">
+      <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-top:16px;">
+            <a href="contact.php?prod=flooring" class="btn btn-orange">
+              Request Epoxy Flooring Quote
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://wa.me/919044129477?text=Hi,%20I%20need%20pricing%20for%20industrial%20epoxy%20flooring." target="_blank" rel="noopener" class="btn btn-outline">
+              WhatsApp Technical Spec Sheet
+            </a>
+          </div>
+    </div>
+  </div>
+  <!-- FULL-WIDTH SPECS & BREAKDOWN -->
+  <div class="specs-table-wrap">
             <table class="specs-table">
               <thead>
                 <tr>
@@ -908,20 +1013,11 @@ include 'header.php';
             </table>
           </div>
 
-          <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-top:16px;">
-            <a href="contact.php?prod=flooring" class="btn btn-orange">
-              Request Epoxy Flooring Quote
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="https://wa.me/919044129477?text=Hi,%20I%20need%20pricing%20for%20industrial%20epoxy%20flooring." target="_blank" rel="noopener" class="btn btn-outline">
-              WhatsApp Technical Spec Sheet
-            </a>
-          </div>
+          
         </div>
       </div>
-    </div>
-
-    <!-- 9. TURNKEY INDUSTRIAL PROJECTS & COMMERCIAL OFFICE WORKS (STANDALONE FULL WIDTH SHOWCASE) -->
+</div>
+<!-- 9. TURNKEY INDUSTRIAL PROJECTS & COMMERCIAL OFFICE WORKS (STANDALONE FULL WIDTH SHOWCASE) -->
     <div class="product-filter-card" data-category="turnkey" id="turnkey" style="margin-bottom:60px;">
       <div style="background:var(--white); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:32px; box-shadow:var(--shadow-xs);">
         <div style="margin-bottom:20px;">
@@ -988,21 +1084,51 @@ include 'header.php';
 
     <!-- 10. AIR BUBBLE WRAP & CUSHIONING ROLLS -->
     <div class="product-filter-card" data-category="eco" id="bubble" style="margin-bottom:60px;">
-      <div class="product-detail-card">
-        <div>
-          <div style="border-radius:var(--radius-sm); overflow:hidden; margin-bottom:16px; border:1px solid var(--border-subtle);">
-            <img src="images/bubble_wrap.jpg" alt="Air Bubble Wrap Packaging Rolls" style="width:100%; height:260px; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
+      <div class="product-detail-card" style="display:flex; flex-direction:column; gap:24px;">
+  <!-- BALANCED 2-COLUMN HEADER (NO BLANK SPACE) -->
+  <div style="display:grid; grid-template-columns:1fr 1.25fr; gap:32px; align-items:start;">
+    <div class="product-gallery-box">
+            <div class="product-main-view" style="height:260px;">
+              <img src="images/bubble_wrap.jpg" alt="Air Bubble Wrap Rolls" class="main-gallery-img" id="mainGalleryImg_bubble" onerror="handleImgError(this)" />
+              <span class="gallery-zoom-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                HD Preview
+              </span>
+            </div>
+            <div class="product-thumbs-row">
+              <div class="thumb-item active" onclick="switchGalleryImg(this, 'mainGalleryImg_bubble')">
+                <img src="images/bubble_wrap.jpg" alt="Air Bubble Wrap Rolls" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_bubble')">
+                <img src="images/bubble_wrap_roll.jpg" alt="Shock Absorption Film" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_bubble')">
+                <img src="images/bubble_wrap_warehouse.jpg" alt="Warehouse Cushioning" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_bubble')">
+                <img src="images/kraft_paper_bags.jpg" alt="Eco Cushioning Pouches" onerror="handleImgError(this)" />
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div>
-          <span class="sub-title">Transit Cushioning</span>
+    <div>
+      <span class="sub-title">Transit Cushioning</span>
           <h2 style="font-family:var(--font-heading); font-weight:800; font-size:1.75rem; color:var(--text-primary); margin-bottom:10px;">Air Bubble Wrap &amp; Shock Absorption Rolls</h2>
           <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.65; margin-bottom:18px;">
             High-grade poly air bubble rolls engineered to absorb shock, vibration, and impact during courier transit. Available in standard clear, anti-static ESD pink, and heavy-duty 3-layer laminated options.
           </p>
-
-          <div class="specs-table-wrap">
+      <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+            <a href="contact.php?prod=bubble" class="btn btn-orange">
+              Request Bubble Wrap Quote
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://wa.me/919044129477?text=Hi,%20I%20need%20pricing%20for%20air%20bubble%20wrap%20rolls." target="_blank" rel="noopener" class="btn btn-outline">
+              WhatsApp Technical Spec Sheet
+            </a>
+          </div>
+    </div>
+  </div>
+  <!-- FULL-WIDTH SPECS & BREAKDOWN -->
+  <div class="specs-table-wrap">
             <table class="specs-table">
               <thead>
                 <tr>
@@ -1036,36 +1162,57 @@ include 'header.php';
             </table>
           </div>
 
-          <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
-            <a href="contact.php?prod=bubble" class="btn btn-orange">
-              Request Bubble Wrap Quote
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="https://wa.me/919044129477?text=Hi,%20I%20need%20pricing%20for%20air%20bubble%20wrap%20rolls." target="_blank" rel="noopener" class="btn btn-outline">
-              WhatsApp Technical Spec Sheet
-            </a>
-          </div>
+          
         </div>
       </div>
-    </div>
-
-    <!-- 11. PP STRAPPING ROLLS & PET HEAVY STRAPS -->
+</div>
+<!-- 11. PP STRAPPING ROLLS & PET HEAVY STRAPS -->
     <div class="product-filter-card" data-category="stretch" id="strapping" style="margin-bottom:60px;">
-      <div class="product-detail-card">
-        <div>
-          <div style="border-radius:var(--radius-sm); overflow:hidden; margin-bottom:16px; border:1px solid var(--border-subtle);">
-            <img src="images/hero_composite.jpg" alt="PP Strapping Rolls and PET Green Straps" style="width:100%; height:260px; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
+      <div class="product-detail-card" style="display:flex; flex-direction:column; gap:24px;">
+  <!-- BALANCED 2-COLUMN HEADER (NO BLANK SPACE) -->
+  <div style="display:grid; grid-template-columns:1fr 1.25fr; gap:32px; align-items:start;">
+    <div class="product-gallery-box">
+            <div class="product-main-view" style="height:260px;">
+              <img src="images/hero_composite.jpg" alt="PP & PET Strapping Rolls" class="main-gallery-img" id="mainGalleryImg_strapping" onerror="handleImgError(this)" />
+              <span class="gallery-zoom-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                HD Preview
+              </span>
+            </div>
+            <div class="product-thumbs-row">
+              <div class="thumb-item active" onclick="switchGalleryImg(this, 'mainGalleryImg_strapping')">
+                <img src="images/hero_composite.jpg" alt="PP & PET Strapping Rolls" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_strapping')">
+                <img src="images/stretch_film.jpg" alt="Pallet Load Stabilization" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_strapping')">
+                <img src="images/tape_rolls.jpg" alt="Bundle Fastening Tapes" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_strapping')">
+                <img src="images/security_seal.jpg" alt="High-Tensile Steel Banding Alt" onerror="handleImgError(this)" />
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div>
-          <span class="sub-title">Pallet &amp; Bundle Binding</span>
+    <div>
+      <span class="sub-title">Pallet &amp; Bundle Binding</span>
           <h2 style="font-family:var(--font-heading); font-weight:800; font-size:1.75rem; color:var(--text-primary); margin-bottom:10px;">PP Strapping Rolls &amp; High-Tensile PET Straps</h2>
           <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.65; margin-bottom:18px;">
             Engineered polypropylene (PP) strapping rolls for heat-sealing automatic machines and green embossed PET polyester straps for heavy pallet load stabilization, replacing steel banding.
           </p>
-
-          <div class="specs-table-wrap">
+      <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+            <a href="contact.php?prod=strapping" class="btn btn-orange">
+              Request Strapping Quote
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://wa.me/919044129477?text=Hi,%20I%20need%20pricing%20for%20PP%20and%20PET%20strapping%20rolls." target="_blank" rel="noopener" class="btn btn-outline">
+              WhatsApp Technical Spec Sheet
+            </a>
+          </div>
+    </div>
+  </div>
+  <!-- FULL-WIDTH SPECS & BREAKDOWN -->
+  <div class="specs-table-wrap">
             <table class="specs-table">
               <thead>
                 <tr>
@@ -1094,36 +1241,57 @@ include 'header.php';
             </table>
           </div>
 
-          <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
-            <a href="contact.php?prod=strapping" class="btn btn-orange">
-              Request Strapping Quote
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="https://wa.me/919044129477?text=Hi,%20I%20need%20pricing%20for%20PP%20and%20PET%20strapping%20rolls." target="_blank" rel="noopener" class="btn btn-outline">
-              WhatsApp Technical Spec Sheet
-            </a>
-          </div>
+          
         </div>
       </div>
-    </div>
-
-    <!-- 12. HYDRAULIC HAND PALLET TRUCKS -->
+</div>
+<!-- 12. HYDRAULIC HAND PALLET TRUCKS -->
     <div class="product-filter-card" data-category="pallets" id="pallettruck" style="margin-bottom:60px;">
-      <div class="product-detail-card">
-        <div>
-          <div style="border-radius:var(--radius-sm); overflow:hidden; margin-bottom:16px; border:1px solid var(--border-subtle);">
-            <img src="images/pallet_truck.jpg" alt="Industrial Hydraulic Hand Pallet Truck" style="width:100%; height:260px; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
+      <div class="product-detail-card" style="display:flex; flex-direction:column; gap:24px;">
+  <!-- BALANCED 2-COLUMN HEADER (NO BLANK SPACE) -->
+  <div style="display:grid; grid-template-columns:1fr 1.25fr; gap:32px; align-items:start;">
+    <div class="product-gallery-box">
+            <div class="product-main-view" style="height:260px;">
+              <img src="images/pallet_truck.jpg" alt="Hydraulic Hand Pallet Truck" class="main-gallery-img" id="mainGalleryImg_pallettruck" onerror="handleImgError(this)" />
+              <span class="gallery-zoom-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                HD Preview
+              </span>
+            </div>
+            <div class="product-thumbs-row">
+              <div class="thumb-item active" onclick="switchGalleryImg(this, 'mainGalleryImg_pallettruck')">
+                <img src="images/pallet_truck.jpg" alt="Hydraulic Hand Pallet Truck" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_pallettruck')">
+                <img src="images/pallet_truck_warehouse.jpg" alt="Warehouse Dock Handling" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_pallettruck')">
+                <img src="images/heavy_duty_rack.jpg" alt="Industrial Storage Integration" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_pallettruck')">
+                <img src="images/plastic_pallets.jpg" alt="HDPE Pallet Handling" onerror="handleImgError(this)" />
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div>
-          <span class="sub-title">Dock &amp; Warehouse Equipment</span>
+    <div>
+      <span class="sub-title">Dock &amp; Warehouse Equipment</span>
           <h2 style="font-family:var(--font-heading); font-weight:800; font-size:1.75rem; color:var(--text-primary); margin-bottom:10px;">Hydraulic Hand Pallet Trucks &amp; Manual Stackers</h2>
           <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.65; margin-bottom:18px;">
             Heavy-duty 2.5Ton and 3.0Ton hydraulic hand pallet jacks featuring leak-proof integrated hydraulic pump valves, heavy C-channel steel forks, and smooth tandem Polyurethane/Nylon rollers.
           </p>
-
-          <div class="specs-table-wrap">
+      <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+            <a href="contact.php?prod=pallettruck" class="btn btn-orange">
+              Request Pallet Truck Quote
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://wa.me/919044129477?text=Hi,%20I%20need%20pricing%20for%20hydraulic%20hand%20pallet%20trucks." target="_blank" rel="noopener" class="btn btn-outline">
+              WhatsApp Technical Spec Sheet
+            </a>
+          </div>
+    </div>
+  </div>
+  <!-- FULL-WIDTH SPECS & BREAKDOWN -->
+  <div class="specs-table-wrap">
             <table class="specs-table">
               <thead>
                 <tr>
@@ -1152,15 +1320,7 @@ include 'header.php';
             </table>
           </div>
 
-          <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
-            <a href="contact.php?prod=pallettruck" class="btn btn-orange">
-              Request Pallet Truck Quote
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="https://wa.me/919044129477?text=Hi,%20I%20need%20pricing%20for%20hydraulic%20hand%20pallet%20trucks." target="_blank" rel="noopener" class="btn btn-outline">
-              WhatsApp Technical Spec Sheet
-            </a>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -1169,3 +1329,4 @@ include 'header.php';
 </section>
 
 <?php include 'footer.php'; ?>
+</div>
