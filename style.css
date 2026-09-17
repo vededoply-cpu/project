@@ -191,6 +191,20 @@
    background: var(--orange-brand);
  }
 
+ .sub-title.center,
+ .text-center .sub-title {
+   justify-content: center;
+ }
+
+ .sub-title.center::after,
+ .text-center .sub-title::after {
+   content: '';
+   display: inline-block;
+   width: 16px;
+   height: 2px;
+   background: var(--orange-brand);
+ }
+
  .section-title {
    font-family: var(--font-heading);
    font-size: clamp(1.85rem, 3.2vw, 2.5rem);
@@ -1778,11 +1792,12 @@
 }
 
 /* ===== PRODUCT GALLERY & MULTI-IMAGE ARRANGEMENT ===== */
+/* ===== PRODUCT GALLERY & MULTI-IMAGE ARRANGEMENT ===== */
 .product-gallery-box {
-  background: #f8fafc;
+  background: #ffffff;
   border: 1px solid #e2e8f0;
-  border-radius: var(--radius-md);
-  padding: 16px;
+  border-radius: 12px;
+  padding: 14px;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   display: flex;
@@ -1791,17 +1806,17 @@
 }
 
 .product-gallery-box:hover {
-  border-color: var(--blue-brand);
+  border-color: rgba(235, 94, 40, 0.4);
   box-shadow: 0 8px 30px rgba(7, 30, 61, 0.08);
 }
 
 .product-main-view {
   position: relative;
   width: 100%;
-  height: 250px;
-  border-radius: var(--radius-sm);
+  height: 260px;
+  border-radius: 8px;
   overflow: hidden;
-  background: #f1f5f9;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1849,8 +1864,9 @@
 .main-gallery-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  padding: 0;
+  object-fit: contain !important;
+  padding: 8px;
+  background: #ffffff;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
 }
 
@@ -1884,27 +1900,33 @@
 }
 
 .product-thumbs-row {
-  display: flex;
-  gap: 10px;
-  align-items: center;
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 10px !important;
+  align-items: center !important;
+  width: 100% !important;
 }
 
 .thumb-item {
-  flex: 1;
-  height: 70px;
-  border-radius: var(--radius-xs);
-  overflow: hidden;
-  background: #ffffff;
-  border: 2px solid #e2e8f0;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  position: relative;
+  flex: 1 !important;
+  height: 72px !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  background: #ffffff !important;
+  border: 1.5px solid #e2e8f0 !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  position: relative !important;
+  padding: 3px !important;
+  box-sizing: border-box !important;
 }
 
 .thumb-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  background: #ffffff !important;
+  border-radius: 5px !important;
   display: block;
 }
 
@@ -3043,15 +3065,18 @@
 }
 
 /* ── FULL PRODUCT IMAGE CONTAINMENT & CLICKABLE ZOOM ── */
-.product-thumb,
-.product-card,
-.product-detail-card img,
-.product-thumb img,
-.grid-2col-thumbs img,
+.product-main-view,
+.main-gallery-img,
+.gallery-zoom-badge,
 .infra-thumb img,
 .hero-slide img,
 .auto-slide img {
-  cursor: zoom-in;
+  cursor: pointer;
+}
+
+.thumb-item,
+.thumb-item img {
+  cursor: pointer !important;
 }
 
 .product-thumb img,
@@ -3060,6 +3085,7 @@
   object-fit: contain !important;
   background-color: #ffffff;
 }
+
 
 /* ── INTERACTIVE IMAGE LIGHTBOX MODAL ── */
 .lightbox-modal {
@@ -3256,16 +3282,16 @@ img, video, iframe, canvas, table {
   }
 
   /* Product Buttons on Mobile */
-  .product-detail-card div[style*="display:flex"],
-  .product-detail-card div[style*="display: flex"] {
+  .product-detail-card div:has(> .btn),
+  .product-detail-card .btn-group {
     flex-direction: column !important;
     align-items: stretch !important;
     gap: 10px !important;
     width: 100% !important;
   }
 
-  .product-detail-card div[style*="display:flex"] .btn,
-  .product-detail-card div[style*="display: flex"] .btn {
+  .product-detail-card div:has(> .btn) .btn,
+  .product-detail-card .btn-group .btn {
     width: 100% !important;
     justify-content: center !important;
     text-align: center !important;

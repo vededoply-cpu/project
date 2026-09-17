@@ -8,22 +8,30 @@ window.handleImgError = function (img) {
 
 window.switchGalleryImg = function (thumbEl, targetImgId) {
   if (!thumbEl || !targetImgId) return;
+  
+  const thumbItem = thumbEl.closest('.thumb-item') || thumbEl;
   const targetImg = document.getElementById(targetImgId);
-  const newSrc = thumbEl.getAttribute('data-fullsrc') || (thumbEl.querySelector('img') ? thumbEl.querySelector('img').src : null);
+  if (!targetImg || !thumbItem) return;
+
+  const childImg = thumbItem.querySelector('img') || thumbItem;
+  const newSrc = thumbItem.getAttribute('data-fullsrc') || childImg.src;
+  const newAlt = childImg.alt || targetImg.alt;
+
   if (targetImg && newSrc) {
-    targetImg.style.opacity = '0.4';
+    targetImg.style.opacity = '0.3';
     setTimeout(function () {
       targetImg.src = newSrc;
+      if (newAlt) targetImg.alt = newAlt;
       targetImg.style.opacity = '1';
     }, 120);
 
     // Active state toggling
-    const parentContainer = thumbEl.closest('.product-thumbs-row') || thumbEl.parentElement;
+    const parentContainer = thumbItem.closest('.product-thumbs-row') || thumbItem.parentElement;
     if (parentContainer) {
       parentContainer.querySelectorAll('.thumb-item').forEach(function (el) {
         el.classList.remove('active');
       });
-      thumbEl.classList.add('active');
+      thumbItem.classList.add('active');
     }
   }
 };
@@ -569,11 +577,31 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Attach click listener to all product photos, sliders, and gallery thumbs
+  // ── 2-STEP GALLERY LIGHTBOX CLICK HANDLER ──
+  // Step 1: Click thumbnail -> switchGalleryImg updates main image src & active state (no lightbox).
+  // Step 2: Click main preview image / HD badge -> opens full-screen lightbox modal.
   document.addEventListener('click', function (e) {
     const target = e.target;
-    if (target && target.tagName === 'IMG') {
-      const isZoomable = target.closest('.product-thumb, .product-card, .auto-slide, .hero-slide, .infra-thumb, .product-detail-card, .product-filter-card, .grid-2col-thumbs');
+    if (!target) return;
+
+    // STEP 1: Ignore all thumbnail clicks for lightbox (handled by switchGalleryImg)
+    if (target.closest('.thumb-item, .product-thumbs-row, .grid-2col-thumbs, .product-gallery-grid, .product-gallery-grid-item')) {
+      return;
+    }
+
+    // STEP 2: Only main preview box, main image, or HD Preview badge click opens full-screen lightbox
+    const mainViewContainer = target.closest('.product-main-view');
+    if (mainViewContainer) {
+      const mainImg = mainViewContainer.querySelector('img');
+      if (mainImg) {
+        openLightbox(mainImg.src, mainImg.alt || mainImg.title);
+        return;
+      }
+    }
+
+    // Fallback for standalone zoomable images (e.g. hero slider, excluding product gallery)
+    if (target.tagName === 'IMG' && !target.closest('.product-gallery-box')) {
+      const isZoomable = target.closest('.hero-slide, .infra-thumb');
       if (isZoomable || target.classList.contains('zoomable-img')) {
         openLightbox(target.src, target.alt || target.title);
       }
@@ -582,26 +610,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-/* Global Product Gallery Thumbnail Switcher */
-function switchGalleryImg(thumbEl, targetMainId) {
-  const mainImg = document.getElementById(targetMainId);
-  if (!mainImg) return;
-  const newSrc = thumbEl.querySelector('img').src;
-  const newAlt = thumbEl.querySelector('img').alt;
-
-  // Smooth fade transition
-  mainImg.style.opacity = '0.3';
-  setTimeout(() => {
-    mainImg.src = newSrc;
-    if (newAlt) mainImg.alt = newAlt;
-    mainImg.style.opacity = '1';
-  }, 120);
-
-  // Update active state indicator
-  const parentRow = thumbEl.parentElement;
-  if (parentRow) {
-    const siblings = parentRow.querySelectorAll('.thumb-item');
-    siblings.forEach(s => s.classList.remove('active'));
-    thumbEl.classList.add('active');
-  }
-}

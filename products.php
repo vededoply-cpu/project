@@ -328,17 +328,27 @@ include 'header.php';
 
     <!-- 4. ECO & CUSHIONING -->
     <div class="product-filter-card" data-category="eco" id="ecopack" style="margin-bottom:60px;">
-      <div class="product-detail-card">
-        <div>
-          <div style="border-radius:var(--radius-sm); overflow:hidden; margin-bottom:16px; border:1px solid var(--border-subtle);">
-            <img src="images/ai_kraft_mailers.jpg" alt="Eco Friendly Kraft Paper Bags and Honeycomb Paper" style="width:100%; height:260px; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
+      <div class="product-detail-card" style="display:flex; flex-direction:column; gap:24px;">
+        <div style="display:grid; grid-template-columns:1fr 1.25fr; gap:32px; align-items:start;">
+          <div class="product-gallery-box">
+            <div class="product-main-view" style="height:260px;">
+              <img src="images/ai_kraft_mailers.jpg" alt="Eco Friendly Kraft Paper Bags and Honeycomb Paper" class="main-gallery-img" id="mainGalleryImg_ecopack_php" onerror="handleImgError(this)" />
+              <span class="gallery-zoom-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                HD Preview
+              </span>
+            </div>
+            <div class="product-thumbs-row">
+              <div class="thumb-item active" onclick="switchGalleryImg(this, 'mainGalleryImg_ecopack_php')">
+                <img src="images/ai_kraft_mailers.jpg" alt="Eco Kraft Paper Bags" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_ecopack_php')">
+                <img src="images/bubble_wrap.jpg" alt="Air Bubble Protective Wrap Roll" onerror="handleImgError(this)" />
+              </div>
+            </div>
           </div>
-          <div style="border-radius:var(--radius-xs); overflow:hidden; border:1px solid var(--border-subtle);">
-            <img src="images/bubble_wrap.jpg" alt="Air Bubble Protective Wrap Roll" style="height:120px; width:100%; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
-          </div>
-        </div>
+          <div>
 
-        <div>
           <span class="sub-title">Sustainable Packaging</span>
           <h2 style="font-family:var(--font-heading); font-weight:800; font-size:1.75rem; color:var(--text-primary); margin-bottom:10px;">Kraft Paper Bags &amp; Honeycomb Cushioning</h2>
           <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.65; margin-bottom:18px;">
@@ -733,16 +743,28 @@ include 'header.php';
 
     <!-- 7C. INDUSTRIAL PLASTIC STORAGE CRATES WITH LIDS -->
     <div class="product-filter-card" data-category="pallets" id="plastic-crates" style="margin-bottom:60px;">
-      <div class="product-detail-card">
-        <div>
-          <div style="border-radius:var(--radius-sm); overflow:hidden; margin-bottom:16px; border:1px solid var(--border-subtle);">
-            <img src="images/product_photo_4.jpg" alt="Plastic Storage Crate with Lid" style="width:100%; height:260px; object-fit:cover; background:#ffffff;" onerror="handleImgError(this)" />
+      <div class="product-detail-card" style="display:flex; flex-direction:column; gap:24px;">
+        <div style="display:grid; grid-template-columns:1fr 1.25fr; gap:32px; align-items:start;">
+          <div class="product-gallery-box">
+            <div class="product-main-view" style="height:260px;">
+              <img src="images/product_photo_4.jpg" alt="Plastic Storage Crate with Lid" class="main-gallery-img" id="mainGalleryImg_plastic-crates" onerror="handleImgError(this)" />
+              <span class="gallery-zoom-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                HD Preview
+              </span>
+            </div>
+            <div class="product-thumbs-row">
+              <div class="thumb-item active" onclick="switchGalleryImg(this, 'mainGalleryImg_plastic-crates')">
+                <img src="images/product_photo_4.jpg" alt="Plastic Storage Crate with Lid" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_plastic-crates')">
+                <img src="images/plastic_crate.jpg" alt="HDPE Stackable Storage Crate" onerror="handleImgError(this)" />
+              </div>
+              <div class="thumb-item" onclick="switchGalleryImg(this, 'mainGalleryImg_plastic-crates')">
+                <img src="images/product_photo_4.jpg" alt="Heavy-Duty Locking Crate" onerror="handleImgError(this)" />
+              </div>
+            </div>
           </div>
-          <div class="grid-2col-thumbs">
-            <img src="images/plastic_crate.jpg" alt="HDPE Stackable Plastic Storage Crate with Lid" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:cover; background:#ffffff; border:1px solid var(--border-subtle);" onerror="handleImgError(this)" />
-            <img src="images/plastic_pallets.jpg" alt="Industrial HDPE Plastic Pallets" style="border-radius:var(--radius-xs); height:120px; width:100%; object-fit:cover; background:#ffffff; border:1px solid var(--border-subtle);" onerror="handleImgError(this)" />
-          </div>
-        </div>
 
         <div>
           <span class="sub-title">Material Handling &amp; Industrial Storage</span>
@@ -1019,17 +1041,20 @@ include 'header.php';
 </div>
 <!-- 9. TURNKEY INDUSTRIAL PROJECTS & COMMERCIAL OFFICE WORKS (STANDALONE FULL WIDTH SHOWCASE) -->
     <div class="product-filter-card" data-category="turnkey" id="turnkey" style="margin-bottom:60px;">
-      <div style="background:var(--white); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:32px; box-shadow:var(--shadow-xs);">
-        <div style="margin-bottom:20px;">
-          <span class="sub-title">Infrastructure &amp; Fitout Execution</span>
-          <h2 style="font-family:var(--font-heading); font-weight:800; font-size:1.75rem; color:var(--text-primary); margin-bottom:8px; display:flex; align-items:center; gap:10px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:24px;height:24px;color:var(--orange-brand);"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0h9m-9 0V9a2 2 0 012-2h2a2 2 0 012 2v12m-6 0h6"/></svg>
+      <div style="background:var(--white); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:36px 32px; box-shadow:var(--shadow-sm);">
+        <div style="text-align:center; max-width:820px; margin:0 auto 32px auto; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+          <div style="width:52px; height:52px; border-radius:50%; background:#FFF4EE; border:1px solid rgba(235,94,40,0.22); color:var(--orange-brand); display:flex; align-items:center; justify-content:center; margin-bottom:14px; box-shadow:0 4px 12px rgba(235,94,40,0.12);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="width:26px; height:26px;"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0h9m-9 0V9a2 2 0 012-2h2a2 2 0 012 2v12m-6 0h6"/></svg>
+          </div>
+          <span class="sub-title center" style="margin-bottom:12px;">Infrastructure &amp; Fitout Execution</span>
+          <h2 style="font-family:var(--font-heading); font-weight:800; font-size:clamp(1.75rem, 2.8vw, 2.25rem); color:var(--text-primary); margin-bottom:12px; text-align:center; line-height:1.25; letter-spacing:-0.015em;">
             Turnkey Industrial Projects &amp; Commercial Office Works
           </h2>
-          <p style="font-size:0.95rem; color:var(--text-secondary); line-height:1.6;">
+          <p style="font-size:1.02rem; color:var(--text-secondary); line-height:1.7; text-align:center; max-width:700px; margin:0 auto;">
             End-to-end site execution from heavy industrial plant flooring &amp; racking setup to high-end corporate office interior fitouts across Bengaluru.
           </p>
         </div>
+
 
         <!-- Visual Project Showcase Gallery Grid (4 High-Res Images) -->
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:16px; margin-bottom:24px;">
@@ -1070,7 +1095,7 @@ include 'header.php';
           </div>
         </div>
 
-        <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+        <div style="display:flex; gap:12px; align-items:center; justify-content:center; flex-wrap:wrap;">
           <a href="contact.php?prod=turnkey" class="btn btn-orange">
             Request Turnkey &amp; Site Survey Quote
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -1079,6 +1104,7 @@ include 'header.php';
             WhatsApp Turnkey Consultation
           </a>
         </div>
+
       </div>
     </div>
 
