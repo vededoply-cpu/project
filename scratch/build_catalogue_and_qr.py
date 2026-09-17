@@ -22,7 +22,7 @@ qr = qrcode.QRCode(
     box_size=10,
     border=2,
 )
-catalogue_url = "https://miraiflexipack.in/pdf/Mirai_Packaging_Master_Catalogue.pdf"
+catalogue_url = "https://raw.githubusercontent.com/vededoply-cpu/project/main/pdf/Mirai_Packaging_Master_Catalogue.pdf"
 qr.add_data(catalogue_url)
 qr.make(fit=True)
 
@@ -578,7 +578,7 @@ if os.path.exists(qr_path):
         [qr_flowable, Paragraph(
             "<b>SCAN QR CODE TO DOWNLOAD DIGITAL MASTER CATALOGUE</b><br/><br/>"
             "Scan this QR code with any smartphone camera to open and save our complete 2026 Master Specification Catalogue PDF on your device.<br/><br/>"
-            "<b>Direct Web Link:</b> https://miraiflexipack.in/pdf/Mirai_Packaging_Master_Catalogue.pdf",
+            "<b>Direct Web Link:</b> https://raw.githubusercontent.com/vededoply-cpu/project/main/pdf/Mirai_Packaging_Master_Catalogue.pdf",
             body_style
         )]
     ]
