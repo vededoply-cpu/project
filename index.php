@@ -198,7 +198,7 @@ include 'header.php';
             View Product Catalog
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
-          <a href="#calculator" class="btn btn-outline-white btn-lg">
+          <a href="#calculator" class="btn btn-primary btn-lg" style="background:#0f2942; border-color:#0f2942; color:#ffffff; font-weight:800;">
             Box Dimension Estimator
           </a>
         </div>
