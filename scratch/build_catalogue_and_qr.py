@@ -238,7 +238,7 @@ story.append(Spacer(1, 14))
 
 # Corporate Metadata Table
 meta_data = [
-    [Paragraph("Corporate Head Office", table_cell_bold), Paragraph("1091, 8th Cross Road, Jai Marathi Nagar, Bengaluru – 560086", table_cell_style)],
+    [Paragraph("Corporate Head Office", table_cell_bold), Paragraph("Unit 101, 139/88, Oxford Towers, HAL Old Airport Road, Bengaluru – 560008", table_cell_style)],
     [Paragraph("GSTIN Registration", table_cell_bold), Paragraph("29AAUFM9272M1Z2", table_cell_style)],
     [Paragraph("Official Contact Phone", table_cell_bold), Paragraph("+91-9044129477 / Sales Engineering Desk", table_cell_style)],
     [Paragraph("Email Enquiries", table_cell_bold), Paragraph("sales@miraiflexipack.in", table_cell_style)],
@@ -555,7 +555,7 @@ story.append(Spacer(1, 16))
 story.append(Paragraph("FOR IMMEDIATE BULK QUOTATIONS & PLANT SURVEYS", h2_style))
 contact_box = [
     [Paragraph("<b>Mirai Packaging LLP Sales Office & Works:</b><br/>"
-               "1091, 8th Cross Road, Jai Marathi Nagar, Bengaluru – 560086, Karnataka, India<br/>"
+               "Unit 101, 139/88, Oxford Towers, HAL Old Airport Road, Bengaluru – 560008, Karnataka, India<br/>"
                "<b>Phone:</b> +91-9044129477 | <b>Email:</b> sales@miraiflexipack.in | <b>Web:</b> www.miraiflexipack.in", body_style)]
 ]
 t_contact = Table(contact_box, colWidths=[540])

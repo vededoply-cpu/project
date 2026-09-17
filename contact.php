@@ -43,7 +43,7 @@ include 'header.php';
               </div>
               <div>
                 <h4 style="font-family:var(--font-heading);font-weight:700;font-size:1.05rem;color:var(--text-dark);">Registered Office &amp; Warehouse</h4>
-                <p style="font-size:0.92rem;color:var(--text-body);line-height:1.6;">1091, 8th Cross Road, Jai Marathi Nagar, Bengaluru Urban, Karnataka, 560086, India</p>
+                <p style="font-size:0.92rem;color:var(--text-body);line-height:1.6;">Unit 101, 139/88, Oxford Towers, HAL Old Airport Road, Bengaluru, Karnataka, 560008, India</p>
               </div>
             </div>
 
