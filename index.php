@@ -21,7 +21,7 @@ include 'header.php';
         
         <!-- Slide 1 -->
         <div class="auto-slide active">
-          <img src="images/corrugated_lineup.jpg" alt="Corrugated Box Manufacturing Lineup"/>
+          <img src="images/corrugated_lineup_wide.jpg" alt="Corrugated Box Manufacturing Lineup"/>
           <div class="slide-caption">
             <span class="slide-badge">Corrugation Plant</span>
             <h3>Custom 3-Ply &amp; 5-Ply Master Cartons</h3>
@@ -31,7 +31,7 @@ include 'header.php';
 
         <!-- Slide 2 -->
         <div class="auto-slide">
-          <img src="images/wooden_pallets.jpg" alt="ISPM-15 Heat Treated Wooden Pallets"/>
+          <img src="images/wooden_pallets_wide.jpg" alt="ISPM-15 Heat Treated Wooden Pallets"/>
           <div class="slide-caption">
             <span class="slide-badge">Export Packaging</span>
             <h3>ISPM-15 Heat-Treated Wooden Pallets</h3>
@@ -41,7 +41,7 @@ include 'header.php';
 
         <!-- Slide 3 -->
         <div class="auto-slide">
-          <img src="images/pp_box.jpg" alt="PP Corrugated Flute Boxes"/>
+          <img src="images/pp_box_wide.jpg" alt="PP Corrugated Flute Boxes"/>
           <div class="slide-caption">
             <span class="slide-badge">Returnable Packaging</span>
             <h3>PP Flute Corrugated Reusable Boxes</h3>
@@ -51,7 +51,7 @@ include 'header.php';
 
         <!-- Slide 4 -->
         <div class="auto-slide">
-          <img src="images/modern_machinery.jpg" alt="High-Speed Corrugation Machine Plant"/>
+          <img src="images/modern_machinery_wide.jpg" alt="High-Speed Corrugation Machine Plant"/>
           <div class="slide-caption">
             <span class="slide-badge">Machinery &amp; Automation</span>
             <h3>High-Speed Corrugator &amp; Converting Plant</h3>
@@ -61,7 +61,7 @@ include 'header.php';
 
         <!-- Slide 5 -->
         <div class="auto-slide">
-          <img src="images/courier_bag.jpg" alt="Co-Ex Tamper-Evident Courier Bags"/>
+          <img src="images/courier_bag_wide.jpg" alt="Co-Ex Tamper-Evident Courier Bags"/>
           <div class="slide-caption">
             <span class="slide-badge">E-Commerce Mailers</span>
             <h3>Co-Ex Tamper-Evident Courier Flyer Bags</h3>
@@ -71,7 +71,7 @@ include 'header.php';
 
         <!-- Slide 6 -->
         <div class="auto-slide">
-          <img src="images/tape_rolls.jpg" alt="Industrial BOPP Packaging Tapes"/>
+          <img src="images/tape_rolls_wide.jpg" alt="Industrial BOPP Packaging Tapes"/>
           <div class="slide-caption">
             <span class="slide-badge">Tapes &amp; Adhesives</span>
             <h3>High-Tack Industrial BOPP Packaging Tapes</h3>
@@ -81,7 +81,7 @@ include 'header.php';
 
         <!-- Slide 7 -->
         <div class="auto-slide">
-          <img src="images/quality_testing.jpg" alt="Quality Testing Laboratory"/>
+          <img src="images/quality_testing_wide.jpg" alt="Quality Testing Laboratory"/>
           <div class="slide-caption">
             <span class="slide-badge">Quality Assurance</span>
             <h3>In-House Box Compression (BCT) &amp; Bursting QC Lab</h3>
@@ -91,7 +91,7 @@ include 'header.php';
 
         <!-- Slide 8 -->
         <div class="auto-slide">
-          <img src="images/stretch_film.jpg" alt="Cast LLDPE Stretch Film Rolls"/>
+          <img src="images/stretch_film_wide.jpg" alt="Cast LLDPE Stretch Film Rolls"/>
           <div class="slide-caption">
             <span class="slide-badge">Pallet Securing</span>
             <h3>Cast LLDPE Machine &amp; Manual Stretch Film</h3>
@@ -101,7 +101,7 @@ include 'header.php';
 
         <!-- Slide 9 -->
         <div class="auto-slide">
-          <img src="images/bubble_wrap.jpg" alt="Air Bubble Protective Rolls"/>
+          <img src="images/bubble_wrap_wide.jpg" alt="Air Bubble Protective Rolls"/>
           <div class="slide-caption">
             <span class="slide-badge">Cushioning Protection</span>
             <h3>Multi-Layer Shock Absorption Air Bubble Rolls</h3>
@@ -111,7 +111,7 @@ include 'header.php';
 
         <!-- Slide 10 -->
         <div class="auto-slide">
-          <img src="images/about_factory.jpg" alt="Mirai Packaging Distribution Warehouse"/>
+          <img src="images/about_factory_wide.jpg" alt="Mirai Packaging Distribution Warehouse"/>
           <div class="slide-caption">
             <span class="slide-badge">Warehousing &amp; Fleet</span>
             <h3>Bengaluru Central Distribution &amp; Logistics Hub</h3>
@@ -121,7 +121,7 @@ include 'header.php';
 
         <!-- Slide 11 -->
         <div class="auto-slide">
-          <img src="images/plastic_pallets.jpg" alt="Heavy-Duty Plastic Pallets"/>
+          <img src="images/plastic_pallets_wide.jpg" alt="Heavy-Duty Plastic Pallets"/>
           <div class="slide-caption">
             <span class="slide-badge">Material Handling</span>
             <h3>Heavy-Duty HDPE Racking Plastic Pallets</h3>
@@ -131,7 +131,7 @@ include 'header.php';
 
         <!-- Slide 12 -->
         <div class="auto-slide">
-          <img src="images/security_seal.jpg" alt="High Security Seals"/>
+          <img src="images/security_seal_wide.jpg" alt="High Security Seals"/>
           <div class="slide-caption">
             <span class="slide-badge">Logistics Security</span>
             <h3>Laser-Numbered Security Pull-Tight Seals</h3>
@@ -938,7 +938,7 @@ include 'header.php';
 
     <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:24px;">
       <div style="background:var(--white); border-radius:var(--radius-md); border:1px solid var(--border-subtle); overflow:hidden; box-shadow:var(--shadow-xs);">
-        <img src="images/epoxy_flooring.jpg" alt="Industrial Epoxy Flooring" style="width:100%; height:200px; object-fit:cover;"/>
+        <img src="images/epoxy_flooring.jpg" alt="Industrial Epoxy Flooring" style="width:100%; height:200px; object-fit:contain; background:#f8fafc;"/>
         <div style="padding:22px;">
           <h3 style="font-family:var(--font-heading); font-weight:700; font-size:1.15rem; margin-bottom:8px; color:var(--text-primary);">Industrial Epoxy &amp; ESD Flooring</h3>
           <p style="font-size:0.88rem; color:var(--text-secondary); line-height:1.6; margin-bottom:14px;">
@@ -949,7 +949,7 @@ include 'header.php';
       </div>
 
       <div style="background:var(--white); border-radius:var(--radius-md); border:1px solid var(--border-subtle); overflow:hidden; box-shadow:var(--shadow-xs);">
-        <img src="images/heavy_duty_rack.jpg" alt="Turnkey Warehouse Racking Setup" style="width:100%; height:200px; object-fit:cover;"/>
+        <img src="images/heavy_duty_rack.jpg" alt="Turnkey Warehouse Racking Setup" style="width:100%; height:200px; object-fit:contain; background:#f8fafc;"/>
         <div style="padding:22px;">
           <h3 style="font-family:var(--font-heading); font-weight:700; font-size:1.15rem; margin-bottom:8px; color:var(--text-primary);">Turnkey Warehouse Setup</h3>
           <p style="font-size:0.88rem; color:var(--text-secondary); line-height:1.6; margin-bottom:14px;">
@@ -960,7 +960,7 @@ include 'header.php';
       </div>
 
       <div style="background:var(--white); border-radius:var(--radius-md); border:1px solid var(--border-subtle); overflow:hidden; box-shadow:var(--shadow-xs);">
-        <img src="images/office_fitout.jpg" alt="Turnkey Commercial Office Fitout" style="width:100%; height:200px; object-fit:cover;"/>
+        <img src="images/office_fitout.jpg" alt="Turnkey Commercial Office Fitout" style="width:100%; height:200px; object-fit:contain; background:#f8fafc;"/>
         <div style="padding:22px;">
           <h3 style="font-family:var(--font-heading); font-weight:700; font-size:1.15rem; margin-bottom:8px; color:var(--text-primary);">Commercial Office Fitouts</h3>
           <p style="font-size:0.88rem; color:var(--text-secondary); line-height:1.6; margin-bottom:14px;">
