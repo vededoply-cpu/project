@@ -3256,12 +3256,13 @@ img, video, iframe, canvas, table {
   color: var(--text-secondary);
 }
 
-/* ===== CLIENT LOGO GRID SECTION ===== */
+/* ===== CLIENT LOGO TICKER SECTION ===== */
 .clients-logo-section {
   background: #f8fafc;
   padding: 50px 0 60px 0;
   border-bottom: 1px solid var(--border-subtle);
   position: relative;
+  overflow: hidden;
 }
 
 .clients-logo-header {
@@ -3288,50 +3289,74 @@ img, video, iframe, canvas, table {
   margin: 0 auto;
 }
 
-.clients-logo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  align-items: center;
+.brand-ticker-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  padding: 12px 0;
 }
 
-.client-logo-box {
+.brand-ticker-track {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  width: max-content;
+  animation: logoTickerSlide 32s linear infinite;
+  will-change: transform;
+}
+
+.brand-ticker-container:hover .brand-ticker-track {
+  animation-play-state: paused;
+}
+
+@keyframes logoTickerSlide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.brand-ticker-card {
+  flex-shrink: 0;
+  width: 220px;
+  height: 96px;
   background: #ffffff;
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  height: 100px;
-  padding: 16px 20px;
+  padding: 14px 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
-  transition: all var(--transition);
-  position: relative;
-  overflow: hidden;
+  transition: all var(--transition-fast);
 }
 
-.client-logo-box:hover {
+.brand-ticker-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.09);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
   border-color: var(--blue-brand);
 }
 
-.client-logo-img {
-  max-height: 56px;
-  max-width: 160px;
+.brand-ticker-img {
+  max-height: 52px;
+  max-width: 155px;
   width: auto;
   height: auto;
   object-fit: contain;
   transition: transform var(--transition-fast);
 }
 
-.client-logo-box:hover .client-logo-img {
+.brand-ticker-card:hover .brand-ticker-img {
   transform: scale(1.05);
 }
 
-.client-logo-fallback {
+.brand-ticker-fallback {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3339,15 +3364,15 @@ img, video, iframe, canvas, table {
   gap: 2px;
 }
 
-.client-logo-name {
+.brand-ticker-name {
   font-family: var(--font-heading);
   font-weight: 800;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   color: var(--navy-dark);
   line-height: 1.2;
 }
 
-.client-logo-sub {
+.brand-ticker-sub {
   font-size: 0.72rem;
   color: var(--blue-brand);
   text-transform: uppercase;
@@ -3356,16 +3381,16 @@ img, video, iframe, canvas, table {
 }
 
 @media (max-width: 768px) {
-  .clients-logo-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 12px !important;
+  .brand-ticker-card {
+    width: 175px !important;
+    height: 80px !important;
+    padding: 10px 12px !important;
   }
-  .client-logo-box {
-    height: 84px !important;
-    padding: 12px 14px !important;
+  .brand-ticker-img {
+    max-height: 42px !important;
+    max-width: 125px !important;
   }
-  .client-logo-img {
-    max-height: 44px !important;
-    max-width: 130px !important;
+  .brand-ticker-name {
+    font-size: 0.95rem !important;
   }
 }
