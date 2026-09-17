@@ -3085,8 +3085,15 @@
 .gallery-zoom-badge,
 .infra-thumb img,
 .hero-slide img,
-.auto-slide img {
-  cursor: pointer;
+.auto-slide img,
+.product-thumb,
+.product-thumb img,
+div[style*="minmax"] img,
+div[style*="height:170px"],
+div[style*="height:170px"] img,
+div[style*="height:130px"],
+div[style*="height:130px"] img {
+  cursor: pointer !important;
 }
 
 .thumb-item,

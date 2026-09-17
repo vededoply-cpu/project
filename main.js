@@ -577,19 +577,19 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // ── 2-STEP GALLERY LIGHTBOX CLICK HANDLER ──
-  // Step 1: Click thumbnail -> switchGalleryImg updates main image src & active state (no lightbox).
-  // Step 2: Click main preview image / HD badge -> opens full-screen lightbox modal.
+  // ── UNIVERSAL IMAGE LIGHTBOX CLICK HANDLER ──
+  // Step 1: Click thumbnail item -> switchGalleryImg updates main image preview (no lightbox).
+  // Step 2: Click main preview box, product thumb, or ANY showcase image item -> opens full-screen lightbox modal.
   document.addEventListener('click', function (e) {
     const target = e.target;
     if (!target) return;
 
-    // STEP 1: Ignore all thumbnail clicks for lightbox (handled by switchGalleryImg)
-    if (target.closest('.thumb-item, .product-thumbs-row, .grid-2col-thumbs, .product-gallery-grid, .product-gallery-grid-item')) {
+    // STEP 1: Ignore gallery thumbnails (handled by switchGalleryImg to update main preview)
+    if (target.closest('.thumb-item, .product-thumbs-row, .grid-2col-thumbs')) {
       return;
     }
 
-    // STEP 2: Only main preview box, main image, or HD Preview badge click opens full-screen lightbox
+    // STEP 2: Main product preview box (.product-main-view)
     const mainViewContainer = target.closest('.product-main-view');
     if (mainViewContainer) {
       const mainImg = mainViewContainer.querySelector('img');
@@ -599,12 +599,19 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
 
-    // Fallback for standalone zoomable images (e.g. hero slider, excluding product gallery)
-    if (target.tagName === 'IMG' && !target.closest('.product-gallery-box')) {
-      const isZoomable = target.closest('.hero-slide, .infra-thumb');
-      if (isZoomable || target.classList.contains('zoomable-img')) {
-        openLightbox(target.src, target.alt || target.title);
+    // STEP 3: Showcase Grid Items (Turnkey fitouts, PP Box fabrication grid, product card thumbs, hero slides)
+    const showcaseContainer = target.closest('.product-thumb, .hero-slide, .infra-thumb, div[style*="height:170px"], div[style*="height:130px"], div[style*="minmax"]');
+    if (showcaseContainer) {
+      const img = showcaseContainer.querySelector('img');
+      if (img) {
+        openLightbox(img.src, img.alt || img.title);
+        return;
       }
+    }
+
+    // STEP 4: Direct click on any standalone image (excluding gallery thumbnail row)
+    if (target.tagName === 'IMG' && !target.closest('.product-gallery-box')) {
+      openLightbox(target.src, target.alt || target.title);
     }
   });
 
