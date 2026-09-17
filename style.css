@@ -3273,10 +3273,39 @@ img, video, iframe, canvas, table {
     width: 100% !important;
   }
 
+  /* Mobile 1-Column & 2x2 Showcase Grid Overrides */
+  .product-detail-card div[style*="grid-template-columns:1fr 1fr"],
+  .product-detail-card div[style*="grid-template-columns: 1fr 1fr"],
+  .product-filter-card div[style*="grid-template-columns:1fr 1fr"],
+  .product-filter-card div[style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* 4-Image Fabrication & Project Showcase Grids -> 2x2 Grid on Mobile */
+  div[style*="minmax(180px"],
+  div[style*="minmax(220px"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+
+  div[style*="minmax(180px"] img,
+  div[style*="minmax(220px"] img {
+    width: 100% !important;
+    height: 120px !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+
   .product-detail-card h2,
   .product-detail-card h3,
+  .product-detail-card h4,
   .product-detail-card p,
   .product-detail-card span,
+  .product-detail-card strong,
   .product-detail-card div {
     overflow-wrap: break-word !important;
     word-break: break-word !important;
