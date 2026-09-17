@@ -951,7 +951,7 @@ include 'header.php';
       </div>
 
       <div style="background:var(--white); border-radius:var(--radius-md); border:1px solid var(--border-subtle); overflow:hidden; box-shadow:var(--shadow-xs);">
-        <img src="images/about_factory.jpg" alt="Turnkey Office Work and Fitout" style="width:100%; height:200px; object-fit:cover;"/>
+        <img src="images/office_fitout.jpg" alt="Turnkey Commercial Office Fitout" style="width:100%; height:200px; object-fit:cover;"/>
         <div style="padding:22px;">
           <h3 style="font-family:var(--font-heading); font-weight:700; font-size:1.15rem; margin-bottom:8px; color:var(--text-primary);">Commercial Office Fitouts</h3>
           <p style="font-size:0.88rem; color:var(--text-secondary); line-height:1.6; margin-bottom:14px;">
