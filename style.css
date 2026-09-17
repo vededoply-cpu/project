@@ -691,11 +691,11 @@
 
  /* ===== HERO SECTION (CLEAN INDUSTRIAL, NO GIMMICKS) ===== */
  .hero {
-   background-color: var(--navy-dark);
-   color: var(--white);
-   padding: 70px 0 80px 0;
-   position: relative;
-   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(135deg, #eef6ff 0%, #dbeafe 50%, #f8fafc 100%);
+  color: var(--text-primary);
+  padding: 70px 0 80px 0;
+  position: relative;
+  border-bottom: 1px solid #cbd5e1;
  }
 
   .hero-grid {
@@ -713,18 +713,23 @@
    border: 1px solid rgba(255, 255, 255, 0.15);
    padding: 6px 14px;
    border-radius: var(--radius-xs);
+   background: #ffffff;
+   border: 1.5px solid #bfdbfe;
+   padding: 6px 14px;
+   border-radius: var(--radius-xs);
    font-family: var(--font-heading);
    font-size: 0.8rem;
-   font-weight: 700;
+   font-weight: 800;
    letter-spacing: 0.06em;
    text-transform: uppercase;
-   color: #38bdf8;
+   color: var(--blue-brand);
    margin-bottom: 20px;
+   box-shadow: 0 2px 8px rgba(21, 101, 192, 0.08);
  }
 
  .hero-badge-dot {
-   width: 7px;
-   height: 7px;
+   width: 8px;
+   height: 8px;
    border-radius: 50%;
    background: var(--orange-brand);
  }
@@ -735,17 +740,18 @@
    font-weight: 900;
    line-height: 1.12;
    letter-spacing: -0.02em;
+   color: #0e2748;
    margin-bottom: 18px;
  }
 
  .hero-title span {
-   color: #38bdf8;
+   color: var(--blue-brand);
  }
 
  .hero-desc {
    font-size: 1.05rem;
    line-height: 1.7;
-   color: #cbd5e1;
+   color: #334155;
    margin-bottom: 26px;
    max-width: 560px;
  }
@@ -761,13 +767,14 @@
    display: inline-flex;
    align-items: center;
    gap: 6px;
-   background: rgba(255, 255, 255, 0.06);
-   border: 1px solid rgba(255, 255, 255, 0.12);
-   padding: 5px 12px;
+   background: #ffffff;
+   border: 1px solid #cbd5e1;
+   padding: 6px 14px;
    border-radius: var(--radius-xs);
-   font-size: 0.8rem;
-   color: #e2e8f0;
-   font-weight: 600;
+   font-size: 0.82rem;
+   color: #0e2748;
+   font-weight: 700;
+   box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
  }
 
  .hero-chip svg {
@@ -789,14 +796,14 @@
    grid-template-columns: repeat(3, 1fr);
    gap: 20px;
    padding-top: 26px;
-   border-top: 1px solid rgba(255, 255, 255, 0.12);
+   border-top: 1px solid #cbd5e1;
  }
 
  .hero-stat-num {
    font-family: var(--font-heading);
    font-size: 1.9rem;
    font-weight: 900;
-   color: var(--white);
+   color: #0e2748;
    line-height: 1;
    margin-bottom: 4px;
  }
@@ -807,10 +814,10 @@
 
  .hero-stat-lbl {
    font-size: 0.78rem;
-   color: #94a3b8;
+   color: #475569;
    text-transform: uppercase;
    letter-spacing: 0.05em;
-   font-weight: 600;
+   font-weight: 700;
  }
 
  /* HERO IMAGE FRAME */
@@ -2943,14 +2950,13 @@
   border-radius: 10px;
 }
 
-/* ── HERO SECTION RIGHT-SIDE AUTOMATIC CAROUSEL ── */
 .hero-img-card {
   position: relative;
   border-radius: var(--radius-md);
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: var(--shadow-xl);
-  background: var(--navy-dark);
+  border: 1.5px solid #bfdbfe;
+  box-shadow: 0 12px 32px rgba(21, 101, 192, 0.12);
+  background: #ffffff;
   height: 480px;
 }
 
@@ -3004,14 +3010,14 @@
   top: 14px;
   left: 14px;
   z-index: 4;
-  background: rgba(15, 23, 42, 0.82);
+  background: var(--blue-brand);
   color: var(--white);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 0.72rem;
-  font-weight: 700;
-  padding: 4px 10px;
+  font-weight: 800;
+  padding: 5px 12px;
   border-radius: 20px;
-  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -3022,16 +3028,16 @@
   left: 14px;
   right: 14px;
   z-index: 4;
-  background: rgba(15, 23, 42, 0.85);
+  background: rgba(14, 39, 72, 0.90);
   color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 0.78rem;
-  font-weight: 500;
-  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 8px 14px;
   border-radius: 8px;
-  backdrop-filter: blur(4px);
-  line-height: 1.35;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  backdrop-filter: blur(6px);
+  line-height: 1.4;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
 }
 
 .hero-slider-arrow {
