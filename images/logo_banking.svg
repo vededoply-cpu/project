@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <rect width="200" height="60" fill="#ffffff"/>
+  <g transform="translate(10, 10)">
+    <path d="M16,4 L32,16 L0,16 Z M4,18 L8,18 L8,32 L4,32 Z M14,18 L18,18 L18,32 L14,32 Z M24,18 L28,18 L28,32 L24,32 Z M0,34 L32,34 L32,38 L0,38 Z" fill="#0f172a"/>
+    <text x="38" y="27" font-family="'Outfit', Arial, sans-serif" font-weight="900" font-size="15" fill="#0f172a" letter-spacing="1">BANK PARTNERS</text>
+  </g>
+</svg>

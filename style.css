@@ -1961,6 +1961,14 @@
   display: block;
 }
 
+.ticker-logo-img {
+  height: 36px;
+  max-width: 130px;
+  object-fit: contain;
+  margin-bottom: 6px;
+  display: block;
+}
+
 .thumb-item img {
   width: 100%;
   height: 100%;

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <rect width="200" height="60" fill="#ffffff"/>
+  <g transform="translate(10, 10)">
+    <path d="M16,4 L28,20 L16,36 L4,20 Z" fill="#16a34a"/>
+    <text x="36" y="27" font-family="'Outfit', Arial, sans-serif" font-weight="900" font-size="18" fill="#16a34a" letter-spacing="1">HEALTHFARM</text>
+  </g>
+</svg>
