@@ -5,6 +5,156 @@ $meta_desc = 'Mirai Packaging LLP is Bangalore\'s premier manufacturer of 2 to 9
 include 'header.php';
 ?>
 
+<!-- AUTOMATIC IMAGE SHOWCASE SLIDER (12 IMAGES - 3 SEC AUTO SLIDE) -->
+<section class="section-pad bg-surface" id="gallery-slider">
+  <div class="container">
+    <div class="section-header text-center">
+      <span class="sub-title">Visual Showcase</span>
+      <h2 class="section-title">Manufacturing Infrastructure &amp; <span>Packaging Gallery</span></h2>
+      <p class="section-desc">
+        Take a visual tour of our Bengaluru corrugation plant, automated conversion machinery, testing laboratory, and full range of packaging products.
+      </p>
+    </div>
+
+    <div class="auto-slider-wrapper" id="homeAutoSlider">
+      <div class="auto-slider-track" id="sliderTrack">
+        
+        <!-- Slide 1 -->
+        <div class="auto-slide active">
+          <img src="images/corrugated_lineup.jpg" alt="Corrugated Box Manufacturing Lineup"/>
+          <div class="slide-caption">
+            <span class="slide-badge">Corrugation Plant</span>
+            <h3>Custom 3-Ply &amp; 5-Ply Master Cartons</h3>
+            <p>Automated slotting and die-cutting for high-volume corrugated boxes.</p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="auto-slide">
+          <img src="images/wooden_pallets.jpg" alt="ISPM-15 Heat Treated Wooden Pallets"/>
+          <div class="slide-caption">
+            <span class="slide-badge">Export Packaging</span>
+            <h3>ISPM-15 Heat-Treated Wooden Pallets</h3>
+            <p>Pinewood and hardwood heavy-duty pallets with thermal pest eradication certification.</p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="auto-slide">
+          <img src="images/pp_box.jpg" alt="PP Corrugated Flute Boxes"/>
+          <div class="slide-caption">
+            <span class="slide-badge">Returnable Packaging</span>
+            <h3>PP Flute Corrugated Reusable Boxes</h3>
+            <p>Waterproof, chemical-resistant twin-wall polypropylene boxes for closed-loop logistics.</p>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="auto-slide">
+          <img src="images/modern_machinery.jpg" alt="High-Speed Corrugation Machine Plant"/>
+          <div class="slide-caption">
+            <span class="slide-badge">Machinery &amp; Automation</span>
+            <h3>High-Speed Corrugator &amp; Converting Plant</h3>
+            <p>Computerized rotary sheer cutters and 4-color flexo folder-gluers.</p>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="auto-slide">
+          <img src="images/courier_bag.jpg" alt="Co-Ex Tamper-Evident Courier Bags"/>
+          <div class="slide-caption">
+            <span class="slide-badge">E-Commerce Mailers</span>
+            <h3>Co-Ex Tamper-Evident Courier Flyer Bags</h3>
+            <p>High-tear resistance multi-layer polyethylene bags with permanent hot-melt adhesive strip.</p>
+          </div>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="auto-slide">
+          <img src="images/tape_rolls.jpg" alt="Industrial BOPP Packaging Tapes"/>
+          <div class="slide-caption">
+            <span class="slide-badge">Tapes &amp; Adhesives</span>
+            <h3>High-Tack Industrial BOPP Packaging Tapes</h3>
+            <p>Custom printed and clear 40–50 micron acrylic tapes for instant box sealing.</p>
+          </div>
+        </div>
+
+        <!-- Slide 7 -->
+        <div class="auto-slide">
+          <img src="images/quality_testing.jpg" alt="Quality Testing Laboratory"/>
+          <div class="slide-caption">
+            <span class="slide-badge">Quality Assurance</span>
+            <h3>In-House Box Compression (BCT) &amp; Bursting QC Lab</h3>
+            <p>Strict batch sampling for Mullen burst factor and compression load resistance.</p>
+          </div>
+        </div>
+
+        <!-- Slide 8 -->
+        <div class="auto-slide">
+          <img src="images/stretch_film.jpg" alt="Cast LLDPE Stretch Film Rolls"/>
+          <div class="slide-caption">
+            <span class="slide-badge">Pallet Securing</span>
+            <h3>Cast LLDPE Machine &amp; Manual Stretch Film</h3>
+            <p>High elongation stretch wrap providing dust and moisture protection during transit.</p>
+          </div>
+        </div>
+
+        <!-- Slide 9 -->
+        <div class="auto-slide">
+          <img src="images/bubble_wrap.jpg" alt="Air Bubble Protective Rolls"/>
+          <div class="slide-caption">
+            <span class="slide-badge">Cushioning Protection</span>
+            <h3>Multi-Layer Shock Absorption Air Bubble Rolls</h3>
+            <p>10mm bubble diameter protective cushioning for fragile glass, electronics, and cosmetics.</p>
+          </div>
+        </div>
+
+        <!-- Slide 10 -->
+        <div class="auto-slide">
+          <img src="images/about_factory.jpg" alt="Mirai Packaging Distribution Warehouse"/>
+          <div class="slide-caption">
+            <span class="slide-badge">Warehousing &amp; Fleet</span>
+            <h3>Bengaluru Central Distribution &amp; Logistics Hub</h3>
+            <p>Ready buffer inventory and daily fleet dispatches across industrial hubs.</p>
+          </div>
+        </div>
+
+        <!-- Slide 11 -->
+        <div class="auto-slide">
+          <img src="images/plastic_pallets.jpg" alt="Heavy-Duty Plastic Pallets"/>
+          <div class="slide-caption">
+            <span class="slide-badge">Material Handling</span>
+            <h3>Heavy-Duty HDPE Racking Plastic Pallets</h3>
+            <p>Hygienic, washable plastic pallets for pharmaceutical and food storage.</p>
+          </div>
+        </div>
+
+        <!-- Slide 12 -->
+        <div class="auto-slide">
+          <img src="images/security_seal.jpg" alt="High Security Seals"/>
+          <div class="slide-caption">
+            <span class="slide-badge">Logistics Security</span>
+            <h3>Laser-Numbered Security Pull-Tight Seals</h3>
+            <p>Tamper-proof polypropylene and bolt seals for cargo container verification.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Navigation Arrows -->
+      <button class="slider-btn prev-btn" id="sliderPrev" aria-label="Previous Slide">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 19l-7-7 7-7"/></svg>
+      </button>
+      <button class="slider-btn next-btn" id="sliderNext" aria-label="Next Slide">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+
+      <!-- Pagination Dots -->
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
+  </div>
+</section>
+
 <!-- HERO SECTION -->
 <section class="hero" id="hero">
   <div class="container">
@@ -80,6 +230,12 @@ include 'header.php';
           <div class="hero-slider-track" id="heroSliderTrack">
             
             <div class="hero-slide active">
+              <img src="images/hero_composite.jpg" alt="All-in-One Industrial Packaging &amp; Dispatch Kits"/>
+              <div class="hero-slide-badge">All-in-One Packaging &amp; Dispatch Kits</div>
+              <div class="hero-slide-desc">Complete 2-ply to 9-ply corrugated cartons, tamper-proof courier mailers, BOPP tapes &amp; stretch wrap.</div>
+            </div>
+
+            <div class="hero-slide">
               <img src="images/product_photo_4.jpg" alt="Plastic Storage Crate with Lid"/>
               <div class="hero-slide-badge">Plastic Storage Crate with Lid</div>
               <div class="hero-slide-desc">Heavy-duty stackable HDPE plastic crates with lid lock for industrial material handling.</div>
@@ -173,15 +329,14 @@ include 'header.php';
           </div>
         </div>
 
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:14px;">
-            <div style="background:rgba(255,255,255,0.06); backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,0.12); padding:16px; border-radius:var(--radius-sm); text-align:center;">
-              <div style="font-family:var(--font-heading); font-weight:800; font-size:1.3rem; color:var(--orange);">ISO 9001:2015</div>
-              <div style="font-size:0.75rem; color:#94a3b8; text-transform:uppercase; letter-spacing:0.5px; margin-top:2px;">QC System Audited</div>
-            </div>
-            <div style="background:rgba(255,255,255,0.06); backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,0.12); padding:16px; border-radius:var(--radius-sm); text-align:center;">
-              <div style="font-family:var(--font-heading); font-weight:800; font-size:1.3rem; color:#38bdf8;">100% Recyclable</div>
-              <div style="font-size:0.75rem; color:#94a3b8; text-transform:uppercase; letter-spacing:0.5px; margin-top:2px;">Eco Kraft Options</div>
-            </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:14px;">
+          <div style="background:rgba(255,255,255,0.06); backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,0.12); padding:16px; border-radius:var(--radius-sm); text-align:center;">
+            <div style="font-family:var(--font-heading); font-weight:800; font-size:1.3rem; color:var(--orange);">ISO 9001:2015</div>
+            <div style="font-size:0.75rem; color:#94a3b8; text-transform:uppercase; letter-spacing:0.5px; margin-top:2px;">QC System Audited</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.06); backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,0.12); padding:16px; border-radius:var(--radius-sm); text-align:center;">
+            <div style="font-family:var(--font-heading); font-weight:800; font-size:1.3rem; color:#38bdf8;">100% Recyclable</div>
+            <div style="font-size:0.75rem; color:#94a3b8; text-transform:uppercase; letter-spacing:0.5px; margin-top:2px;">Eco Kraft Options</div>
           </div>
         </div>
       </div>
@@ -768,155 +923,7 @@ include 'header.php';
   </div>
 </section>
 
-<!-- AUTOMATIC IMAGE SHOWCASE SLIDER (12 IMAGES - 3 SEC AUTO SLIDE) -->
-<section class="section-pad bg-surface" id="gallery-slider">
-  <div class="container">
-    <div class="section-header text-center">
-      <span class="sub-title">Visual Showcase</span>
-      <h2 class="section-title">Manufacturing Infrastructure &amp; <span>Packaging Gallery</span></h2>
-      <p class="section-desc">
-        Take a visual tour of our Bengaluru corrugation plant, automated conversion machinery, testing laboratory, and full range of packaging products.
-      </p>
-    </div>
 
-    <div class="auto-slider-wrapper" id="homeAutoSlider">
-      <div class="auto-slider-track" id="sliderTrack">
-        
-        <!-- Slide 1 -->
-        <div class="auto-slide active">
-          <img src="images/corrugated_lineup.jpg" alt="Corrugated Box Manufacturing Lineup"/>
-          <div class="slide-caption">
-            <span class="slide-badge">Corrugation Plant</span>
-            <h3>Custom 3-Ply &amp; 5-Ply Master Cartons</h3>
-            <p>Automated slotting and die-cutting for high-volume corrugated boxes.</p>
-          </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="auto-slide">
-          <img src="images/wooden_pallets.jpg" alt="ISPM-15 Heat Treated Wooden Pallets"/>
-          <div class="slide-caption">
-            <span class="slide-badge">Export Packaging</span>
-            <h3>ISPM-15 Heat-Treated Wooden Pallets</h3>
-            <p>Pinewood and hardwood heavy-duty pallets with thermal pest eradication certification.</p>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="auto-slide">
-          <img src="images/pp_box.jpg" alt="PP Corrugated Flute Boxes"/>
-          <div class="slide-caption">
-            <span class="slide-badge">Returnable Packaging</span>
-            <h3>PP Flute Corrugated Reusable Boxes</h3>
-            <p>Waterproof, chemical-resistant twin-wall polypropylene boxes for closed-loop logistics.</p>
-          </div>
-        </div>
-
-        <!-- Slide 4 -->
-        <div class="auto-slide">
-          <img src="images/modern_machinery.jpg" alt="High-Speed Corrugation Machine Plant"/>
-          <div class="slide-caption">
-            <span class="slide-badge">Machinery &amp; Automation</span>
-            <h3>High-Speed Corrugator &amp; Converting Plant</h3>
-            <p>Computerized rotary sheer cutters and 4-color flexo folder-gluers.</p>
-          </div>
-        </div>
-
-        <!-- Slide 5 -->
-        <div class="auto-slide">
-          <img src="images/courier_bag.jpg" alt="Co-Ex Tamper-Evident Courier Bags"/>
-          <div class="slide-caption">
-            <span class="slide-badge">E-Commerce Mailers</span>
-            <h3>Co-Ex Tamper-Evident Courier Flyer Bags</h3>
-            <p>High-tear resistance multi-layer polyethylene bags with permanent hot-melt adhesive strip.</p>
-          </div>
-        </div>
-
-        <!-- Slide 6 -->
-        <div class="auto-slide">
-          <img src="images/tape_rolls.jpg" alt="Industrial BOPP Packaging Tapes"/>
-          <div class="slide-caption">
-            <span class="slide-badge">Tapes &amp; Adhesives</span>
-            <h3>High-Tack Industrial BOPP Packaging Tapes</h3>
-            <p>Custom printed and clear 40–50 micron acrylic tapes for instant box sealing.</p>
-          </div>
-        </div>
-
-        <!-- Slide 7 -->
-        <div class="auto-slide">
-          <img src="images/quality_testing.jpg" alt="Quality Testing Laboratory"/>
-          <div class="slide-caption">
-            <span class="slide-badge">Quality Assurance</span>
-            <h3>In-House Box Compression (BCT) &amp; Bursting QC Lab</h3>
-            <p>Strict batch sampling for Mullen burst factor and compression load resistance.</p>
-          </div>
-        </div>
-
-        <!-- Slide 8 -->
-        <div class="auto-slide">
-          <img src="images/stretch_film.jpg" alt="Cast LLDPE Stretch Film Rolls"/>
-          <div class="slide-caption">
-            <span class="slide-badge">Pallet Securing</span>
-            <h3>Cast LLDPE Machine &amp; Manual Stretch Film</h3>
-            <p>High elongation stretch wrap providing dust and moisture protection during transit.</p>
-          </div>
-        </div>
-
-        <!-- Slide 9 -->
-        <div class="auto-slide">
-          <img src="images/bubble_wrap.jpg" alt="Air Bubble Protective Rolls"/>
-          <div class="slide-caption">
-            <span class="slide-badge">Cushioning Protection</span>
-            <h3>Multi-Layer Shock Absorption Air Bubble Rolls</h3>
-            <p>10mm bubble diameter protective cushioning for fragile glass, electronics, and cosmetics.</p>
-          </div>
-        </div>
-
-        <!-- Slide 10 -->
-        <div class="auto-slide">
-          <img src="images/about_factory.jpg" alt="Mirai Packaging Distribution Warehouse"/>
-          <div class="slide-caption">
-            <span class="slide-badge">Warehousing &amp; Fleet</span>
-            <h3>Bengaluru Central Distribution &amp; Logistics Hub</h3>
-            <p>Ready buffer inventory and daily fleet dispatches across industrial hubs.</p>
-          </div>
-        </div>
-
-        <!-- Slide 11 -->
-        <div class="auto-slide">
-          <img src="images/plastic_pallets.jpg" alt="Heavy-Duty Plastic Pallets"/>
-          <div class="slide-caption">
-            <span class="slide-badge">Material Handling</span>
-            <h3>Heavy-Duty HDPE Racking Plastic Pallets</h3>
-            <p>Hygienic, washable plastic pallets for pharmaceutical and food storage.</p>
-          </div>
-        </div>
-
-        <!-- Slide 12 -->
-        <div class="auto-slide">
-          <img src="images/security_seal.jpg" alt="High Security Seals"/>
-          <div class="slide-caption">
-            <span class="slide-badge">Logistics Security</span>
-            <h3>Laser-Numbered Security Pull-Tight Seals</h3>
-            <p>Tamper-proof polypropylene and bolt seals for cargo container verification.</p>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Navigation Arrows -->
-      <button class="slider-btn prev-btn" id="sliderPrev" aria-label="Previous Slide">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 19l-7-7 7-7"/></svg>
-      </button>
-      <button class="slider-btn next-btn" id="sliderNext" aria-label="Next Slide">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 5l7 7-7 7"/></svg>
-      </button>
-
-      <!-- Pagination Dots -->
-      <div class="slider-dots" id="sliderDots"></div>
-    </div>
-  </div>
-</section>
 
 <!-- TURNKEY INDUSTRIAL PROJECTS & COMMERCIAL OFFICE WORKS SHOWCASE -->
 <section class="section-pad bg-neutral" id="turnkey">
