@@ -376,9 +376,9 @@
   .navbar {
     position: sticky;
     top: 0;
-    background: linear-gradient(120deg, #ff4757 0%, #ff6b81 55%, #38bdf8 100%);
-    border-bottom: 2px solid #38bdf8;
-    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.25);
+    background: linear-gradient(120deg, #38bdf8 0%, #ff6b81 45%, #ff4757 100%);
+    border-bottom: 2px solid #ff4757;
+    box-shadow: 0 4px 20px rgba(255, 71, 87, 0.25);
     z-index: 100;
     transition: box-shadow var(--transition-fast);
   }
@@ -1977,6 +1977,272 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
+}
+
+/* ===== INDUSTRIAL EPOXY FLOORING & INFRASTRUCTURE SECTION ===== */
+.epoxy-hero-banner {
+  background: linear-gradient(135deg, #071e3d 0%, #0c2b53 100%);
+  color: var(--white);
+  padding: 64px 0 70px 0;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.epoxy-hero-badge-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 20px 0 26px 0;
+}
+
+.epoxy-badge-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.epoxy-badge-item svg {
+  width: 16px;
+  height: 16px;
+  color: #f59e0b;
+}
+
+.epoxy-services-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  margin-top: 36px;
+}
+
+.epoxy-service-card {
+  background: var(--white);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-xs);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.epoxy-service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--blue-brand);
+}
+
+.epoxy-service-card.highlight {
+  background: var(--navy-dark);
+  color: var(--white);
+  border-color: var(--navy-dark);
+}
+
+.epoxy-service-card.highlight .epoxy-service-title {
+  color: var(--white);
+}
+
+.epoxy-service-card.highlight .epoxy-service-desc {
+  color: #cbd5e1;
+}
+
+.epoxy-service-thumb {
+  position: relative;
+  height: 135px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.epoxy-service-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.epoxy-service-card:hover .epoxy-service-thumb img {
+  transform: scale(1.06);
+}
+
+.epoxy-service-icon-badge {
+  position: absolute;
+  bottom: -16px;
+  left: 14px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #f59e0b;
+  color: var(--navy-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+.epoxy-service-body {
+  padding: 22px 14px 16px 14px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.epoxy-service-title {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.epoxy-service-desc {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.epoxy-service-arrow {
+  color: #f59e0b;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* PROJECT GALLERY (DARK SECTION) */
+.epoxy-gallery-section {
+  background: var(--navy-dark);
+  color: var(--white);
+  padding: 60px 0 70px 0;
+}
+
+.epoxy-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-top: 36px;
+}
+
+.epoxy-gallery-card {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  height: 220px;
+  transition: all 0.3s ease;
+}
+
+.epoxy-gallery-card:hover {
+  transform: translateY(-4px);
+  border-color: #f59e0b;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.epoxy-gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.epoxy-gallery-card:hover img {
+  transform: scale(1.08);
+}
+
+.epoxy-gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px 14px;
+  background: linear-gradient(to top, rgba(9, 25, 44, 0.95), transparent);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.epoxy-gallery-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--white);
+}
+
+/* VALUE BAR */
+.epoxy-value-bar {
+  background: #07172b;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px 0;
+  color: var(--white);
+}
+
+.epoxy-value-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.epoxy-value-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.epoxy-value-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.epoxy-value-text strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  color: var(--white);
+}
+
+.epoxy-value-text span {
+  font-size: 0.78rem;
+  color: #94a3b8;
+}
+
+@media (max-width: 1024px) {
+  .epoxy-services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .epoxy-gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .epoxy-services-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .epoxy-gallery-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .epoxy-value-grid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /* ===== RESPONSIVE MEDIA QUERIES ===== */

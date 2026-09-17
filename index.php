@@ -80,8 +80,8 @@ include 'header.php';
           <div class="hero-slider-track" id="heroSliderTrack">
             
             <div class="hero-slide active">
-              <img src="images/product_photo_4.jpg" alt="Mirai Corrugated Boxes &amp; Master Packaging"/>
-              <div class="hero-slide-badge">Corrugated Cartons &amp; Master Boxes</div>
+              <img src="images/product_photo_4.jpg" alt="Plastic Storage Crate with Lid"/>
+              <div class="hero-slide-badge">Plastic Storage Crate with Lid</div>
             </div>
 
             <div class="hero-slide">
@@ -493,6 +493,34 @@ include 'header.php';
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
             <a href="contact.php?prod=pallets" class="product-inquiry-btn">Enquire Bulk</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8B. Dedicated Plastic Storage Crates with Lids -->
+      <div class="product-card" data-category="warehouse">
+        <div class="product-thumb">
+          <img src="images/product_photo_4.jpg" alt="Plastic Storage Crate with Lid"/>
+          <span class="product-thumb-tag">Industrial Storage</span>
+          <span class="product-badge-accent">HDPE &amp; PP Virgin</span>
+        </div>
+        <div class="product-body">
+          <h3 class="product-title">Plastic Storage Crates with Lids</h3>
+          <p class="product-desc">
+            Heavy-duty stackable and nestable plastic storage crates with attached/detachable locking lids. Engineered from high-density virgin HDPE for closed-loop industrial material handling and inventory storage.
+          </p>
+          <div class="product-specs">
+            <span class="spec-pill">Material: <strong>100% Virgin HDPE</strong></span>
+            <span class="spec-pill">Design: <strong>Stackable &amp; Lid Lock</strong></span>
+            <span class="spec-pill">Capacity: <strong>Up to 50 kg/crate</strong></span>
+            <span class="spec-pill">Usage: <strong>Auto &amp; Retail Supply</strong></span>
+          </div>
+          <div class="product-footer">
+            <a href="products.php#plastic-crates" class="product-cta-link">
+              View Technical Specs
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="contact.php?prod=plastic-crates" class="product-inquiry-btn">Enquire Bulk</a>
           </div>
         </div>
       </div>

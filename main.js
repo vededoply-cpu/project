@@ -553,28 +553,6 @@ document.addEventListener('DOMContentLoaded', function () {
         openLightbox(target.src, target.alt || target.title);
       }
     }
-  // ── CATEGORY FILTER BUTTONS HANDLER ──
-  const filterBtns = document.querySelectorAll('.product-filter-btn');
-  const filterCards = document.querySelectorAll('.product-filter-card');
-
-  filterBtns.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      const filterValue = this.getAttribute('data-filter');
-
-      // Toggle active class on buttons
-      filterBtns.forEach(function (b) { b.classList.remove('active'); });
-      this.classList.add('active');
-
-      // Filter product cards
-      filterCards.forEach(function (card) {
-        const cardCategory = card.getAttribute('data-category');
-        if (filterValue === 'all' || cardCategory === filterValue) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    });
   });
 
 });
