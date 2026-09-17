@@ -3255,3 +3255,117 @@ img, video, iframe, canvas, table {
   border-left: 3px solid var(--blue-brand);
   color: var(--text-secondary);
 }
+
+/* ===== CLIENT LOGO GRID SECTION ===== */
+.clients-logo-section {
+  background: #f8fafc;
+  padding: 50px 0 60px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  position: relative;
+}
+
+.clients-logo-header {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.clients-logo-header .sub-title {
+  margin-bottom: 8px;
+}
+
+.clients-logo-header h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.clients-logo-header p {
+  font-size: 0.96rem;
+  color: var(--text-muted);
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.clients-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  align-items: center;
+}
+
+.client-logo-box {
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  height: 100px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+  transition: all var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.client-logo-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.09);
+  border-color: var(--blue-brand);
+}
+
+.client-logo-img {
+  max-height: 56px;
+  max-width: 160px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform var(--transition-fast);
+}
+
+.client-logo-box:hover .client-logo-img {
+  transform: scale(1.05);
+}
+
+.client-logo-fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.client-logo-name {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: var(--navy-dark);
+  line-height: 1.2;
+}
+
+.client-logo-sub {
+  font-size: 0.72rem;
+  color: var(--blue-brand);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .clients-logo-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+  }
+  .client-logo-box {
+    height: 84px !important;
+    padding: 12px 14px !important;
+  }
+  .client-logo-img {
+    max-height: 44px !important;
+    max-width: 130px !important;
+  }
+}
