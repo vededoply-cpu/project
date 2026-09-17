@@ -1,1093 +1,1917 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes" />
   <title>Mirai Packaging LLP | Industrial Packaging Manufacturer &amp; Converter | Bengaluru</title>
-  <meta name="description" content="Mirai Packaging LLP is Bangalore's leading manufacturer and wholesale supplier of 2 to 9 ply corrugated boxes, courier flyer bags, BOPP tapes, eco kraft bags, stretch film and security seals."/>
-  <link rel="icon" type="image/png" href="images/favicon.png"/>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="description"
+    content="Mirai Packaging LLP is Bangalore's leading manufacturer and wholesale supplier of 2 to 9 ply corrugated boxes, courier flyer bags, BOPP tapes, eco kraft bags, stretch film and security seals." />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<!-- UTILITY TOPBAR -->
-<div class="topbar">
-  <div class="container">
-    <div class="topbar-inner">
-      <div class="topbar-left">
-        <span class="topbar-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-          1091, 8th Cross Road, Jai Marathi Nagar, Bengaluru – 560086
-        </span>
-        <span class="topbar-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-          miraipackagingllp@gmail.com
-        </span>
-        <span class="topbar-badge">GSTIN: 29AAUFM9272M1Z2</span>
-      </div>
-      <div class="topbar-right">
-        <span class="topbar-item">Mon – Sat: 9:00 AM – 7:00 PM IST</span>
-        <a href="tel:+919491436494" class="topbar-phone">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-          +91 9491436494
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- HEADER NAVBAR -->
-<header class="navbar" id="navbar">
-  <div class="container">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo" id="navLogo">
-        <img src="images/logo.png" alt="Mirai Packaging LLP" class="nav-logo-img"/>
-        <div class="nav-logo-text">
-          <span class="brand-name">MIRAI</span>
-          <span class="brand-tag">PACKAGING LLP</span>
-          <span class="brand-motto">Flexible Packaging Solutions For Modern Needs</span>
-        </div>
-      </a>
-      <nav class="nav-menu" id="navMenu">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="about.html" class="nav-link">About Us</a>
-        <a href="products.html" class="nav-link">Products &amp; Specs</a>
-        <a href="clients.html" class="nav-link">Client Portfolio</a>
-        <a href="contact.html" class="nav-link">Contact &amp; RFQ</a>
-      </nav>
-      <div class="nav-actions">
-        <a href="contact.html" class="btn btn-orange btn-sm">
-          Request Quote
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!-- MOBILE DRAWER -->
-<div class="drawer-overlay" id="drawerOverlay"></div>
-<nav class="mobile-drawer" id="mobileDrawer">
-  <div class="drawer-header">
-    <div class="nav-logo">
-      <img src="images/logo.png" alt="Mirai Packaging LLP" style="height:42px;"/>
-      <div class="nav-logo-text">
-        <span class="brand-name" style="font-size:1.2rem;">MIRAI</span>
-        <span class="brand-tag">PACKAGING LLP</span>
-      </div>
-    </div>
-    <div class="drawer-close" id="drawerClose">&#x2715;</div>
-  </div>
-  <div class="drawer-nav">
-    <a href="index.html" class="drawer-link active">Home</a>
-    <a href="about.html" class="drawer-link">About Us</a>
-    <a href="products.html" class="drawer-link">Products &amp; Specs</a>
-    <a href="clients.html" class="drawer-link">Client Portfolio</a>
-    <a href="contact.html" class="drawer-link">Contact &amp; RFQ</a>
-  </div>
-  <div class="drawer-footer">
-    <a href="tel:+919491436494" class="btn btn-outline" style="width:100%;margin-bottom:8px;justify-content:center;">
-      Call: +91 9491436494
-    </a>
-    <a href="contact.html" class="btn btn-orange" style="width:100%;justify-content:center;">
-      Request Bulk Quote
-    </a>
-  </div>
-</nav>
-
-<!-- HERO SECTION -->
-<section class="hero" id="hero">
-  <div class="container">
-    <div class="hero-grid">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span class="hero-badge-dot"></span>
-          ISO 9001:2015 Certified • Bengaluru Manufacturing Unit
-        </div>
-        <h1 class="hero-title">
-          Serving All Packaging Needs <span>Under One Roof</span>
-        </h1>
-        <p class="hero-desc">
-          Mirai Packaging LLP is Bangalore's premier manufacturing and wholesale enterprise. We solve multi-vendor procurement bottlenecks by delivering tailor-made 2 to 9 Ply corrugated cartons, tamper-proof courier mailers, high-shear BOPP tapes, and transit security seals on a single enterprise platform.
-        </p>
-        
-        <div class="hero-chips">
-          <span class="hero-chip">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
-            2 Ply to 9 Ply Heavy Duty Cartons
+  <!-- UTILITY TOPBAR -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-inner">
+        <div class="topbar-left">
+          <span class="topbar-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            1091, 8th Cross Road, Jai Marathi Nagar, Bengaluru – 560086
           </span>
-          <span class="hero-chip">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
-            Tamper-Proof Courier Flyers &amp; POD
+          <span class="topbar-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            sales@miraiflexipack.in
           </span>
-          <span class="hero-chip">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
-            In-House BCT &amp; Bursting Testing Lab
-          </span>
-          <span class="hero-chip">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
-            Committed Dispatch on TAT
-          </span>
+          <span class="topbar-badge">GSTIN: 29AAUFM9272M1Z2</span>
         </div>
-
-        <div class="hero-btns">
-          <a href="products.html" class="btn btn-orange btn-lg">
-            View Product Catalog
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-          <a href="#calculator" class="btn btn-outline-white btn-lg">
-            Box Dimension Estimator
-          </a>
-        </div>
-
-        <div class="hero-stats">
-          <div>
-            <div class="hero-stat-num">
-              <span data-target="500" data-suffix="+">500+</span>
-            </div>
-            <div class="hero-stat-lbl">Active Packaging SKUs</div>
-          </div>
-          <div>
-            <div class="hero-stat-num">
-              <span data-target="25" data-suffix="+">25+</span>
-            </div>
-            <div class="hero-stat-lbl">Enterprise Clients</div>
-          </div>
-          <div>
-            <div class="hero-stat-num">
-              <span>9<span class="plus">Ply</span></span>
-            </div>
-            <div class="hero-stat-lbl">Max Corrugation Ply</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-visual">
-        <div class="hero-img-card">
-          <img src="images/hero_composite.jpg" alt="Mirai Industrial Packaging Products Range" class="hero-img-main"/>
-          <div class="hero-img-caption">
-            <div>
-              <strong>Complete Supply Chain Range</strong>
-              <div style="color:#94a3b8; font-size:0.75rem;">Cartons • Courier Mailers • Tapes • Stretch Wrap • Security Seals</div>
-            </div>
-            <a href="contact.html" class="btn btn-orange btn-sm">Enquire Now</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ENTERPRISE CLIENT PARTNERS TICKER -->
-<section class="brand-ticker-section">
-  <div class="container">
-    <div class="brand-ticker-header">
-      <span class="ticker-badge">Enterprise Supply Chains</span>
-      <h3 class="ticker-heading">Trusted Packaging Partner to India's Foremost Brands</h3>
-    </div>
-  </div>
-  <div class="ticker-slider-wrap">
-    <div class="ticker-track">
-      <!-- PUMA -->
-      <div class="ticker-card">
-        <div class="ticker-card-top">
-          <span class="brand-name">PUMA India</span>
-          <span class="brand-tag">National SLA</span>
-        </div>
-        <span class="brand-sector">Apparel &amp; Footwear</span>
-      </div>
-
-      <!-- Ashok Leyland -->
-      <div class="ticker-card">
-        <div class="ticker-card-top">
-          <span class="brand-name">Ashok Leyland</span>
-          <span class="brand-tag">Heavy Duty</span>
-        </div>
-        <span class="brand-sector">Automotive Tier-1 OEM</span>
-      </div>
-
-      <!-- Swiss Beauty -->
-      <div class="ticker-card">
-        <div class="ticker-card-top">
-          <span class="brand-name">Swiss Beauty</span>
-          <span class="brand-tag">Luxury Finish</span>
-        </div>
-        <span class="brand-sector">Cosmetics &amp; Personal Care</span>
-      </div>
-
-      <!-- Urban Company -->
-      <div class="ticker-card">
-        <div class="ticker-card-top">
-          <span class="brand-name">Urban Company</span>
-          <span class="brand-tag">Service Kits</span>
-        </div>
-        <span class="brand-sector">Home Services &amp; Logistics</span>
-      </div>
-
-      <!-- USANA -->
-      <div class="ticker-card">
-        <div class="ticker-card-top">
-          <span class="brand-name">USANA Health</span>
-          <span class="brand-tag">Pharma Grade</span>
-        </div>
-        <span class="brand-sector">Nutraceuticals &amp; Wellness</span>
-      </div>
-
-      <!-- Arvind Fashions -->
-      <div class="ticker-card">
-        <div class="ticker-card-top">
-          <span class="brand-name">Arvind Fashions</span>
-          <span class="brand-tag">Export Cartons</span>
-        </div>
-        <span class="brand-sector">Garment Retail Hubs</span>
-      </div>
-
-      <!-- Wrogn / USPL -->
-      <div class="ticker-card">
-        <div class="ticker-card-top">
-          <span class="brand-name">USPL / Wrogn</span>
-          <span class="brand-tag">Fashion Retail</span>
-        </div>
-        <span class="brand-sector">Youth Lifestyle Brands</span>
-      </div>
-
-      <!-- Banking Security -->
-      <div class="ticker-card">
-        <div class="ticker-card-top">
-          <span class="brand-name">Banking Partners</span>
-          <span class="brand-tag">Tamper Evident</span>
-        </div>
-        <span class="brand-sector">IDBI &bull; Karur Vysya &bull; Equitas</span>
-      </div>
-
-      <!-- Master Chow -->
-      <div class="ticker-card">
-        <div class="ticker-card-top">
-          <span class="brand-name">Master Chow</span>
-          <span class="brand-tag">Transit Safe</span>
-        </div>
-        <span class="brand-sector">D2C Gourmet Food</span>
-      </div>
-
-      <!-- HealthFarm -->
-      <div class="ticker-card">
-        <div class="ticker-card-top">
-          <span class="brand-name">HealthFarm</span>
-          <span class="brand-tag">Clean Pack</span>
-        </div>
-        <span class="brand-sector">Sports Nutrition</span>
-      </div>
-
-      <!-- DUPLICATE SET FOR SEAMLESS INFINITE LOOP -->
-      <div class="ticker-card">
-        <div class="ticker-card-top">
-          <span class="brand-name">PUMA India</span>
-          <span class="brand-tag">National SLA</span>
-        </div>
-        <span class="brand-sector">Apparel &amp; Footwear</span>
-      </div>
-
-      <div class="ticker-card">
-        <div class="ticker-card-top">
-          <span class="brand-name">Ashok Leyland</span>
-          <span class="brand-tag">Heavy Duty</span>
-        </div>
-        <span class="brand-sector">Automotive Tier-1 OEM</span>
-      </div>
-
-      <div class="ticker-card">
-        <div class="ticker-card-top">
-          <span class="brand-name">Swiss Beauty</span>
-          <span class="brand-tag">Luxury Finish</span>
-        </div>
-        <span class="brand-sector">Cosmetics &amp; Personal Care</span>
-      </div>
-
-      <div class="ticker-card">
-        <div class="ticker-card-top">
-          <span class="brand-name">Urban Company</span>
-          <span class="brand-tag">Service Kits</span>
-        </div>
-        <span class="brand-sector">Home Services &amp; Logistics</span>
-      </div>
-
-      <div class="ticker-card">
-        <div class="ticker-card-top">
-          <span class="brand-name">USANA Health</span>
-          <span class="brand-tag">Pharma Grade</span>
-        </div>
-        <span class="brand-sector">Nutraceuticals &amp; Wellness</span>
-      </div>
-
-      <div class="ticker-card">
-        <div class="ticker-card-top">
-          <span class="brand-name">Arvind Fashions</span>
-          <span class="brand-tag">Export Cartons</span>
-        </div>
-        <span class="brand-sector">Garment Retail Hubs</span>
-      </div>
-
-      <div class="ticker-card">
-        <div class="ticker-card-top">
-          <span class="brand-name">USPL / Wrogn</span>
-          <span class="brand-tag">Fashion Retail</span>
-        </div>
-        <span class="brand-sector">Youth Lifestyle Brands</span>
-      </div>
-
-      <div class="ticker-card">
-        <div class="ticker-card-top">
-          <span class="brand-name">Banking Partners</span>
-          <span class="brand-tag">Tamper Evident</span>
-        </div>
-        <span class="brand-sector">IDBI &bull; Karur Vysya &bull; Equitas</span>
-      </div>
-
-      <div class="ticker-card">
-        <div class="ticker-card-top">
-          <span class="brand-name">Master Chow</span>
-          <span class="brand-tag">Transit Safe</span>
-        </div>
-        <span class="brand-sector">D2C Gourmet Food</span>
-      </div>
-
-      <div class="ticker-card">
-        <div class="ticker-card-top">
-          <span class="brand-name">HealthFarm</span>
-          <span class="brand-tag">Clean Pack</span>
-        </div>
-        <span class="brand-sector">Sports Nutrition</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PRODUCT SHOWCASE MATRIX -->
-<section class="section-pad bg-neutral" id="products">
-  <div class="container">
-    <div class="section-header text-center">
-      <span class="sub-title">Manufactured Product Range</span>
-      <h2 class="section-title">Engineered Products for <span>Modern Supply Chains</span></h2>
-      <p class="section-desc">
-        Produced with premium virgin &amp; recycled kraft liners, high-shear polymer adhesives, and strict bursting strength quality assurance.
-      </p>
-    </div>
-
-    <div class="products-grid">
-      <!-- 1. Corrugated Boxes -->
-      <div class="product-card">
-        <div class="product-thumb">
-          <img src="images/corrugated_lineup.jpg" alt="Corrugated Packaging Shipping Boxes Lineup"/>
-          <span class="product-thumb-tag">Master Cartons</span>
-          <span class="product-badge-accent">2 to 9 Ply</span>
-        </div>
-        <div class="product-body">
-          <h3 class="product-title">Corrugated Shipping &amp; Die-Cut Boxes</h3>
-          <p class="product-desc">
-            RSC standard cartons, die-cut self-locking mailers, partition boxes, and heavy-duty 7/9 ply export shippers engineered for high stacking compression.
-          </p>
-          <div class="product-specs">
-            <span class="spec-pill">GSM: <strong>120 – 350 GSM</strong></span>
-            <span class="spec-pill">Flute: <strong>B, C, E, BC, AAA</strong></span>
-            <span class="spec-pill">Bursting: <strong>14 – 32 kg/cm²</strong></span>
-            <span class="spec-pill">Print: <strong>1-4 Color Flexo</strong></span>
-          </div>
-          <div class="product-footer">
-            <a href="products.html#corrugated" class="product-cta-link">
-              View Technical Specs
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="contact.html?prod=corrugated" class="product-inquiry-btn">Enquire Bulk</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 2. Courier Bags -->
-      <div class="product-card">
-        <div class="product-thumb">
-          <img src="images/courier_bag.jpg" alt="Tamper-Proof Poly Courier Mailer Bags"/>
-          <span class="product-thumb-tag">E-Commerce Flyers</span>
-          <span class="product-badge-accent">Tamper Proof</span>
-        </div>
-        <div class="product-body">
-          <h3 class="product-title">Tamper-Evident Courier &amp; Poly Bags</h3>
-          <p class="product-desc">
-            Co-extruded multilayer LDPE bags with permanent hot-melt adhesive lip, POD airway bill receipt jacket, bubble-lined interior options, and opaque black inner.
-          </p>
-          <div class="product-specs">
-            <span class="spec-pill">Thickness: <strong>50 – 80 Microns</strong></span>
-            <span class="spec-pill">Seal: <strong>Hot-Melt Void Strip</strong></span>
-            <span class="spec-pill">Type: <strong>POD Jacket / Bubble</strong></span>
-            <span class="spec-pill">Waterproof: <strong>100% Co-Ex</strong></span>
-          </div>
-          <div class="product-footer">
-            <a href="products.html#courier" class="product-cta-link">
-              View Technical Specs
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="contact.html?prod=courier" class="product-inquiry-btn">Enquire Bulk</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 3. Packaging Tapes -->
-      <div class="product-card">
-        <div class="product-thumb">
-          <img src="images/tape_rolls.jpg" alt="Industrial BOPP Packaging Tapes and Custom Printed Rolls"/>
-          <span class="product-thumb-tag">Adhesive Tapes</span>
-          <span class="product-badge-accent">High Tack</span>
-        </div>
-        <div class="product-body">
-          <h3 class="product-title">BOPP &amp; Custom Printed Tapes</h3>
-          <p class="product-desc">
-            High-shear acrylic and hot-melt BOPP tapes in clear, brown, and custom logo printed rolls designed for manual dispensers or high-speed automated taping machines.
-          </p>
-          <div class="product-specs">
-            <span class="spec-pill">Thickness: <strong>40 – 52 Microns</strong></span>
-            <span class="spec-pill">Width: <strong>24mm, 48mm, 72mm</strong></span>
-            <span class="spec-pill">Roll Length: <strong>50m – 650m</strong></span>
-            <span class="spec-pill">Custom: <strong>Brand Logo Print</strong></span>
-          </div>
-          <div class="product-footer">
-            <a href="products.html#tapes" class="product-cta-link">
-              View Technical Specs
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="contact.html?prod=tapes" class="product-inquiry-btn">Enquire Bulk</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 4. Eco Kraft Bags & Honeycomb -->
-      <div class="product-card">
-        <div class="product-thumb">
-          <img src="images/kraft_paper_bags.jpg" alt="Eco Friendly Kraft Paper Bags and Honeycomb Cushioning Roll"/>
-          <span class="product-thumb-tag">Sustainable Packaging</span>
-          <span class="product-badge-accent">100% Eco</span>
-        </div>
-        <div class="product-body">
-          <h3 class="product-title">Eco Kraft Bags &amp; Honeycomb Cushioning</h3>
-          <p class="product-desc">
-            FSC-certified biodegradable brown kraft retail shopping bags with twisted handles, paired with expanding honeycomb paper wrap replacing plastic bubble wrap.
-          </p>
-          <div class="product-specs">
-            <span class="spec-pill">Material: <strong>Virgin Kraft Paper</strong></span>
-            <span class="spec-pill">Grammage: <strong>90 – 180 GSM</strong></span>
-            <span class="spec-pill">Cushion: <strong>Hexagonal Mesh</strong></span>
-            <span class="spec-pill">Eco: <strong>100% Biodegradable</strong></span>
-          </div>
-          <div class="product-footer">
-            <a href="products.html#ecopack" class="product-cta-link">
-              View Technical Specs
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="contact.html?prod=ecopack" class="product-inquiry-btn">Enquire Bulk</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 5. Stretch Film Rolls -->
-      <div class="product-card">
-        <div class="product-thumb">
-          <img src="images/stretch_film.jpg" alt="Industrial LLDPE Stretch Film Rolls and Pallet Wrap"/>
-          <span class="product-thumb-tag">Pallet Unitization</span>
-          <span class="product-badge-accent">Cast LLDPE</span>
-        </div>
-        <div class="product-body">
-          <h3 class="product-title">Industrial Stretch Film &amp; Pallet Wrap</h3>
-          <p class="product-desc">
-            High-clarity cast multi-layer LLDPE film rolls offering superior elongation up to 300%, puncture resistance, and load stability for palletized transport.
-          </p>
-          <div class="product-specs">
-            <span class="spec-pill">Thickness: <strong>17 – 35 Microns</strong></span>
-            <span class="spec-pill">Elongation: <strong>Up to 300%</strong></span>
-            <span class="spec-pill">Width: <strong>500mm (20 Inch)</strong></span>
-            <span class="spec-pill">Type: <strong>Hand &amp; Machine Grade</strong></span>
-          </div>
-          <div class="product-footer">
-            <a href="products.html#stretch" class="product-cta-link">
-              View Technical Specs
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="contact.html?prod=stretch" class="product-inquiry-btn">Enquire Bulk</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 6. Security Seals & Envelopes -->
-      <div class="product-card">
-        <div class="product-thumb">
-          <img src="images/security_seal.jpg" alt="Tamper Proof Security Seals and Barcoded Envelopes"/>
-          <span class="product-thumb-tag">Transit Security</span>
-          <span class="product-badge-accent">Laser Numbered</span>
-        </div>
-        <div class="product-body">
-          <h3 class="product-title">Security Seals, STEB Bags &amp; Envelopes</h3>
-          <p class="product-desc">
-            Sequential laser-serialized pull-tight PP seals, bolt container locks, gold loan tamper envelopes, and high-security currency transit bags for banks and logistics.
-          </p>
-          <div class="product-specs">
-            <span class="spec-pill">Material: <strong>High Impact PP &amp; Steel</strong></span>
-            <span class="spec-pill">Serial: <strong>Laser Barcode / Number</strong></span>
-            <span class="spec-pill">Tensile: <strong>15 – 45 kg Break</strong></span>
-            <span class="spec-pill">Security: <strong>ISO 17712 Compliant</strong></span>
-          </div>
-          <div class="product-footer">
-            <a href="products.html#security" class="product-cta-link">
-              View Technical Specs
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="contact.html?prod=security" class="product-inquiry-btn">Enquire Bulk</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- INTERACTIVE PACKAGING CALCULATOR SECTION -->
-<section class="calc-section" id="calculator">
-  <div class="container">
-    <div class="calc-container">
-      <div class="calc-info">
-        <span class="sub-title" style="color:#38bdf8;">Engineering Tool</span>
-        <h2 class="section-title" style="color:#ffffff;">
-          Carton Dimension &amp;<br/>
-          <span style="color:#38bdf8;">Volumetric Weight Estimator</span>
-        </h2>
-        <p class="section-desc" style="color:#cbd5e1; margin-bottom:24px;">
-          Configure carton dimensions to estimate volumetric chargeable freight weight, suggested flute profile, and structural compression strength for logistics planning.
-        </p>
-        <ul style="display:flex; flex-direction:column; gap:12px; color:#e2e8f0; font-size:0.92rem;">
-          <li style="display:flex; align-items:center; gap:8px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:16px;height:16px;color:#38bdf8;"><path d="M20 6L9 17l-5-5"/></svg>
-            Standard volumetric ratio calculation: (L × W × H in cm) / 5000
-          </li>
-          <li style="display:flex; align-items:center; gap:8px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:16px;height:16px;color:#38bdf8;"><path d="M20 6L9 17l-5-5"/></svg>
-            Flute recommendation based on load stacking requirements
-          </li>
-          <li style="display:flex; align-items:center; gap:8px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:16px;height:16px;color:#38bdf8;"><path d="M20 6L9 17l-5-5"/></svg>
-            Physical CAD prototype sample support available prior to bulk run
-          </li>
-        </ul>
-      </div>
-
-      <div class="calc-card">
-        <h3 style="font-family:var(--font-heading);font-weight:800;font-size:1.3rem;margin-bottom:18px;color:var(--text-primary);">
-          Configure Box Parameters
-        </h3>
-        
-        <div class="calc-form-grid">
-          <div class="calc-group">
-            <label class="calc-label" for="calcLength">Length (cm)</label>
-            <input type="number" id="calcLength" class="calc-input" value="40" min="5" max="250"/>
-          </div>
-          <div class="calc-group">
-            <label class="calc-label" for="calcWidth">Width (cm)</label>
-            <input type="number" id="calcWidth" class="calc-input" value="30" min="5" max="250"/>
-          </div>
-          <div class="calc-group">
-            <label class="calc-label" for="calcHeight">Height (cm)</label>
-            <input type="number" id="calcHeight" class="calc-input" value="25" min="5" max="250"/>
-          </div>
-        </div>
-
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:16px;">
-          <div class="calc-group">
-            <label class="calc-label" for="calcPly">Board Construction</label>
-            <select id="calcPly" class="calc-select">
-              <option value="3ply">3-Ply (Single Wall)</option>
-              <option value="5ply" selected>5-Ply (Double Wall Standard)</option>
-              <option value="7ply">7-Ply (Heavy Duty Export)</option>
-            </select>
-          </div>
-          <div class="calc-group">
-            <label class="calc-label" for="calcFinish">Surface Finish</label>
-            <select id="calcFinish" class="calc-select">
-              <option value="kraft">Natural Brown Kraft</option>
-              <option value="white">Bleached White Duplex</option>
-              <option value="printed">Custom 4-Color Flexo Printed</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="calc-result-box">
-          <div class="calc-res-item">
-            <span class="calc-res-val" id="resVolWeight">6.00 kg</span>
-            <span class="calc-res-lbl">Volumetric Weight</span>
-          </div>
-          <div class="calc-res-item">
-            <span class="calc-res-val" id="resFlute" style="font-size:1rem;">BC-Flute</span>
-            <span class="calc-res-lbl">Suggested Flute</span>
-          </div>
-          <div class="calc-res-item">
-            <span class="calc-res-val" id="resBCT">480 - 650 kgf</span>
-            <span class="calc-res-lbl">Est. BCT Strength</span>
-          </div>
-        </div>
-
-        <div style="margin-top:20px;">
-          <a href="contact.html?calc=true" class="btn btn-orange" style="width:100%;justify-content:center;">
-            Request Bulk Quotation for this Size
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        <div class="topbar-right">
+          <span class="topbar-item">Mon – Sat: 9:00 AM – 7:00 PM IST</span>
+          <a href="tel:+919044129477" class="topbar-phone">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+            </svg>
+            +91-9044129477
           </a>
         </div>
       </div>
     </div>
   </div>
-</section>
 
-<!-- MANUFACTURING & TESTING INFRASTRUCTURE -->
-<section class="section-pad" id="infrastructure">
-  <div class="container">
-    <div class="section-header text-center">
-      <span class="sub-title">Manufacturing Capabilities</span>
-      <h2 class="section-title">Automated Corrugation Plant &amp; <span>QC Laboratory</span></h2>
-      <p class="section-desc">
-        Equipped with computer-controlled corrugators, precision rotary slotters, and in-house digital testing instruments to guarantee zero-defect transit durability.
-      </p>
-    </div>
-
-    <div class="infra-grid">
-      <!-- Machine Plant Card -->
-      <div class="infra-card">
-        <div class="infra-thumb">
-          <img src="images/modern_machinery.jpg" alt="High-Speed Corrugated Board Manufacturing Machine"/>
-          <span class="infra-badge">Production Plant</span>
-        </div>
-        <div class="infra-body">
-          <h3 class="infra-title">Automatic Corrugation &amp; Converting</h3>
-          <p class="infra-desc">
-            Our automated converting facility delivers over 500,000+ cartons per month with computer-synchronized rotary sheer cutters, precision slitting, and inline flexo folder-gluers.
-          </p>
-          <div class="infra-checklist">
-            <div class="infra-check-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>
-              5-Ply &amp; 7-Ply Automatic Corrugator
-            </div>
-            <div class="infra-check-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>
-              High Precision Die-Punching
-            </div>
-            <div class="infra-check-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>
-              Automated Palletizing Units
-            </div>
-            <div class="infra-check-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>
-              Inline 4-Color Flexo Printing
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Testing Lab Card -->
-      <div class="infra-card">
-        <div class="infra-thumb">
-          <img src="images/quality_testing.jpg" alt="Quality Testing Lab with Box Compression and Bursting Machine"/>
-          <span class="infra-badge" style="color:#ffb74d;">Quality Testing Lab</span>
-        </div>
-        <div class="infra-body">
-          <h3 class="infra-title">In-House Quality Assurance Laboratory</h3>
-          <p class="infra-desc">
-            Every production batch undergoes strict mechanical testing. From Edge Crush Tests (ECT) to Box Compression Tests (BCT), we verify structural integrity before dispatch.
-          </p>
-          <div class="infra-checklist">
-            <div class="infra-check-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>
-              Digital Box Compression Tester (BCT)
-            </div>
-            <div class="infra-check-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>
-              Mullen Bursting Strength Test
-            </div>
-            <div class="infra-check-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>
-              Cobb Sizing Water Absorption
-            </div>
-            <div class="infra-check-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>
-              Tensile &amp; Peel Adhesion Testing
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WHY CHOOSE US (FACILITY PHOTO & VALUE PILLARS) -->
-<section class="section-pad bg-surface" id="about-summary">
-  <div class="container">
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:44px; align-items:center;">
-      <div>
-        <div style="border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--border-subtle); box-shadow:var(--shadow-md);">
-          <img src="images/about_factory.jpg" alt="Mirai Packaging Bengaluru Distribution Facility" style="width:100%; height:440px; object-fit:cover;"/>
-          <div style="padding:14px 18px; background:var(--navy-dark); color:var(--white); font-size:0.85rem; display:flex; justify-content:space-between; align-items:center;">
-            <span style="font-family:var(--font-heading); font-weight:800; color:#38bdf8;">Bengaluru Distribution Hub</span>
-            <span style="color:#94a3b8;">Daily Fleet Dispatches Across Karnataka</span>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <span class="sub-title">Why Associate With Us</span>
-        <h2 class="section-title">Single-Window Vendor Consolidation <span>For Enterprise Supply Chains</span></h2>
-        <p class="section-desc" style="margin-bottom:20px;">
-          Managing separate vendors for cartons, courier mailers, tapes, stretch film, and seals leads to administrative overhead, inconsistent quality, and inventory delays. Mirai eliminates these friction points under a single SLA.
-        </p>
-
-        <div style="display:flex; flex-direction:column; gap:14px;">
-          <div style="display:flex; gap:14px; align-items:flex-start;">
-            <div style="width:36px;height:36px;border-radius:var(--radius-xs);background:var(--blue-subtle);color:var(--blue-brand);display:flex;align-items:center;justify-content:center;font-weight:800;font-family:var(--font-heading);flex-shrink:0;">01</div>
-            <div>
-              <h4 style="font-family:var(--font-heading);font-weight:800;font-size:1.05rem;color:var(--text-primary);margin-bottom:2px;">Consolidated Procurement Billing</h4>
-              <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.55;">One vendor, one invoice, and consistent material quality standards across your entire packaging inventory.</p>
-            </div>
-          </div>
-
-          <div style="display:flex; gap:14px; align-items:flex-start;">
-            <div style="width:36px;height:36px;border-radius:var(--radius-xs);background:var(--orange-subtle);color:var(--orange-brand);display:flex;align-items:center;justify-content:center;font-weight:800;font-family:var(--font-heading);flex-shrink:0;">02</div>
-            <div>
-              <h4 style="font-family:var(--font-heading);font-weight:800;font-size:1.05rem;color:var(--text-primary);margin-bottom:2px;">Factory-Direct Volume Rates</h4>
-              <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.55;">Direct corrugation and conversion eliminates middleman trading margins, lowering total cost of procurement.</p>
-            </div>
-          </div>
-
-          <div style="display:flex; gap:14px; align-items:flex-start;">
-            <div style="width:36px;height:36px;border-radius:var(--radius-xs);background:var(--blue-subtle);color:var(--blue-brand);display:flex;align-items:center;justify-content:center;font-weight:800;font-family:var(--font-heading);flex-shrink:0;">03</div>
-            <div>
-              <h4 style="font-family:var(--font-heading);font-weight:800;font-size:1.05rem;color:var(--text-primary);margin-bottom:2px;">Vendor Managed Inventory (VMI)</h4>
-              <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.55;">We maintain safety buffer stock in our Bengaluru warehouse and dispatch on a call-off schedule to prevent factory downtime.</p>
-            </div>
-          </div>
-        </div>
-
-        <div style="margin-top:24px;">
-          <a href="about.html" class="btn btn-primary">
-            Read Corporate Profile
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROCESS: HOW IT WORKS -->
-<section class="section-pad" id="process">
-  <div class="container">
-    <div class="section-header text-center">
-      <span class="sub-title">Execution Workflow</span>
-      <h2 class="section-title">The 4-Step <span>Packaging Lifecycle</span></h2>
-      <p class="section-desc">
-        From custom structural CAD die-lines to automated manufacturing and fleet delivery on committed turnaround times.
-      </p>
-    </div>
-
-    <div class="process-grid">
-      <div class="process-card">
-        <div class="process-step-num">01</div>
-        <h4>Requirements &amp; CAD</h4>
-        <p>We evaluate product dimensions, transit vibration, fragility, and design structural die-lines with optimized paper GSM.</p>
-      </div>
-
-      <div class="process-card">
-        <div class="process-step-num">02</div>
-        <h4>Sampling &amp; Lab QC</h4>
-        <p>Physical prototype samples are produced and validated on our digital Mullen bursting tester prior to production sign-off.</p>
-      </div>
-
-      <div class="process-card">
-        <div class="process-step-num">03</div>
-        <h4>Automated Production</h4>
-        <p>Commercial manufacturing runs on our 5-ply automated corrugator line with 4-color flexo graphic printing and inline gluing.</p>
-      </div>
-
-      <div class="process-card">
-        <div class="process-step-num">04</div>
-        <h4>Fleet Dispatch on TAT</h4>
-        <p>Palletized and stretch-wrapped batches dispatched via dedicated logistics fleet with 99.8% on-time delivery commitment.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CERTIFICATIONS & QUALITY ASSURANCE BAR -->
-<div class="cert-bar">
-  <div class="container">
-    <div class="cert-grid">
-      <div class="cert-item">
-        <div class="cert-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <div>
-          <div class="cert-title">ISO 9001:2015</div>
-          <div class="cert-sub">Quality Management Certified</div>
-        </div>
-      </div>
-
-      <div class="cert-item">
-        <div class="cert-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
-        </div>
-        <div>
-          <div class="cert-title">FSC Certified Paper</div>
-          <div class="cert-sub">Sustainable Kraft Sourcing</div>
-        </div>
-      </div>
-
-      <div class="cert-item">
-        <div class="cert-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        </div>
-        <div>
-          <div class="cert-title">RoHS &amp; Heavy-Metal Free</div>
-          <div class="cert-sub">Non-Toxic Inks &amp; Polymers</div>
-        </div>
-      </div>
-
-      <div class="cert-item">
-        <div class="cert-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-        </div>
-        <div>
-          <div class="cert-title">BCT &amp; ECT Lab Tested</div>
-          <div class="cert-sub">Laboratory Burst Certified</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- CLIENT TESTIMONIALS -->
-<section class="section-pad bg-neutral" id="testimonials">
-  <div class="container">
-    <div class="section-header text-center">
-      <span class="sub-title">Client Verifications</span>
-      <h2 class="section-title">Feedback from <span>Supply Chain Managers</span></h2>
-    </div>
-
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:24px;">
-      <div style="background:var(--white); padding:28px; border-radius:var(--radius-sm); border:1px solid var(--border-subtle); box-shadow:var(--shadow-xs);">
-        <div style="color:#f59e0b; margin-bottom:12px; font-size:1.1rem;">★★★★★</div>
-        <p style="font-size:0.92rem; line-height:1.65; color:var(--text-secondary); margin-bottom:18px; font-style:italic;">
-          "Mirai Packaging has streamlined our Bengaluru warehouse operations. Their 5-ply corrugated master cartons have completely eliminated transit crushing across interstate routes. Delivery timelines have been consistent."
-        </p>
-        <div style="padding-top:14px; border-top:1px solid var(--border-subtle); font-size:0.84rem;">
-          <strong style="color:var(--text-primary); display:block;">Logistics &amp; Distribution Lead</strong>
-          <span style="color:var(--text-muted);">Automotive Spares OEM</span>
-        </div>
-      </div>
-
-      <div style="background:var(--white); padding:28px; border-radius:var(--radius-sm); border:1px solid var(--border-subtle); box-shadow:var(--shadow-xs);">
-        <div style="color:#f59e0b; margin-bottom:12px; font-size:1.1rem;">★★★★★</div>
-        <p style="font-size:0.92rem; line-height:1.65; color:var(--text-secondary); margin-bottom:18px; font-style:italic;">
-          "The tamper-proof courier mailers and custom printed BOPP tapes from Mirai Packaging reduced transit tampering significantly across our fulfillment hubs. Consolidating under one vendor simplified our procurement."
-        </p>
-        <div style="padding-top:14px; border-top:1px solid var(--border-subtle); font-size:0.84rem;">
-          <strong style="color:var(--text-primary); display:block;">Senior Procurement Manager</strong>
-          <span style="color:var(--text-muted);">National Apparel &amp; Lifestyle Brand</span>
-        </div>
-      </div>
-
-      <div style="background:var(--white); padding:28px; border-radius:var(--radius-sm); border:1px solid var(--border-subtle); box-shadow:var(--shadow-xs);">
-        <div style="color:#f59e0b; margin-bottom:12px; font-size:1.1rem;">★★★★★</div>
-        <p style="font-size:0.92rem; line-height:1.65; color:var(--text-secondary); margin-bottom:18px; font-style:italic;">
-          "We source custom printed white duplex tuck cartons and protective bubble wrap from Mirai. Their in-house laboratory BCT testing certification ensures structural consistency for fragile skincare bottles."
-        </p>
-        <div style="padding-top:14px; border-top:1px solid var(--border-subtle); font-size:0.84rem;">
-          <strong style="color:var(--text-primary); display:block;">Operations Director</strong>
-          <span style="color:var(--text-muted);">Cosmetics &amp; FMCG Brand</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FREQUENTLY ASKED QUESTIONS -->
-<section class="section-pad" id="faq">
-  <div class="container">
-    <div class="section-header text-center">
-      <span class="sub-title">Technical Support</span>
-      <h2 class="section-title">Frequently Asked <span>Packaging Questions</span></h2>
-    </div>
-
-    <div class="faq-grid">
-      <div class="faq-item active">
-        <button class="faq-question">
-          <span>What is the minimum order quantity (MOQ) for custom printed corrugated boxes?</span>
-          <span class="faq-icon">▼</span>
-        </button>
-        <div class="faq-answer">
-          <p>For standard plain RSC corrugated cartons, orders start from 500 units. For custom flexo-printed cartons with client branding, typical production runs start from 1,000 to 2,000 units depending on box dimensions and flute profile.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          <span>Can you manufacture heavy-duty 7-ply and 9-ply cartons for machinery and exports?</span>
-          <span class="faq-icon">▼</span>
-        </button>
-        <div class="faq-answer">
-          <p>Yes. We manufacture heavy-duty triple-wall 7-ply and 9-ply corrugated cartons using high-burst imported virgin kraft papers capable of supporting compressive loads up to 1,200 kgf for automotive parts, machinery, and sea exports.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          <span>Do you provide physical prototype samples before full production?</span>
-          <span class="faq-icon">▼</span>
-        </button>
-        <div class="faq-answer">
-          <p>Yes. Once carton dimensions and board specifications are determined, our CAD department provides physical unprinted structural samples for transit fitting and drop testing prior to commercial manufacturing.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          <span>What are your delivery turnaround times across Bengaluru and South India?</span>
-          <span class="faq-icon">▼</span>
-        </button>
-        <div class="faq-answer">
-          <p>For catalog stock items (standard cartons, courier flyers, stretch wrap, and tapes), delivery in Bengaluru is within 24–48 hours. Custom manufacturing runs typically dispatch within 5 to 7 working days.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- HIGH-IMPACT CTA BANNER -->
-<section class="cta-banner">
-  <div class="container">
-    <div class="cta-inner">
-      <div>
-        <h2 class="cta-title">Upgrade Your Supply Chain With Precision Packaging</h2>
-        <p class="cta-desc">
-          Speak with our packaging specialists today for volume purchase pricing, CAD die-lines, and sample kits.
-        </p>
-      </div>
-      <div class="cta-btns">
-        <a href="contact.html" class="btn btn-white btn-lg">
-          Get Bulk Pricing
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <a href="tel:+919491436494" class="btn btn-outline-white btn-lg">
-          Call: +91 9491436494
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CORPORATE FOOTER -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="footer-logo">
-          <img src="images/logo_white.png" alt="Mirai Packaging LLP" class="footer-logo-img"/>
+  <!-- HEADER NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo" id="navLogo">
+          <img src="images/logo.png" alt="Mirai Packaging LLP" class="nav-logo-img" />
           <div class="nav-logo-text">
-            <span class="brand-name" style="color:#ffffff;">MIRAI</span>
-            <span class="brand-tag" style="color:#38bdf8;">PACKAGING LLP</span>
+            <span class="brand-name">MIRAI</span>
+            <span class="brand-tag">PACKAGING LLP</span>
+            <span class="brand-motto">Flexible Packaging Solutions For Modern Needs</span>
           </div>
         </a>
-        <p>
-          Mirai Packaging LLP is Bangalore's premier manufacturing and conversion partner for industrial packaging materials. Serving enterprise logistics, e-commerce, and manufacturing hubs across India.
+        <nav class="nav-menu" id="navMenu">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="products.html" class="nav-link">Products &amp; Specs</a>
+          <a href="clients.html" class="nav-link">Client Portfolio</a>
+          <a href="contact.html" class="nav-link">Contact &amp; RFQ</a>
+        </nav>
+        <div class="nav-actions">
+          <a href="contact.html" class="btn btn-orange btn-sm">
+            Request Quote
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <nav class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="Mirai Packaging LLP" style="height:48px;" />
+        <div class="nav-logo-text">
+          <span class="brand-name" style="font-size:1.2rem;">MIRAI</span>
+          <span class="brand-tag">PACKAGING LLP</span>
+        </div>
+      </div>
+      <div class="drawer-close" id="drawerClose">&#x2715;</div>
+    </div>
+    <div class="drawer-nav">
+      <a href="index.html" class="drawer-link active">Home</a>
+      <a href="about.html" class="drawer-link">About Us</a>
+      <a href="products.html" class="drawer-link">Products &amp; Specs</a>
+      <a href="clients.html" class="drawer-link">Client Portfolio</a>
+      <a href="contact.html" class="drawer-link">Contact &amp; RFQ</a>
+    </div>
+    <div class="drawer-footer">
+      <a href="tel:+919044129477" class="btn btn-outline" style="width:100%;margin-bottom:8px;justify-content:center;">
+        Call: +91 9044129477
+      </a>
+      <a href="contact.html" class="btn btn-orange" style="width:100%;justify-content:center;">
+        Request Bulk Quote
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            ISO 9001:2015 Certified • Bengaluru Manufacturing Unit
+          </div>
+          <div class="hero-float-badge">
+            Direct Factory Pricing &bull; 50+ Custom Sizes in Stock &bull; Express Dispatch
+          </div>
+          <h1 class="hero-title">
+            Serving All Packaging Needs <span>Under One Roof</span>
+          </h1>
+          <p class="hero-desc">
+            Mirai Packaging LLP is an ISO 9001:2015 certified, Bangalore-based manufacturing and wholesale enterprise
+            specializing in end-to-end industrial packaging and material handling solutions. The company eliminates
+            multi-vendor procurement bottlenecks by delivering custom-engineered protective packaging, storage systems,
+            and transit security on a single platform.
+          </p>
+
+          <div class="hero-chips">
+            <span class="hero-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              2 Ply to 9 Ply Heavy Duty Cartons
+            </span>
+            <span class="hero-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              Tamper-Proof Courier Flyers &amp; POD
+            </span>
+            <span class="hero-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              In-House BCT &amp; Bursting Testing Lab
+            </span>
+            <span class="hero-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              Committed Dispatch on TAT
+            </span>
+          </div>
+
+          <div class="hero-btns">
+            <a href="pdf/Mirai_Packaging_Master_Catalogue.pdf" download="Mirai_Packaging_Master_Catalogue.pdf" class="btn btn-orange btn-lg" style="box-shadow:0 4px 18px rgba(235,94,40,0.4);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:18px;height:18px;"><path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              Download Catalogue (PDF)
+            </a>
+            <a href="products.html" class="btn btn-outline-white btn-lg">
+              View Product Range
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <div class="hero-stat-num">
+                <span data-target="500" data-suffix="+">500+</span>
+              </div>
+              <div class="hero-stat-lbl">Active Packaging SKUs</div>
+            </div>
+            <div>
+              <div class="hero-stat-num">
+                <span data-target="42" data-suffix="+">42+</span>
+              </div>
+              <div class="hero-stat-lbl">Enterprise Clients</div>
+            </div>
+            <div>
+              <div class="hero-stat-num">
+                <span data-target="30" data-suffix="+">30+</span>
+              </div>
+              <div class="hero-stat-lbl">Cities Served Pan-India</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-img-card" id="heroSliderCard">
+            <div class="hero-slider-track" id="heroSliderTrack">
+
+              <div class="hero-slide active">
+                <img src="images/hero_composite.jpg" alt="All-in-One Industrial Packaging &amp; Dispatch Kits" />
+                <div class="hero-slide-badge">All-in-One Packaging &amp; Dispatch Kits</div>
+                <div class="hero-slide-desc">Complete 2-ply to 9-ply corrugated cartons, tamper-proof courier mailers, BOPP tapes &amp; stretch wrap.</div>
+              </div>
+
+              <div class="hero-slide">
+                <img src="images/corrugated_box.jpg" alt="Heavy Duty Corrugated Cartons" />
+                <div class="hero-slide-badge">Heavy-Duty RSC Master Cartons</div>
+                <div class="hero-slide-desc">3-Ply, 5-Ply &amp; 7-Ply corrugated boxes custom engineered for high bursting strength &amp; stacking.</div>
+              </div>
+
+              <div class="hero-slide">
+                <img src="images/courier_bag.jpg" alt="Tamper-Proof Courier Flyer Bags" />
+                <div class="hero-slide-badge">Tamper-Proof Courier Flyer Bags</div>
+                <div class="hero-slide-desc">Co-Ex polyethylene mailers with permanent seal strip &amp; POD jacket for e-commerce transit security.</div>
+              </div>
+
+              <div class="hero-slide">
+                <img src="images/bopp_tape_rolls.jpg" alt="Industrial BOPP Packaging Tapes" />
+                <div class="hero-slide-badge">High-Tack Industrial BOPP Tapes</div>
+                <div class="hero-slide-desc">Heavy-duty acrylic self-adhesive BOPP sealing tapes in custom sizes &amp; branded logo prints.</div>
+              </div>
+
+              <div class="hero-slide">
+                <img src="images/product_photo_4.jpg" alt="Plastic Storage Crate with Lid" />
+                <div class="hero-slide-badge">Plastic Storage Crates with Lid</div>
+                <div class="hero-slide-desc">Heavy-duty stackable HDPE plastic crates with lid lock for industrial material handling.</div>
+              </div>
+
+              <div class="hero-slide">
+                <img src="images/stretch_film_pallet.jpg" alt="High-Cling Stretch Film Pallet Wrap" />
+                <div class="hero-slide-badge">High-Cling Stretch Film &amp; Pallet Wrap</div>
+                <div class="hero-slide-desc">High-elongation LLDPE machine &amp; manual stretch wrap for pallet stabilization &amp; dust protection.</div>
+              </div>
+
+              <div class="hero-slide">
+                <img src="images/bubble_wrap.jpg" alt="Multi-Layer Air Bubble Rolls" />
+                <div class="hero-slide-badge">Protective Air Bubble Rolls</div>
+                <div class="hero-slide-desc">Multi-layer air bubble rolls &amp; EPE foam sheets for fragile item cushioning &amp; surface protection.</div>
+              </div>
+
+              <div class="hero-slide">
+                <img src="images/kraft_paper_bags.jpg" alt="Eco-Kraft Paper Bags &amp; Mailers" />
+                <div class="hero-slide-badge">Eco-Kraft Paper Bags &amp; Mailers</div>
+                <div class="hero-slide-desc">100% recyclable biodegradable kraft paper bags &amp; mailers for sustainable retail packaging.</div>
+              </div>
+
+              <div class="hero-slide">
+                <img src="images/pp_box.jpg" alt="PP Flute Corrugated Reusable Boxes" />
+                <div class="hero-slide-badge">PP Corrugated Flute Boxes</div>
+                <div class="hero-slide-desc">Waterproof, chemical-resistant twin-wall polypropylene boxes for reusable closed-loop logistics.</div>
+              </div>
+
+              <div class="hero-slide">
+                <img src="images/wooden_pallets.jpg" alt="ISPM-15 Heat Treated Wooden Pallets" />
+                <div class="hero-slide-badge">ISPM-15 Export Wooden Pallets</div>
+                <div class="hero-slide-desc">Heat-treated wooden pallets certified for export &amp; heavy logistics load bearing.</div>
+              </div>
+
+            </div>
+
+            <!-- Slide Controls -->
+            <button class="hero-slider-arrow hero-prev" id="heroPrev" aria-label="Previous image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button class="hero-slider-arrow hero-next" id="heroNext" aria-label="Next image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+
+            <!-- Slide Dots -->
+            <div class="hero-slider-dots" id="heroDots"></div>
+
+            <div class="hero-img-caption">
+              <div>
+                <strong style="color:var(--white); font-weight:700; font-size:0.88rem;">Complete Supply Chain
+                  Range</strong>
+                <div style="color:#94a3b8; font-size:0.75rem;">Cartons • Courier Mailers • Tapes • Stretch Wrap •
+                  Security Seals</div>
+              </div>
+              <a href="contact.html" class="btn btn-orange btn-sm" style="flex-shrink:0;">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENTERPRISE CLIENT PARTNERS TICKER -->
+  <section class="brand-ticker-section">
+    <div class="container">
+      <div class="brand-ticker-header">
+        <span class="ticker-badge">Enterprise Supply Chains</span>
+        <h3 class="ticker-heading">Trusted Packaging Partner to India's Foremost Brands</h3>
+      </div>
+    </div>
+    <div class="ticker-slider-wrap">
+      <div class="ticker-track">
+        <!-- PUMA -->
+        <div class="ticker-card">
+          <img src="images/logo_puma.svg" alt="PUMA India" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">PUMA India</span>
+            <span class="brand-tag">National SLA</span>
+          </div>
+          <span class="brand-sector">Apparel &amp; Footwear</span>
+        </div>
+
+        <!-- Ashok Leyland -->
+        <div class="ticker-card">
+          <img src="images/logo_ashok_leyland.svg" alt="Ashok Leyland" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">Ashok Leyland</span>
+            <span class="brand-tag">Heavy Duty</span>
+          </div>
+          <span class="brand-sector">Automotive Tier-1 OEM</span>
+        </div>
+
+        <!-- Swiss Beauty -->
+        <div class="ticker-card">
+          <img src="images/logo_swiss_beauty.svg" alt="Swiss Beauty" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">Swiss Beauty</span>
+            <span class="brand-tag">Luxury Finish</span>
+          </div>
+          <span class="brand-sector">Cosmetics &amp; Personal Care</span>
+        </div>
+
+        <!-- Urban Company -->
+        <div class="ticker-card">
+          <img src="images/logo_urban_company.svg" alt="Urban Company" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">Urban Company</span>
+            <span class="brand-tag">Service Kits</span>
+          </div>
+          <span class="brand-sector">Home Services &amp; Logistics</span>
+        </div>
+
+        <!-- USANA -->
+        <div class="ticker-card">
+          <img src="images/logo_usana.svg" alt="USANA Health" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">USANA Health</span>
+            <span class="brand-tag">Pharma Grade</span>
+          </div>
+          <span class="brand-sector">Nutraceuticals &amp; Wellness</span>
+        </div>
+
+        <!-- Arvind Fashions -->
+        <div class="ticker-card">
+          <img src="images/logo_arvind_fashions.svg" alt="Arvind Fashions" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">Arvind Fashions</span>
+            <span class="brand-tag">Export Cartons</span>
+          </div>
+          <span class="brand-sector">Garment Retail Hubs</span>
+        </div>
+
+        <!-- Wrogn / USPL -->
+        <div class="ticker-card">
+          <img src="images/logo_wrogn.svg" alt="WROGN USPL" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">USPL / Wrogn</span>
+            <span class="brand-tag">Fashion Retail</span>
+          </div>
+          <span class="brand-sector">Youth Lifestyle Brands</span>
+        </div>
+
+        <!-- Banking Security -->
+        <div class="ticker-card">
+          <img src="images/logo_banking.svg" alt="Banking Partners" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">Banking Partners</span>
+            <span class="brand-tag">Tamper Evident</span>
+          </div>
+          <span class="brand-sector">IDBI &bull; Karur Vysya &bull; Equitas</span>
+        </div>
+
+        <!-- Master Chow -->
+        <div class="ticker-card">
+          <img src="images/logo_master_chow.svg" alt="Master Chow" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">Master Chow</span>
+            <span class="brand-tag">Transit Safe</span>
+          </div>
+          <span class="brand-sector">D2C Gourmet Food</span>
+        </div>
+
+        <!-- HealthFarm -->
+        <div class="ticker-card">
+          <img src="images/logo_healthfarm.svg" alt="HealthFarm" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">HealthFarm</span>
+            <span class="brand-tag">Clean Pack</span>
+          </div>
+          <span class="brand-sector">Sports Nutrition</span>
+        </div>
+
+        <!-- Zepto -->
+        <div class="ticker-card">
+          <img src="images/logo_zepto.svg" alt="Zepto" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">Zepto</span>
+            <span class="brand-tag">10-Min Dispatch</span>
+          </div>
+          <span class="brand-sector">Dark Store &amp; Quick Retail</span>
+        </div>
+
+        <!-- Haldiram's -->
+        <div class="ticker-card">
+          <img src="images/logo_haldiram.jpg" alt="Haldiram's" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">Haldiram's</span>
+            <span class="brand-tag">FMCG Grade</span>
+          </div>
+          <span class="brand-sector">Food Processing &amp; Sweets</span>
+        </div>
+
+        <!-- Aditya Birla Fashion -->
+        <div class="ticker-card">
+          <img src="images/logo_aditya_birla.jpg" alt="Aditya Birla Fashion" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">Aditya Birla Fashion</span>
+            <span class="brand-tag">ABFRL Retail</span>
+          </div>
+          <span class="brand-sector">Apparel &amp; Multi-Brand Stores</span>
+        </div>
+
+        <!-- Blackberrys -->
+        <div class="ticker-card">
+          <img src="images/logo_blackberry.jpg" alt="Blackberrys" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">Blackberrys</span>
+            <span class="brand-tag">Premium Apparel</span>
+          </div>
+          <span class="brand-sector">Men's Fashion &amp; Retail</span>
+        </div>
+
+        <!-- DUPLICATE SET FOR SEAMLESS INFINITE LOOP -->
+        <div class="ticker-card">
+          <img src="images/logo_puma.svg" alt="PUMA India" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">PUMA India</span>
+            <span class="brand-tag">National SLA</span>
+          </div>
+          <span class="brand-sector">Apparel &amp; Footwear</span>
+        </div>
+
+        <div class="ticker-card">
+          <img src="images/logo_ashok_leyland.svg" alt="Ashok Leyland" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">Ashok Leyland</span>
+            <span class="brand-tag">Heavy Duty</span>
+          </div>
+          <span class="brand-sector">Automotive Tier-1 OEM</span>
+        </div>
+
+        <div class="ticker-card">
+          <img src="images/logo_swiss_beauty.svg" alt="Swiss Beauty" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">Swiss Beauty</span>
+            <span class="brand-tag">Luxury Finish</span>
+          </div>
+          <span class="brand-sector">Cosmetics &amp; Personal Care</span>
+        </div>
+
+        <div class="ticker-card">
+          <img src="images/logo_urban_company.svg" alt="Urban Company" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">Urban Company</span>
+            <span class="brand-tag">Service Kits</span>
+          </div>
+          <span class="brand-sector">Home Services &amp; Logistics</span>
+        </div>
+
+        <div class="ticker-card">
+          <img src="images/logo_usana.svg" alt="USANA Health" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">USANA Health</span>
+            <span class="brand-tag">Pharma Grade</span>
+          </div>
+          <span class="brand-sector">Nutraceuticals &amp; Wellness</span>
+        </div>
+
+        <div class="ticker-card">
+          <img src="images/logo_arvind_fashions.svg" alt="Arvind Fashions" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">Arvind Fashions</span>
+            <span class="brand-tag">Export Cartons</span>
+          </div>
+          <span class="brand-sector">Garment Retail Hubs</span>
+        </div>
+
+        <div class="ticker-card">
+          <img src="images/logo_wrogn.svg" alt="WROGN USPL" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">USPL / Wrogn</span>
+            <span class="brand-tag">Fashion Retail</span>
+          </div>
+          <span class="brand-sector">Youth Lifestyle Brands</span>
+        </div>
+
+        <div class="ticker-card">
+          <img src="images/logo_banking.svg" alt="Banking Partners" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">Banking Partners</span>
+            <span class="brand-tag">Tamper Evident</span>
+          </div>
+          <span class="brand-sector">IDBI &bull; Karur Vysya &bull; Equitas</span>
+        </div>
+
+        <div class="ticker-card">
+          <img src="images/logo_master_chow.svg" alt="Master Chow" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">Master Chow</span>
+            <span class="brand-tag">Transit Safe</span>
+          </div>
+          <span class="brand-sector">D2C Gourmet Food</span>
+        </div>
+
+        <div class="ticker-card">
+          <img src="images/logo_healthfarm.svg" alt="HealthFarm" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">HealthFarm</span>
+            <span class="brand-tag">Clean Pack</span>
+          </div>
+          <span class="brand-sector">Sports Nutrition</span>
+        </div>
+
+        <div class="ticker-card">
+          <img src="images/logo_zepto.svg" alt="Zepto" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">Zepto</span>
+            <span class="brand-tag">10-Min Dispatch</span>
+          </div>
+          <span class="brand-sector">Dark Store &amp; Quick Retail</span>
+        </div>
+
+        <div class="ticker-card">
+          <img src="images/logo_haldiram.jpg" alt="Haldiram's" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">Haldiram's</span>
+            <span class="brand-tag">FMCG Grade</span>
+          </div>
+          <span class="brand-sector">Food Processing &amp; Sweets</span>
+        </div>
+
+        <div class="ticker-card">
+          <img src="images/logo_aditya_birla.jpg" alt="Aditya Birla Fashion" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">Aditya Birla Fashion</span>
+            <span class="brand-tag">ABFRL Retail</span>
+          </div>
+          <span class="brand-sector">Apparel &amp; Multi-Brand Stores</span>
+        </div>
+
+        <div class="ticker-card">
+          <img src="images/logo_blackberry.jpg" alt="Blackberrys" class="ticker-logo-img" />
+          <div class="ticker-card-top">
+            <span class="brand-name">Blackberrys</span>
+            <span class="brand-tag">Premium Apparel</span>
+          </div>
+          <span class="brand-sector">Men's Fashion &amp; Retail</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- PRODUCT SHOWCASE MATRIX -->
+  <section class="section-pad bg-neutral" id="products">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-title">Manufactured Product Range</span>
+        <h2 class="section-title">Engineered Products for <span>Modern Supply Chains</span></h2>
+        <p class="section-desc">
+          Produced with premium virgin &amp; recycled kraft liners, high-shear polymer adhesives, and strict bursting
+          strength quality assurance.
         </p>
-        <div class="footer-badges">
-          <span class="footer-badge-pill">GSTIN: 29AAUFM9272M1Z2</span>
-          <span class="footer-badge-pill">ISO 9001:2015</span>
-          <span class="footer-badge-pill">MSME Registered</span>
-        </div>
       </div>
 
-      <div class="footer-col">
-        <h4>Core Products</h4>
-        <div class="footer-links">
-          <a href="products.html#corrugated">Corrugated Boxes (2-9 Ply)</a>
-          <a href="products.html#courier">Tamper-Proof Courier Bags</a>
-          <a href="products.html#tapes">BOPP &amp; Custom Printed Tapes</a>
-          <a href="products.html#ecopack">Eco Kraft Bags &amp; Honeycomb</a>
-          <a href="products.html#stretch">Industrial Stretch Film</a>
-          <a href="products.html#security">Security Seals &amp; Locks</a>
-        </div>
+      <!-- CATEGORY FILTER TABS -->
+      <div class="filter-tabs">
+        <button class="filter-tab-btn active" data-filter="all">All Products (12)</button>
+        <button class="filter-tab-btn" data-filter="boxes">Boxes &amp; Mailers</button>
+        <button class="filter-tab-btn" data-filter="tapes">Tapes &amp; Films</button>
+        <button class="filter-tab-btn" data-filter="warehouse">Warehouse &amp; Pallets</button>
+        <button class="filter-tab-btn" data-filter="industrial">Industrial Solutions</button>
       </div>
 
-      <div class="footer-col">
-        <h4>Company</h4>
-        <div class="footer-links">
-          <a href="about.html">About Mirai</a>
-          <a href="clients.html">Client Portfolio</a>
-          <a href="index.html#infrastructure">Manufacturing Plant</a>
-          <a href="index.html#calculator">Packaging Calculator</a>
-          <a href="contact.html">Request Sample Kit</a>
-          <a href="contact.html">Contact Us</a>
-        </div>
-      </div>
-
-      <div class="footer-col">
-        <h4>Bengaluru Hub</h4>
-        <div class="footer-contact-list">
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-            <span>1091, 8th Cross Road, Jai Marathi Nagar, Bengaluru Urban, Karnataka – 560086</span>
+      <div class="products-grid">
+        <!-- 1. Corrugated Boxes -->
+        <div class="product-card" data-category="boxes">
+          <div class="product-thumb">
+            <img src="images/ai_corrugated_boxes.jpg" alt="Corrugated Packaging Shipping Boxes Lineup" />
+            <span class="product-thumb-tag">Master Cartons</span>
+            <span class="product-badge-accent">2 to 9 Ply</span>
           </div>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-            <span>+91 9491436494 / +91 9819352677</span>
+          <div class="product-body">
+            <h3 class="product-title">Corrugated Shipping &amp; Die-Cut Boxes</h3>
+            <p class="product-desc">
+              RSC standard cartons, die-cut self-locking mailers, partition boxes, and heavy-duty 7/9 ply export
+              shippers engineered for high stacking compression.
+            </p>
+            <div class="product-specs">
+              <span class="spec-pill">GSM: <strong>120 – 350 GSM</strong></span>
+              <span class="spec-pill">Flute: <strong>B, C, E, BC, AAA</strong></span>
+              <span class="spec-pill">Bursting: <strong>14 – 32 kg/cm²</strong></span>
+              <span class="spec-pill">Print: <strong>1-4 Color Flexo</strong></span>
+            </div>
+            <div class="product-footer">
+              <a href="products.html#corrugated" class="product-cta-link">
+                View Technical Specs
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="contact.html?prod=corrugated" class="product-inquiry-btn">Enquire Bulk</a>
+            </div>
           </div>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-            <span>miraipackagingllp@gmail.com</span>
+        </div>
+
+        <!-- 2. Courier Bags -->
+        <div class="product-card" data-category="boxes">
+          <div class="product-thumb">
+            <img src="images/ai_courier_mailers.jpg" alt="Tamper-Proof Poly Courier Mailer Bags" />
+            <span class="product-thumb-tag">E-Commerce Flyers</span>
+            <span class="product-badge-accent">Tamper Proof</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Tamper-Evident Courier &amp; Poly Bags</h3>
+            <p class="product-desc">
+              Co-extruded multilayer LDPE bags with permanent hot-melt adhesive lip, POD airway bill receipt jacket,
+              bubble-lined interior options, and opaque black inner.
+            </p>
+            <div class="product-specs">
+              <span class="spec-pill">Thickness: <strong>50 – 80 Microns</strong></span>
+              <span class="spec-pill">Seal: <strong>Hot-Melt Void Strip</strong></span>
+              <span class="spec-pill">Type: <strong>POD Jacket / Bubble</strong></span>
+              <span class="spec-pill">Waterproof: <strong>100% Co-Ex</strong></span>
+            </div>
+            <div class="product-footer">
+              <a href="products.html#courier" class="product-cta-link">
+                View Technical Specs
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="contact.html?prod=courier" class="product-inquiry-btn">Enquire Bulk</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Packaging Tapes -->
+        <div class="product-card" data-category="tapes">
+          <div class="product-thumb">
+            <img src="images/tape_rolls.jpg" alt="Industrial BOPP Packaging Tapes and Custom Printed Rolls" />
+            <span class="product-thumb-tag">Adhesive Tapes</span>
+            <span class="product-badge-accent">High Tack</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">BOPP &amp; Custom Printed Tapes</h3>
+            <p class="product-desc">
+              High-shear acrylic and hot-melt BOPP tapes in clear, brown, and custom logo printed rolls designed for
+              manual dispensers or high-speed automated taping machines.
+            </p>
+            <div class="product-specs">
+              <span class="spec-pill">Thickness: <strong>40 – 52 Microns</strong></span>
+              <span class="spec-pill">Width: <strong>24mm, 48mm, 72mm</strong></span>
+              <span class="spec-pill">Roll Length: <strong>50m – 650m</strong></span>
+              <span class="spec-pill">Custom: <strong>Brand Logo Print</strong></span>
+            </div>
+            <div class="product-footer">
+              <a href="products.html#tapes" class="product-cta-link">
+                View Technical Specs
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="contact.html?prod=tapes" class="product-inquiry-btn">Enquire Bulk</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Eco Kraft Bags & Honeycomb -->
+        <div class="product-card" data-category="boxes">
+          <div class="product-thumb">
+            <img src="images/ai_kraft_mailers.jpg" alt="Eco Friendly Kraft Paper Bags and Honeycomb Cushioning Roll" />
+            <span class="product-thumb-tag">Sustainable Packaging</span>
+            <span class="product-badge-accent">100% Eco</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Eco Kraft Bags &amp; Honeycomb Cushioning</h3>
+            <p class="product-desc">
+              FSC-certified biodegradable brown kraft retail shopping bags with twisted handles, paired with expanding
+              honeycomb paper wrap replacing plastic bubble wrap.
+            </p>
+            <div class="product-specs">
+              <span class="spec-pill">Material: <strong>Virgin Kraft Paper</strong></span>
+              <span class="spec-pill">Grammage: <strong>90 – 180 GSM</strong></span>
+              <span class="spec-pill">Cushion: <strong>Hexagonal Mesh</strong></span>
+              <span class="spec-pill">Eco: <strong>100% Biodegradable</strong></span>
+            </div>
+            <div class="product-footer">
+              <a href="products.html#ecopack" class="product-cta-link">
+                View Technical Specs
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="contact.html?prod=ecopack" class="product-inquiry-btn">Enquire Bulk</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Stretch Film Rolls -->
+        <div class="product-card" data-category="tapes">
+          <div class="product-thumb">
+            <img src="images/stretch_film.jpg" alt="Industrial LLDPE Stretch Film Rolls and Pallet Wrap" />
+            <span class="product-thumb-tag">Pallet Unitization</span>
+            <span class="product-badge-accent">Cast LLDPE</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Industrial Stretch Film &amp; Pallet Wrap</h3>
+            <p class="product-desc">
+              High-clarity cast multi-layer LLDPE film rolls offering superior elongation up to 300%, puncture
+              resistance, and load stability for palletized transport.
+            </p>
+            <div class="product-specs">
+              <span class="spec-pill">Thickness: <strong>17 – 35 Microns</strong></span>
+              <span class="spec-pill">Elongation: <strong>Up to 300%</strong></span>
+              <span class="spec-pill">Width: <strong>500mm (20 Inch)</strong></span>
+              <span class="spec-pill">Type: <strong>Hand &amp; Machine Grade</strong></span>
+            </div>
+            <div class="product-footer">
+              <a href="products.html#stretch" class="product-cta-link">
+                View Technical Specs
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="contact.html?prod=stretch" class="product-inquiry-btn">Enquire Bulk</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Security Seals & Envelopes -->
+        <div class="product-card" data-category="industrial">
+          <div class="product-thumb">
+            <img src="images/security_seal.jpg" alt="Tamper Proof Security Seals and Barcoded Envelopes" />
+            <span class="product-thumb-tag">Transit Security</span>
+            <span class="product-badge-accent">Laser Numbered</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Security Seals, STEB Bags &amp; Envelopes</h3>
+            <p class="product-desc">
+              Sequential laser-serialized pull-tight PP seals, bolt container locks, gold loan tamper envelopes, and
+              high-security currency transit bags for banks and logistics.
+            </p>
+            <div class="product-specs">
+              <span class="spec-pill">Material: <strong>High Impact PP &amp; Steel</strong></span>
+              <span class="spec-pill">Serial: <strong>Laser Barcode / Number</strong></span>
+              <span class="spec-pill">Tensile: <strong>15 – 45 kg Break</strong></span>
+              <span class="spec-pill">Security: <strong>ISO 17712 Compliant</strong></span>
+            </div>
+            <div class="product-footer">
+              <a href="products.html#security" class="product-cta-link">
+                View Technical Specs
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="contact.html?prod=security" class="product-inquiry-btn">Enquire Bulk</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Heavy Duty Storage Racks -->
+        <div class="product-card" data-category="warehouse">
+          <div class="product-thumb">
+            <img src="images/heavy_duty_rack.jpg" alt="Heavy Duty Industrial Pallet Racking System" />
+            <span class="product-thumb-tag">Warehouse Infra</span>
+            <span class="product-badge-accent">Heavy Load</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Heavy Duty Storage Racks &amp; Pallet Racking</h3>
+            <p class="product-desc">
+              Cold-rolled high tensile steel beam racks engineered for heavy industrial warehouse storage, maximum
+              vertical density, and multi-tier pallet placement.
+            </p>
+            <div class="product-specs">
+              <span class="spec-pill">Load: <strong>500 – 3000 kg/Level</strong></span>
+              <span class="spec-pill">Steel: <strong>IS 2062 Grade</strong></span>
+              <span class="spec-pill">Finish: <strong>Powder Coated</strong></span>
+              <span class="spec-pill">Adjust: <strong>50mm Pitch</strong></span>
+            </div>
+            <div class="product-footer">
+              <a href="products.html#racks" class="product-cta-link">
+                View Technical Specs
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="contact.html?prod=racks" class="product-inquiry-btn">Enquire Bulk</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Wooden & Plastic Pallets, Crates & PP Boxes -->
+        <div class="product-card" data-category="warehouse">
+          <div class="product-thumb">
+            <img src="images/plastic_pallets.jpg" alt="Industrial Wooden and Plastic Pallets and Crates" />
+            <span class="product-thumb-tag">Material Handling</span>
+            <span class="product-badge-accent">ISPM-15 &amp; HDPE</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Pallets, Crates &amp; PP Corrugated Boxes</h3>
+            <p class="product-desc">
+              ISPM-15 heat-treated wooden pallets, virgin HDPE heavy plastic pallets, stackable crates with lids, and
+              waterproof reusable PP flute corrugated boxes.
+            </p>
+            <div class="product-specs">
+              <span class="spec-pill">Pallets: <strong>Wooden &amp; Plastic</strong></span>
+              <span class="spec-pill">Crates: <strong>HDPE Stackable</strong></span>
+              <span class="spec-pill">PP Box: <strong>2 – 10mm Flute</strong></span>
+              <span class="spec-pill">Entry: <strong>2-Way &amp; 4-Way</strong></span>
+            </div>
+            <div class="product-footer">
+              <a href="products.html#pallets" class="product-cta-link">
+                View Technical Specs
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="contact.html?prod=pallets" class="product-inquiry-btn">Enquire Bulk</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8B. Dedicated Plastic Storage Crates with Lids -->
+        <div class="product-card" data-category="warehouse">
+          <div class="product-thumb">
+            <img src="images/product_photo_4.jpg" alt="Plastic Storage Crate with Lid" />
+            <span class="product-thumb-tag">Industrial Storage</span>
+            <span class="product-badge-accent">HDPE &amp; PP Virgin</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Plastic Storage Crates with Lids</h3>
+            <p class="product-desc">
+              Heavy-duty stackable and nestable plastic storage crates with attached/detachable locking lids. Engineered
+              from high-density virgin HDPE for closed-loop industrial material handling and inventory storage.
+            </p>
+            <div class="product-specs">
+              <span class="spec-pill">Material: <strong>100% Virgin HDPE</strong></span>
+              <span class="spec-pill">Design: <strong>Stackable &amp; Lid Lock</strong></span>
+              <span class="spec-pill">Capacity: <strong>Up to 50 kg/crate</strong></span>
+              <span class="spec-pill">Usage: <strong>Auto &amp; Retail Supply</strong></span>
+            </div>
+            <div class="product-footer">
+              <a href="products.html#plastic-crates" class="product-cta-link">
+                View Technical Specs
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="contact.html?prod=plastic-crates" class="product-inquiry-btn">Enquire Bulk</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8C. Dedicated Polypropylene (PP) Corrugated Flute Box -->
+        <div class="product-card" data-category="warehouse">
+          <div class="product-thumb">
+            <img src="images/product_photo_5.jpg" alt="Polypropylene (PP) Corrugated Flute Box" />
+            <span class="product-thumb-tag">Returnable Packaging</span>
+            <span class="product-badge-accent">100% Waterproof &amp; Reusable</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Polypropylene (PP) Corrugated Flute Boxes</h3>
+            <p class="product-desc">
+              Lightweight, chemical-resistant twin-wall PP flute boxes custom fabricated with ultrasonic spot welding,
+              plastic corner reinforcements, and velcro/strap closures for closed-loop internal plant movement.
+            </p>
+            <div class="product-specs">
+              <span class="spec-pill">Flute Thickness: <strong>2mm – 10mm (250–2000 GSM)</strong></span>
+              <span class="spec-pill">Construction: <strong>Ultrasonic Welded &amp; Riveted</strong></span>
+              <span class="spec-pill">Features: <strong>Waterproof, Washable &amp; ESD Safe</strong></span>
+              <span class="spec-pill">Life Cycle: <strong>50+ Reusable Returns</strong></span>
+            </div>
+            <div class="product-footer">
+              <a href="products.html#pp-boxes" class="product-cta-link">
+                View Technical Specs
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="contact.html?prod=pp-boxes" class="product-inquiry-btn">Enquire Bulk</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Industrial Epoxy Flooring -->
+        <div class="product-card" data-category="industrial">
+          <div class="product-thumb">
+            <img src="images/epoxy_flooring_warehouse.jpg"
+              alt="Industrial Epoxy Flooring &amp; 5S Line Marking Solutions" />
+            <span class="product-thumb-tag">Epoxy Flooring</span>
+            <span class="product-badge-accent">5S Line Marking</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Industrial Epoxy Flooring &amp; 5S Line Marking</h3>
+            <p class="product-desc">
+              Designed to perfectly complement your Heavy-Duty Storage Racks and Plastic Crates, our epoxy flooring
+              &amp; 5S line marking solutions create a clean, safe, and organized industrial space built for high
+              forklift traffic and chemical resistance.
+            </p>
+            <div class="product-specs">
+              <span class="spec-pill">Ideal For: <strong>Racks &amp; Plastic Crates</strong></span>
+              <span class="spec-pill">Thickness: <strong>1.5 – 4.0 mm Epoxy</strong></span>
+              <span class="spec-pill">Surface: <strong>Anti-Slip &amp; Oil Resistant</strong></span>
+              <span class="spec-pill">Safety: <strong>5S Line Marking</strong></span>
+            </div>
+            <div class="product-footer">
+              <a href="products.html#flooring" class="product-cta-link">
+                View Technical Specs
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="contact.html?prod=flooring" class="product-inquiry-btn">Enquire Bulk</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. Air Bubble Wrap & Cushioning Rolls -->
+        <div class="product-card" data-category="tapes">
+          <div class="product-thumb">
+            <img src="images/bubble_wrap.jpg" alt="Air Bubble Wrap Rolls and Inflatable Air Cushioning" />
+            <span class="product-thumb-tag">Shock Cushioning</span>
+            <span class="product-badge-accent">2-Layer &amp; 3-Layer Heavy Duty</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Air Bubble Wrap &amp; Shock Cushioning Rolls</h3>
+            <p class="product-desc">
+              High-density poly air bubble wrap rolls (10mm &amp; 25mm jumbo bubble size), 2-layer &amp; 3-layer
+              laminated barrier cushioning, and anti-static ESD pink bubble rolls engineered for high-impact transit
+              protection.
+            </p>
+            <div class="product-specs">
+              <span class="spec-pill">Bubble Size: <strong>10mm &amp; 25mm Jumbo</strong></span>
+              <span class="spec-pill">Grammage: <strong>40 – 150 GSM</strong></span>
+              <span class="spec-pill">Roll Width: <strong>0.5m – 1.5m</strong></span>
+              <span class="spec-pill">Layer: <strong>2-Layer / 3-Layer Laminated</strong></span>
+            </div>
+            <div class="product-footer">
+              <a href="products.html#bubble" class="product-cta-link">
+                View Technical Specs
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="contact.html?prod=bubble" class="product-inquiry-btn">Enquire Bulk</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11. All-in-One Industrial Packaging & Dispatch Supplies -->
+        <div class="product-card" data-category="industrial">
+          <div class="product-thumb">
+            <img src="images/hero_composite.jpg" alt="All-in-One Industrial Packaging & Dispatch Supplies" />
+            <span class="product-thumb-tag">Dispatch Kits</span>
+            <span class="product-badge-accent">All-in-One Range</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">All-in-One Industrial Packaging &amp; Dispatch Kits</h3>
+            <p class="product-desc">
+              Comprehensive range of corrugated shippers, tamper-evident courier mailers, high-tack BOPP sealing tapes, air bubble rolls, and binding supplies for complete warehouse dispatch operations.
+            </p>
+            <div class="product-specs">
+              <span class="spec-pill">Range: <strong>Cartons, Tapes &amp; Mailers</strong></span>
+              <span class="spec-pill">Quality: <strong>ISO 9001:2015 Standards</strong></span>
+              <span class="spec-pill">Dispatch: <strong>Committed Delivery TAT</strong></span>
+              <span class="spec-pill">Supply: <strong>Pan-India E-Com &amp; Retail</strong></span>
+            </div>
+            <div class="product-footer">
+              <a href="products.html#strapping" class="product-cta-link">
+                View Technical Specs
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="contact.html?prod=dispatch-kits" class="product-inquiry-btn">Enquire Bulk</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12. Hydraulic Hand Pallet Trucks -->
+        <div class="product-card" data-category="warehouse">
+          <div class="product-thumb">
+            <img src="images/pallet_truck.jpg" alt="Industrial Hydraulic Hand Pallet Truck" />
+            <span class="product-thumb-tag">Forklift &amp; Dock</span>
+            <span class="product-badge-accent">2.5T &amp; 3.0T Load</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Hydraulic Hand Pallet Trucks &amp; Stackers</h3>
+            <p class="product-desc">
+              Heavy-duty hydraulic hand pallet jacks built with high-tensile steel chassis, leak-proof hydraulic pumps,
+              and durable polyurethane/nylon dual tandem load rollers.
+            </p>
+            <div class="product-specs">
+              <span class="spec-pill">Capacity: <strong>2500kg – 3000kg</strong></span>
+              <span class="spec-pill">Fork Length: <strong>1150mm / 1220mm</strong></span>
+              <span class="spec-pill">Wheels: <strong>Dual Tandem PU</strong></span>
+              <span class="spec-pill">Pump: <strong>Integral Cast Iron</strong></span>
+            </div>
+            <div class="product-footer">
+              <a href="products.html#pallettruck" class="product-cta-link">
+                View Technical Specs
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="contact.html?prod=pallettruck" class="product-inquiry-btn">Enquire Bulk</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE PACKAGING CALCULATOR SECTION -->
+  <section class="calc-section" id="calculator">
+    <div class="container">
+      <div class="calc-container">
+        <div class="calc-info">
+          <span class="sub-title" style="color:#38bdf8;">Engineering Tool</span>
+          <h2 class="section-title" style="color:#ffffff;">
+            Carton Dimension &amp;<br />
+            <span style="color:#38bdf8;">Sheet Size &amp; Weight Estimator</span>
+          </h2>
+          <p class="section-desc" style="color:#cbd5e1; margin-bottom:24px;">
+            Configure carton dimensions (in mm) to calculate required corrugated sheet blank size, sheet area,
+            volumetric chargeable freight weight, and structural compression strength.
+          </p>
+          <ul style="display:flex; flex-direction:column; gap:12px; color:#e2e8f0; font-size:0.92rem;">
+            <li style="display:flex; align-items:center; gap:8px;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                style="width:16px;height:16px;color:#38bdf8;">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              Corrugated Sheet Size (Blank Dimension): Length &amp; Width in mm
+            </li>
+            <li style="display:flex; align-items:center; gap:8px;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                style="width:16px;height:16px;color:#38bdf8;">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              Corrugated Sheet Area calculation (in m² &amp; sq.ft)
+            </li>
+            <li style="display:flex; align-items:center; gap:8px;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                style="width:16px;height:16px;color:#38bdf8;">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              Standard volumetric ratio calculation: (L × W × H in mm) / 5,000,000
+            </li>
+            <li style="display:flex; align-items:center; gap:8px;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                style="width:16px;height:16px;color:#38bdf8;">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              Flute recommendation based on load stacking requirements
+            </li>
+          </ul>
+
+          <div
+            style="background:rgba(255,255,255,0.06); padding:16px; border-radius:var(--radius-sm); border:1px solid rgba(255,255,255,0.1); margin-top:20px;">
+            <div style="font-size:0.84rem; color:#38bdf8; font-weight:700; margin-bottom:6px;">CORRUGATED SHEET FORMULAS
+              (RSC BOX):</div>
+            <div style="font-size:0.82rem; color:#cbd5e1; line-height:1.6;">
+              • <strong>Sheet Cut Length:</strong> 2 × (Length + Width) + Joint Flap (35–50mm)<br />
+              • <strong>Sheet Cut Width:</strong> Width + Height + Crease Allowance (6–15mm)<br />
+              • <strong>Sheet Area:</strong> (Sheet Length × Sheet Width) / 1,000,000 m²
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <h3
+            style="font-family:var(--font-heading);font-weight:800;font-size:1.3rem;margin-bottom:18px;color:var(--text-primary);">
+            Configure Box Parameters (mm)
+          </h3>
+
+          <div class="calc-form-grid">
+            <div class="calc-group">
+              <label class="calc-label" for="calcLength">Length (mm)</label>
+              <input type="number" id="calcLength" class="calc-input" value="400" min="50" max="2500" step="5" />
+            </div>
+            <div class="calc-group">
+              <label class="calc-label" for="calcWidth">Width (mm)</label>
+              <input type="number" id="calcWidth" class="calc-input" value="300" min="50" max="2000" step="5" />
+            </div>
+            <div class="calc-group">
+              <label class="calc-label" for="calcHeight">Height (mm)</label>
+              <input type="number" id="calcHeight" class="calc-input" value="250" min="50" max="2000" step="5" />
+            </div>
+          </div>
+
+          <div class="form-row-2col" style="margin-bottom:16px;">
+            <div class="calc-group">
+              <label class="calc-label" for="calcPly">Board Construction</label>
+              <select id="calcPly" class="calc-select">
+                <option value="3ply">3-Ply (Single Wall)</option>
+                <option value="5ply" selected>5-Ply (Double Wall Standard)</option>
+                <option value="7ply">7-Ply (Heavy Duty Export)</option>
+              </select>
+            </div>
+            <div class="calc-group">
+              <label class="calc-label" for="calcFinish">Surface Finish</label>
+              <select id="calcFinish" class="calc-select">
+                <option value="kraft">Natural Brown Kraft</option>
+                <option value="white">Bleached White Duplex</option>
+                <option value="printed">Custom 4-Color Flexo Printed</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="calc-result-box">
+            <div class="calc-res-item">
+              <span class="calc-res-val" id="resSheetSize" style="font-size:1.1rem;">1440 × 560 mm</span>
+              <span class="calc-res-lbl">Sheet Size (Blank)</span>
+            </div>
+            <div class="calc-res-item">
+              <span class="calc-res-val" id="resSheetArea" style="font-size:1.05rem;">0.81 m²</span>
+              <span class="calc-res-lbl">Sheet Area</span>
+            </div>
+            <div class="calc-res-item">
+              <span class="calc-res-val" id="resVolWeight">3.00 kg</span>
+              <span class="calc-res-lbl">Volumetric Weight</span>
+            </div>
+            <div class="calc-res-item">
+              <span class="calc-res-val" id="resFlute" style="font-size:1rem;">BC-Flute</span>
+              <span class="calc-res-lbl">Suggested Flute</span>
+            </div>
+            <div class="calc-res-item">
+              <span class="calc-res-val" id="resBCT">480 - 650 kgf</span>
+              <span class="calc-res-lbl">Est. BCT Strength</span>
+            </div>
+          </div>
+
+          <div style="margin-top:20px;">
+            <a href="contact.html?calc=true" class="btn btn-orange" style="width:100%;justify-content:center;">
+              Request Bulk Quotation for this Size
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="footer-bottom">
-      <div>&copy; 2026 Mirai Packaging LLP. All Rights Reserved. Flexible Packaging Solutions For Modern Needs.</div>
-      <div>Registered Bengaluru, Karnataka</div>
+  <!-- AUTOMATIC IMAGE SHOWCASE SLIDER (12 IMAGES - 3 SEC AUTO SLIDE) -->
+  <section class="section-pad bg-surface" id="gallery-slider">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-title">Visual Showcase</span>
+        <h2 class="section-title">Manufacturing Infrastructure &amp; <span>Packaging Gallery</span></h2>
+        <p class="section-desc">
+          Take a visual tour of our Bengaluru corrugation plant, automated conversion machinery, testing laboratory, and
+          full range of packaging products.
+        </p>
+      </div>
+
+      <div class="auto-slider-wrapper" id="homeAutoSlider">
+        <div class="auto-slider-track" id="sliderTrack">
+
+          <!-- Slide 1 -->
+          <div class="auto-slide active">
+            <img src="images/corrugated_lineup.jpg" alt="Corrugated Box Manufacturing Lineup" />
+            <div class="slide-caption">
+              <span class="slide-badge">Corrugation Plant</span>
+              <h3>Custom 3-Ply &amp; 5-Ply Master Cartons</h3>
+              <p>Automated slotting and die-cutting for high-volume corrugated boxes.</p>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="auto-slide">
+            <img src="images/wooden_pallets.jpg" alt="ISPM-15 Heat Treated Wooden Pallets" />
+            <div class="slide-caption">
+              <span class="slide-badge">Export Packaging</span>
+              <h3>ISPM-15 Heat-Treated Wooden Pallets</h3>
+              <p>Pinewood and hardwood heavy-duty pallets with thermal pest eradication certification.</p>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="auto-slide">
+            <img src="images/pp_box.jpg" alt="PP Corrugated Flute Boxes" />
+            <div class="slide-caption">
+              <span class="slide-badge">Returnable Packaging</span>
+              <h3>PP Flute Corrugated Reusable Boxes</h3>
+              <p>Waterproof, chemical-resistant twin-wall polypropylene boxes for closed-loop logistics.</p>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="auto-slide">
+            <img src="images/modern_machinery.jpg" alt="High-Speed Corrugation Machine Plant" />
+            <div class="slide-caption">
+              <span class="slide-badge">Machinery &amp; Automation</span>
+              <h3>High-Speed Corrugator &amp; Converting Plant</h3>
+              <p>Computerized rotary sheer cutters and 4-color flexo folder-gluers.</p>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="auto-slide">
+            <img src="images/courier_bag.jpg" alt="Co-Ex Tamper-Evident Courier Bags" />
+            <div class="slide-caption">
+              <span class="slide-badge">E-Commerce Mailers</span>
+              <h3>Co-Ex Tamper-Evident Courier Flyer Bags</h3>
+              <p>High-tear resistance multi-layer polyethylene bags with permanent hot-melt adhesive strip.</p>
+            </div>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="auto-slide">
+            <img src="images/tape_rolls.jpg" alt="Industrial BOPP Packaging Tapes" />
+            <div class="slide-caption">
+              <span class="slide-badge">Tapes &amp; Adhesives</span>
+              <h3>High-Tack Industrial BOPP Packaging Tapes</h3>
+              <p>Custom printed and clear 40–50 micron acrylic tapes for instant box sealing.</p>
+            </div>
+          </div>
+
+          <!-- Slide 7 -->
+          <div class="auto-slide">
+            <img src="images/quality_testing.jpg" alt="Quality Testing Laboratory" />
+            <div class="slide-caption">
+              <span class="slide-badge">Quality Assurance</span>
+              <h3>In-House Box Compression (BCT) &amp; Bursting QC Lab</h3>
+              <p>Strict batch sampling for Mullen burst factor and compression load resistance.</p>
+            </div>
+          </div>
+
+          <!-- Slide 8 -->
+          <div class="auto-slide">
+            <img src="images/stretch_film.jpg" alt="Cast LLDPE Stretch Film Rolls" />
+            <div class="slide-caption">
+              <span class="slide-badge">Pallet Securing</span>
+              <h3>Cast LLDPE Machine &amp; Manual Stretch Film</h3>
+              <p>High elongation stretch wrap providing dust and moisture protection during transit.</p>
+            </div>
+          </div>
+
+          <!-- Slide 9 -->
+          <div class="auto-slide">
+            <img src="images/bubble_wrap.jpg" alt="Air Bubble Protective Rolls" />
+            <div class="slide-caption">
+              <span class="slide-badge">Cushioning Protection</span>
+              <h3>Multi-Layer Shock Absorption Air Bubble Rolls</h3>
+              <p>10mm bubble diameter protective cushioning for fragile glass, electronics, and cosmetics.</p>
+            </div>
+          </div>
+
+          <!-- Slide 10 -->
+          <div class="auto-slide">
+            <img src="images/about_factory.jpg" alt="Mirai Packaging Distribution Warehouse" />
+            <div class="slide-caption">
+              <span class="slide-badge">Warehousing &amp; Fleet</span>
+              <h3>Bengaluru Central Distribution &amp; Logistics Hub</h3>
+              <p>Ready buffer inventory and daily fleet dispatches across industrial hubs.</p>
+            </div>
+          </div>
+
+          <!-- Slide 11 -->
+          <div class="auto-slide">
+            <img src="images/plastic_pallets.jpg" alt="Heavy-Duty Plastic Pallets" />
+            <div class="slide-caption">
+              <span class="slide-badge">Material Handling</span>
+              <h3>Heavy-Duty HDPE Racking Plastic Pallets</h3>
+              <p>Hygienic, washable plastic pallets for pharmaceutical and food storage.</p>
+            </div>
+          </div>
+
+          <!-- Slide 12 -->
+          <div class="auto-slide">
+            <img src="images/security_seal.jpg" alt="High Security Seals" />
+            <div class="slide-caption">
+              <span class="slide-badge">Logistics Security</span>
+              <h3>Laser-Numbered Security Pull-Tight Seals</h3>
+              <p>Tamper-proof polypropylene and bolt seals for cargo container verification.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button class="slider-btn prev-btn" id="sliderPrev" aria-label="Previous Slide">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button class="slider-btn next-btn" id="sliderNext" aria-label="Next Slide">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+
+        <!-- Pagination Dots -->
+        <div class="slider-dots" id="sliderDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANUFACTURING & TESTING INFRASTRUCTURE -->
+  <section class="section-pad" id="infrastructure">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-title">Manufacturing Capabilities</span>
+        <h2 class="section-title">Automated Corrugation Plant &amp; <span>QC Laboratory</span></h2>
+        <p class="section-desc">
+          Equipped with computer-controlled corrugators, precision rotary slotters, and in-house digital testing
+          instruments to guarantee zero-defect transit durability.
+        </p>
+      </div>
+
+      <div class="infra-grid">
+        <!-- Machine Plant Card -->
+        <div class="infra-card">
+          <div class="infra-thumb">
+            <img src="images/modern_machinery.jpg" alt="High-Speed Corrugated Board Manufacturing Machine" />
+            <span class="infra-badge">Production Plant</span>
+          </div>
+          <div class="infra-body">
+            <h3 class="infra-title">Automatic Corrugation &amp; Converting</h3>
+            <p class="infra-desc">
+              Our automated converting facility delivers over 500,000+ cartons per month with computer-synchronized
+              rotary sheer cutters, precision slitting, and inline flexo folder-gluers.
+            </p>
+            <div class="infra-checklist">
+              <div class="infra-check-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                5-Ply &amp; 7-Ply Automatic Corrugator
+              </div>
+              <div class="infra-check-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                High Precision Die-Punching
+              </div>
+              <div class="infra-check-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                Automated Palletizing Units
+              </div>
+              <div class="infra-check-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                Inline 4-Color Flexo Printing
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testing Lab Card -->
+        <div class="infra-card">
+          <div class="infra-thumb">
+            <img src="images/quality_testing.jpg" alt="Quality Testing Lab with Box Compression and Bursting Machine" />
+            <span class="infra-badge" style="color:#ffb74d;">Quality Testing Lab</span>
+          </div>
+          <div class="infra-body">
+            <h3 class="infra-title">In-House Quality Assurance Laboratory</h3>
+            <p class="infra-desc">
+              Every production batch undergoes strict mechanical testing. From Edge Crush Tests (ECT) to Box Compression
+              Tests (BCT), we verify structural integrity before dispatch.
+            </p>
+            <div class="infra-checklist">
+              <div class="infra-check-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                Digital Box Compression Tester (BCT)
+              </div>
+              <div class="infra-check-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                Mullen Bursting Strength Test
+              </div>
+              <div class="infra-check-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                Cobb Sizing Water Absorption
+              </div>
+              <div class="infra-check-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                Tensile &amp; Peel Adhesion Testing
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US (FACILITY PHOTO & VALUE PILLARS) -->
+  <section class="section-pad bg-surface" id="about-summary">
+    <div class="container">
+      <div class="about-story-grid">
+        <div>
+          <div
+            style="border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--border-subtle); box-shadow:var(--shadow-md);">
+            <img src="images/about_factory.jpg" alt="Mirai Packaging Bengaluru Distribution Facility"
+              style="width:100%; height:440px; object-fit:cover;" />
+            <div
+              style="padding:14px 18px; background:var(--navy-dark); color:var(--white); font-size:0.85rem; display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-family:var(--font-heading); font-weight:800; color:#38bdf8;">Bengaluru Distribution
+                Hub</span>
+              <span style="color:#94a3b8;">Daily Fleet Dispatches Across Karnataka</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <span class="sub-title">Why Associate With Us</span>
+          <h2 class="section-title">Single-Window Vendor Consolidation <span>For Enterprise Supply Chains</span></h2>
+          <p class="section-desc" style="margin-bottom:20px;">
+            Managing separate vendors for cartons, courier mailers, tapes, stretch film, and seals leads to
+            administrative overhead, inconsistent quality, and inventory delays. Mirai eliminates these friction points
+            under a single SLA.
+          </p>
+
+          <div style="display:flex; flex-direction:column; gap:14px;">
+            <div style="display:flex; gap:14px; align-items:flex-start;">
+              <div
+                style="width:36px;height:36px;border-radius:var(--radius-xs);background:var(--blue-subtle);color:var(--blue-brand);display:flex;align-items:center;justify-content:center;font-weight:800;font-family:var(--font-heading);flex-shrink:0;">
+                01</div>
+              <div>
+                <h4
+                  style="font-family:var(--font-heading);font-weight:800;font-size:1.05rem;color:var(--text-primary);margin-bottom:2px;">
+                  Consolidated Procurement Billing</h4>
+                <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.55;">One vendor, one invoice, and
+                  consistent material quality standards across your entire packaging inventory.</p>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:14px; align-items:flex-start;">
+              <div
+                style="width:36px;height:36px;border-radius:var(--radius-xs);background:var(--orange-subtle);color:var(--orange-brand);display:flex;align-items:center;justify-content:center;font-weight:800;font-family:var(--font-heading);flex-shrink:0;">
+                02</div>
+              <div>
+                <h4
+                  style="font-family:var(--font-heading);font-weight:800;font-size:1.05rem;color:var(--text-primary);margin-bottom:2px;">
+                  Factory-Direct Volume Rates</h4>
+                <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.55;">Direct corrugation and
+                  conversion eliminates middleman trading margins, lowering total cost of procurement.</p>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:14px; align-items:flex-start;">
+              <div
+                style="width:36px;height:36px;border-radius:var(--radius-xs);background:var(--blue-subtle);color:var(--blue-brand);display:flex;align-items:center;justify-content:center;font-weight:800;font-family:var(--font-heading);flex-shrink:0;">
+                03</div>
+              <div>
+                <h4
+                  style="font-family:var(--font-heading);font-weight:800;font-size:1.05rem;color:var(--text-primary);margin-bottom:2px;">
+                  Vendor Managed Inventory (VMI)</h4>
+                <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.55;">We maintain safety buffer
+                  stock in our Bengaluru warehouse and dispatch on a call-off schedule to prevent factory downtime.</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:24px;">
+            <a href="about.html" class="btn btn-primary">
+              Read Corporate Profile
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- DEDICATED MASTER CATALOGUE & QR CODE BANNER (POSITIONED AT NEAR-BOTTOM FOR CLEAN TOP PAGE LOOK) -->
+  <section style="background:linear-gradient(135deg, #071e3d 0%, #0f2b57 100%); color:#ffffff; padding:48px 0;" id="catalogue-qr">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:1.4fr 1fr; gap:32px; align-items:center;" class="product-card-grid">
+        
+        <!-- Left Column: Master Catalogue Specs & Download -->
+        <div>
+          <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(235,94,40,0.15); border:1px solid rgba(235,94,40,0.35); color:var(--orange-brand); padding:5px 14px; border-radius:20px; font-size:0.78rem; font-weight:800; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:12px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:14px;height:14px;"><path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            2026 Master Technical Edition
+          </div>
+          <h2 style="font-family:var(--font-heading); font-weight:900; font-size:clamp(1.75rem, 3vw, 2.3rem); color:#ffffff; line-height:1.2; margin-bottom:10px;">
+            Download Master Product <span style="color:var(--orange-brand);">Catalogue (PDF)</span>
+          </h2>
+          <p style="font-size:0.98rem; color:#cbd5e1; line-height:1.65; margin-bottom:18px; max-width:620px;">
+            Get our comprehensive 580KB technical specification guide covering 500+ SKUs, paper grammages (GSM), bursting factor (BF) test standards, FEFCO box designs, and enterprise MOQ pricing matrices.
+          </p>
+
+          <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-bottom:14px;">
+            <a href="pdf/Mirai_Packaging_Master_Catalogue.pdf" download="Mirai_Packaging_Master_Catalogue.pdf" class="btn btn-orange" style="padding:12px 22px; font-size:0.92rem; font-weight:800; box-shadow:0 4px 16px rgba(235,94,40,0.35);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:18px;height:18px;"><path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              Download Catalogue (PDF)
+            </a>
+            <a href="https://raw.githubusercontent.com/vededoply-cpu/project/main/pdf/Mirai_Packaging_Master_Catalogue.pdf" target="_blank" rel="noopener" class="btn btn-outline" style="color:#ffffff; border-color:rgba(255,255,255,0.3); padding:12px 18px; font-size:0.9rem;">
+              View Online PDF
+            </a>
+          </div>
+          <div style="font-size:0.8rem; color:#94a3b8; display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
+            <span>✓ ISO 9001:2015 Verified Specs</span>
+            <span>✓ Instant PDF Download (580 KB)</span>
+          </div>
+        </div>
+
+        <!-- Right Column: QR Code Mobile Scanner Box -->
+        <div style="background:#ffffff; border-radius:var(--radius-md); padding:20px; text-align:center; color:var(--text-primary); box-shadow:0 10px 30px rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.2); max-width:280px; margin:0 auto;">
+          <div style="font-size:0.75rem; font-weight:800; color:var(--orange-brand); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:6px;">Scan Mobile QR Code</div>
+          <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:8px; margin-bottom:8px; display:inline-block;">
+            <img src="images/catalogue_qr_code.png" alt="Scan QR Code to Download Catalogue" style="width:130px; height:130px; display:block; margin:0 auto;" />
+          </div>
+          <h4 style="font-family:var(--font-heading); font-weight:800; font-size:0.98rem; color:var(--text-primary); margin-bottom:4px;">Scan with Camera</h4>
+          <p style="font-size:0.78rem; color:var(--text-secondary); line-height:1.4; margin:0;">
+            Point smartphone camera to scan &amp; download the Master Catalogue instantly.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS: HOW IT WORKS -->
+  <section class="section-pad" id="process">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-title">Execution Workflow</span>
+        <h2 class="section-title">The 4-Step <span>Packaging Lifecycle</span></h2>
+        <p class="section-desc">
+          From custom structural CAD die-lines to automated manufacturing and fleet delivery on committed turnaround
+          times.
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="process-step-num">01</div>
+          <h4>Requirements &amp; CAD</h4>
+          <p>We evaluate product dimensions, transit vibration, fragility, and design structural die-lines with
+            optimized paper GSM.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-step-num">02</div>
+          <h4>Sampling &amp; Lab QC</h4>
+          <p>Physical prototype samples are produced and validated on our digital Mullen bursting tester prior to
+            production sign-off.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-step-num">03</div>
+          <h4>Automated Production</h4>
+          <p>Commercial manufacturing runs on our 5-ply automated corrugator line with 4-color flexo graphic printing
+            and inline gluing.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-step-num">04</div>
+          <h4>Fleet Dispatch on TAT</h4>
+          <p>Palletized and stretch-wrapped batches dispatched via dedicated logistics fleet with 99.8% on-time delivery
+            commitment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS & QUALITY ASSURANCE BAR -->
+  <div class="cert-bar">
+    <div class="container">
+      <div class="cert-grid">
+        <div class="cert-item">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <div>
+            <div class="cert-title">ISO 9001:2015</div>
+            <div class="cert-sub">Quality Management Certified</div>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" />
+            </svg>
+          </div>
+          <div>
+            <div class="cert-title">FSC Certified Paper</div>
+            <div class="cert-sub">Sustainable Kraft Sourcing</div>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <div class="cert-title">RoHS &amp; Heavy-Metal Free</div>
+            <div class="cert-sub">Non-Toxic Inks &amp; Polymers</div>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <div class="cert-title">BCT &amp; ECT Lab Tested</div>
+            <div class="cert-sub">Laboratory Burst Certified</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</footer>
 
-<!-- FLOATING CONTACT ACTIONS -->
-<div class="floating-contact-widget">
-  <button class="scroll-top-btn" id="scrollTop" aria-label="Scroll to top">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:18px;height:18px;"><path d="M18 15l-6-6-6 6"/></svg>
-  </button>
-  <a href="tel:+919491436494" class="float-btn float-call" aria-label="Call Mirai Packaging">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px;height:20px;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-  </a>
-  <a href="https://wa.me/919491436494?text=Hi%20Mirai%20Packaging,%20I%20am%20interested%20in%20packaging%20materials%20for%20my%20business." target="_blank" rel="noopener" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor" style="width:24px;height:24px;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19.53-1.09 1.04-1.52 1.1-.41.06-.94.08-1.53-.1-.36-.11-.83-.27-1.43-.53-2.54-1.1-4.2-3.66-4.33-3.83-.13-.17-1.04-1.38-1.04-2.64s.66-1.88.9-2.13c.23-.26.51-.32.68-.32.17 0 .34 0 .49.01.16.01.37-.06.58.44.22.52.74 1.8.8 1.93.07.13.11.28.02.45-.09.17-.13.28-.26.43-.13.16-.28.35-.4.47-.13.13-.27.27-.12.53.15.26.68 1.12 1.46 1.81 1 .89 1.85 1.17 2.11 1.3.26.13.41.11.56-.06.16-.17.68-.79.86-1.06.18-.27.36-.22.61-.13.25.09 1.58.74 1.85.88.27.13.45.2.52.31.06.12.06.68-.13 1.21z"/></svg>
-  </a>
-</div>
+  <!-- CLIENT TESTIMONIALS -->
+  <section class="section-pad bg-neutral" id="testimonials">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-title">Client Verifications</span>
+        <h2 class="section-title">Feedback from <span>Supply Chain Managers</span></h2>
+      </div>
 
-<!-- MOBILE BOTTOM ACTION BAR -->
-<div class="mobile-bottom-bar">
-  <div class="mobile-bottom-grid">
-    <a href="tel:+919491436494" class="mobile-bar-btn" style="background:var(--navy-dark); color:var(--white);">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-      Call
+      <div class="grid-auto-fit-320">
+        <div
+          style="background:var(--white); padding:28px; border-radius:var(--radius-sm); border:1px solid var(--border-subtle); box-shadow:var(--shadow-xs);">
+          <div style="color:#f59e0b; margin-bottom:12px; font-size:1.1rem;">★★★★★</div>
+          <p
+            style="font-size:0.92rem; line-height:1.65; color:var(--text-secondary); margin-bottom:18px; font-style:italic;">
+            "Mirai Packaging has streamlined our Bengaluru warehouse operations. Their 5-ply corrugated master cartons
+            have completely eliminated transit crushing across interstate routes. Delivery timelines have been
+            consistent."
+          </p>
+          <div style="padding-top:14px; border-top:1px solid var(--border-subtle); font-size:0.84rem;">
+            <strong style="color:var(--text-primary); display:block;">Logistics &amp; Distribution Lead</strong>
+            <span style="color:var(--text-muted);">Automotive Spares OEM</span>
+          </div>
+        </div>
+
+        <div
+          style="background:var(--white); padding:28px; border-radius:var(--radius-sm); border:1px solid var(--border-subtle); box-shadow:var(--shadow-xs);">
+          <div style="color:#f59e0b; margin-bottom:12px; font-size:1.1rem;">★★★★★</div>
+          <p
+            style="font-size:0.92rem; line-height:1.65; color:var(--text-secondary); margin-bottom:18px; font-style:italic;">
+            "The tamper-proof courier mailers and custom printed BOPP tapes from Mirai Packaging reduced transit
+            tampering significantly across our fulfillment hubs. Consolidating under one vendor simplified our
+            procurement."
+          </p>
+          <div style="padding-top:14px; border-top:1px solid var(--border-subtle); font-size:0.84rem;">
+            <strong style="color:var(--text-primary); display:block;">Senior Procurement Manager</strong>
+            <span style="color:var(--text-muted);">National Apparel &amp; Lifestyle Brand</span>
+          </div>
+        </div>
+
+        <div
+          style="background:var(--white); padding:28px; border-radius:var(--radius-sm); border:1px solid var(--border-subtle); box-shadow:var(--shadow-xs);">
+          <div style="color:#f59e0b; margin-bottom:12px; font-size:1.1rem;">★★★★★</div>
+          <p
+            style="font-size:0.92rem; line-height:1.65; color:var(--text-secondary); margin-bottom:18px; font-style:italic;">
+            "We source custom printed white duplex tuck cartons and protective bubble wrap from Mirai. Their in-house
+            laboratory BCT testing certification ensures structural consistency for fragile skincare bottles."
+          </p>
+          <div style="padding-top:14px; border-top:1px solid var(--border-subtle); font-size:0.84rem;">
+            <strong style="color:var(--text-primary); display:block;">Operations Director</strong>
+            <span style="color:var(--text-muted);">Cosmetics &amp; FMCG Brand</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FREQUENTLY ASKED QUESTIONS -->
+  <section class="section-pad" id="faq">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-title">Technical Support</span>
+        <h2 class="section-title">Frequently Asked <span>Packaging Questions</span></h2>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>What is the minimum order quantity (MOQ) for custom printed corrugated boxes?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>For standard plain RSC corrugated cartons, orders start from 500 units. For custom flexo-printed cartons
+              with client branding, typical production runs start from 1,000 to 2,000 units depending on box dimensions
+              and flute profile.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can you manufacture heavy-duty 7-ply and 9-ply cartons for machinery and exports?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. We manufacture heavy-duty triple-wall 7-ply and 9-ply corrugated cartons using high-burst imported
+              virgin kraft papers capable of supporting compressive loads up to 1,200 kgf for automotive parts,
+              machinery, and sea exports.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you provide physical prototype samples before full production?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Once carton dimensions and board specifications are determined, our CAD department provides physical
+              unprinted structural samples for transit fitting and drop testing prior to commercial manufacturing.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What are your delivery turnaround times across Bengaluru and South India?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>For catalog stock items (standard cartons, courier flyers, stretch wrap, and tapes), delivery in
+              Bengaluru is within 24–48 hours. Custom manufacturing runs typically dispatch within 5 to 7 working days.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIGH-IMPACT CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-inner">
+        <div>
+          <h2 class="cta-title">Upgrade Your Supply Chain With Precision Packaging</h2>
+          <p class="cta-desc">
+            Speak with our packaging specialists today for volume purchase pricing, CAD die-lines, and sample kits.
+          </p>
+        </div>
+        <div class="cta-btns">
+          <a href="contact.html" class="btn btn-white btn-lg">
+            Get Bulk Pricing
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="tel:+919044129477" class="btn btn-outline-white btn-lg">
+            Call: +91-9044129477
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORPORATE FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="images/logo_white.png" alt="Mirai Packaging LLP" class="footer-logo-img" />
+            <div class="nav-logo-text">
+              <span class="brand-name" style="color:#ffffff;">MIRAI</span>
+              <span class="brand-tag" style="color:#38bdf8;">PACKAGING LLP</span>
+            </div>
+          </a>
+          <p>
+            Mirai Packaging LLP is Bangalore's premier manufacturing and conversion partner for industrial packaging
+            materials. Serving enterprise logistics, e-commerce, and manufacturing hubs across India.
+          </p>
+          <div class="footer-badges">
+            <span class="footer-badge-pill">GSTIN: 29AAUFM9272M1Z2</span>
+            <span class="footer-badge-pill">ISO 9001:2015</span>
+            <span class="footer-badge-pill">MSME Registered</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Core Products</h4>
+          <div class="footer-links">
+            <a href="products.html#corrugated">Corrugated Boxes (2-9 Ply)</a>
+            <a href="products.html#courier">Tamper-Proof Courier Bags</a>
+            <a href="products.html#tapes">BOPP &amp; Custom Printed Tapes</a>
+            <a href="products.html#ecopack">Eco Kraft Bags &amp; Honeycomb</a>
+            <a href="products.html#stretch">Industrial Stretch Film</a>
+            <a href="products.html#security">Security Seals &amp; Locks</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="about.html">About Mirai</a>
+            <a href="clients.html">Client Portfolio</a>
+            <a href="index.html#infrastructure">Manufacturing Plant</a>
+            <a href="index.html#calculator">Packaging Calculator</a>
+            <a href="contact.html">Request Sample Kit</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Bengaluru Hub</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span>1091, 8th Cross Road, Jai Marathi Nagar, Bengaluru Urban, Karnataka – 560086</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+              </svg>
+              <span>+91-9044129477</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <span>sales@miraiflexipack.in</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Mirai Packaging LLP. All Rights Reserved. Flexible Packaging Solutions For Modern Needs.</div>
+        <div>Registered Bengaluru, Karnataka</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING CONTACT ACTIONS -->
+  <div class="floating-contact-widget">
+    <button class="scroll-top-btn" id="scrollTop" aria-label="Scroll to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:18px;height:18px;">
+        <path d="M18 15l-6-6-6 6" />
+      </svg>
+    </button>
+    <a href="tel:+919044129477" class="float-btn float-call" aria-label="Call Mirai Packaging">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px;height:20px;">
+        <path
+          d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+      </svg>
     </a>
-    <a href="https://wa.me/919491436494?text=Hi%20Mirai%20Packaging,%20I%20need%20a%20packaging%20quote." target="_blank" rel="noopener" class="mobile-bar-btn" style="background:#25D366; color:var(--white);">
-      WhatsApp
-    </a>
-    <a href="contact.html" class="mobile-bar-btn" style="background:var(--orange-brand); color:var(--white);">
-      Get Quote
+    <a href="https://wa.me/919044129477?text=Hi%20Mirai%20Packaging,%20I%20am%20interested%20in%20packaging%20materials%20for%20my%20business."
+      target="_blank" rel="noopener" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor" style="width:24px;height:24px;">
+        <path
+          d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19.53-1.09 1.04-1.52 1.1-.41.06-.94.08-1.53-.1-.36-.11-.83-.27-1.43-.53-2.54-1.1-4.2-3.66-4.33-3.83-.13-.17-1.04-1.38-1.04-2.64s.66-1.88.9-2.13c.23-.26.51-.32.68-.32.17 0 .34 0 .49.01.16.01.37-.06.58.44.22.52.74 1.8.8 1.93.07.13.11.28.02.45-.09.17-.13.28-.26.43-.13.16-.28.35-.4.47-.13.13-.27.27-.12.53.15.26.68 1.12 1.46 1.81 1 .89 1.85 1.17 2.11 1.3.26.13.41.11.56-.06.16-.17.68-.79.86-1.06.18-.27.36-.22.61-.13.25.09 1.58.74 1.85.88.27.13.45.2.52.31.06.12.06.68-.13 1.21z" />
+      </svg>
     </a>
   </div>
-</div>
 
-<script src="main.js"></script>
+  <!-- MOBILE BOTTOM ACTION BAR -->
+  <div class="mobile-bottom-bar">
+    <div class="mobile-bottom-grid">
+      <a href="tel:+919044129477" class="mobile-bar-btn" style="background:var(--navy-dark); color:var(--white);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;">
+          <path
+            d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+        </svg>
+        Call
+      </a>
+      <a href="https://wa.me/919044129477?text=Hi%20Mirai%20Packaging,%20I%20need%20a%20packaging%20quote."
+        target="_blank" rel="noopener" class="mobile-bar-btn" style="background:#25D366; color:var(--white);">
+        WhatsApp
+      </a>
+      <a href="contact.html" class="mobile-bar-btn" style="background:var(--orange-brand); color:var(--white);">
+        Get Quote
+      </a>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
 </body>
+
 </html>
-
-
