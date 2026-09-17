@@ -568,7 +568,7 @@ include 'header.php';
       <!-- 9. Industrial Epoxy Flooring -->
       <div class="product-card" data-category="industrial">
         <div class="product-thumb">
-          <img src="images/epoxy_flooring.jpg" alt="Industrial Epoxy Flooring &amp; 5S Line Marking Solutions"/>
+          <img src="images/epoxy_flooring_warehouse.jpg" alt="Industrial Epoxy Flooring &amp; 5S Line Marking Solutions"/>
           <span class="product-thumb-tag">Epoxy Flooring</span>
           <span class="product-badge-accent">5S Line Marking</span>
         </div>

@@ -823,7 +823,7 @@ include 'header.php';
       <div class="product-detail-card">
         <div class="product-gallery-box">
           <div class="product-main-view">
-            <img src="images/epoxy_flooring.jpg" alt="Industrial Epoxy Flooring &amp; 5S Line Marking Solutions" class="main-gallery-img" id="mainGalleryImgEpoxy_php"/>
+            <img src="images/epoxy_flooring_warehouse.jpg" alt="Industrial Epoxy Flooring &amp; 5S Line Marking Solutions" class="main-gallery-img" id="mainGalleryImgEpoxy_php"/>
             <span class="gallery-zoom-badge">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
               HD Preview
