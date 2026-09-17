@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="240" height="80">
+  <rect width="240" height="80" fill="#ffffff"/>
+  <g transform="translate(15, 16)">
+    <!-- Swiss Cross Emblem -->
+    <rect x="0" y="4" width="38" height="38" rx="6" fill="#D32F2F"/>
+    <path d="M19,11 L19,35 M7,23 L31,23" stroke="#ffffff" stroke-width="5" stroke-linecap="square"/>
+    <!-- Text -->
+    <text x="50" y="26" font-family="'Outfit', 'Georgia', serif" font-weight="800" font-size="20" fill="#09192c" letter-spacing="2">SWISS BEAUTY</text>
+    <text x="50" y="41" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="600" font-size="9" fill="#757575" letter-spacing="3">COSMETICS &amp; CARE</text>
+  </g>
+</svg>
