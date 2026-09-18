@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
-  <rect width="200" height="60" fill="#ffffff"/>
-  <g transform="translate(10, 10)">
-    <rect x="0" y="4" width="32" height="32" rx="6" fill="#e11d48"/>
-    <path d="M8,16 Q16,8 24,16 Q16,24 8,16 Z" fill="#ffffff"/>
-    <text x="40" y="26" font-family="'Outfit', Arial, sans-serif" font-weight="900" font-size="17" fill="#e11d48" letter-spacing="1">MASTER CHOW</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" width="220" height="60">
+  <g transform="translate(8, 8)">
+    <path d="M 4 20 C 4 34 14 40 24 40 C 34 40 44 34 44 20 Z" fill="#D32F2F"/>
+    <path d="M 10 12 L 38 12" stroke="#D32F2F" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 16 6 L 32 6" stroke="#D32F2F" stroke-width="2" stroke-linecap="round"/>
+    <text x="50" y="29" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="18" fill="#111827" letter-spacing="1">MASTERCHOW</text>
   </g>
 </svg>

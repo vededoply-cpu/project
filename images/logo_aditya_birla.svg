@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <g transform="translate(8, 8)">
+    <g fill="#D9232E" transform="scale(0.75) translate(0, 0)">
+      <path d="M 22 0 L 27 16 L 42 10 L 32 22 L 46 32 L 30 32 L 34 46 L 22 34 L 10 46 L 14 32 L -2 32 L 12 22 L 2 10 L 17 16 Z"/>
+    </g>
+    <text x="46" y="22" font-family="'Times New Roman', serif" font-weight="900" font-size="15" fill="#A81C24" letter-spacing="1">ADITYA BIRLA</text>
+    <text x="46" y="36" font-family="'Helvetica Neue', sans-serif" font-weight="800" font-size="9" fill="#0F172A" letter-spacing="2.5">FASHION &amp; RETAIL</text>
+  </g>
+</svg>
