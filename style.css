@@ -987,39 +987,6 @@
  }
 
  /* ===== STRUCTURED PRODUCT CARDS ===== */
- .products-grid {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-   gap: 28px;
- }
-
- .product-card {
-   background: var(--white);
-   border-radius: var(--radius-md);
-   border: 1px solid var(--border-subtle);
-   overflow: hidden;
-   box-shadow: var(--shadow-xs);
-   display: flex;
-   flex-direction: column;
-   transition: all var(--transition-fast);
- }
-
- .product-card:hover {
-   border-color: var(--blue-brand);
-   box-shadow: var(--shadow-md);
-   transform: translateY(-3px);
- }
-
- .product-thumb {
-   position: relative;
-   height: 230px;
-   background: var(--bg-surface);
-   overflow: hidden;
- }
-
- .product-thumb img {
-   width: 100%;
-   height: 100%;
    object-fit: contain !important;
    background: #f8fafc;
    transition: transform 0.4s ease;
@@ -3427,12 +3394,20 @@ img, video, iframe, canvas, table {
   .product-thumbs-row {
     display: flex !important;
     flex-direction: row !important;
-    gap: 8px !important;
-    width: 100% !important;
   }
 
-  .thumb-item {
-    height: 65px !important;
+  .ticker-card .brand-sector {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  /* Mobile product grid adjustments */
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .product-detail-card h2 {
