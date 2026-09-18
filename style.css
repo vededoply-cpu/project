@@ -3657,3 +3657,242 @@ img, video, iframe, canvas, table {
     height: 320px !important;
   }
 }
+
+/* ===== PDF USER SPECIFICATION SECTIONS ===== */
+
+/* 1. Under One Roof Section */
+.roof-card-banner {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 40px 32px;
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.05);
+}
+
+/* 2. Enterprise Case Study Cards (PDF Page 2) */
+.enterprise-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 24px;
+}
+
+.enterprise-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  border: 1px solid #e2e8f0;
+  padding: 24px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.enterprise-card:hover {
+  border-color: rgba(235, 94, 40, 0.4);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+  transform: translateY(-3px);
+}
+
+.enterprise-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  gap: 12px;
+}
+
+.enterprise-brand-title {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--navy-dark);
+}
+
+.enterprise-brand-sector {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--blue-brand);
+  background: var(--blue-subtle);
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.enterprise-card-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.enterprise-card-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.enterprise-chip {
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: #334155;
+  background: #f1f5f9;
+  padding: 3px 9px;
+  border-radius: var(--radius-xs);
+}
+
+/* 3. Why Choose Mirai Cards (PDF Page 2) */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.why-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  padding: 24px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.03);
+  transition: all 0.3s ease;
+}
+
+.why-card:hover {
+  border-color: var(--orange-brand);
+  box-shadow: 0 10px 24px rgba(235, 94, 40, 0.12);
+  transform: translateY(-4px);
+}
+
+.why-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(235, 94, 40, 0.1);
+  color: var(--orange-brand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px auto;
+}
+
+.why-card-title {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--navy-dark);
+  margin-bottom: 8px;
+}
+
+.why-card-desc {
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* 4. Serviceable Cities / Storage Partner Section (PDF Page 3) */
+.storage-partner-box {
+  background: linear-gradient(135deg, #09192c 0%, #14325a 100%);
+  border-radius: var(--radius-lg);
+  padding: 36px 32px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-shadow: 0 12px 32px rgba(9, 25, 44, 0.25);
+  margin-bottom: 32px;
+}
+
+.city-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.city-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  transition: all 0.25s ease;
+}
+
+.city-card:hover {
+  border-color: var(--orange-brand);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
+}
+
+.city-img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover !important;
+  border-radius: var(--radius-sm);
+  margin-bottom: 10px;
+}
+
+.city-name {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: var(--navy-dark);
+}
+
+/* 5. Redesigned Red Stats Cards (PDF Page 3) */
+.red-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.red-stat-card {
+  background: linear-gradient(135deg, #d9232e 0%, #b71c1c 100%);
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 12px 28px rgba(217, 35, 46, 0.35);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.red-stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 36px rgba(217, 35, 46, 0.45);
+}
+
+.red-stat-card::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -40%;
+  width: 180px;
+  height: 180px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.red-stat-num {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 1;
+  color: #ffffff;
+  margin-bottom: 10px;
+  letter-spacing: -1px;
+}
+
+.red-stat-lbl {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.92);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
