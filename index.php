@@ -86,57 +86,21 @@ include 'header.php';
             </div>
 
             <div class="hero-slide">
-              <img src="images/ai_corrugated_boxes_wide.jpg" alt="Heavy Duty Corrugated Cartons"/>
+              <img src="images/ai_corrugated_boxes_wide.jpg" alt="Heavy Duty Corrugated Master Cartons"/>
               <div class="hero-slide-badge">Heavy-Duty RSC Master Cartons</div>
               <div class="hero-slide-desc">3-Ply, 5-Ply &amp; 7-Ply corrugated boxes custom engineered for high bursting strength &amp; stacking.</div>
             </div>
 
             <div class="hero-slide">
-              <img src="images/ai_courier_mailers_wide.jpg" alt="Tamper-Proof Poly Courier Mailers"/>
-              <div class="hero-slide-badge">Tamper-Proof Poly Courier Mailers</div>
-              <div class="hero-slide-desc">Co-Ex polyethylene mailers with permanent seal strip &amp; POD jacket for e-commerce security.</div>
+              <img src="images/tape_rolls_wide.jpg" alt="Industrial BOPP Packaging Tapes &amp; Poly Mailers"/>
+              <div class="hero-slide-badge">High-Tack BOPP Tapes &amp; Courier Flyers</div>
+              <div class="hero-slide-desc">Heavy-duty self-adhesive BOPP sealing tapes &amp; tamper-evident poly mailers for secure transit.</div>
             </div>
 
             <div class="hero-slide">
-              <img src="images/tape_rolls_wide.jpg" alt="Industrial BOPP Packaging Tapes"/>
-              <div class="hero-slide-badge">High-Tack Industrial BOPP Tapes</div>
-              <div class="hero-slide-desc">Heavy-duty acrylic self-adhesive BOPP sealing tapes in custom sizes &amp; prints.</div>
-            </div>
-
-            <div class="hero-slide">
-              <img src="images/stretch_film_wide.jpg" alt="High-Cling Stretch Film Pallet Wrap"/>
-              <div class="hero-slide-badge">High-Cling Stretch Film &amp; Pallet Wrap</div>
-              <div class="hero-slide-desc">High-elongation LLDPE machine &amp; manual stretch wrap for pallet stabilization &amp; dust protection.</div>
-            </div>
-
-            <div class="hero-slide">
-              <img src="images/bubble_wrap_wide.jpg" alt="Multi-Layer Air Bubble Rolls"/>
-              <div class="hero-slide-badge">Protective Air Bubble Rolls</div>
-              <div class="hero-slide-desc">Multi-layer air bubble rolls &amp; EPE foam sheets for fragile item cushioning &amp; surface protection.</div>
-            </div>
-
-            <div class="hero-slide">
-              <img src="images/pp_box_wide.jpg" alt="PP Corrugated Flute Boxes"/>
-              <div class="hero-slide-badge">PP Corrugated Flute Boxes</div>
-              <div class="hero-slide-desc">Waterproof, chemical-resistant twin-wall polypropylene boxes for reusable closed-loop logistics.</div>
-            </div>
-
-            <div class="hero-slide">
-              <img src="images/wooden_pallets_wide.jpg" alt="ISPM-15 Export Wooden Pallets"/>
-              <div class="hero-slide-badge">ISPM-15 Export Wooden Pallets</div>
-              <div class="hero-slide-desc">Heat-treated wooden pallets certified for export &amp; heavy logistics load bearing.</div>
-            </div>
-
-            <div class="hero-slide">
-              <img src="images/heavy_duty_rack_wide.jpg" alt="Warehouse Racking System &amp; Material Handling"/>
-              <div class="hero-slide-badge">Warehouse Racking &amp; Material Handling</div>
-              <div class="hero-slide-desc">Heavy-duty selective pallet racking systems, hydraulic stackers &amp; industrial storage layouts.</div>
-            </div>
-
-            <div class="hero-slide">
-              <img src="images/ai_kraft_mailers_wide.jpg" alt="Eco-Kraft Paper Bags &amp; Mailers"/>
-              <div class="hero-slide-badge">Eco-Kraft Paper Bags &amp; Mailers</div>
-              <div class="hero-slide-desc">100% recyclable biodegradable kraft paper bags &amp; mailers for sustainable retail packaging.</div>
+              <img src="images/bubble_wrap_wide.jpg" alt="Protective Air Bubble Rolls &amp; Stretch Wrap"/>
+              <div class="hero-slide-badge">Air Bubble Cushioning &amp; Pallet Wrap</div>
+              <div class="hero-slide-desc">Multi-layer air bubble rolls &amp; LLDPE stretch film for fragile item protection &amp; pallet stabilization.</div>
             </div>
 
           </div>
