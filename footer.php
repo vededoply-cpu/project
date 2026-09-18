@@ -21,7 +21,7 @@
       </div>
 
       <div class="footer-col">
-        <h4>Core Products</h4>
+        <h3>Core Products</h3>
         <div class="footer-links">
           <a href="products.php#corrugated">Corrugated Boxes (2-9 Ply)</a>
           <a href="products.php#courier">Tamper-Proof Courier Bags</a>
@@ -34,7 +34,7 @@
       </div>
 
       <div class="footer-col">
-        <h4>Company &amp; Services</h4>
+        <h3>Company &amp; Services</h3>
         <div class="footer-links">
           <a href="about.php">About Mirai</a>
           <a href="clients.php">Client Portfolio</a>
@@ -47,7 +47,7 @@
       </div>
 
       <div class="footer-col">
-        <h4>Bengaluru Hub</h4>
+        <h3>Bengaluru Hub</h3>
         <div class="footer-contact-list">
           <div class="footer-contact-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>

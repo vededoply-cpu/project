@@ -70,7 +70,7 @@ include 'header.php';
         <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:10px; margin-bottom:10px; display:inline-block;">
           <img src="images/catalogue_qr_code.png" alt="Scan QR Code to Download Catalogue" style="width:150px; height:150px; display:block; margin:0 auto;" />
         </div>
-        <h4 style="font-family:var(--font-heading); font-weight:800; font-size:1.02rem; color:var(--text-primary); margin-bottom:4px;">Scan with Camera</h4>
+        <h3 style="font-family:var(--font-heading); font-weight:800; font-size:1.02rem; color:var(--text-primary); margin-bottom:4px;">Scan with Camera</h3>
         <p style="font-size:0.8rem; color:var(--text-secondary); line-height:1.4; margin:0;">
           Point smartphone camera to scan &amp; download the Master Catalogue instantly on mobile.
         </p>
