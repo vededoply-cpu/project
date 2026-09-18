@@ -34,8 +34,8 @@ include 'header.php';
         <div>
           <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:18px;">
             <div>
-              <span style="font-family:var(--font-heading); font-weight:900; font-size:1.6rem; color:var(--text-dark); display:block;">BigBasket</span>
-              <span style="font-size:0.8rem; color:var(--blue-primary); font-weight:700; text-transform:uppercase; letter-spacing:0.5px;">E-Commerce &amp; Quick Grocery</span>
+              <img src="images/logo_bigbasket.svg" alt="BigBasket" class="enterprise-logo-img" style="margin-bottom:6px;" />
+              <span style="font-size:0.8rem; color:var(--blue-primary); font-weight:700; text-transform:uppercase; letter-spacing:0.5px; display:block;">E-Commerce &amp; Quick Grocery</span>
             </div>
             <span style="background:var(--blue-subtle); color:var(--blue-primary); font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:12px;">Active Client</span>
           </div>
@@ -54,8 +54,8 @@ include 'header.php';
         <div>
           <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:18px;">
             <div>
-              <span style="font-family:var(--font-heading); font-weight:900; font-size:1.6rem; color:var(--text-dark); display:block;">Hyperpure (Zomato)</span>
-              <span style="font-size:0.8rem; color:var(--orange); font-weight:700; text-transform:uppercase; letter-spacing:0.5px;">Food &amp; HoReCa Supply</span>
+              <img src="images/logo_zomato.svg" alt="Hyperpure (Zomato)" class="enterprise-logo-img" style="margin-bottom:6px;" />
+              <span style="font-size:0.8rem; color:var(--orange); font-weight:700; text-transform:uppercase; letter-spacing:0.5px; display:block;">Food &amp; HoReCa Supply</span>
             </div>
             <span style="background:var(--orange-subtle); color:var(--orange); font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:12px;">Active Client</span>
           </div>
@@ -69,13 +69,13 @@ include 'header.php';
         </div>
       </div>
 
-      <!-- JioMart -->
+      <!-- Reliance Retail -->
       <div style="background:var(--white); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--shadow-sm); display:flex; flex-direction:column; justify-content:space-between;">
         <div>
           <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:18px;">
             <div>
-              <span style="font-family:var(--font-heading); font-weight:900; font-size:1.6rem; color:var(--text-dark); display:block;">JioMart</span>
-              <span style="font-size:0.8rem; color:var(--blue-primary); font-weight:700; text-transform:uppercase; letter-spacing:0.5px;">Pan-India Retail Fleet</span>
+              <img src="images/logo_reliance_retail.svg" alt="Reliance Retail" class="enterprise-logo-img" style="margin-bottom:6px;" />
+              <span style="font-size:0.8rem; color:var(--blue-primary); font-weight:700; text-transform:uppercase; letter-spacing:0.5px; display:block;">Pan-India Retail Fleet</span>
             </div>
             <span style="background:var(--blue-subtle); color:var(--blue-primary); font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:12px;">Active Client</span>
           </div>
@@ -89,13 +89,13 @@ include 'header.php';
         </div>
       </div>
 
-      <!-- Delhivery -->
+      <!-- Flipkart -->
       <div style="background:var(--white); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--shadow-sm); display:flex; flex-direction:column; justify-content:space-between;">
         <div>
           <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:18px;">
             <div>
-              <span style="font-family:var(--font-heading); font-weight:900; font-size:1.6rem; color:var(--text-dark); display:block;">Delhivery</span>
-              <span style="font-size:0.8rem; color:var(--orange); font-weight:700; text-transform:uppercase; letter-spacing:0.5px;">Express Express Logistics</span>
+              <img src="images/logo_flipkart.svg" alt="Flipkart" class="enterprise-logo-img" style="margin-bottom:6px;" />
+              <span style="font-size:0.8rem; color:var(--orange); font-weight:700; text-transform:uppercase; letter-spacing:0.5px; display:block;">Express Logistics</span>
             </div>
             <span style="background:var(--orange-subtle); color:var(--orange); font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:12px;">Active Client</span>
           </div>
@@ -114,8 +114,8 @@ include 'header.php';
         <div>
           <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:18px;">
             <div>
-              <span style="font-family:var(--font-heading); font-weight:900; font-size:1.6rem; color:var(--text-dark); display:block;">Amazon Sellers</span>
-              <span style="font-size:0.8rem; color:var(--blue-primary); font-weight:700; text-transform:uppercase; letter-spacing:0.5px;">FBA Fulfillment Network</span>
+              <img src="images/logo_amazon.svg" alt="Amazon Sellers" class="enterprise-logo-img" style="margin-bottom:6px;" />
+              <span style="font-size:0.8rem; color:var(--blue-primary); font-weight:700; text-transform:uppercase; letter-spacing:0.5px; display:block;">FBA Fulfillment Network</span>
             </div>
             <span style="background:var(--blue-subtle); color:var(--blue-primary); font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:12px;">Active Client</span>
           </div>
@@ -129,23 +129,23 @@ include 'header.php';
         </div>
       </div>
 
-      <!-- Master Chow -->
+      <!-- Tata Enterprises -->
       <div style="background:var(--white); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--shadow-sm); display:flex; flex-direction:column; justify-content:space-between;">
         <div>
           <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:18px;">
             <div>
-              <span style="font-family:var(--font-heading); font-weight:900; font-size:1.6rem; color:var(--text-dark); display:block;">Master Chow</span>
-              <span style="font-size:0.8rem; color:var(--orange); font-weight:700; text-transform:uppercase; letter-spacing:0.5px;">D2C Gourmet Food</span>
+              <img src="images/logo_tata.svg" alt="Tata Enterprises" class="enterprise-logo-img" style="margin-bottom:6px;" />
+              <span style="font-size:0.8rem; color:var(--orange); font-weight:700; text-transform:uppercase; letter-spacing:0.5px; display:block;">Industrial &amp; Auto Crates</span>
             </div>
             <span style="background:var(--orange-subtle); color:var(--orange); font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:12px;">Active Client</span>
           </div>
           <p style="font-size:0.92rem; color:var(--text-body); line-height:1.6; margin-bottom:20px;">
-            Custom multi-color flexo-printed die-cut partitions and leak-proof outer transit boxes designed for fragile glass sauce bottles.
+            Heavy duty heavy-wall triple flute AAA corrugated shippers, heavy wooden heat-treated pallets, and precision component dividers.
           </p>
         </div>
         <div style="border-top:1px solid var(--border-light); padding-top:16px; font-size:0.82rem; color:var(--text-muted); display:flex; gap:16px;">
-          <span>Custom Print</span>
-          <span>Glass Safety</span>
+          <span>Heavy Duty Cartons</span>
+          <span>Export Pallets</span>
         </div>
       </div>
 

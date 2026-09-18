@@ -3771,6 +3771,13 @@ img, video, iframe, canvas, table {
   color: var(--navy-dark);
 }
 
+.enterprise-logo-img {
+  height: 36px;
+  max-width: 170px;
+  object-fit: contain;
+  display: block;
+}
+
 .enterprise-brand-sector {
   font-size: 0.72rem;
   font-weight: 800;
