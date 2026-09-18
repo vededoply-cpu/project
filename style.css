@@ -691,134 +691,142 @@
 
  /* ===== HERO SECTION (CLEAN INDUSTRIAL, NO GIMMICKS) ===== */
  .hero {
-  background: linear-gradient(135deg, #eef6ff 0%, #dbeafe 50%, #f8fafc 100%);
-  color: var(--text-primary);
+  background-color: var(--navy-dark);
+  color: var(--white);
   padding: 70px 0 80px 0;
   position: relative;
-  border-bottom: 1px solid #cbd5e1;
- }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
 
-  .hero-grid {
-    display: grid;
-    grid-template-columns: 1.15fr 1fr;
-    gap: 48px;
-    align-items: center;
-  }
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
 
- .hero-badge {
-   display: inline-flex;
-   align-items: center;
-   gap: 8px;
-   background: rgba(255, 255, 255, 0.08);
-   border: 1px solid rgba(255, 255, 255, 0.15);
-   padding: 6px 14px;
-   border-radius: var(--radius-xs);
-   background: #ffffff;
-   border: 1.5px solid #bfdbfe;
-   padding: 6px 14px;
-   border-radius: var(--radius-xs);
-   font-family: var(--font-heading);
-   font-size: 0.8rem;
-   font-weight: 800;
-   letter-spacing: 0.06em;
-   text-transform: uppercase;
-   color: var(--blue-brand);
-   margin-bottom: 20px;
-   box-shadow: 0 2px 8px rgba(21, 101, 192, 0.08);
- }
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 6px 14px;
+  border-radius: var(--radius-xs);
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
 
- .hero-badge-dot {
-   width: 8px;
-   height: 8px;
-   border-radius: 50%;
-   background: var(--orange-brand);
- }
+.hero-float-badge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 6px 14px;
+  border-radius: var(--radius-xs);
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #38bdf8;
+}
 
- .hero-title {
-   font-family: var(--font-heading);
-   font-size: clamp(2.2rem, 4vw, 3.4rem);
-   font-weight: 900;
-   line-height: 1.12;
-   letter-spacing: -0.02em;
-   color: #0e2748;
-   margin-bottom: 18px;
- }
+.hero-badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--orange-brand);
+}
 
- .hero-title span {
-   color: var(--blue-brand);
- }
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  font-weight: 900;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  margin-bottom: 18px;
+}
 
- .hero-desc {
-   font-size: 1.05rem;
-   line-height: 1.7;
-   color: #334155;
-   margin-bottom: 26px;
-   max-width: 560px;
- }
+.hero-title span {
+  color: #38bdf8;
+}
 
- .hero-chips {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 8px;
-   margin-bottom: 30px;
- }
+.hero-desc {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #cbd5e1;
+  font-weight: 400;
+  margin-bottom: 26px;
+  max-width: 560px;
+}
 
- .hero-chip {
-   display: inline-flex;
-   align-items: center;
-   gap: 6px;
-   background: #ffffff;
-   border: 1px solid #cbd5e1;
-   padding: 6px 14px;
-   border-radius: var(--radius-xs);
-   font-size: 0.82rem;
-   color: #0e2748;
-   font-weight: 700;
-   box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
- }
+.hero-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 30px;
+}
 
- .hero-chip svg {
-   width: 14px;
-   height: 14px;
-   color: var(--orange-brand);
- }
+.hero-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 5px 12px;
+  border-radius: var(--radius-xs);
+  font-size: 0.8rem;
+  color: #e2e8f0;
+  font-weight: 600;
+}
 
- .hero-btns {
-   display: flex;
-   align-items: center;
-   gap: 14px;
-   flex-wrap: wrap;
-   margin-bottom: 36px;
- }
+.hero-chip svg {
+  width: 14px;
+  height: 14px;
+  color: var(--orange-brand);
+}
 
- .hero-stats {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   gap: 20px;
-   padding-top: 26px;
-   border-top: 1px solid #cbd5e1;
- }
+.hero-btns {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
 
- .hero-stat-num {
-   font-family: var(--font-heading);
-   font-size: 1.9rem;
-   font-weight: 900;
-   color: #0e2748;
-   line-height: 1;
-   margin-bottom: 4px;
- }
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
 
- .hero-stat-num .plus {
-   color: var(--orange-brand);
- }
+.hero-stat-num {
+  font-family: var(--font-heading);
+  font-size: 1.9rem;
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1;
+  margin-bottom: 4px;
+}
 
- .hero-stat-lbl {
-   font-size: 0.78rem;
-   color: #475569;
-   text-transform: uppercase;
-   letter-spacing: 0.05em;
-   font-weight: 700;
- }
+.hero-stat-num .plus {
+  color: var(--orange-brand);
+}
+
+.hero-stat-lbl {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
 
  /* HERO IMAGE FRAME */
  .hero-visual {
@@ -2048,131 +2056,18 @@
   margin: 20px 0 26px 0;
 }
 
-.epoxy-badge-item.hero-badge {
+.epoxy-badge-item {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #ffffff;
-  border: 1.5px solid #0f5298;
-  padding: 6px 14px;
-  border-radius: var(--radius-xs);
-  font-family: var(--font-heading);
-  font-size: 0.8rem;
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #0f5298;
-  box-shadow: 0 2px 8px rgba(15, 82, 152, 0.12);
-}
-
-.hero-float-badge {
-  display: inline-flex;
-  align-items: center;
-  background: #ffffff;
-  border: 1.5px solid #0f5298;
-  padding: 6px 14px;
-  border: 1.5px solid #0b1727;
-  padding: 6px 14px;
-  border-radius: var(--radius-xs);
-  font-family: var(--font-heading);
-  font-size: 0.82rem;
-  font-weight: 800;
-  color: #0f5298;
-  box-shadow: 0 2px 8px rgba(15, 82, 152, 0.12);
-}
-
-.hero-badge-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--orange-brand);
-}
-
-.hero-title {
-  font-family: var(--font-heading);
-  font-size: clamp(2.2rem, 4vw, 3.4rem);
-  font-weight: 900;
-  line-height: 1.12;
-  letter-spacing: -0.02em;
-  color: #0b1727 !important;
-  margin-bottom: 18px;
-}
-
-.hero-title span {
-  color: #0f5298 !important;
-}
-
-.hero-desc {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: #0b1727 !important;
-  font-weight: 600;
-  margin-bottom: 26px;
-  max-width: 560px;
-}
-
-.hero-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 30px;
-}
-
-.hero-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: #ffffff;
-  border: 1.5px solid #0b1727;
-  padding: 6px 14px;
-  border-radius: var(--radius-xs);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 8px 16px;
+  border-radius: 20px;
   font-size: 0.85rem;
-  color: #0b1727 !important;
-  font-weight: 800;
-  box-shadow: 0 2px 6px rgba(11, 23, 39, 0.08);
-}
-
-.hero-chip svg {
-  width: 14px;
-  height: 14px;
-  color: var(--orange-brand);
-}
-
-.hero-btns {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  flex-wrap: wrap;
-  margin-bottom: 36px;
-}
-
-.hero-stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding-top: 26px;
-  border-top: 1.5px solid #0b1727;
-}
-
-.hero-stat-num {
-  font-family: var(--font-heading);
-  font-size: 2.1rem;
-  font-weight: 900;
-  color: #0b1727 !important;
-  line-height: 1;
-  margin-bottom: 4px;
-}
-
-.hero-stat-num .plus {
-  color: var(--orange-brand);
-}
-
-.hero-stat-lbl {
-  font-size: 0.82rem;
-  color: #0b1727 !important;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-weight: 800;
+  font-weight: 600;
+  color: #e2e8f0;
 }
 
 .epoxy-badge-item svg {
