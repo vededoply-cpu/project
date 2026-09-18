@@ -1,9 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
-  <g transform="translate(8, 8)">
-    <rect x="0" y="2" width="42" height="42" rx="6" fill="#0055A5"/>
-    <path d="M 10 12 L 32 34 M 32 12 L 10 34" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round"/>
-    <circle cx="21" cy="23" r="4.5" fill="#ffffff"/>
-    <text x="52" y="26" font-family="'Arial Black', sans-serif" font-weight="900" font-size="15" fill="#0055A5" letter-spacing="0.5">ASHOK LEYLAND</text>
-    <text x="52" y="40" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="9" fill="#E65100" letter-spacing="1.5">AUTOMOTIVE TIER-1 OEM</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 50" width="220" height="50">
+  <g transform="translate(0, 5)">
+    <circle cx="18" cy="20" r="16" fill="#003366"/>
+    <path d="M 10 14 L 18 28 L 26 14 Z" fill="#ffffff"/>
+    <text x="42" y="20" font-family="'Arial Black', sans-serif" font-weight="900" font-size="14" fill="#003366" letter-spacing="1">ASHOK LEYLAND</text>
+    <text x="42" y="32" font-family="'Arial', sans-serif" font-weight="bold" font-size="9" fill="#e31e24" letter-spacing="2">AUTOMOTIVE OEM</text>
   </g>
 </svg>

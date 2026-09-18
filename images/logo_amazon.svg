@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="200" height="50">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 50" width="170" height="50">
   <g transform="translate(0, 5)">
-    <text x="0" y="24" font-family="'Arial Black', sans-serif" font-weight="900" font-size="22" fill="#0F172A" letter-spacing="-1">amazon</text>
-    <text x="96" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="15" fill="#64748B">Sellers</text>
-    <path d="M 8 30 Q 45 40 80 29" fill="none" stroke="#FF9900" stroke-width="3.5" stroke-linecap="round"/>
-    <path d="M 74 25 L 82 29 L 76 34" fill="#FF9900"/>
+    <text x="0" y="26" font-family="'Arial Black', 'Helvetica', sans-serif" font-weight="900" font-size="24" fill="#111111" letter-spacing="-1">amazon</text>
+    <!-- Arrow -->
+    <path d="M 10 32 Q 45 42 82 28" fill="none" stroke="#ff9900" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 77 24 L 85 27 L 80 34 Z" fill="#ff9900"/>
   </g>
 </svg>

@@ -1,8 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="200" height="50">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 50" width="210" height="50">
   <g transform="translate(0, 5)">
-    <rect x="0" y="2" width="38" height="38" rx="8" fill="#111827"/>
-    <text x="8" y="28" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="22" fill="#84CC16">b</text>
-    <text x="20" y="28" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="22" fill="#ffffff">b</text>
-    <text x="46" y="27" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="20" fill="#0F172A" letter-spacing="-0.5">BigBasket</text>
+    <!-- bb icon -->
+    <rect x="0" y="2" width="36" height="36" rx="6" fill="#84c225"/>
+    <text x="7" y="27" font-family="'Arial Black', sans-serif" font-weight="900" font-size="22" fill="#ffffff" letter-spacing="-1">bb</text>
+    <circle cx="28" cy="8" r="4" fill="#e23744"/>
+    <!-- bigbasket text -->
+    <text x="44" y="27" font-family="'Arial Black', 'Helvetica Neue', sans-serif" font-weight="900" font-size="22" fill="#222222" letter-spacing="-0.5">big<tspan fill="#84c225">basket</tspan></text>
   </g>
 </svg>

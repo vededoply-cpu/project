@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 60" width="180" height="60">
-  <g transform="translate(8, 8)">
-    <text x="6" y="34" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="33" fill="#5B21B6" letter-spacing="-1">zepto</text>
-    <circle cx="112" cy="18" r="4.5" fill="#FF3366"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 50" width="150" height="50">
+  <g transform="translate(0, 5)">
+    <text x="0" y="28" font-family="'Arial Black', sans-serif" font-weight="900" font-style="italic" font-size="26" fill="#6c2bd9" letter-spacing="-1">zepto</text>
   </g>
 </svg>

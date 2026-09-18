@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
-  <g transform="translate(8, 8)">
-    <g fill="#D9232E" transform="scale(0.75) translate(0, 0)">
-      <path d="M 22 0 L 27 16 L 42 10 L 32 22 L 46 32 L 30 32 L 34 46 L 22 34 L 10 46 L 14 32 L -2 32 L 12 22 L 2 10 L 17 16 Z"/>
-    </g>
-    <text x="46" y="22" font-family="'Times New Roman', serif" font-weight="900" font-size="15" fill="#A81C24" letter-spacing="1">ADITYA BIRLA</text>
-    <text x="46" y="36" font-family="'Helvetica Neue', sans-serif" font-weight="800" font-size="9" fill="#0F172A" letter-spacing="2.5">FASHION &amp; RETAIL</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 50" width="230" height="50">
+  <g transform="translate(0, 5)">
+    <!-- Sunburst -->
+    <circle cx="18" cy="20" r="14" fill="#d32f2f"/>
+    <polygon points="18,2 22,12 32,8 24,18 34,20 24,22 32,32 22,28 18,38 14,28 4,32 12,22 2,20 12,18 4,8 14,12" fill="#f57c00"/>
+    <text x="42" y="19" font-family="'Arial Black', sans-serif" font-weight="900" font-size="12" fill="#d32f2f" letter-spacing="0.5">ADITYA BIRLA</text>
+    <text x="42" y="31" font-family="'Arial', sans-serif" font-weight="bold" font-size="10" fill="#333333" letter-spacing="2">GROUP</text>
   </g>
 </svg>

@@ -1,8 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" width="220" height="60">
-  <g transform="translate(8, 8)">
-    <rect x="0" y="2" width="40" height="40" rx="6" fill="#DA291C"/>
-    <path d="M 20 10 V 34 M 8 22 H 32" stroke="#ffffff" stroke-width="5" stroke-linecap="square"/>
-    <text x="50" y="25" font-family="'Cinzel', 'Times New Roman', serif" font-weight="800" font-size="17" fill="#000000" letter-spacing="1">SWISS BEAUTY</text>
-    <text x="50" y="39" font-family="'Montserrat', sans-serif" font-weight="700" font-size="8" fill="#E65100" letter-spacing="2.5">COSMETICS &amp; CARE</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 50" width="210" height="50">
+  <g transform="translate(0, 5)">
+    <text x="0" y="20" font-family="'Cinzel', 'Times New Roman', serif" font-weight="bold" font-size="16" fill="#111111" letter-spacing="3">SWISS BEAUTY</text>
+    <text x="0" y="32" font-family="'Montserrat', 'Arial', sans-serif" font-weight="600" font-size="9" fill="#888888" letter-spacing="4">COSMETICS</text>
   </g>
 </svg>

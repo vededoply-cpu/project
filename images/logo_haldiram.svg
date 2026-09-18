@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" width="220" height="60">
-  <g transform="translate(8, 8)">
-    <ellipse cx="102" cy="22" rx="94" ry="21" fill="#C8102E" stroke="#FFC72C" stroke-width="2.5"/>
-    <text x="102" y="29" font-family="'Georgia', 'Times New Roman', serif" font-weight="bold" font-style="italic" font-size="22" fill="#ffffff" text-anchor="middle">Haldiram's</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 50" width="180" height="50">
+  <g transform="translate(0, 5)">
+    <ellipse cx="80" cy="20" rx="75" ry="18" fill="#d32f2f"/>
+    <text x="25" y="26" font-family="'Brush Script MT', 'Georgia', serif" font-weight="bold" font-size="22" fill="#ffffff">Haldiram's</text>
   </g>
 </svg>
