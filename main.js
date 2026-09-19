@@ -697,5 +697,95 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+  // ── LIVE ORDER & BULK RFQ POPUP NOTIFICATION TOAST SYSTEM (5-10 SEC INTERVAL) ──
+  (function initLiveOrderToasts() {
+    const liveOrders = [
+      { name: "Ramesh Sharma", city: "Jaipur", product: "500 Pcs 5-Ply Corrugated Cartons", time: "Just now", badge: "Verified Order" },
+      { name: "Amit Patel", city: "Mumbai", product: "2,000 Rolls High-Tack BOPP Tapes", time: "2 mins ago", badge: "Bulk Order" },
+      { name: "Suresh Kumar", city: "Ahmedabad", product: "1,000 Pcs Tamper-Proof Courier Flyers", time: "4 mins ago", badge: "Express Dispatch" },
+      { name: "Venkatesh R.", city: "Chennai", product: "50 Pcs ISPM-15 Export Wooden Pallets", time: "1 min ago", badge: "Verified Order" },
+      { name: "Rajesh Verma", city: "Delhi NCR", product: "1,500 Pcs 3-Ply Master Shipping Boxes", time: "Just now", badge: "Bulk Order" },
+      { name: "Priya Kulkarni", city: "Pune", product: "200 Pcs HDPE Heavy Plastic Storage Crates", time: "3 mins ago", badge: "Verified Order" },
+      { name: "Kiran Gowda", city: "Bengaluru", product: "300 Pcs PP Corrugated Flute Boxes", time: "5 mins ago", badge: "Same-Day Dispatch" },
+      { name: "Vikramaditya S.", city: "Vadodara", product: "500 Mtrs Heavy Air Bubble Wrap Rolls", time: "Just now", badge: "Verified Order" },
+      { name: "Sunil Joshi", city: "Indore", product: "2,500 Pcs Barcoded Security Transit Seals", time: "2 mins ago", badge: "Bulk RFQ" },
+      { name: "Anil Deshmukh", city: "Hyderabad", product: "800 Pcs Co-Ex Courier Mailer Bags", time: "4 mins ago", badge: "Verified Order" },
+      { name: "Mahesh Agarwal", city: "Surat", product: "100 Pcs Heavy Duty Warehouse Pallet Racks", time: "Just now", badge: "Turnkey Project" },
+      { name: "Deepak Nair", city: "Kochi", product: "1,000 Mtrs Cast LLDPE Stretch Film Rolls", time: "3 mins ago", badge: "Verified Order" }
+    ];
+
+    let toastContainer = document.getElementById('liveOrderToast');
+    if (!toastContainer) {
+      toastContainer = document.createElement('div');
+      toastContainer.id = 'liveOrderToast';
+      toastContainer.className = 'live-order-toast';
+      document.body.appendChild(toastContainer);
+    }
+
+    let orderIndex = 0;
+    let toastTimer = null;
+    let isUserDismissed = false;
+
+    function showNextToast() {
+      if (isUserDismissed || !toastContainer) return;
+
+      const order = liveOrders[orderIndex];
+      orderIndex = (orderIndex + 1) % liveOrders.length;
+
+      toastContainer.innerHTML = `
+        <div class="toast-card">
+          <div class="toast-badge-row">
+            <span class="toast-verified-dot"></span>
+            <span class="toast-badge-lbl">${order.badge}</span>
+            <span class="toast-time">${order.time}</span>
+            <button class="toast-close-btn" id="toastCloseBtn" aria-label="Close notification">&times;</button>
+          </div>
+          <div class="toast-body">
+            <div class="toast-user"><strong>${order.name}</strong> from <span class="toast-city">${order.city}</span></div>
+            <div class="toast-product">${order.product}</div>
+          </div>
+        </div>
+      `;
+
+      toastContainer.classList.add('show');
+
+      const closeBtn = document.getElementById('toastCloseBtn');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          hideToast();
+          isUserDismissed = true;
+        });
+      }
+
+      // Hide toast after 4.5 seconds
+      setTimeout(function () {
+        hideToast();
+      }, 4500);
+    }
+
+    function hideToast() {
+      if (toastContainer) {
+        toastContainer.classList.remove('show');
+      }
+    }
+
+    function scheduleNextToast() {
+      if (isUserDismissed) return;
+      // Random interval between 6 to 9 seconds (6000ms to 9000ms)
+      const randomInterval = Math.floor(Math.random() * 3000) + 6000;
+      toastTimer = setTimeout(function () {
+        showNextToast();
+        scheduleNextToast();
+      }, randomInterval);
+    }
+
+    // Initial trigger after 4 seconds on page load
+    setTimeout(function () {
+      showNextToast();
+      scheduleNextToast();
+    }, 4000);
+  })();
+
 });
 
