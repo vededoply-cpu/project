@@ -700,18 +700,31 @@ document.addEventListener('DOMContentLoaded', function () {
   // ── LIVE ORDER & BULK RFQ POPUP NOTIFICATION TOAST SYSTEM (5-10 SEC INTERVAL) ──
   (function initLiveOrderToasts() {
     const liveOrders = [
-      { name: "Ramesh Sharma", city: "Jaipur", product: "500 Pcs 5-Ply Corrugated Cartons", time: "Just now", badge: "Verified Order" },
-      { name: "Amit Patel", city: "Mumbai", product: "2,000 Rolls High-Tack BOPP Tapes", time: "2 mins ago", badge: "Bulk Order" },
-      { name: "Suresh Kumar", city: "Ahmedabad", product: "1,000 Pcs Tamper-Proof Courier Flyers", time: "4 mins ago", badge: "Express Dispatch" },
-      { name: "Venkatesh R.", city: "Chennai", product: "50 Pcs ISPM-15 Export Wooden Pallets", time: "1 min ago", badge: "Verified Order" },
-      { name: "Rajesh Verma", city: "Delhi NCR", product: "1,500 Pcs 3-Ply Master Shipping Boxes", time: "Just now", badge: "Bulk Order" },
-      { name: "Priya Kulkarni", city: "Pune", product: "200 Pcs HDPE Heavy Plastic Storage Crates", time: "3 mins ago", badge: "Verified Order" },
-      { name: "Kiran Gowda", city: "Bengaluru", product: "300 Pcs PP Corrugated Flute Boxes", time: "5 mins ago", badge: "Same-Day Dispatch" },
-      { name: "Vikramaditya S.", city: "Vadodara", product: "500 Mtrs Heavy Air Bubble Wrap Rolls", time: "Just now", badge: "Verified Order" },
-      { name: "Sunil Joshi", city: "Indore", product: "2,500 Pcs Barcoded Security Transit Seals", time: "2 mins ago", badge: "Bulk RFQ" },
-      { name: "Anil Deshmukh", city: "Hyderabad", product: "800 Pcs Co-Ex Courier Mailer Bags", time: "4 mins ago", badge: "Verified Order" },
-      { name: "Mahesh Agarwal", city: "Surat", product: "100 Pcs Heavy Duty Warehouse Pallet Racks", time: "Just now", badge: "Turnkey Project" },
-      { name: "Deepak Nair", city: "Kochi", product: "1,000 Mtrs Cast LLDPE Stretch Film Rolls", time: "3 mins ago", badge: "Verified Order" }
+      { name: "BigBasket Procurement Desk", city: "Bengaluru", product: "5,000 Pcs 5-Ply Partition Corrugated Cartons", time: "Just now", badge: "Enterprise SLA" },
+      { name: "Reliance Retail Logistics", city: "Mumbai", product: "25,000 Pcs Tamper-Evident Poly Courier Mailers", time: "1 min ago", badge: "Verified Order" },
+      { name: "Flipkart Sorting Hub", city: "Bengaluru", product: "500 Rolls Cast LLDPE Machine Stretch Film", time: "2 mins ago", badge: "Bulk Order" },
+      { name: "Amazon FBA Seller Desk", city: "Delhi NCR", product: "2,000 Pcs Standard FBA Master Shipping Boxes", time: "Just now", badge: "Express Dispatch" },
+      { name: "Zepto Quick Store Ops", city: "Mumbai", product: "3,000 Pcs 10-Min Dispatch Flyers & BOPP Tapes", time: "3 mins ago", badge: "Verified Order" },
+      { name: "Tata Auto Component Desk", city: "Pune", product: "100 Pcs Heavy-Duty AAA Triple Flute Shippers", time: "Just now", badge: "Heavy Industrial" },
+      { name: "Zomato Hyperpure Supply", city: "Gurugram", product: "10,000 Pcs Food-Grade Kraft Shopping Bags", time: "4 mins ago", badge: "Enterprise Order" },
+      { name: "Haldiram's FMCG Pack Desk", city: "Noida", product: "1,500 Pcs Double-Wall Master Cartons", time: "1 min ago", badge: "Verified Order" },
+      { name: "PUMA India National Logistics", city: "Bengaluru", product: "3,000 Pcs Custom Apparel Shipping Cartons", time: "Just now", badge: "Enterprise SLA" },
+      { name: "Ashok Leyland Plant Ops", city: "Chennai", product: "150 Pcs ISPM-15 Heat-Treated Export Wooden Pallets", time: "2 mins ago", badge: "Export Grade" },
+      { name: "Aditya Birla ABFRL Retail", city: "Bengaluru", product: "2,000 Pcs High-Burst Garment Master Cartons", time: "5 mins ago", badge: "Verified Order" },
+      { name: "Swiss Beauty Cosmetics", city: "Delhi NCR", product: "1,200 Pcs Custom Printed Poly Mailer Bags", time: "3 mins ago", badge: "Bulk Order" },
+      { name: "Urban Company Service Desk", city: "Gurugram", product: "500 Pcs HDPE Heavy Plastic Storage Crates", time: "Just now", badge: "Verified Order" },
+      { name: "Arvind Fashions Garment Desk", city: "Bengaluru", product: "800 Pcs 5-Ply Export Shipping Shippers", time: "4 mins ago", badge: "Express Dispatch" },
+      { name: "WROGN USPL E-Com Ops", city: "Bengaluru", product: "1,500 Pcs Co-Ex Security Courier Mailers", time: "2 mins ago", badge: "Verified Order" },
+      { name: "IDBI & KVB Banking Desk", city: "Chennai", product: "5,000 Pcs Laser Serialized Security Seals", time: "Just now", badge: "Banking Security" },
+      { name: "MasterChow D2C Logistics", city: "Delhi", product: "400 Mtrs Shock Cushioning Air Bubble Rolls", time: "3 mins ago", badge: "Verified Order" },
+      { name: "HealthFarm Nutrition", city: "Chandigarh", product: "600 Pcs High-GSM Master Shipping Boxes", time: "5 mins ago", badge: "Bulk Order" },
+      { name: "USANA Health Sciences", city: "Bengaluru", product: "1,000 Pcs Pharma-Grade Moisture Barrier Cartons", time: "1 min ago", badge: "Verified Order" },
+      { name: "Ramesh Sharma", city: "Jaipur", product: "500 Pcs 3-Ply Corrugated Shipping Cartons", time: "Just now", badge: "Verified Order" },
+      { name: "Suresh Patel", city: "Ahmedabad", product: "1,000 Pcs Reusable PP Corrugated Flute Boxes", time: "4 mins ago", badge: "Bulk RFQ" },
+      { name: "Venkatesh R.", city: "Coimbatore", product: "200 Pcs Stackable Virgin HDPE Crates with Lids", time: "2 mins ago", badge: "Verified Order" },
+      { name: "Vikramaditya S.", city: "Vadodara", product: "50 Pcs Heavy-Duty Pallet Racking Beams", time: "Just now", badge: "Turnkey Project" },
+      { name: "Sunil Joshi", city: "Indore", product: "2,500 Pcs Barcoded Transit Security Seals", time: "3 mins ago", badge: "Verified Order" },
+      { name: "Kiran Gowda", city: "Mysuru", product: "300 Mtrs Laminated 3-Layer Bubble Wrap Rolls", time: "1 min ago", badge: "Express Dispatch" }
     ];
 
     let toastContainer = document.getElementById('liveOrderToast');
