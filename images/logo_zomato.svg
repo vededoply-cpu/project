@@ -1,6 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 50" width="180" height="50">
-  <g transform="translate(0, 5)">
-    <rect x="0" y="2" width="160" height="36" rx="6" fill="#cb202d"/>
-    <text x="14" y="28" font-family="'Trebuchet MS', 'Arial Black', sans-serif" font-weight="900" font-style="italic" font-size="24" fill="#ffffff" letter-spacing="-0.8">zomato</text>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 48" width="160" height="48">
+  <rect width="160" height="48" rx="8" fill="#e23744" />
+  <text x="80" y="32" font-family="'Comfortaa', 'Arial Black', sans-serif" font-weight="900" font-style="italic" font-size="26" fill="#ffffff" text-anchor="middle" letter-spacing="-1">zomato</text>
 </svg>

@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
-  <g transform="translate(8, 8)">
-    <text x="4" y="34" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="32" fill="#09192c" letter-spacing="2">WROGN</text>
-    <line x1="2" y1="34" x2="38" y2="8" stroke="#E55302" stroke-width="4.5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 48" width="150" height="48">
+  <g transform="translate(10, 8)">
+    <text x="0" y="25" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="26" fill="#000000" letter-spacing="3">WROGN</text>
+    <line x1="58" y1="8" x2="72" y2="28" stroke="#e31e24" stroke-width="4" />
   </g>
 </svg>

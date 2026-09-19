@@ -1,7 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" width="220" height="60">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 48" width="170" height="48">
   <g transform="translate(8, 8)">
-    <path d="M 18 2 L 36 38 H 26 L 18 20 L 10 38 H 0 Z" fill="#E55302"/>
-    <text x="44" y="26" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="21" fill="#0F172A" letter-spacing="0.5">arvind</text>
-    <text x="44" y="39" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="8.5" fill="#E55302" letter-spacing="2">FASHIONS</text>
+    <text x="0" y="22" font-family="'Times New Roman', serif" font-weight="900" font-size="22" fill="#ac192d" letter-spacing="1">arvind</text>
+    <text x="0" y="32" font-family="'Arial', sans-serif" font-weight="800" font-size="8" fill="#002b49" letter-spacing="3">F A S H I O N S</text>
   </g>
 </svg>

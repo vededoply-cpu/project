@@ -1,11 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 50" width="190" height="50">
-  <g transform="translate(0, 5)">
-    <!-- Yellow bag -->
-    <rect x="0" y="4" width="32" height="32" rx="4" fill="#ffe11b"/>
-    <!-- f icon -->
-    <path d="M 12 10 H 22 M 12 17 H 19 M 12 10 V 26" stroke="#2874f0" stroke-width="3.5" stroke-linecap="round"/>
-    <path d="M 19 12 L 25 7" stroke="#2874f0" stroke-width="2.5" stroke-linecap="round"/>
-    <!-- Flipkart text -->
-    <text x="40" y="27" font-family="'Arial Black', 'Helvetica', sans-serif" font-weight="900" font-style="italic" font-size="21" fill="#2874f0" letter-spacing="-0.5">Flipkart</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 48" width="170" height="48">
+  <g transform="translate(6, 6)">
+    <!-- Yellow Shopping Bag with Blue F -->
+    <rect x="2" y="6" width="28" height="26" rx="4" fill="#ffe11b" />
+    <path d="M10 6 Q16 0 22 6" stroke="#ffe11b" stroke-width="3" fill="none" />
+    <text x="9" y="26" font-family="'Arial Black', sans-serif" font-weight="900" font-style="italic" font-size="20" fill="#2874f0">f</text>
+    <!-- Flipkart Text -->
+    <text x="36" y="25" font-family="'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-style="italic" font-size="20" fill="#2874f0">Flipkart</text>
   </g>
 </svg>

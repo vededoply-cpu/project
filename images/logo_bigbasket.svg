@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 50" width="210" height="50">
-  <g transform="translate(0, 5)">
-    <!-- bb icon -->
-    <rect x="0" y="2" width="36" height="36" rx="6" fill="#84c225"/>
-    <text x="7" y="27" font-family="'Arial Black', sans-serif" font-weight="900" font-size="22" fill="#ffffff" letter-spacing="-1">bb</text>
-    <circle cx="28" cy="8" r="4" fill="#e23744"/>
-    <!-- bigbasket text -->
-    <text x="44" y="27" font-family="'Arial Black', 'Helvetica Neue', sans-serif" font-weight="900" font-size="22" fill="#222222" letter-spacing="-0.5">big<tspan fill="#84c225">basket</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 50" width="180" height="50">
+  <g transform="translate(10, 8)">
+    <!-- Green Basket Symbol -->
+    <path d="M12 8 L32 8 L28 26 L16 26 Z" fill="#84c225" />
+    <path d="M16 8 Q22 0 28 8" stroke="#84c225" stroke-width="2.5" fill="none" />
+    <text x="38" y="24" font-family="'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="22" fill="#84c225">big</text>
+    <text x="74" y="24" font-family="'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="22" fill="#222222">basket</text>
+    <circle cx="62" cy="7" r="3" fill="#84c225" />
   </g>
 </svg>

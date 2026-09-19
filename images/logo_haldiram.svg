@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 50" width="180" height="50">
-  <g transform="translate(0, 5)">
-    <ellipse cx="80" cy="20" rx="75" ry="18" fill="#d32f2f"/>
-    <text x="25" y="26" font-family="'Brush Script MT', 'Georgia', serif" font-weight="bold" font-size="22" fill="#ffffff">Haldiram's</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 50" width="170" height="50">
+  <g transform="translate(10, 5)">
+    <!-- Official Haldiram's Red Oval Badge -->
+    <ellipse cx="75" cy="20" rx="70" ry="18" fill="#d32f2f" stroke="#ffc107" stroke-width="2" />
+    <text x="75" y="26" font-family="'Brush Script MT', 'Comic Sans MS', cursive" font-weight="bold" font-size="22" fill="#ffffff" text-anchor="middle">Haldiram's</text>
   </g>
 </svg>

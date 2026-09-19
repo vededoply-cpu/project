@@ -1,13 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 50" width="220" height="50">
-  <g transform="translate(0, 5)">
-    <!-- Reliance emblem -->
-    <g transform="translate(0, 4)">
-      <polygon points="14,0 28,14 14,28 0,14" fill="#003399"/>
-      <polygon points="14,4 24,14 14,24 4,14" fill="#e31e24"/>
-      <polygon points="14,8 20,14 14,20 8,14" fill="#ffcc00"/>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 50" width="180" height="50">
+  <g transform="translate(6, 6)">
+    <!-- Reliance Diamond Logo Icon -->
+    <polygon points="18,4 32,18 18,32 4,18" fill="#004b93" />
+    <polygon points="18,9 27,18 18,27 9,18" fill="#e31e24" />
+    <polygon points="18,13 22,18 18,23 14,18" fill="#ffc20e" />
     <!-- Text -->
-    <text x="36" y="22" font-family="'Georgia', 'Times New Roman', serif" font-weight="bold" font-size="18" fill="#003399" letter-spacing="0">Reliance</text>
-    <text x="36" y="34" font-family="'Arial Black', sans-serif" font-weight="900" font-size="11" fill="#e31e24" letter-spacing="3">RETAIL</text>
+    <text x="38" y="19" font-family="'Arial Black', sans-serif" font-weight="900" font-size="15" fill="#004b93" letter-spacing="0.5">Reliance</text>
+    <text x="38" y="32" font-family="'Arial Black', sans-serif" font-weight="900" font-size="11" fill="#e31e24" letter-spacing="2">RETAIL</text>
   </g>
 </svg>

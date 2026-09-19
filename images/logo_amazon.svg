@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 50" width="170" height="50">
-  <g transform="translate(0, 5)">
-    <text x="0" y="26" font-family="'Arial Black', 'Helvetica', sans-serif" font-weight="900" font-size="24" fill="#111111" letter-spacing="-1">amazon</text>
-    <!-- Arrow -->
-    <path d="M 10 32 Q 45 42 82 28" fill="none" stroke="#ff9900" stroke-width="3.5" stroke-linecap="round"/>
-    <path d="M 77 24 L 85 27 L 80 34 Z" fill="#ff9900"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 48" width="160" height="48">
+  <g transform="translate(10, 6)">
+    <text x="0" y="24" font-family="'Arial Black', sans-serif" font-weight="900" font-size="24" fill="#111111" letter-spacing="-1">amazon</text>
+    <!-- Orange Smile Arrow -->
+    <path d="M12 28 Q45 40 75 25" stroke="#ff9900" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    <polygon points="73,20 82,24 75,28" fill="#ff9900" />
   </g>
 </svg>

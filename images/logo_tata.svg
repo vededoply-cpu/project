@@ -1,9 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 50" width="160" height="50">
-  <g transform="translate(0, 5)">
-    <!-- Tata Emblem -->
-    <ellipse cx="20" cy="20" rx="18" ry="15" fill="#004b87"/>
-    <path d="M 10 12 H 30 M 20 12 V 28 M 13 18 H 27" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
-    <!-- TATA Text -->
-    <text x="46" y="27" font-family="'Helvetica Neue', 'Arial', sans-serif" font-weight="900" font-size="22" fill="#004b87" letter-spacing="2">TATA</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 48" width="150" height="48">
+  <g transform="translate(10, 4)">
+    <ellipse cx="20" cy="20" rx="18" ry="16" fill="#00529c" />
+    <path d="M10 12 L30 12 M20 12 L20 28 M14 20 L26 20" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+    <text x="46" y="27" font-family="'Arial Black', sans-serif" font-weight="900" font-size="22" fill="#00529c" letter-spacing="2">TATA</text>
   </g>
 </svg>
