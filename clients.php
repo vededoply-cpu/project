@@ -6,18 +6,18 @@ include 'header.php';
 ?>
 
 <!-- PAGE HERO -->
-<section style="background:linear-gradient(135deg, #071e3d 0%, #0c2b53 100%); color:var(--white); padding:60px 0 70px 0;">
+<section style="background:linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%); color:#0f172a; padding:60px 0 70px 0; border-bottom:1px solid #bae6fd;">
   <div class="container">
-    <div style="font-size:0.85rem; color:#94a3b8; margin-bottom:12px; display:flex; gap:8px; align-items:center;">
-      <a href="index.php" style="color:#94a3b8;">Home</a>
+    <div style="font-size:0.85rem; color:#64748b; margin-bottom:12px; display:flex; gap:8px; align-items:center;">
+      <a href="index.php" style="color:#64748b;">Home</a>
       <span>/</span>
-      <span style="color:#38bdf8; font-weight:600;">Enterprise Clients</span>
+      <span style="color:#0284c7; font-weight:600;">Enterprise Clients</span>
     </div>
-    <h1 style="font-family:var(--font-heading); font-weight:900; font-size:clamp(2.2rem, 4vw, 3.4rem); line-height:1.15; margin-bottom:16px;">
+    <h1 style="font-family:var(--font-heading); font-weight:900; font-size:clamp(2.2rem, 4vw, 3.4rem); line-height:1.15; margin-bottom:16px; color:#0f172a;">
       Trusted by India's Foremost<br/>
-      <span style="color:#38bdf8;">Enterprise Brands</span>
+      <span style="color:#0284c7;">Enterprise Brands</span>
     </h1>
-    <p style="font-size:1.1rem; color:#cbd5e1; max-width:680px; line-height:1.7;">
+    <p style="font-size:1.1rem; color:#334155; max-width:680px; line-height:1.7;">
       From high-growth direct-to-consumer e-commerce leaders to Tier-1 automotive conglomerates, see how Mirai Packaging LLP powers mission-critical supply chain operations.
     </p>
   </div>
@@ -152,16 +152,16 @@ include 'header.php';
     </div>
 
     <!-- CTA CALLOUT -->
-    <div style="background:linear-gradient(135deg, #071e3d 0%, #0c2b53 100%); border-radius:var(--radius-lg); padding:40px; color:var(--white); text-align:center;">
-      <h3 style="font-family:var(--font-heading); font-weight:800; font-size:1.8rem; margin-bottom:12px;">
+    <div style="background:linear-gradient(135deg, #0284c7 0%, #0369a1 100%); border-radius:var(--radius-lg); padding:40px; color:#ffffff; text-align:center;">
+      <h3 style="font-family:var(--font-heading); font-weight:800; font-size:1.8rem; margin-bottom:12px; color:#ffffff;">
         Join Over 42+ Industry Leaders Partnering With Mirai Packaging
       </h3>
-      <p style="font-size:1rem; color:#cbd5e1; max-width:640px; margin:0 auto 24px auto; line-height:1.6;">
+      <p style="font-size:1rem; color:#e0f2fe; max-width:640px; margin:0 auto 24px auto; line-height:1.6;">
         Contact our enterprise sales department for custom contract pricing, SLA-backed dispatch schedules, and dedicated account management.
       </p>
       <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
         <a href="contact.php" class="btn btn-orange btn-lg">Request Enterprise Quote</a>
-        <a href="tel:+919044129477" class="btn btn-outline-white btn-lg">Call Enterprise Desk: +91-9044129477</a>
+        <a href="tel:+919044129477" class="btn btn-outline-white btn-lg" style="color:#ffffff; border-color:rgba(255,255,255,0.6);">Call Enterprise Desk: +91-9044129477</a>
       </div>
     </div>
 

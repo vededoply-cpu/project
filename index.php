@@ -789,17 +789,17 @@ include 'header.php';
   <div class="container">
     <div class="calc-container">
       <div class="calc-info">
-        <span class="sub-title" style="color:#38bdf8;">Engineering Tool</span>
-        <h2 style="font-family:var(--font-heading); font-weight:800; font-size:1.8rem; margin-bottom:14px; color:#ffffff;">
+        <span class="sub-title" style="color:#0284c7;">Engineering Tool</span>
+        <h2 style="font-family:var(--font-heading); font-weight:800; font-size:1.8rem; margin-bottom:14px; color:#0f172a;">
           Interactive Box Sheet Size &amp;<br/>Weight Calculator
         </h2>
-        <p style="font-size:0.92rem; color:#cbd5e1; line-height:1.65; margin-bottom:20px;">
+        <p style="font-size:0.92rem; color:#334155; line-height:1.65; margin-bottom:20px;">
           Calculate required corrugated sheet blank size (in mm), total sheet area (m² / sq.ft), volumetric freight weight, and recommended flute structure.
         </p>
 
-        <div style="background:rgba(255,255,255,0.06); padding:16px; border-radius:var(--radius-sm); border:1px solid rgba(255,255,255,0.1); margin-bottom:16px;">
-          <div style="font-size:0.84rem; color:#38bdf8; font-weight:700; margin-bottom:6px;">CORRUGATED SHEET FORMULAS (RSC BOX):</div>
-          <div style="font-size:0.82rem; color:#cbd5e1; line-height:1.6;">
+        <div style="background:#e0f2fe; padding:16px; border-radius:var(--radius-sm); border:1px solid #bae6fd; margin-bottom:16px;">
+          <div style="font-size:0.84rem; color:#0284c7; font-weight:700; margin-bottom:6px;">CORRUGATED SHEET FORMULAS (RSC BOX):</div>
+          <div style="font-size:0.82rem; color:#334155; line-height:1.6;">
             • <strong>Sheet Cut Length:</strong> 2 × (Length + Width) + Joint Flap (35–50mm)<br/>
             • <strong>Sheet Cut Width:</strong> Width + Height + Crease Allowance (6–15mm)<br/>
             • <strong>Sheet Area:</strong> (Sheet Length × Sheet Width) / 1,000,000 m²

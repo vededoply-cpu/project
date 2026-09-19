@@ -6,17 +6,17 @@ include 'header.php';
 ?>
 
 <!-- PAGE HERO -->
-<section style="background-color:var(--navy-dark); color:var(--white); padding:50px 0 54px 0; border-bottom:1px solid rgba(255,255,255,0.08);">
+<section style="background:linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%); color:#0f172a; padding:50px 0 54px 0; border-bottom:1px solid #bae6fd;">
   <div class="container">
-    <div style="font-size:0.82rem; color:#94a3b8; margin-bottom:10px; display:flex; gap:8px; align-items:center;">
-      <a href="index.php" style="color:#94a3b8;">Home</a>
+    <div style="font-size:0.82rem; color:#64748b; margin-bottom:10px; display:flex; gap:8px; align-items:center;">
+      <a href="index.php" style="color:#64748b;">Home</a>
       <span>/</span>
-      <span style="color:#38bdf8; font-weight:600;">Products &amp; Technical Specifications</span>
+      <span style="color:#0284c7; font-weight:600;">Products &amp; Technical Specifications</span>
     </div>
-    <h1 style="font-family:var(--font-heading); font-weight:900; font-size:clamp(2rem, 3.6vw, 3rem); line-height:1.15; margin-bottom:12px;">
+    <h1 style="font-family:var(--font-heading); font-weight:900; font-size:clamp(2rem, 3.6vw, 3rem); line-height:1.15; margin-bottom:12px; color:#0f172a;">
       Industrial Packaging Catalog &amp; Technical Specifications
     </h1>
-    <p style="font-size:1.05rem; color:#cbd5e1; max-width:680px; line-height:1.65; margin-bottom:18px;">
+    <p style="font-size:1.05rem; color:#334155; max-width:680px; line-height:1.65; margin-bottom:18px;">
       Technical parameters, paper grammage, flute constructions, and burst strength specifications across our manufactured range.
     </p>
     <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
@@ -24,7 +24,7 @@ include 'header.php';
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:16px;height:16px;"><path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
         Download Master Catalogue (PDF)
       </a>
-      <a href="#catalogue-qr" class="btn btn-outline btn-sm" style="color:#ffffff; border-color:rgba(255,255,255,0.3); padding:10px 16px;">
+      <a href="#catalogue-qr" class="btn btn-outline btn-sm" style="color:#0284c7; border-color:#0284c7; padding:10px 16px;">
         Scan QR Code
       </a>
     </div>
@@ -32,20 +32,20 @@ include 'header.php';
 </section>
 
 <!-- DEDICATED MASTER CATALOGUE & QR CODE BANNER -->
-<section style="background:linear-gradient(135deg, #071e3d 0%, #0f2b57 100%); color:#ffffff; padding:48px 0;" id="catalogue-qr">
+<section style="background:linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%); color:#0f172a; border-bottom:1px solid #bae6fd; padding:48px 0;" id="catalogue-qr">
   <div class="container">
     <div style="display:grid; grid-template-columns:1.4fr 1fr; gap:32px; align-items:center;" class="product-card-grid">
       
       <!-- Left Column: Master Catalogue Specs & Download -->
       <div>
-        <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(235,94,40,0.15); border:1px solid rgba(235,94,40,0.35); color:var(--orange-brand); padding:5px 14px; border-radius:20px; font-size:0.78rem; font-weight:800; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:12px;">
+        <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(2,132,199,0.12); border:1px solid rgba(2,132,199,0.3); color:#0284c7; padding:5px 14px; border-radius:20px; font-size:0.78rem; font-weight:800; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:12px;">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:14px;height:14px;"><path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
           2026 Master Technical Edition
         </div>
-        <h2 style="font-family:var(--font-heading); font-weight:900; font-size:clamp(1.75rem, 3vw, 2.3rem); color:#ffffff; line-height:1.2; margin-bottom:10px;">
+        <h2 style="font-family:var(--font-heading); font-weight:900; font-size:clamp(1.75rem, 3vw, 2.3rem); color:#0f172a; line-height:1.2; margin-bottom:10px;">
           Download Master Product <span style="color:var(--orange-brand);">Catalogue (PDF)</span>
         </h2>
-        <p style="font-size:0.98rem; color:#cbd5e1; line-height:1.65; margin-bottom:18px; max-width:620px;">
+        <p style="font-size:0.98rem; color:#334155; line-height:1.65; margin-bottom:18px; max-width:620px;">
           Get our comprehensive 580KB technical specification guide covering 500+ SKUs, paper grammages (GSM), bursting factor (BF) test standards, FEFCO box designs, and enterprise MOQ pricing matrices.
         </p>
 
@@ -54,11 +54,11 @@ include 'header.php';
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:18px;height:18px;"><path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
             Download Catalogue (PDF)
           </a>
-          <a href="https://raw.githubusercontent.com/vededoply-cpu/project/main/pdf/Mirai_Packaging_Master_Catalogue.pdf" target="_blank" rel="noopener" class="btn btn-outline" style="color:#ffffff; border-color:rgba(255,255,255,0.3); padding:12px 18px; font-size:0.9rem;">
+          <a href="https://raw.githubusercontent.com/vededoply-cpu/project/main/pdf/Mirai_Packaging_Master_Catalogue.pdf" target="_blank" rel="noopener" class="btn btn-outline" style="color:#0284c7; border-color:#0284c7; padding:12px 18px; font-size:0.9rem;">
             View Online PDF
           </a>
         </div>
-        <div style="font-size:0.8rem; color:#94a3b8; display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
+        <div style="font-size:0.8rem; color:#64748b; display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
           <span>✓ ISO 9001:2015 Verified Specs</span>
           <span>✓ Instant PDF Download (580 KB)</span>
         </div>

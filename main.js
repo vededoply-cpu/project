@@ -615,5 +615,87 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  // ── UNDER ONE ROOF BACKGROUND SLIDER ──
+  const roofBgTrack = document.getElementById('roofBgTrack');
+  const roofDots = document.getElementById('roofDots');
+  if (roofBgTrack) {
+    const roofSlides = roofBgTrack.querySelectorAll('.roof-bg-slide');
+    if (roofSlides.length > 0) {
+      let currentRoofIndex = 0;
+      let roofTimer = null;
+      const ROOF_INTERVAL = 3500; // 3.5 seconds
+
+      if (roofDots) {
+        roofDots.innerHTML = '';
+        roofSlides.forEach(function (_, idx) {
+          const dot = document.createElement('button');
+          dot.className = 'roof-dot' + (idx === 0 ? ' active' : '');
+          dot.setAttribute('aria-label', 'Background slide ' + (idx + 1));
+          dot.addEventListener('click', function () {
+            setRoofSlide(idx);
+            resetRoofTimer();
+          });
+          roofDots.appendChild(dot);
+        });
+      }
+
+      function updateRoofSlides() {
+        roofSlides.forEach(function (slide, idx) {
+          if (idx === currentRoofIndex) {
+            slide.classList.add('active');
+          } else {
+            slide.classList.remove('active');
+          }
+        });
+
+        if (roofDots) {
+          const dots = roofDots.querySelectorAll('.roof-dot');
+          dots.forEach(function (dot, idx) {
+            if (idx === currentRoofIndex) {
+              dot.classList.add('active');
+            } else {
+              dot.classList.remove('active');
+            }
+          });
+        }
+      }
+
+      function setRoofSlide(idx) {
+        currentRoofIndex = (idx + roofSlides.length) % roofSlides.length;
+        updateRoofSlides();
+      }
+
+      function nextRoofSlide() {
+        setRoofSlide(currentRoofIndex + 1);
+      }
+
+      function startRoofTimer() {
+        if (!roofTimer) {
+          roofTimer = setInterval(nextRoofSlide, ROOF_INTERVAL);
+        }
+      }
+
+      function stopRoofTimer() {
+        if (roofTimer) {
+          clearInterval(roofTimer);
+          roofTimer = null;
+        }
+      }
+
+      function resetRoofTimer() {
+        stopRoofTimer();
+        startRoofTimer();
+      }
+
+      const roofSection = document.getElementById('under-one-roof');
+      if (roofSection) {
+        roofSection.addEventListener('mouseenter', stopRoofTimer);
+        roofSection.addEventListener('mouseleave', startRoofTimer);
+      }
+
+      startRoofTimer();
+    }
+  }
+
 });
 

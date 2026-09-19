@@ -6,18 +6,18 @@ include 'header.php';
 ?>
 
 <!-- PAGE HERO -->
-<section style="background:linear-gradient(135deg, #071e3d 0%, #0c2b53 100%); color:var(--white); padding:60px 0 70px 0;">
+<section style="background:linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%); color:#0f172a; padding:60px 0 70px 0; border-bottom:1px solid #bae6fd;">
   <div class="container">
-    <div style="font-size:0.85rem; color:#94a3b8; margin-bottom:12px; display:flex; gap:8px; align-items:center;">
-      <a href="index.php" style="color:#94a3b8;">Home</a>
+    <div style="font-size:0.85rem; color:#64748b; margin-bottom:12px; display:flex; gap:8px; align-items:center;">
+      <a href="index.php" style="color:#64748b;">Home</a>
       <span>/</span>
-      <span style="color:#38bdf8; font-weight:600;">Contact &amp; Quotation</span>
+      <span style="color:#0284c7; font-weight:600;">Contact &amp; Quotation</span>
     </div>
-    <h1 style="font-family:var(--font-heading); font-weight:900; font-size:clamp(2.2rem, 4vw, 3.4rem); line-height:1.15; margin-bottom:16px;">
+    <h1 style="font-family:var(--font-heading); font-weight:900; font-size:clamp(2.2rem, 4vw, 3.4rem); line-height:1.15; margin-bottom:16px; color:#0f172a;">
       Direct Manufacturer Pricing &amp;<br/>
-      <span style="color:#38bdf8;">Technical Engineering Support</span>
+      <span style="color:#0284c7;">Technical Engineering Support</span>
     </h1>
-    <p style="font-size:1.1rem; color:#cbd5e1; max-width:680px; line-height:1.7;">
+    <p style="font-size:1.1rem; color:#334155; max-width:680px; line-height:1.7;">
       Request bulk purchase pricing, physical prototype samples, industrial epoxy floor surveys, or turnkey office project consultations directly from our Bengaluru converting team.
     </p>
   </div>

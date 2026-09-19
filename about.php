@@ -6,17 +6,17 @@ include 'header.php';
 ?>
 
 <!-- PAGE HERO -->
-<section style="background-color:var(--navy-dark); color:var(--white); padding:50px 0 54px 0; border-bottom:1px solid rgba(255,255,255,0.08);">
+<section style="background:linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%); color:#0f172a; padding:50px 0 54px 0; border-bottom:1px solid #bae6fd;">
   <div class="container">
-    <div style="font-size:0.82rem; color:#94a3b8; margin-bottom:10px; display:flex; gap:8px; align-items:center;">
-      <a href="index.php" style="color:#94a3b8;">Home</a>
+    <div style="font-size:0.82rem; color:#64748b; margin-bottom:10px; display:flex; gap:8px; align-items:center;">
+      <a href="index.php" style="color:#64748b;">Home</a>
       <span>/</span>
-      <span style="color:#38bdf8; font-weight:600;">About Us</span>
+      <span style="color:#0284c7; font-weight:600;">About Us</span>
     </div>
-    <h1 style="font-family:var(--font-heading); font-weight:900; font-size:clamp(2rem, 3.6vw, 3rem); line-height:1.15; margin-bottom:12px;">
+    <h1 style="font-family:var(--font-heading); font-weight:900; font-size:clamp(2rem, 3.6vw, 3rem); line-height:1.15; margin-bottom:12px; color:#0f172a;">
       Industrial Packaging Conversion &amp; Supply Chain Partner
     </h1>
-    <p style="font-size:1.05rem; color:#cbd5e1; max-width:680px; line-height:1.65;">
+    <p style="font-size:1.05rem; color:#334155; max-width:680px; line-height:1.65;">
       Mirai Packaging LLP operates an integrated converting plant and central distribution center in Bengaluru, delivering high-reliability packaging materials for enterprise supply chains.
     </p>
   </div>
