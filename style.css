@@ -4807,3 +4807,48 @@ img, video, iframe, canvas, table {
     height: 36px !important;
   }
 }
+
+/* 9. About Section Full-Width Responsive Text & Image Fix */
+.about-hero-grid,
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+@media (max-width: 991px) {
+  .about-hero-grid,
+  .about-story-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+
+  .about-hero-grid > div,
+  .about-story-grid > div {
+    width: 100% !important;
+  }
+
+  .about-hero-grid img,
+  .about-story-grid img {
+    width: 100% !important;
+    height: 250px !important;
+    object-fit: cover !important;
+    border-radius: 14px 14px 0 0 !important;
+  }
+
+  .about-hero-grid h2,
+  .about-story-grid h2 {
+    font-size: clamp(1.4rem, 5.5vw, 1.85rem) !important;
+    line-height: 1.28 !important;
+    word-break: normal !important;
+    hyphens: none !important;
+  }
+
+  .about-hero-grid p,
+  .about-story-grid p {
+    font-size: 0.92rem !important;
+    line-height: 1.65 !important;
+  }
+}
