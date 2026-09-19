@@ -4757,3 +4757,53 @@ img, video, iframe, canvas, table {
   color: #0284c7 !important;
   font-weight: 600 !important;
 }
+
+/* 8. Mobile Enterprise Client Cards & Floating Buttons Fix */
+.enterprise-card-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap !important;
+  gap: 8px 12px !important;
+}
+
+.enterprise-brand-sector {
+  white-space: normal !important;
+  word-break: break-word !important;
+  max-width: 100% !important;
+  line-height: 1.35 !important;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .enterprise-card {
+    padding: 16px 14px !important;
+  }
+
+  .enterprise-card-header {
+    gap: 6px 10px !important;
+  }
+
+  .enterprise-logo-img {
+    height: 28px !important;
+    max-width: 125px !important;
+  }
+
+  .enterprise-brand-sector {
+    font-size: 0.68rem !important;
+    padding: 3px 8px !important;
+    text-align: left !important;
+  }
+
+  /* Prevent floating circular Call/WhatsApp buttons from overlapping cards on mobile */
+  .floating-contact-widget .float-btn {
+    display: none !important;
+  }
+
+  .scroll-top-btn {
+    bottom: 60px !important;
+    right: 12px !important;
+    width: 36px !important;
+    height: 36px !important;
+  }
+}
