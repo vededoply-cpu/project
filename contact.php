@@ -1,7 +1,7 @@
 <?php
 $page = 'contact';
 $page_title = 'Contact & Request Bulk Quote | Mirai Packaging LLP';
-$meta_desc = 'Get direct manufacturer quotation for corrugated boxes, courier flyers, tapes, industrial epoxy, and turnkey office/warehouse projects from Mirai Packaging LLP in Bengaluru. Phone: +91-9044129477.';
+$meta_desc = 'Get direct manufacturer quotation for corrugated boxes, courier flyers, tapes, industrial epoxy, and turnkey office/warehouse projects from Mirai Packaging LLP in Bengaluru. Phone: +91-9491436494.';
 include 'header.php';
 ?>
 
@@ -54,7 +54,7 @@ include 'header.php';
               <div>
                 <h4 style="font-family:var(--font-heading);font-weight:700;font-size:1.05rem;color:var(--text-dark);">Direct Phone Lines</h4>
                 <p style="font-size:0.92rem;color:var(--text-body);line-height:1.6;">
-                  <a href="tel:+919044129477" style="color:var(--blue-primary);font-weight:700;">+91-9044129477</a>
+                  <a href="tel:+919491436494" style="color:var(--blue-primary);font-weight:700;">+91-9491436494</a>
                 </p>
               </div>
             </div>
@@ -66,7 +66,7 @@ include 'header.php';
               <div>
                 <h4 style="font-family:var(--font-heading);font-weight:700;font-size:1.05rem;color:var(--text-dark);">Official Correspondence</h4>
                 <p style="font-size:0.92rem;color:var(--text-body);line-height:1.6;">
-                  <a href="mailto:sales@miraiflexipack.in" style="color:var(--blue-primary);font-weight:700;">sales@miraiflexipack.in</a>
+                  <a href="mailto:miraipackagingllp@gmail.com" style="color:var(--blue-primary);font-weight:700;">miraipackagingllp@gmail.com</a>
                 </p>
               </div>
             </div>
@@ -87,7 +87,7 @@ include 'header.php';
         </div>
 
         <!-- WHATSAPP DIRECT CTA CARD -->
-        <a href="https://wa.me/919044129477?text=Hi%20Mirai%20Packaging,%20I%20want%20an%20urgent%20packaging%20quote." target="_blank" rel="noopener" style="display:flex; align-items:center; gap:16px; background:#25D366; color:#ffffff; padding:18px 24px; border-radius:var(--radius-md); box-shadow:0 10px 25px rgba(37,211,102,0.3); font-family:var(--font-heading); font-weight:800; font-size:1.1rem;">
+        <a href="https://wa.me/919491436494?text=Hi%20Mirai%20Packaging,%20I%20want%20an%20urgent%20packaging%20quote." target="_blank" rel="noopener" style="display:flex; align-items:center; gap:16px; background:#25D366; color:#ffffff; padding:18px 24px; border-radius:var(--radius-md); box-shadow:0 10px 25px rgba(37,211,102,0.3); font-family:var(--font-heading); font-weight:800; font-size:1.1rem;">
           <svg viewBox="0 0 24 24" fill="currentColor" style="width:32px;height:32px;flex-shrink:0;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19.53-1.09 1.04-1.52 1.1-.41.06-.94.08-1.53-.1-.36-.11-.83-.27-1.43-.53-2.54-1.1-4.2-3.66-4.33-3.83-.13-.17-1.04-1.38-1.04-2.64s.66-1.88.9-2.13c.23-.26.51-.32.68-.32.17 0 .34 0 .49.01.16.01.37-.06.58.44.22.52.74 1.8.8 1.93.07.13.11.28.02.45-.09.17-.13.28-.26.43-.13.16-.28.35-.4.47-.13.13-.27.27-.12.53.15.26.68 1.12 1.46 1.81 1 .89 1.85 1.17 2.11 1.3.26.13.41.11.56-.06.16-.17.68-.79.86-1.06.18-.27.36-.22.61-.13.25.09 1.58.74 1.85.88.27.13.45.2.52.31.06.12.06.68-.13 1.21z"/></svg>
           <div>
             <div>Instant WhatsApp RFQ</div>
@@ -123,7 +123,7 @@ include 'header.php';
               </div>
               <div class="form-group">
                 <label class="form-label" for="contactPhone">Mobile Number *</label>
-                <input type="tel" id="contactPhone" class="form-control" placeholder="+91 9044129477" required/>
+                <input type="tel" id="contactPhone" class="form-control" placeholder="+91 9491436494" required/>
               </div>
             </div>
 

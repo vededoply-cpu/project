@@ -22,19 +22,19 @@ if (!isset($meta_desc)) $meta_desc = 'Mirai Packaging LLP is Bangalore\'s premie
       <div class="topbar-left">
         <span class="topbar-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-          Unit 101, 139/88, Oxford Towers, HAL Old Airport Road, Bengaluru – 560008
+          Add-1091, 8th Cross Road, Jai Marathi Nagar, Bengaluru Urban, Karnataka – 560086
         </span>
         <span class="topbar-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-          sales@miraiflexipack.in
+          miraipackagingllp@gmail.com
         </span>
         <span class="topbar-badge">GSTIN: 29AAUFM9272M1Z2</span>
       </div>
       <div class="topbar-right">
         <span class="topbar-item">Mon – Sat: 9:00 AM – 7:00 PM IST</span>
-        <a href="tel:+919044129477" class="topbar-phone">
+        <a href="tel:+919491436494" class="topbar-phone">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-          +91-9044129477
+          +91-9491436494
         </a>
       </div>
     </div>
@@ -94,8 +94,8 @@ if (!isset($meta_desc)) $meta_desc = 'Mirai Packaging LLP is Bangalore\'s premie
     <a href="contact.php" class="drawer-link <?php if ($page === 'contact') echo 'active'; ?>">Contact &amp; Enquiry</a>
   </div>
   <div class="drawer-footer">
-    <a href="tel:+919044129477" class="btn btn-outline" style="width:100%;margin-bottom:8px;justify-content:center;">
-      Call: +91 9044129477
+    <a href="tel:+919491436494" class="btn btn-outline" style="width:100%;margin-bottom:8px;justify-content:center;">
+      Call: +91 9491436494
     </a>
     <a href="contact.php" class="btn btn-orange" style="width:100%;justify-content:center;">Get Bulk Pricing</a>
   </div>

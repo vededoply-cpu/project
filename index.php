@@ -934,8 +934,8 @@ include 'header.php';
           Get Bulk Pricing
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
-        <a href="tel:+919044129477" class="btn btn-outline-white btn-lg">
-          Call: +91-9044129477
+        <a href="tel:+919491436494" class="btn btn-outline-white btn-lg">
+          Call: +91-9491436494
         </a>
       </div>
     </div>
