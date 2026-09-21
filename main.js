@@ -793,12 +793,38 @@ document.addEventListener('DOMContentLoaded', function () {
       }, randomInterval);
     }
 
-    // Initial trigger after 4 seconds on page load
-    setTimeout(function () {
-      showNextToast();
-      scheduleNextToast();
-    }, 4000);
   })();
+
+  // ── PREVENT ALL MOBILE PINCH ZOOM & DOUBLE-TAP ZOOM GESTURES ──
+  document.addEventListener('gesturestart', function (e) {
+    e.preventDefault();
+  }, { passive: false });
+
+  document.addEventListener('gesturechange', function (e) {
+    e.preventDefault();
+  }, { passive: false });
+
+  document.addEventListener('gestureend', function (e) {
+    e.preventDefault();
+  }, { passive: false });
+
+  let lastTouchEndTime = 0;
+  document.addEventListener('touchend', function (e) {
+    const now = (new Date()).getTime();
+    if (now - lastTouchEndTime <= 300) {
+      // Prevent double-tap zoom on interactive elements if target isn't input
+      if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA' && e.target.tagName !== 'SELECT') {
+        e.preventDefault();
+      }
+    }
+    lastTouchEndTime = now;
+  }, { passive: false });
+
+  document.addEventListener('touchmove', function (e) {
+    if (e.touches && e.touches.length > 1) {
+      e.preventDefault(); // Block 2-finger pinch zoom
+    }
+  }, { passive: false });
 
 });
 
