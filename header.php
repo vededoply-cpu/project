@@ -7,7 +7,7 @@ if (!isset($meta_desc)) $meta_desc = 'Mirai Packaging LLP is Bangalore\'s premie
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
   <title><?php echo htmlspecialchars($page_title); ?></title>
   <meta name="description" content="<?php echo htmlspecialchars($meta_desc); ?>"/>
   <link rel="icon" type="image/png" href="images/favicon.png"/>

@@ -94,8 +94,10 @@
    scroll-behavior: smooth;
    font-size: 16px;
    -webkit-text-size-adjust: 100%;
-   overflow-x: hidden;
-   max-width: 100%;
+   overflow-x: hidden !important;
+   width: 100% !important;
+   max-width: 100% !important;
+   touch-action: manipulation;
  }
 
  body {
@@ -106,8 +108,21 @@
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    overflow-x: hidden !important;
+   width: 100% !important;
    max-width: 100% !important;
    position: relative;
+   touch-action: manipulation;
+ }
+
+ /* Prevent auto-zoom on input focus in mobile browsers */
+ input[type="text"],
+ input[type="number"],
+ input[type="email"],
+ input[type="tel"],
+ input[type="search"],
+ select,
+ textarea {
+   font-size: 16px !important;
    touch-action: manipulation;
  }
 
