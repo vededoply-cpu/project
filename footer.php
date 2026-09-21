@@ -51,15 +51,15 @@
         <div class="footer-contact-list">
           <div class="footer-contact-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-            <span>Add-1091, 8th Cross Road, Jai Marathi Nagar, Bengaluru Urban, Karnataka – 560086</span>
+            <span>Unit 101, 139/88, Oxford Towers, HAL Old Airport Road, Bengaluru, Bengaluru Urban, Karnataka – 560008</span>
           </div>
           <div class="footer-contact-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-            <span>+91-9491436494</span>
+            <span>+91-904412477</span>
           </div>
           <div class="footer-contact-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-            <span>miraipackagingllp@gmail.com</span>
+            <span>sales@miraipackaging.in</span>
           </div>
         </div>
       </div>
@@ -77,10 +77,10 @@
   <button class="scroll-top-btn" id="scrollTop" aria-label="Scroll to top">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:18px;height:18px;"><path d="M18 15l-6-6-6 6"/></svg>
   </button>
-  <a href="tel:+919491436494" class="float-btn float-call" aria-label="Call Mirai Packaging">
+  <a href="tel:+91904412477" class="float-btn float-call" aria-label="Call Mirai Packaging">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px;height:20px;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
   </a>
-  <a href="https://wa.me/919491436494?text=Hi%20Mirai%20Packaging,%20I%20am%20interested%20in%20packaging%20materials%20for%20my%20business." target="_blank" rel="noopener" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
+  <a href="https://wa.me/91904412477?text=Hi%20Mirai%20Packaging,%20I%20am%20interested%20in%20packaging%20materials%20for%20my%20business." target="_blank" rel="noopener" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
     <svg viewBox="0 0 24 24" fill="currentColor" style="width:24px;height:24px;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19.53-1.09 1.04-1.52 1.1-.41.06-.94.08-1.53-.1-.36-.11-.83-.27-1.43-.53-2.54-1.1-4.2-3.66-4.33-3.83-.13-.17-1.04-1.38-1.04-2.64s.66-1.88.9-2.13c.23-.26.51-.32.68-.32.17 0 .34 0 .49.01.16.01.37-.06.58.44.22.52.74 1.8.8 1.93.07.13.11.28.02.45-.09.17-.13.28-.26.43-.13.16-.28.35-.4.47-.13.13-.27.27-.12.53.15.26.68 1.12 1.46 1.81 1 .89 1.85 1.17 2.11 1.3.26.13.41.11.56-.06.16-.17.68-.79.86-1.06.18-.27.36-.22.61-.13.25.09 1.58.74 1.85.88.27.13.45.2.52.31.06.12.06.68-.13 1.21z"/></svg>
   </a>
 </div>
@@ -88,11 +88,11 @@
 <!-- MOBILE BOTTOM ACTION BAR -->
 <div class="mobile-bottom-bar">
   <div class="mobile-bottom-grid">
-    <a href="tel:+919491436494" class="mobile-bar-btn" style="background:#0284c7; color:#ffffff;">
+    <a href="tel:+91904412477" class="mobile-bar-btn" style="background:#0284c7; color:#ffffff;">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
       Call
     </a>
-    <a href="https://wa.me/919491436494?text=Hi%20Mirai%20Packaging,%20I%20need%20a%20packaging%20quote." target="_blank" rel="noopener" class="mobile-bar-btn" style="background:#25D366; color:var(--white);">
+    <a href="https://wa.me/91904412477?text=Hi%20Mirai%20Packaging,%20I%20need%20a%20packaging%20quote." target="_blank" rel="noopener" class="mobile-bar-btn" style="background:#25D366; color:var(--white);">
       WhatsApp
     </a>
     <a href="contact.php" class="mobile-bar-btn" style="background:var(--orange-brand); color:var(--white);">

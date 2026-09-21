@@ -137,7 +137,7 @@ include 'header.php';
               Request Box Quote
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-            <a href="https://wa.me/919491436494?text=Hi,%20I%20need%20a%20quotation%20for%20corrugated%20boxes." target="_blank" rel="noopener" class="btn btn-outline">
+            <a href="https://wa.me/91904412477?text=Hi,%20I%20need%20a%20quotation%20for%20corrugated%20boxes." target="_blank" rel="noopener" class="btn btn-outline">
               WhatsApp Technical Spec Sheet
             </a>
           </div>
@@ -226,7 +226,7 @@ include 'header.php';
               Request Courier Bag Quote
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-            <a href="https://wa.me/919491436494?text=Hi,%20I%20need%20pricing%20for%20courier%20flyer%20bags." target="_blank" rel="noopener" class="btn btn-outline">
+            <a href="https://wa.me/91904412477?text=Hi,%20I%20need%20pricing%20for%20courier%20flyer%20bags." target="_blank" rel="noopener" class="btn btn-outline">
               WhatsApp Technical Spec Sheet
             </a>
           </div>
@@ -642,7 +642,7 @@ include 'header.php';
               Request Wooden Pallets Quote
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-            <a href="https://wa.me/919491436494?text=Hi,%20I%20need%20a%20quotation%20for%20ISPM-15%20Wooden%20Pallets." target="_blank" rel="noopener" class="btn btn-outline">
+            <a href="https://wa.me/91904412477?text=Hi,%20I%20need%20a%20quotation%20for%20ISPM-15%20Wooden%20Pallets." target="_blank" rel="noopener" class="btn btn-outline">
               WhatsApp Spec Sheet
             </a>
           </div>
@@ -1081,7 +1081,7 @@ include 'header.php';
               Request Epoxy Flooring Quote
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-            <a href="https://wa.me/919491436494?text=Hi,%20I%20need%20pricing%20for%20industrial%20epoxy%20flooring." target="_blank" rel="noopener" class="btn btn-outline">
+            <a href="https://wa.me/91904412477?text=Hi,%20I%20need%20pricing%20for%20industrial%20epoxy%20flooring." target="_blank" rel="noopener" class="btn btn-outline">
               WhatsApp Technical Spec Sheet
             </a>
           </div>
@@ -1187,7 +1187,7 @@ include 'header.php';
             Request Turnkey &amp; Site Survey Quote
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
-          <a href="https://wa.me/919491436494?text=Hi,%20I%20want%20to%20discuss%20an%20industrial%20epoxy%20or%20turnkey%20office%20project." target="_blank" rel="noopener" class="btn btn-outline">
+          <a href="https://wa.me/91904412477?text=Hi,%20I%20want%20to%20discuss%20an%20industrial%20epoxy%20or%20turnkey%20office%20project." target="_blank" rel="noopener" class="btn btn-outline">
             WhatsApp Turnkey Consultation
           </a>
         </div>
@@ -1234,7 +1234,7 @@ include 'header.php';
               Request Bubble Wrap Quote
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-            <a href="https://wa.me/919491436494?text=Hi,%20I%20need%20pricing%20for%20air%20bubble%20wrap%20rolls." target="_blank" rel="noopener" class="btn btn-outline">
+            <a href="https://wa.me/91904412477?text=Hi,%20I%20need%20pricing%20for%20air%20bubble%20wrap%20rolls." target="_blank" rel="noopener" class="btn btn-outline">
               WhatsApp Technical Spec Sheet
             </a>
           </div>
@@ -1318,7 +1318,7 @@ include 'header.php';
               Request Strapping Quote
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-            <a href="https://wa.me/919491436494?text=Hi,%20I%20need%20pricing%20for%20PP%20and%20PET%20strapping%20rolls." target="_blank" rel="noopener" class="btn btn-outline">
+            <a href="https://wa.me/91904412477?text=Hi,%20I%20need%20pricing%20for%20PP%20and%20PET%20strapping%20rolls." target="_blank" rel="noopener" class="btn btn-outline">
               WhatsApp Technical Spec Sheet
             </a>
           </div>
@@ -1397,7 +1397,7 @@ include 'header.php';
               Request Pallet Truck Quote
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-            <a href="https://wa.me/919491436494?text=Hi,%20I%20need%20pricing%20for%20hydraulic%20hand%20pallet%20trucks." target="_blank" rel="noopener" class="btn btn-outline">
+            <a href="https://wa.me/91904412477?text=Hi,%20I%20need%20pricing%20for%20hydraulic%20hand%20pallet%20trucks." target="_blank" rel="noopener" class="btn btn-outline">
               WhatsApp Technical Spec Sheet
             </a>
           </div>
